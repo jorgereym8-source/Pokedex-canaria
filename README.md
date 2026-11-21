@@ -19,6 +19,11 @@ Cada dato se guarda con su fuente.
 - MITECO (Atlas y Libros Rojos), UICN, GBIF, iNaturalist y Wikidata para completar tamaño, longevidad y fenología.
 - [Wikimedia Commons](https://commons.wikimedia.org) e [iNaturalist](https://www.inaturalist.org): fotos con licencia libre (CC0, CC BY, CC BY-SA y, de iNaturalist, también CC BY-NC y CC BY-NC-SA) para completar las de Biota.
 - [Especies Vegetales en Canarias](https://endemicascanarias.com) (Gerardo G. Casanova y colaboradores): solo enlace a la ficha de cada planta. Sus fotos tienen © y la web pide el consentimiento expreso del autor para usarlas, así que no se muestran en la app.
+- Rasgos por grupo: AnAge (reproducción), AVONET y EltonTraits (aves y mamíferos), FishBase (peces), WCVP de Kew (forma vital, clima y distribución mundial de las plantas) y Chromosome Counts Database (números cromosomáticos, cuando el servicio responde).
+- Conservación: Red Natura 2000 y los informes de los artículos 12 y 17 de las directivas Aves y Hábitats (Agencia Europea de Medio Ambiente), tallas mínimas del caladero canario (Real Decreto 560/1995, BOE) y el Compendio de fichas de la Base de especies introducidas en Canarias (Gobierno de Canarias).
+- Altitud y primer registro: registros de GBIF en Canarias y el modelo del terreno Copernicus GLO-90.
+- Sonidos: xeno-canto (con clave, como secreto `XC_KEY` de GitHub) e iNaturalist, con licencia Creative Commons.
+- Vulnerabilidad al cambio climático: solo si se rellena `datos-propios/vulnerabilidad.csv`.
 - Open-Meteo para el tiempo de los avistamientos.
 
 Las fotos pertenecen a sus autores: la app las muestra desde la web de origen (Biota, Commons o iNaturalist), con su autor y licencia, y no las copia.
@@ -34,6 +39,7 @@ Abre la app en Safari, pulsa Compartir y elige «Añadir a pantalla de inicio».
 - `scripts/descargar.py`: descarga desde Biota y Centinela. Se ejecuta en GitHub Actions.
 - `scripts/enriquecer.py`: categoría UICN, tamaño, peso, longevidad y ciclo de vida.
 - `scripts/fotos.py`: fotos con licencia libre y enlaces a Especies Vegetales en Canarias.
+- `scripts/rasgos.py`, `scripts/conservacion.py`, `scripts/registros.py`, `scripts/sonidos.py`: biología por grupos, conservación y normativa, altitud y primer registro, y sonidos.
 - `fuentes/`, `vendor/leaflet/`: tipografías y mapas alojados en la propia app (con sus licencias).
 - `sw.js`: permite usar la app sin conexión.
 
