@@ -114,6 +114,15 @@ def slug(nombre: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", t).strip("-")
 
 
+def limpiar_autor(a: str) -> str:
+    m = re.match(r"No machine-readable author provided\.\s*(.+?) assumed", a)
+    if m:
+        a = m.group(1)
+    a = re.sub(r"^(User|Usuario):", "", a).strip(" .")
+    a = re.sub(r"\s*\[\d+\]\s*$", "", a)
+    return a or "Autor en Wikimedia Commons"
+
+
 def texto_plano(h: str, maximo: int = 80) -> str:
     t = re.sub(r"<[^>]+>", " ", h or "")
     t = re.sub(r"\s+", " ", html.unescape(t)).strip()
@@ -242,7 +251,7 @@ def commons(nombres: list[str], cache: dict) -> None:
 # ------------------------------------------------ Especies Vegetales en Canarias
 
 def evc(cache: dict) -> dict:
-    if not caducado(cache.get("fecha"), 30) and cache.get("fichas"):
+    if not caducado(cache.get("fecha"), 30) and cache.get("fichas") and cache.get("version") == 2:
         return cache["fichas"]
     fichas: dict[str, dict] = {}
     vistas, cola = set(), [f"{EVC}/es/listado-todas?limit=0", f"{EVC}/es/listado-todas"]
@@ -257,7 +266,7 @@ def evc(cache: dict) -> dict:
             continue
         for href, texto in re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>', r.text, re.S):
             href = html.unescape(href)
-            if "/allcategories-" in href and "/colaboradores/" not in href:
+            if ("/allcategories-" in href and "/colaboradores/" not in href) or re.match(r"/es/orquideas/[a-z]+-[a-z]", href):
                 u = urljoin(EVC, href).replace("://www.", "://")
                 sl = u.rstrip("/").rsplit("/", 1)[-1]
                 fichas.setdefault(sl, {"url": u, "texto": texto_plano(texto, 120)})
@@ -266,19 +275,36 @@ def evc(cache: dict) -> dict:
     print(f"Especies Vegetales en Canarias: {len(fichas)} fichas en {len(vistas)} páginas", flush=True)
     if fichas:
         cache.clear()
-        cache.update({"fecha": HOY, "fichas": fichas})
+        cache.update({"fecha": HOY, "version": 2, "fichas": fichas})
     return cache.get("fichas", {})
+
+
+def indice_evc(fichas: dict) -> dict:
+    """Slug → URL, por la dirección y también por el nombre que muestra el enlace."""
+    por = {}
+    for k, v in fichas.items():
+        por.setdefault(k, v["url"])
+        nombre = re.split(r"[(\[]", v.get("texto", ""))[0].strip()
+        if re.match(r"^[A-Z][a-z]+ (?:× |x )?[a-z-]+", nombre):
+            por.setdefault(slug(nombre), v["url"])
+    return por
 
 
 def buscar_evc(nombre: str, fichas: dict) -> str | None:
     candidatos = [slug(nombre)] + ([slug(nombre.replace("×", "x"))] if "×" in nombre else [])
     for sl in candidatos:
         if sl in fichas:
-            return fichas[sl]["url"]
+            return fichas[sl]
+    partes = sin_rango(nombre).split()
+    if len(partes) == 2:  # especie en Biota, solo la subespecie típica en la web
+        for r in ("subsp", "var"):
+            k = f"{candidatos[0]}-{r}-{slug(partes[1])}"
+            if k in fichas:
+                return fichas[k]
     for sl in candidatos:
         for k, v in fichas.items():
-            if k.startswith(sl + "-") and not re.match(r"(subsp|var|f|ssp)-", k[len(sl) + 1:]):
-                return v["url"]  # p. ej. «lysimachia-wildpretii-pelletiera-wildpretii»
+            if k.startswith(sl + "-") and not re.match(r"(subsp|var|f|ssp|x)-", k[len(sl) + 1:]):
+                return v  # p. ej. «lysimachia-wildpretii-pelletiera-wildpretii»
     return None
 
 
@@ -313,7 +339,7 @@ def main() -> int:
     finally:
         guardar_json(EXTRA / "inat.json", c_inat)
     try:
-        f_evc = evc(c_evc)
+        f_evc = indice_evc(evc(c_evc))
     finally:
         guardar_json(EXTRA / "evc.json", c_evc)
 
@@ -334,7 +360,7 @@ def main() -> int:
             a = (c_com.get("nombres", {}).get(n) or {}).get("archivo")
             info = c_com.get("archivos", {}).get(a or "") or {}
             if a and info.get("ok"):
-                lista.append({"fuente": "Wikimedia Commons", "archivo": a, "autor": info["autor"], "lic": info["lic"],
+                lista.append({"fuente": "Wikimedia Commons", "archivo": a, "autor": limpiar_autor(info["autor"]), "lic": info["lic"],
                               "licUrl": info.get("licUrl", ""), "pagina": info.get("pagina", ""), "nivel": nivel,
                               **({"taxon": n} if nivel == "especie" else {})})
 
