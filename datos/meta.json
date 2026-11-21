@@ -1,0 +1,35 @@
+{
+ "actualizado": "2026-11-21T02:34:16+00:00",
+ "taxones": 4017,
+ "porGrupo": {
+  "Anfibios": 3,
+  "Aves": 306,
+  "Helechos": 85,
+  "Mamíferos": 68,
+  "Peces": 846,
+  "Plantas con flor": 2660,
+  "Reptiles": 49
+ },
+ "errores": [],
+ "peticiones": 5299,
+ "islas": {
+  "H": "El Hierro",
+  "P": "La Palma",
+  "G": "La Gomera",
+  "T": "Tenerife",
+  "C": "Gran Canaria",
+  "F": "Fuerteventura",
+  "L": "Lanzarote",
+  "M": "Mar"
+ },
+ "presencia": {
+  "s": "segura",
+  "d": "dudosa, equívoca o extinta",
+  "t": "traslocada",
+  "x": "extinta"
+ },
+ "fuentes": {
+  "Biota": "https://www.biodiversidadcanarias.es/biota",
+  "Centinela": "https://www.biodiversidadcanarias.es/centinela"
+ }
+}
