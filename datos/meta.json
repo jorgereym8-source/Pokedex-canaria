@@ -1,17 +1,29 @@
 {
- "actualizado": "2026-11-21T02:34:16+00:00",
- "taxones": 4017,
+ "actualizado": "2026-11-21T22:49:26+00:00",
+ "taxones": 149,
  "porGrupo": {
   "Anfibios": 3,
-  "Aves": 306,
-  "Helechos": 85,
-  "Mamíferos": 68,
-  "Peces": 846,
-  "Plantas con flor": 2660,
-  "Reptiles": 49
+  "Anélidos": 3,
+  "Arácnidos": 9,
+  "Aves": 3,
+  "Cnidarios": 3,
+  "Crustáceos": 17,
+  "Equinodermos": 3,
+  "Esponjas": 3,
+  "Helechos": 3,
+  "Insectos": 42,
+  "Mamíferos": 6,
+  "Miriápodos": 3,
+  "Moluscos": 15,
+  "Otros invertebrados": 15,
+  "Peces": 9,
+  "Plantas con flor": 6,
+  "Reptiles": 6
  },
  "errores": [],
- "peticiones": 5299,
+ "fichasPendientes": 0,
+ "fichasDescargadas": 113,
+ "peticiones": 188,
  "islas": {
   "H": "El Hierro",
   "P": "La Palma",
@@ -31,67 +43,5 @@
  "fuentes": {
   "Biota": "https://www.biodiversidadcanarias.es/biota",
   "Centinela": "https://www.biodiversidadcanarias.es/centinela"
- },
- "enriquecido": {
-  "fecha": "2026-11-21T22:10:25+00:00",
-  "conDato": {
-   "uicn": 3919,
-   "tamano": 2098,
-   "peso": 490,
-   "longevidad": 410,
-   "ciclo": 1233
-  },
-  "taxones": 4017,
-  "uicnPorCategoria": {
-   "EX": 1,
-   "EW": 0,
-   "CR": 62,
-   "EN": 85,
-   "VU": 95,
-   "NT": 68,
-   "LC": 1442,
-   "DD": 78,
-   "NE": 2088
-  }
- },
- "fotos": {
-  "fecha": "2026-11-21",
-  "con_fotos_libres": 3662,
-  "sin_biota_completadas": 1700,
-  "commons": 3201,
-  "inaturalist": 3438,
-  "evc": 2608,
-  "sin_fotos_biota": 1933,
-  "pendientes_inat": 0
- },
- "rasgos": {
-  "fecha": "2026-11-21",
-  "mundo": 2691,
-  "etimologia": 1247,
-  "con_rasgos": 3755,
-  "WCVP (Kew)": 5011,
-  "AnAge": 683,
-  "AVONET": 2840,
-  "EltonTraits": 918,
-  "Wikipedia en español": 74,
-  "FishBase": 6477
- },
- "conservacion": {
-  "fecha": "2026-11-21",
-  "art17": 77,
-  "natura2000": 144,
-  "introduccion": 140,
-  "art12": 172,
-  "tallaMinima": 28
- },
- "registros": {
-  "fecha": "2026-11-21",
-  "altitud": 1958,
-  "primerRegistro": 761
- },
- "sonidos": {
-  "fecha": "2026-11-21",
-  "con_sonido": 326,
-  "xeno_canto": true
  }
 }
