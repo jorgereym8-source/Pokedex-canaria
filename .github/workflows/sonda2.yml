@@ -1,0 +1,32 @@
+name: Sonda ligera
+
+# Comprueba URLs de fuentes nuevas sin descargar archivos grandes.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python scripts/sonda2.py
+      - name: Guardar resultados en la rama sonda-resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/s && cp -r sonda/. /tmp/s/
+          git checkout -q --orphan sonda-resultados
+          git rm -rfq .
+          rm -rf sonda
+          cp -r /tmp/s/. .
+          git add -A
+          git commit -qm "Resultados de la sonda ligera"
+          git push -qf origin sonda-resultados

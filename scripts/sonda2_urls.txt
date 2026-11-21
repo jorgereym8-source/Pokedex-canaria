@@ -1,0 +1,36 @@
+# Natura 2000 (EEA, tabular end 2024 rev 1)
+https://sdi.eea.europa.eu/webdav/datastore/public/eea_t_natura2000_p_2024_v01_r01/
+https://sdi.eea.europa.eu/webdav/datastore/public/eea_t_natura2000_p_2024_v01_r01/CSV/
+# Art. 12 y 17
+https://sdi.eea.europa.eu/webdav/datastore/public/
+https://sdi.eea.europa.eu/webdav/datastore/public/eea_t_3035_10_mio_art12-2013-2018_p_2013-2018_v01_r01/
+https://www.eea.europa.eu/data-and-maps/data/article-12-database-birds-directive-2009-147-ec-1/article-12-2020-dataset/article-12-2020-dataset-csv-format/at_download/file
+https://www.eea.europa.eu/data-and-maps/data/article-17-database-habitats-directive-92-43-eec-2/article-17-2020-dataset/article-17-2020-data-csv-format/at_download/file
+# AVONET (figshare)
+https://api.figshare.com/v2/articles/16586228
+https://api.figshare.com/v2/articles/search?search_for=AVONET
+# EltonTraits
+https://esapubs.org/archive/ecol/E095/178/BirdFuncDat.txt
+https://esapubs.org/archive/ecol/E095/178/MamFuncDat.txt
+# WCVP
+https://sftp.kew.org/pub/data-repositories/WCVP/
+# CCDB
+https://ccdb.tau.ac.il/services/countsFull/?genus=Aeonium&format=json
+https://ccdb.tau.ac.il/services/counts/?species=Aeonium%20arboreum&format=json
+https://taux.evolseq.net/CCDB_web/
+# DEM Copernicus 90 m
+https://copernicus-dem-90m.s3.amazonaws.com/Copernicus_DSM_COG_30_N28_00_W017_00_DEM/Copernicus_DSM_COG_30_N28_00_W017_00_DEM.tif
+# GBIF ocurrencias en Canarias
+https://api.gbif.org/v1/occurrence/search?taxonKey=2468673&geometry=POLYGON((-18.5%2027.4,-13.2%2027.4,-13.2%2029.5,-18.5%2029.5,-18.5%2027.4))&hasCoordinate=true&limit=3
+https://api.gbif.org/v1/occurrence/search?taxonKey=2650829&geometry=POLYGON((-18.5%2027.4,-13.2%2027.4,-13.2%2029.5,-18.5%2029.5,-18.5%2027.4))&limit=1&sort=eventDate&facet=year&facetLimit=200&year=1700,2026
+# iNaturalist sonidos
+https://api.inaturalist.org/v1/places/autocomplete?q=Canary%20Islands
+https://api.inaturalist.org/v1/observations?taxon_name=Fringilla%20teydea&sounds=true&quality_grade=research&per_page=3&order_by=votes
+# Invasoras: compendio del Gobierno de Canarias y REDEXOS
+https://www.gobiernodecanarias.org/medioambiente/descargas/publicaciones/GOBCAN-2022-Compendio-fichas-especies-introducidas-2008-2011.zip
+https://www.redexos.org/
+# BOE: tallas mínimas (RD 560/1995) y catálogo de invasoras (RD 630/2013)
+https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-1995-8639/texto
+https://www.boe.es/datosabiertos/api/legislacion-consolidada/id/BOE-A-2013-8565/texto/indice
+# FishBase: tablas disponibles
+https://huggingface.co/api/datasets/cboettig/fishbase/tree/main/data/fb/v23.05/parquet
