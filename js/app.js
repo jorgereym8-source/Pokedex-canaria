@@ -7,7 +7,7 @@ import {
   insigniasEntrada, urlImagen, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia,
 } from "./ui.js";
 
-const VERSION = "0.1.1";
+const VERSION = "0.1.2";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
 const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, novistas: false, ext: false, am: false, pr: false });
@@ -81,7 +81,7 @@ function vistaInicio() {
 
   vista.innerHTML = `
     <div class="cabecera">
-      <div class="titulos"><span class="sobre">Pokédex Canaria</span><h1>Flora y fauna<br>de Canarias</h1></div>
+      <div class="marca-app"><img src="iconos/logo.png" alt="" width="60" height="60"><div class="titulos"><span class="sobre">Pokédex Canaria</span><h1>Flora y fauna<br>de Canarias</h1></div></div>
       <a class="boton-icono" href="#/ajustes" aria-label="Ajustes">${icono("ajustes")}</a>
     </div>
     <form class="buscador" data-accion="buscar-inicio" role="search">

@@ -5,6 +5,7 @@ export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&a
 const P = {
   hoja: "M5 19C5 10 10 5 19 5c0 9-5 14-14 14zM5 19l9-9",
   pluma: "M20 4C12 4 7 9 7 17v3h3c8 0 10-6 10-16zM7 20l9-10",
+  ave: "M2 13.5l4.5 1c1.5-3 4.5-5 8-5 .5-2 2-3 3.5-3 1.3 0 2.3.8 2.6 2l1.4.6-1.6.4c0 3.6-2.8 7.4-8.4 7.4-3 0-5.5-1.2-7-3M8.5 13.5c1.5 1.2 4 1.3 6-.3M18.2 8.4v.01M11 17.8l-.6 2.4M13.6 17.6l.4 2.4",
   lagarto: "M3 17c2 1 4 0 5-2l2-4c1-2 3-3 5-3h2c2 0 3 1 3 2s-1 2-3 2h-2c-2 0-3 1-4 3l-1 2c-1 2-3 3-5 3M8 15l-2 3M13 13l2 3M11 9l-1-3M16 8l1-3",
   pata: "M8 10a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2zM16 10a1.6 1.6 0 1 1 0-3.2 1.6 1.6 0 0 1 0 3.2zM5 14a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zM19 14a1.4 1.4 0 1 1 0-2.8 1.4 1.4 0 0 1 0 2.8zM12 13c-3 0-5 3-5 5 0 1.5 1.5 2 2.5 2s1.5-.6 2.5-.6 1.5.6 2.5.6 2.5-.5 2.5-2c0-2-2-5-5-5z",
   rana: "M7 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM17 9a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM4 14c0-3 3-5 8-5s8 2 8 5-3 5-8 5-8-2-8-5zM9 14h6",
@@ -49,7 +50,7 @@ export function icono(nombre, extra = "") {
 }
 
 export const GRUPOS = {
-  "Helechos": { icono: "helecho" }, "Plantas con flor": { icono: "hoja" }, "Aves": { icono: "pluma" },
+  "Helechos": { icono: "helecho" }, "Plantas con flor": { icono: "hoja" }, "Aves": { icono: "ave" },
   "Reptiles": { icono: "lagarto" }, "Mamíferos": { icono: "pata" }, "Anfibios": { icono: "rana" }, "Peces": { icono: "pez" },
 };
 export const iconoGrupo = (g) => (GRUPOS[g] || { icono: "hoja" }).icono;

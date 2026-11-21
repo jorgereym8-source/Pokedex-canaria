@@ -39,6 +39,8 @@ svg.icono { width: 1.35em; height: 1.35em; flex: none; fill: none; stroke: curre
 #vista { padding: calc(var(--seguro-arriba) + 20px * var(--esp) + 12px) calc(18px * var(--esp)) calc(110px + var(--seguro-abajo)); display: flex; flex-direction: column; gap: calc(18px * var(--esp)); }
 #vista.sin-relleno-arriba { padding-top: 0; }
 .cabecera { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; }
+.marca-app { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.marca-app img { width: 60px; height: 60px; flex: none; }
 .cabecera .titulos { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
 .sobre { font-size: 0.75em; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--acento); }
 h1, h2, h3 { font-family: var(--font-titulo); margin: 0; }
