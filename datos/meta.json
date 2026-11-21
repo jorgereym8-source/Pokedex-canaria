@@ -1,1 +1,97 @@
-{"actualizado":"2026-11-21T02:34:16+00:00","taxones":4017,"porGrupo":{"Anfibios":3,"Aves":306,"Helechos":85,"Mamíferos":68,"Peces":846,"Plantas con flor":2660,"Reptiles":49},"errores":[],"peticiones":5299,"islas":{"H":"El Hierro","P":"La Palma","G":"La Gomera","T":"Tenerife","C":"Gran Canaria","F":"Fuerteventura","L":"Lanzarote","M":"Mar"},"presencia":{"s":"segura","d":"dudosa, equívoca o extinta","t":"traslocada","x":"extinta"},"fuentes":{"Biota":"https://www.biodiversidadcanarias.es/biota","Centinela":"https://www.biodiversidadcanarias.es/centinela"},"enriquecido":{"fecha":"2026-11-21T15:50:18+00:00","conDato":{"uicn":3919,"tamano":2098,"peso":490,"longevidad":410,"ciclo":1233},"taxones":4017,"uicnPorCategoria":{"EX":1,"EW":0,"CR":62,"EN":85,"VU":95,"NT":68,"LC":1442,"DD":78,"NE":2088}},"fotos":{"fecha":"2026-11-21","con_fotos_libres":3662,"sin_biota_completadas":1700,"commons":3201,"inaturalist":3438,"evc":2608,"sin_fotos_biota":1933,"pendientes_inat":0}}
+{
+ "actualizado": "2026-11-21T02:34:16+00:00",
+ "taxones": 4017,
+ "porGrupo": {
+  "Anfibios": 3,
+  "Aves": 306,
+  "Helechos": 85,
+  "Mamíferos": 68,
+  "Peces": 846,
+  "Plantas con flor": 2660,
+  "Reptiles": 49
+ },
+ "errores": [],
+ "peticiones": 5299,
+ "islas": {
+  "H": "El Hierro",
+  "P": "La Palma",
+  "G": "La Gomera",
+  "T": "Tenerife",
+  "C": "Gran Canaria",
+  "F": "Fuerteventura",
+  "L": "Lanzarote",
+  "M": "Mar"
+ },
+ "presencia": {
+  "s": "segura",
+  "d": "dudosa, equívoca o extinta",
+  "t": "traslocada",
+  "x": "extinta"
+ },
+ "fuentes": {
+  "Biota": "https://www.biodiversidadcanarias.es/biota",
+  "Centinela": "https://www.biodiversidadcanarias.es/centinela"
+ },
+ "enriquecido": {
+  "fecha": "2026-11-21T20:03:24+00:00",
+  "conDato": {
+   "uicn": 3919,
+   "tamano": 2098,
+   "peso": 490,
+   "longevidad": 410,
+   "ciclo": 1233
+  },
+  "taxones": 4017,
+  "uicnPorCategoria": {
+   "EX": 1,
+   "EW": 0,
+   "CR": 62,
+   "EN": 85,
+   "VU": 95,
+   "NT": 68,
+   "LC": 1442,
+   "DD": 78,
+   "NE": 2088
+  }
+ },
+ "fotos": {
+  "fecha": "2026-11-21",
+  "con_fotos_libres": 3662,
+  "sin_biota_completadas": 1700,
+  "commons": 3201,
+  "inaturalist": 3438,
+  "evc": 2608,
+  "sin_fotos_biota": 1933,
+  "pendientes_inat": 0
+ },
+ "rasgos": {
+  "fecha": "2026-11-21",
+  "mundo": 2691,
+  "etimologia": 1247,
+  "con_rasgos": 3755,
+  "WCVP (Kew)": 5011,
+  "AnAge": 683,
+  "AVONET": 2840,
+  "EltonTraits": 918,
+  "Wikipedia en español": 74,
+  "FishBase": 6477
+ },
+ "conservacion": {
+  "fecha": "2026-11-21",
+  "art17": 77,
+  "natura2000": 144,
+  "introduccion": 140,
+  "art12": 172,
+  "tallaMinima": 28
+ },
+ "registros": {
+  "fecha": "2026-11-21",
+  "altitud": 1229,
+  "primerRegistro": 473
+ },
+ "sonidos": {
+  "fecha": "2026-11-21",
+  "con_sonido": 326,
+  "xeno_canto": true
+ }
+}
