@@ -7,7 +7,7 @@ import {
   insigniasEntrada, urlImagen, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia,
 } from "./ui.js";
 
-const VERSION = "0.1.0";
+const VERSION = "0.1.1";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
 const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, novistas: false, ext: false, am: false, pr: false });
@@ -317,7 +317,7 @@ async function vistaFicha(codigo) {
     <div class="insignias">
       ${insigniaNivel(e.nv)}
       <span class="insignia">${esc(f.origen?.nombre || ORIGENES[orig] || orig)}${orig ? ` (${esc(orig)})` : ""}</span>
-      ${orig === "ISI" ? '<span class="insignia invasora">Invasora</span>' : ""}
+      ${orig === "ISI" ? '<span class="insignia invasora">Invasora</span>' : orig === "ISP" ? '<span class="insignia invasora">Potencialmente invasora</span>' : ""}
       ${[...new Set([...(e.cc || []).map((c) => `C. Canario: ${c}`), ...(e.ce || []).map((c) => `C. Español: ${c}`)])].map((c) => `<span class="insignia ${/peligro|vulnerable/i.test(c) ? "amenaza" : ""}">${esc(c)}</span>`).join("")}
     </div>
 
@@ -410,11 +410,11 @@ function enlacesOficiales(e, f) {
     const u = en.url;
     if (/iucnredlist/.test(u)) add("U", "Lista Roja de la UICN", "iucnredlist.org", u);
     else if (/gbif\.org/.test(u)) add("G", "GBIF", "Global Biodiversity Information Facility", u);
-    else if (/magrama|miteco/.test(u)) add("M", "Libros Rojos", "Ministerio para la Transición Ecológica", u);
+    else if (/magrama|miteco|mapama/.test(u)) add("M", "Libros Rojos", "Ministerio para la Transición Ecológica", u);
     else if (/eionet/.test(u)) add("E", `Informe artículo 17 · ${en.titulo}`, "Directiva Hábitats · EIONET", u);
     else add("·", en.titulo || "Enlace", new URL(u).hostname, u);
   }
-  if ((f.origen?.codigo || e.o) === "ISI") add("R", "Especies exóticas invasoras · REDEXOS", "Gobierno de Canarias: cómo avisar de un avistamiento", REDEXOS);
+  if (["ISI", "ISP"].includes(f.origen?.codigo || e.o)) add("R", "Especies exóticas invasoras · REDEXOS", "Gobierno de Canarias: cómo avisar de un avistamiento", REDEXOS);
   const binomio = e.n.split(" ").filter((t) => !/^(subsp\.|var\.|f\.|×)$/.test(t)).slice(0, 2).join(" ");
   add("i", "iNaturalist", "Observaciones ciudadanas", `https://www.inaturalist.org/taxa/search?q=${encodeURIComponent(binomio)}`);
   return l.join("");

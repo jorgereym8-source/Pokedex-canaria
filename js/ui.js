@@ -67,7 +67,7 @@ export const NIVELES = {
 };
 export const ORIGENES = {
   NS: "Nativo seguro", NP: "Nativo probable", IP: "Introducido probable", ISI: "Introducido invasor",
-  ISN: "Introducido no invasor", ISP: "Introducido potencialmente invasor", ISF: "Introducido (asilvestrado)",
+  ISN: "Introducido no invasor", ISP: "Introducido potencialmente invasor", ISF: "Introducido con falta de datos",
 };
 
 export function presencia(is) {
@@ -92,6 +92,7 @@ export function insigniaNivel(nv, pequena = false) {
 export function insigniasEntrada(e, pequena = true) {
   const out = [insigniaNivel(e.nv, pequena)];
   if (e.o === "ISI") out.push(`<span class="insignia ${pequena ? "pequena" : ""} invasora">Invasora</span>`);
+  if (e.o === "ISP") out.push(`<span class="insignia ${pequena ? "pequena" : ""} invasora">Potencialmente invasora</span>`);
   const amen = [...(e.cc || []), ...(e.ce || [])].find((c) => /peligro|vulnerable/i.test(c));
   if (amen) out.push(`<span class="insignia ${pequena ? "pequena" : ""} amenaza">${esc(amen)}</span>`);
   if (e.st === "Extinto") out.push(`<span class="insignia ${pequena ? "pequena" : ""} extinto">Extinto</span>`);
