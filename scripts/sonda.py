@@ -63,6 +63,10 @@ def nombre_fichero(url: str, ctype: str) -> str:
 
 
 def main() -> int:
+    # Si existe scripts/sonda_urls.txt, se usan esas URL (una por línea) en lugar de la lista fija
+    lista = Path(__file__).with_name("sonda_urls.txt")
+    urls = [u.strip() for u in lista.read_text(encoding="utf-8").splitlines() if u.strip() and not u.startswith("#")] if lista.exists() else URLS
+    seguir_js = not lista.exists()
     out = Path("sonda")
     out.mkdir(exist_ok=True)
     s = requests.Session()
@@ -70,7 +74,7 @@ def main() -> int:
 
     resumen = []
     scripts_vistos = set()
-    cola = list(URLS)
+    cola = list(urls)
     while cola:
         url = cola.pop(0)
         try:
@@ -79,7 +83,7 @@ def main() -> int:
             fichero = nombre_fichero(url, ctype)
             (out / fichero).write_bytes(r.content)
             item = {"url": url, "estado": r.status_code, "tipo": ctype, "bytes": len(r.content), "fichero": fichero}
-            if "html" in ctype:
+            if "html" in ctype and seguir_js:
                 texto = r.text
                 item["robot"] = "por ser un robot" in texto
                 # Scripts propios del sitio: ahí suelen estar las llamadas AJAX
