@@ -7,7 +7,7 @@ V00041;Accipiter nisus granti;Gavilán común;Aves;ave;0.28;0.37;longitud;Centin
 V00146;Acridotheres tristis;Miná;Aves;ave;;0.23;longitud;Wikipedia (es);0.0071;Wikidata;;;;LC
 E08356;Acrocephalus schoenobaenus;Carricerín común;Aves;ave;0.115;0.13;longitud;Wikipedia (es);0.0118;AnAge;11.8;AnAge;;LC
 E08357;Acrocephalus scirpaceus;Carricero común;Aves;ave;;0.12;longitud;Wikidata;0.0123;AnAge;16.9;AnAge;;LC
-E08305;Actitis hypoleucos;Andarríos chico;Aves;ave;;;;;0.048;AnAge;14.5;AnAge;;LC
+E08305;Actitis hypoleucos;Andarríos chico;Aves;ave;0.18;0.2;longitud;Wikipedia (es);0.048;AnAge;14.5;AnAge;;LC
 V00204;Agapornis fischeri;Inseparable de Fischer;Aves;ave;;0.14;longitud;Wikipedia (es);0.0483;AnAge;12.6;AnAge;;NT
 V00203;Agapornis personatus;Inseparable cabecinegro;Aves;ave;0.145;0.15;longitud;Wikipedia (es);0.0036;Wikidata;;;;LC
 E08338;Alauda arvensis;Alondra común;Aves;ave;;;;;0.0375;AnAge;10.1;AnAge;;LC
@@ -18,7 +18,7 @@ V00009;Alectoris barbara koenigi;Perdiz moruna;Aves;ave;;;;;0.0196;Wikidata;;;;L
 V00010;Alectoris rufa;Perdiz roja;Aves;ave;0.34;0.38;longitud;Wikipedia (es);0.528;AnAge;6.2;AnAge;;NT
 V00226;Amandava amandava;Bengalí rojo;Aves;ave;;;;;0.0099;Wikidata;;;;LC
 V00242;Amazona ochrocephala;Amazona real;Aves;ave;0.35;0.37;longitud;Wikipedia (es);0.43;AnAge;56.0;AnAge;;LC
-V00035;Anarhynchus alexandrinus;Chorlitejo patinegro;Aves;ave;;;;;;;;;;LC
+V00035;Anarhynchus alexandrinus;Chorlitejo patinegro;Aves;ave;0.15;0.17;longitud;Wikipedia (es);;;;;;LC
 E08268;Anas acuta;Ánade rabudo;Aves;ave;0.59;0.76;longitud;Wikipedia (es);0.721;AnAge;27.4;AnAge;;LC
 E08270;Anas crecca;Cerceta común;Aves;ave;;0.35;longitud;Wikipedia (es);0.3438;AnAge;27.1;AnAge;;LC
 E08272;Anas platyrhynchos;Ánade azulón;Aves;ave;0.5;0.65;longitud;Wikipedia (es);1.0481;AnAge;29.1;AnAge;;LC
@@ -29,8 +29,8 @@ E08347;Anthus cervinus;Bisbita gorgirrojo;Aves;ave;;0.15;longitud;Wikipedia (es)
 E08348;Anthus pratensis;Bisbita pratense;Aves;ave;;;;;0.0184;AnAge;13.1;AnAge;;LC
 E08349;Anthus trivialis;Bisbita arbóreo;Aves;ave;;;;;0.0234;AnAge;8.8;AnAge;;LC
 V00018;Apus apus;Andoriña común;Aves;ave;0.16;0.17;longitud;Wikipedia (es);0.0376;AnAge;21.1;AnAge;;LC
-E11578;Apus pallidus;Andoriña pálida;Aves;ave;0.02;0.46;longitud;Wikipedia (es);0.0413;Wikidata;;;;LC
-V00017;Apus pallidus brehmorum;Andoriña pálida;Aves;ave;0.02;0.46;longitud;Wikipedia (es);0.0413;Wikidata;;;;LC
+E11578;Apus pallidus;Andoriña pálida;Aves;ave;;;;;0.0413;Wikidata;;;;LC
+V00017;Apus pallidus brehmorum;Andoriña pálida;Aves;ave;;;;;0.0413;Wikidata;;;;LC
 V00016;Apus unicolor;Andoriña unicolor;Aves;ave;;;;;0.0024;Wikidata;;;;LC
 E08279;Ardea cinerea;Garza real;Aves;ave;0.9;0.95;longitud;Wikipedia (es);1.443;AnAge;37.5;AnAge;;LC
 V00049;Ardea ibis;Garcilla bueyera;Aves;ave;0.46;0.56;longitud;Wikipedia (es);;;;;;LC
@@ -43,10 +43,10 @@ E08333;Asio flammeus;Búho campestre;Aves;ave;;;;;0.406;AnAge;21.8;AnAge;;LC
 V00152;Asio otus;Búho chico;Aves;ave;0.31;0.37;longitud;Wikipedia (es);0.2497;AnAge;27.8;AnAge;;LC
 V00019;Asio otus canariensis;Búho chico canario;Aves;ave;;0.37;longitud;Centinela (claves de identificación);0.2497;AnAge;27.8;AnAge;;LC
 E09823;Astur gentilis;;Aves;ave;0.48;0.58;longitud;Wikipedia (es);;;;;;
-E08275;Aythya ferina;Porrón europeo;Aves;ave;0.72;0.82;longitud;Wikipedia (es);0.823;AnAge;23.2;AnAge;;VU
+E08275;Aythya ferina;Porrón europeo;Aves;ave;0.42;0.49;longitud;Wikipedia (es);0.823;AnAge;23.2;AnAge;;VU
 E08276;Aythya fuligula;Porrón moñudo;Aves;ave;;0.43;longitud;Wikipedia (es);0.7015;AnAge;45.2;AnAge;;LC
 E09153;Bostrychia hagedash;Ibis hadada;Aves;ave;0.65;0.76;longitud;Wikipedia (es);1.238;AnAge;16.0;AnAge;;LC
-V00050;Botaurus minutus;Avetorillo común;Aves;ave;0.4;0.58;longitud;Wikipedia (es);0.013;Wikidata;;;;
+V00050;Botaurus minutus;Avetorillo común;Aves;ave;0.25;0.36;longitud;Wikipedia (es);0.013;Wikidata;;;;
 V00182;Bucanetes githagineus;Camachuelo trompetero;Aves;ave;;0.12;longitud;Wikipedia (es);;;;;;LC
 V00094;Bucanetes githagineus amantum;Pájaro moro;Aves;ave;;0.12;longitud;Centinela (claves de identificación);;;;;;LC
 V00051;Bulweria bulwerii;Perrito;Aves;ave;0.25;0.29;longitud;Wikipedia (es);0.099;AnAge;22.9;AnAge;;LC
@@ -84,11 +84,11 @@ E08331;Clamator glandarius;Críalo europeo;Aves;ave;0.35;0.39;longitud;Wikipedia
 V00023;Columba bollii;Paloma turqué;Aves;ave;;;;;;;;;;LC
 V00230;Columba guinea;Paloma de Guinea;Aves;ave;;;;;0.0157;Wikidata;;;;LC
 V00024;Columba junoniae;Paloma rabiche;Aves;ave;;0.39;longitud;Centinela (claves de identificación);0.0198;Wikidata;;;;NT
-V00161;Columba livia;Paloma bravía;Aves;ave;0.62;0.72;longitud;Wikipedia (es);0.3587;AnAge;35.0;AnAge;;LC
-V00022;Columba livia livia;Paloma bravía;Aves;ave;0.62;0.72;longitud;Wikipedia (es);0.3587;AnAge;35.0;AnAge;;LC
+V00161;Columba livia;Paloma bravía;Aves;ave;0.29;0.37;longitud;Wikipedia (es);0.3587;AnAge;35.0;AnAge;;LC
+V00022;Columba livia livia;Paloma bravía;Aves;ave;0.29;0.37;longitud;Wikipedia (es);0.3587;AnAge;35.0;AnAge;;LC
 E09661;Columba palumbus;Paloma torcaz;Aves;ave;0.38;0.445;longitud;Wikipedia (es);0.49;AnAge;17.7;AnAge;;LC
 E08330;Columba palumbus palumbus;Paloma torcaz;Aves;ave;0.38;0.445;longitud;Wikipedia (es);0.49;AnAge;17.7;AnAge;;LC
-E08335;Coracias garrulus;Carraca europea;Aves;ave;;;;;0.146;AnAge;9.2;AnAge;;LC
+E08335;Coracias garrulus;Carraca europea;Aves;ave;0.29;0.32;longitud;Wikipedia (es);0.146;AnAge;9.2;AnAge;;LC
 V00162;Corvus corax;Cuervo;Aves;ave;;0.68;longitud;Wikidata;1.0412;AnAge;69.0;AnAge;;LC
 V00059;Corvus corax canariensis;Cuervo canario;Aves;ave;;0.65;longitud;Centinela (claves de identificación);1.0412;AnAge;69.0;AnAge;;LC
 V00135;Coturnix coturnix;Codorniz común;Aves;ave;;;;;0.0965;AnAge;14.6;AnAge;;LC
@@ -109,10 +109,10 @@ V00068;Cyanistes teneriffae ombriosus;Herrerillo herreño;Aves;ave;;0.11;longitu
 V00069;Cyanistes teneriffae palmensis;Herrerillo palmero;Aves;ave;;0.11;longitud;Centinela (claves de identificación);;;;;;LC
 V00067;Cyanistes teneriffae teneriffae;Herrerillo de corbata;Aves;ave;;0.11;longitud;Centinela (claves de identificación);;;;;;LC
 E08341;Delichon urbicum;Avión común;Aves;ave;;0.125;longitud;Wikipedia (es);0.0145;AnAge;15.0;AnAge;;LC
-V00163;Dendrocopos major;Pico picapinos;Aves;ave;0.2;0.24;longitud;Wikipedia (es);0.0751;AnAge;12.7;AnAge;;LC
+V00163;Dendrocopos major;Pico picapinos;Aves;ave;;;;;0.0751;AnAge;12.7;AnAge;;LC
 V00013;Dendrocopos major canariensis;Pájaro carpintero de Tenerife;Aves;ave;0.2;0.25;longitud;Centinela (claves de identificación);0.0751;AnAge;12.7;AnAge;;LC
 V00014;Dendrocopos major thanneri;Pájaro carpintero de Gran Canaria;Aves;ave;0.2;0.25;longitud;Centinela (claves de identificación);0.0751;AnAge;12.7;AnAge;;LC
-V00048;Egretta garzetta;Garceta común;Aves;ave;0.08;1.05;longitud;Wikipedia (es);0.312;AnAge;22.3;AnAge;;LC
+V00048;Egretta garzetta;Garceta común;Aves;ave;0.55;0.65;longitud;Wikipedia (es);0.312;AnAge;22.3;AnAge;;LC
 V00080;Emberiza alcoveri;Escribano patilargo;Aves;ave;;;;;;;;;;NE
 V00095;Emberiza calandra;Triguero;Aves;ave;0.16;0.19;longitud;Wikipedia (es);0.0488;AnAge;10.6;AnAge;;LC
 E07461;Erithacus marionae;Petirrojo de Gran Canaria;Aves;ave;;;;;;;;;;
@@ -146,19 +146,19 @@ V00087;Fringilla polatzeki;Pinzul;Aves;ave;;0.16;longitud;Wikipedia (es);;;;;;EN
 V00086;Fringilla teydea;Pinzón azul;Aves;ave;;0.165;longitud;Centinela (claves de identificación);0.0034;Wikidata;;;;NT
 V00028;Fulica atra;Focha común;Aves;ave;0.32;0.42;longitud;Wikipedia (es);0.7343;AnAge;20.6;AnAge;;LC
 E08311;Gallinago gallinago;Agachadiza común;Aves;ave;;;;;0.1316;AnAge;18.2;AnAge;;LC
-V00027;Gallinula chloropus;Gallineta común;Aves;ave;;;;;0.392;AnAge;18.6;AnAge;;LC
+V00027;Gallinula chloropus;Gallineta común;Aves;ave;0.3;0.38;longitud;Wikipedia (es);0.392;AnAge;18.6;AnAge;;LC
 E08327;Gelochelidon nilotica;Pagaza piconegra;Aves;ave;;;;;0.221;AnAge;16.0;AnAge;;LC
-E08299;Glareola pratincola;Canastera común;Aves;ave;0.6;0.7;longitud;Wikipedia (es);0.0101;Wikidata;;;;LC
+E08299;Glareola pratincola;Canastera común;Aves;ave;;;;;0.0101;Wikidata;;;;LC
 V00038;Haematopus meadewaldoi;Ostrero canario;Aves;ave;;0.08;longitud;Wikipedia (es);;;;;;EX
 E08301;Haematopus ostralegus;Ostrero euroasiático;Aves;ave;0.4;0.45;longitud;Wikipedia (es);0.48;AnAge;43.3;AnAge;;NT
-E08285;Hieraaetus pennatus;Águila calzada;Aves;ave;;;;;0.709;Wikidata;;;;LC
+E08285;Hieraaetus pennatus;Águila calzada;Aves;ave;0.4;0.55;longitud;Wikipedia (es);0.709;Wikidata;;;;LC
 V00033;Himantopus himantopus;Cigüeñuela común;Aves;ave;;0.38;longitud;Centinela (claves de identificación);0.161;AnAge;16.0;AnAge;;LC
 E08358;Hippolais polyglotta;Zarcero políglota;Aves;ave;0.12;0.13;longitud;Wikipedia (es);0.011;AnAge;8.9;AnAge;;LC
 V00001;Hirundo rustica;Golondrina común;Aves;ave;0.146;0.199;longitud;Wikipedia (es);0.0183;AnAge;16.0;AnAge;;LC
-V00057;Hydrobates castro;Paíño de Madeira;Aves;ave;;;;;;;;;;LC
+V00057;Hydrobates castro;Paíño de Madeira;Aves;ave;0.19;0.21;longitud;Wikipedia (es);;;;;;LC
 E10629;Hydrobates leucorhous;Paíño boreal;Aves;ave;;;;;;;;;;VU
 E10630;Hydrobates leucorhous leucorhous;Paíño boreal;Aves;ave;;;;;;;;;;VU
-V00056;Hydrobates pelagicus;Almamestre;Aves;ave;0.36;0.39;longitud;Wikipedia (es);0.0252;AnAge;33.8;AnAge;;LC
+V00056;Hydrobates pelagicus;Almamestre;Aves;ave;0.14;0.18;longitud;Wikipedia (es);0.0252;AnAge;33.8;AnAge;;LC
 E08359;Iduna opaca;Zarcero bereber;Aves;ave;;0.13;longitud;Wikipedia (es);;;;;;LC
 E08337;Jynx torquilla;Torcecuello euroasiático;Aves;ave;;0.16;longitud;Wikipedia (es);0.035;AnAge;10.0;AnAge;;LC
 V00233;Lamprotornis purpureus;Bruñido Purpúreo;Aves;ave;;0.26;longitud;Wikipedia (es);0.0059;Wikidata;;;;LC
@@ -170,7 +170,7 @@ E08394;Larus fuscus graellsii;Gaviota sombría;Aves;ave;;;;;0.7662;AnAge;34.9;An
 E08303;Larus marinus;Gavión atlántico;Aves;ave;;;;;1.6585;AnAge;32.8;AnAge;;LC
 V00173;Larus michahellis;Gaviota patiamarilla;Aves;ave;;;;;1.0895;AnAge;19.2;AnAge;;LC
 V00100;Larus michahellis atlantis;Gaviota patiamarilla;Aves;ave;;;;;1.0895;AnAge;19.2;AnAge;;LC
-E08312;Limosa lapponica;Aguja colipinta;Aves;ave;;0.72;longitud;Wikipedia (es);0.322;AnAge;34.0;AnAge;;NT
+E08312;Limosa lapponica;Aguja colipinta;Aves;ave;0.33;0.41;longitud;Wikipedia (es);0.322;AnAge;34.0;AnAge;;NT
 E08313;Limosa limosa;Aguja colinegra;Aves;ave;;;;;0.294;AnAge;23.6;AnAge;;NT
 V00157;Linaria cannabina;Pardillo común;Aves;ave;;;;;0.0195;AnAge;9.4;AnAge;;LC
 V00093;Linaria cannabina harterti;Pardillo majorero;Aves;ave;;;;;0.0195;AnAge;9.4;AnAge;;LC
@@ -181,7 +181,7 @@ E08271;Mareca penelope;Silbón europeo;Aves;ave;0.42;0.5;longitud;Wikipedia (es)
 E08274;Mareca strepera;Ánade friso;Aves;ave;0.46;0.56;longitud;Wikipedia (es);;;;;;LC
 V00098;Marmaronetta angustirostris;Cerceta pardilla;Aves;ave;0.39;0.42;longitud;Wikipedia (es);0.562;Wikidata;;;;NT
 V00206;Melopsittacus undulatus;Periquito común;Aves;ave;;0.18;longitud;Wikipedia (es);0.03;AnAge;21.0;AnAge;;LC
-E08336;Merops apiaster;Abejaruco europeo;Aves;ave;0.36;0.4;longitud;Wikipedia (es);0.0566;AnAge;5.9;AnAge;;LC
+E08336;Merops apiaster;Abejaruco europeo;Aves;ave;;0.25;longitud;Wikipedia (es);0.0566;AnAge;5.9;AnAge;;LC
 V00236;Milvus migrans;Milano negro;Aves;ave;0.5;0.6;longitud;Wikipedia (es);1.0;AnAge;24.0;AnAge;;LC
 E08395;Milvus migrans migrans;Milano negro;Aves;ave;0.5;0.6;longitud;Wikipedia (es);1.0;AnAge;24.0;AnAge;;LC
 V00039;Milvus milvus;Villano;Aves;ave;0.6;0.65;longitud;Wikipedia (es);1.08;AnAge;38.0;AnAge;;LC
@@ -206,7 +206,7 @@ V00241;Nymphicus hollandicus;Cacatúa ninfa;Aves;ave;0.3;0.33;longitud;Wikipedia
 E08367;Oenanthe hispanica;Collalba rubia;Aves;ave;0.135;0.155;longitud;Wikipedia (es);0.0151;AnAge;4.9;AnAge;;LC
 E08368;Oenanthe oenanthe;Collalba gris;Aves;ave;0.145;0.16;longitud;Wikipedia (es);0.025;AnAge;10.1;AnAge;;LC
 E08355;Oriolus oriolus;Oropéndola europea;Aves;ave;;0.25;longitud;Wikipedia (es);0.079;AnAge;14.8;AnAge;;LC
-V00037;Pandion haliaetus;Guincho;Aves;ave;1.52;1.67;longitud;Wikipedia (es);1.362;AnAge;32.0;AnAge;;LC
+V00037;Pandion haliaetus;Guincho;Aves;ave;0.52;0.6;longitud;Wikipedia (es);1.362;AnAge;32.0;AnAge;;LC
 V00108;Passer domesticus;Gorrión común;Aves;ave;0.14;0.16;longitud;Wikipedia (es);0.0253;AnAge;23.0;AnAge;;LC
 V00077;Passer hispaniolensis;Gorrión moruno;Aves;ave;;;;;0.0242;AnAge;11.2;AnAge;;LC
 V00099;Passer montanus;Gorrión molinero;Aves;ave;0.125;0.14;longitud;Wikipedia (es);0.0205;AnAge;13.1;AnAge;;LC
@@ -227,35 +227,35 @@ V00106;Phylloscopus canariensis exsul;Mosquitero majorero;Aves;ave;;;;;;;;;;LC
 E08377;Phylloscopus collybita;Mosquitero común;Aves;ave;;0.1;longitud;Wikipedia (es);0.0083;AnAge;8.0;AnAge;;LC
 E08378;Phylloscopus collybita collybita;Mosquitero común;Aves;ave;;0.1;longitud;Wikipedia (es);0.0083;AnAge;8.0;AnAge;;LC
 E08361;Phylloscopus sibilatrix;Mosquitero silbador;Aves;ave;;;;;0.01;Wikidata;;;;LC
-E08362;Phylloscopus trochilus;Mosquitero musical;Aves;ave;;0.19;longitud;Wikipedia (es);0.0087;AnAge;11.8;AnAge;;LC
-E08284;Platalea leucorodia;Espátula común;Aves;ave;1.2;1.35;longitud;Wikipedia (es);1.868;AnAge;30.1;AnAge;;LC
+E08362;Phylloscopus trochilus;Mosquitero musical;Aves;ave;;;;;0.0087;AnAge;11.8;AnAge;;LC
+E08284;Platalea leucorodia;Espátula común;Aves;ave;0.8;0.93;longitud;Wikipedia (es);1.868;AnAge;30.1;AnAge;;LC
 E08283;Plegadis falcinellus;Morito común;Aves;ave;0.48;0.66;longitud;Wikipedia (es);0.4312;AnAge;26.8;AnAge;;LC
 E08296;Pluvialis apricaria;Chorlito dorado europeo;Aves;ave;0.26;0.29;longitud;Wikipedia (es);0.214;AnAge;13.8;AnAge;;LC
 E08297;Pluvialis squatarola;Chorlito gris;Aves;ave;;;;;0.224;AnAge;25.6;AnAge;;VU
-E08277;Podiceps nigricollis;Zampullín cuellinegro;Aves;ave;0.06;0.6;longitud;Wikipedia (es);0.392;AnAge;13.1;AnAge;;LC
+E08277;Podiceps nigricollis;Zampullín cuellinegro;Aves;ave;0.28;0.34;longitud;Wikipedia (es);0.392;AnAge;13.1;AnAge;;LC
 V00205;Poicephalus senegalus;Lorito senegalés;Aves;ave;;0.25;longitud;Wikipedia (es);0.155;AnAge;40.0;AnAge;;LC
-E08292;Porzana porzana;Polluela pintoja;Aves;ave;;;;;0.0109;Wikidata;;;;LC
+E08292;Porzana porzana;Polluela pintoja;Aves;ave;0.19;0.225;longitud;Wikipedia (es);0.0109;Wikidata;;;;LC
 V00202;Psittacula krameri;Cotorra de Kramer;Aves;ave;;0.4;longitud;Wikipedia (es);0.128;AnAge;34.0;AnAge;;LC
 V00101;Pterocles orientalis;Ganga;Aves;ave;;;;;0.383;Wikidata;;;;LC
 V00029;Pterocles orientalis orientalis;Ganga;Aves;ave;;0.35;longitud;Centinela (claves de identificación);0.383;Wikidata;;;;LC
 V00054;Puffinus baroli;Tajose;Aves;ave;;;;;;;;;;NE
 V00096;Puffinus holeae;Pardela del jable;Aves;ave;;;;;;;;;;NE
 V00140;Puffinus olsoni;Pardela del malpaís;Aves;ave;;;;;;;;;;
-E09381;Puffinus puffinus;Estapagao;Aves;ave;0.76;0.89;longitud;Wikipedia (es);0.434;AnAge;50.9;AnAge;;LC
-V00053;Puffinus puffinus canariensis;Estapagao;Aves;ave;0.76;0.89;longitud;Wikipedia (es);0.434;AnAge;50.9;AnAge;;LC
-E10633;Puffinus puffinus puffinus;Pardela pichoneta;Aves;ave;0.76;0.89;longitud;Wikipedia (es);0.434;AnAge;50.9;AnAge;;LC
+E09381;Puffinus puffinus;Estapagao;Aves;ave;0.3;0.38;longitud;Wikipedia (es);0.434;AnAge;50.9;AnAge;;LC
+V00053;Puffinus puffinus canariensis;Estapagao;Aves;ave;0.3;0.38;longitud;Wikipedia (es);0.434;AnAge;50.9;AnAge;;LC
+E10633;Puffinus puffinus puffinus;Pardela pichoneta;Aves;ave;0.3;0.38;longitud;Wikipedia (es);0.434;AnAge;50.9;AnAge;;LC
 E08760;Pycnonotus cafer;Bulbul cafre;Aves;ave;;0.2;longitud;Wikipedia (es);;;;;;LC
 V00231;Pycnonotus jocosus;Bulbul orfeo;Aves;ave;;0.2;longitud;Wikipedia (es);0.0277;AnAge;11.1;AnAge;;LC
 V00244;Pyrrhocorax graculus;Chova piquigualda;Aves;ave;0.37;0.39;longitud;Wikipedia (es);0.2115;AnAge;24.4;AnAge;;LC
 V00180;Pyrrhocorax pyrrhocorax;Chova piquirroja;Aves;ave;0.39;0.43;longitud;Wikipedia (es);0.2778;AnAge;20.3;AnAge;;LC
 V00070;Pyrrhocorax pyrrhocorax barbarus;Graja palmera;Aves;ave;;0.4;longitud;Centinela (claves de identificación);0.2778;AnAge;20.3;AnAge;;LC
-E08304;Recurvirostra avosetta;Avoceta común;Aves;ave;0.419;0.451;longitud;Wikipedia (es);0.304;AnAge;27.8;AnAge;;LC
+E08304;Recurvirostra avosetta;Avoceta común;Aves;ave;;;;;0.304;AnAge;27.8;AnAge;;LC
 V00181;Regulus regulus;Reyezuelo canario;Aves;ave;0.085;0.095;longitud;Wikipedia (es);0.0056;AnAge;7.0;AnAge;;LC
 V00235;Regulus regulus ellenthalerae;Reyezuelo canario;Aves;ave;0.085;0.095;longitud;Wikipedia (es);0.0056;AnAge;7.0;AnAge;;LC
 V00071;Regulus regulus teneriffae;Reyezuelo canario;Aves;ave;0.085;0.095;longitud;Wikipedia (es);0.0056;AnAge;7.0;AnAge;;LC
 E08342;Riparia riparia;Avión zapador;Aves;ave;;0.12;longitud;Wikipedia (es);0.0127;AnAge;10.1;AnAge;;LC
-E10635;Rissa tridactyla;Gaviota tridáctila;Aves;ave;;1.0;longitud;Wikipedia (es);0.317;AnAge;28.5;AnAge;;VU
-E10636;Rissa tridactyla tridactyla;Gaviota tridáctila;Aves;ave;;1.0;longitud;Wikipedia (es);0.317;AnAge;28.5;AnAge;;VU
+E10635;Rissa tridactyla;Gaviota tridáctila;Aves;ave;;0.4;longitud;Wikipedia (es);0.317;AnAge;28.5;AnAge;;VU
+E10636;Rissa tridactyla tridactyla;Gaviota tridáctila;Aves;ave;;0.4;longitud;Wikipedia (es);0.317;AnAge;28.5;AnAge;;VU
 V00183;Saxicola dacotiae;Tarabilla canaria;Aves;ave;;;;;0.0019;Wikidata;;;;NT
 V00063;Saxicola dacotiae dacotiae;Caldereta;Aves;ave;;;;;0.0019;Wikidata;;;;NT
 V00064;Saxicola dacotiae murielae;Caldereta de Alegranza;Aves;ave;;;;;0.0019;Wikidata;;;;NT
@@ -264,7 +264,7 @@ E08372;Saxicola rubicola;Tarabilla europea;Aves;ave;;;;;;;;;;NE
 V00030;Scolopax rusticola;Gallinuela;Aves;ave;;0.36;longitud;Wikipedia (es);0.3083;AnAge;15.5;AnAge;;LC
 V00089;Serinus canaria;Canario;Aves;ave;;0.13;longitud;Wikipedia (es);0.0243;AnAge;24.0;AnAge;;LC
 V00088;Serinus serinus;Verdecillo;Aves;ave;0.11;0.12;longitud;Wikipedia (es);0.0112;AnAge;;;;LC
-E08269;Spatula clypeata;Cuchara común;Aves;ave;;0.06;longitud;Wikipedia (es);;;;;;LC
+E08269;Spatula clypeata;Cuchara común;Aves;ave;;0.48;longitud;Wikipedia (es);;;;;;LC
 E08273;Spatula querquedula;Cerceta carretona;Aves;ave;0.37;0.41;longitud;Wikipedia (es);;;;;;LC
 V00227;Spilopelia senegalensis;Tórtola del Senegal;Aves;ave;;;;;;;;;;LC
 E08344;Spinus spinus;Jilguero lúgano;Aves;ave;0.11;0.125;longitud;Wikipedia (es);0.0132;AnAge;13.5;AnAge;;LC
@@ -275,16 +275,16 @@ E10637;Stercorarius skua;Págalo grande;Aves;ave;;0.58;longitud;Wikipedia (es);1
 V00103;Sterna dougallii;Garajao rosado;Aves;ave;;;;;0.112;AnAge;25.7;AnAge;;LC
 V00102;Sterna hirundo;Garajao común;Aves;ave;0.31;0.35;longitud;Wikipedia (es);0.12;AnAge;33.0;AnAge;;LC
 E11128;Sterna paradisaea;Charrán ártico;Aves;ave;0.33;0.36;longitud;Wikipedia (es);0.1;AnAge;34.0;AnAge;;LC
-E08329;Sternula albifrons;Charrancito común;Aves;ave;;;;;0.031;AnAge;23.9;AnAge;;LC
+E08329;Sternula albifrons;Charrancito común;Aves;ave;0.22;0.24;longitud;Wikipedia (es);0.031;AnAge;23.9;AnAge;;LC
 V00147;Streptopelia decaocto;Tórtola turca;Aves;ave;;;;;0.1574;AnAge;17.9;AnAge;;LC
 V00196;Streptopelia risoria;Tórtola rosígris;Aves;ave;;;;;;;12.0;AnAge;;LC
-V00025;Streptopelia turtur;Tórtola común;Aves;ave;0.47;0.55;longitud;Wikipedia (es);0.132;AnAge;13.2;AnAge;;VU
+V00025;Streptopelia turtur;Tórtola común;Aves;ave;0.24;0.29;longitud;Wikipedia (es);0.132;AnAge;13.2;AnAge;;VU
 V00065;Sturnus vulgaris;Estornino pinto;Aves;ave;;0.2;longitud;Wikipedia (es);0.074;AnAge;22.9;AnAge;;LC
 V00047;Sylvia atricapilla;Curruca capirotada;Aves;ave;0.13;0.15;longitud;Wikipedia (es);0.0167;AnAge;13.8;AnAge;;LC
 V00072;Sylvia atricapilla heineken;Capirote;Aves;ave;;0.14;longitud;Centinela (claves de identificación);0.0167;AnAge;13.8;AnAge;;LC
 E08363;Sylvia borin;Curruca mosquitera;Aves;ave;;0.14;longitud;Wikipedia (es);0.0246;AnAge;24.0;AnAge;;LC
 E08334;Tachymarptis melba;Vencejo real;Aves;ave;;;;;0.006;Wikidata;;;;LC
-V00097;Tadorna ferruginea;Tarro canelo;Aves;ave;1.1;1.35;longitud;Wikipedia (es);1.36;Wikidata;;;;LC
+V00097;Tadorna ferruginea;Tarro canelo;Aves;ave;0.58;0.7;longitud;Wikipedia (es);1.36;Wikidata;;;;LC
 E08328;Thalasseus sandvicensis;Charrán patinegro;Aves;ave;0.37;0.43;longitud;Wikipedia (es);0.25;AnAge;30.8;AnAge;;LC
 E11579;Thinornis dubius;Chorlitejo chico;Aves;ave;;;;;;;;;;
 V00034;Thinornis dubius curonicus;Chorlitejo chico;Aves;ave;;;;;;;;;;
@@ -309,7 +309,7 @@ V00221;Uraeginthus bengalus;Coliazul bengalí;Aves;ave;0.125;0.13;longitud;Wikip
 E08298;Vanellus vanellus;Avefría europea;Aves;ave;0.28;0.31;longitud;Wikipedia (es);0.2185;AnAge;24.5;AnAge;;NT
 E08293;Zapornia parva;Polluela bastarda;Aves;ave;0.18;0.2;longitud;Wikipedia (es);0.0079;Wikidata;;;;LC
 F00020;Adiantum capillus-veneris;Culantrillo de pozo;Helechos;helecho;0.1;0.4;altura;Wikipedia (es);;;;;Perenne;LC
-F02151;Adiantum hispidulum;;Helechos;helecho;;0.45;longitud;Wikipedia (es);;;;;;NE
+F02151;Adiantum hispidulum;;Helechos;helecho;;0.45;altura;Wikipedia (es);;;;;;NE
 F00021;Adiantum raddianum;Culantrillo;Helechos;helecho;;;;;;;;;;NE
 E08185;Adiantum reniforme;;Helechos;helecho;;;;;;;;;;NE
 F00022;Adiantum reniforme subsp. pusillum;Tostonera;Helechos;helecho;;;;;;;;;;NE
@@ -323,24 +323,24 @@ F00030;Asplenium adiantum-nigrum;Culantrillo negro;Helechos;helecho;0.1;0.3;altu
 F02189;Asplenium aethiopicum;;Helechos;helecho;;;;;;;;;;NE
 F00031;Asplenium aethiopicum subsp. braithwaitii;Culantrillo de Braithwait;Helechos;helecho;;;;;;;;;;NE
 F00032;Asplenium anceps;Culantrillo calambur;Helechos;helecho;;;;;;;;;;NE
-F00044;Asplenium aureum;Doradilla medicinal;Helechos;helecho;;0.25;longitud;Centinela (claves de identificación);;;;;;LC
+F00044;Asplenium aureum;Doradilla medicinal;Helechos;helecho;;;;;;;;;;LC
 E08930;Asplenium ceterach;;Helechos;helecho;;;;;;;;;;NE
 F02190;Asplenium filare;;Helechos;helecho;;;;;;;;;;NE
 F00034;Asplenium filare subsp. canariense;;Helechos;helecho;;;;;;;;;;NE
 F00035;Asplenium hemionitis;Hierba candil;Helechos;helecho;;;;;;;;;;NE
-F00036;Asplenium marinum;Culantrillo marino;Helechos;helecho;;0.58;altura;Wikipedia (es);;;;;;NE
-F00037;Asplenium monanthes;;Helechos;helecho;;0.6;longitud;Wikipedia (es);;;;;;NE
-F00038;Asplenium obovatum;;Helechos;helecho;;0.35;altura;Wikipedia (es);;;;;;NE
-F00033;Asplenium obovatum subsp. billotii;;Helechos;helecho;;0.35;altura;Wikipedia (es);;;;;;NE
+F00036;Asplenium marinum;Culantrillo marino;Helechos;helecho;;;;;;;;;;NE
+F00037;Asplenium monanthes;;Helechos;helecho;;;;;;;;;;NE
+F00038;Asplenium obovatum;;Helechos;helecho;;;;;;;;;;NE
+F00033;Asplenium obovatum subsp. billotii;;Helechos;helecho;;;;;;;;;;NE
 F00039;Asplenium onopteris;Culantrillo negro de monte;Helechos;helecho;;;;;;;;;;NE
 F00041;Asplenium septentrionale;Helecho cinta;Helechos;helecho;0.05;0.15;altura;Wikipedia (es);;;;;;NE
 F00042;Asplenium terorense;Culantrillo de Teror;Helechos;helecho;;;;;;;;;;EN
-F02191;Asplenium trichomanes;;Helechos;helecho;0.1;0.5;altura;Wikipedia (es);;;;;Perenne;NE
-F02347;Asplenium trichomanes subsp. maderense;;Helechos;helecho;0.1;0.5;altura;Wikipedia (es);;;;;Perenne;NE
-F00043;Asplenium trichomanes subsp. quadrivalens;Culantrillo menor;Helechos;helecho;;0.28;longitud;Centinela (claves de identificación);;;;;Perenne;NE
-F02346;Asplenium trichomanes subsp. trichomanes;;Helechos;helecho;0.1;0.5;altura;Wikipedia (es);;;;;Perenne;NE
-F00045;Athyrium filix-femina;Helecho hembra;Helechos;helecho;0.2;0.9;longitud;Wikipedia (es);;;;;;NE
-F00059;Azolla filiculoides;Azolla;Helechos;helecho;;0.2;altura;Wikipedia (es);;;;;;NE
+F02191;Asplenium trichomanes;;Helechos;helecho;;;;;;;;;Perenne;NE
+F02347;Asplenium trichomanes subsp. maderense;;Helechos;helecho;;;;;;;;;Perenne;NE
+F00043;Asplenium trichomanes subsp. quadrivalens;Culantrillo menor;Helechos;helecho;;;;;;;;;Perenne;NE
+F02346;Asplenium trichomanes subsp. trichomanes;;Helechos;helecho;;;;;;;;;Perenne;NE
+F00045;Athyrium filix-femina;Helecho hembra;Helechos;helecho;;;;;;;;;;NE
+F00059;Azolla filiculoides;Azolla;Helechos;helecho;;;;;;;;;;NE
 E06621;Cheilanthes tirajanae;;Helechos;helecho;;;;;;;;;;NE
 F00029;Christella dentata;Cristela dentada;Helechos;helecho;;;;;;;;;Perenne;NE
 F02213;Cosentinia vellea;;Helechos;helecho;;;;;;;;;;NE
@@ -351,12 +351,12 @@ E10941;Cystopteris diaphana;;Helechos;helecho;;;;;;;;;;NE
 E06829;Cystopteris diaphana subsp. cleoae;;Helechos;helecho;;;;;;;;;;
 F02146;Cystopteris diaphana subsp. diaphana;;Helechos;helecho;;;;;;;;;;
 F00046;Cystopteris fragilis;Helecho de manantial;Helechos;helecho;;;;;;;;;;NE
-F00055;Davallia canariensis;Helecho batatilla;Helechos;helecho;;0.15;longitud;Wikipedia (es);;;;;Perenne;NE
+F00055;Davallia canariensis;Helecho batatilla;Helechos;helecho;;;;;;;;;Perenne;NE
 F00047;Diplazium caudatum;Helecho de monte;Helechos;helecho;;;;;;;;;;NE
 F00049;Dryopteris aemula;;Helechos;helecho;;;;;;;;;;NE
 F02170;Dryopteris affinis;;Helechos;helecho;;;;;;;;;Perenne;NE
 F00050;Dryopteris affinis subsp. affinis;;Helechos;helecho;;;;;;;;;Perenne;NE
-F00051;Dryopteris guanchica;Helecho penco dentado;Helechos;helecho;;0.05;altura;Centinela (claves de identificación);;;;;;LC
+F00051;Dryopteris guanchica;Helecho penco dentado;Helechos;helecho;;;;;;;;;;LC
 F00052;Dryopteris oligodonta;Helecha;Helechos;helecho;;;;;;;;;;LC
 E08189;Equisetum ramosissimum;;Helechos;helecho;;;;;;;;;;LC
 F00004;Equisetum ramosissimum subsp. ramosissimum;Colacaballo;Helechos;helecho;;;;;;;;;;LC
@@ -372,18 +372,18 @@ F00006;Ophioglossum lusitanicum subsp. lusitanicum;;Helechos;helecho;;;;;;;;;;LC
 F00007;Ophioglossum polyphyllum;Lenguaserpiente foliosa;Helechos;helecho;;;;;;;;;Perenne;NE
 F00012;Paragymnopteris marantae;Doradilla canela;Helechos;helecho;;;;;;;;;;NE
 E06792;Phlebodium aureum;;Helechos;helecho;;;;;;;;;Perenne;LC
-E06810;Platycerium bifurcatum;;Helechos;helecho;0.25;0.9;longitud;Wikipedia (es);;;;;Perenne;NE
+E06810;Platycerium bifurcatum;;Helechos;helecho;;;;;;;;;Perenne;NE
 E07440;Polypodium macaronesicum;;Helechos;helecho;;;;;;;;;;NE
 F00008;Polypodium macaronesicum subsp. macaronesicum;Polipodio del país;Helechos;helecho;;;;;;;;;;NE
-F00053;Polystichum aculeatum;Píjaro;Helechos;helecho;0.3;0.75;longitud;Wikipedia (es);;;;;;NE
-F00054;Polystichum setiferum;Píjaro;Helechos;helecho;0.3;1.2;longitud;Wikipedia (es);;;;;;NE
+F00053;Polystichum aculeatum;Píjaro;Helechos;helecho;;0.6;altura;Wikipedia (es);;;;;;NE
+F00054;Polystichum setiferum;Píjaro;Helechos;helecho;;;;;;;;;;NE
 E06843;Psilotum nudum;;Helechos;helecho;;;;;;;;;;LC
-F00028;Pteridium aquilinum;Helechera;Helechos;helecho;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
+F00028;Pteridium aquilinum;Helechera;Helechos;helecho;;;;;;;;;Perenne;NE
 F00015;Pteris cretica;;Helechos;helecho;;;;;;;;;;NE
 F00016;Pteris incompleta;Rasguño dentado;Helechos;helecho;;;;;;;;;;NT
 F00017;Pteris multifida;;Helechos;helecho;;;;;;;;;;NE
-F00018;Pteris tremula;;Helechos;helecho;;2.0;longitud;Wikipedia (es);;;;;;NE
-F00019;Pteris vittata;Helecho rajuño;Helechos;helecho;;0.008;altura;Wikipedia (es);;;;;;LC
+F00018;Pteris tremula;;Helechos;helecho;;;;;;;;;;NE
+F00019;Pteris vittata;Helecho rajuño;Helechos;helecho;;;;;;;;;;LC
 E07991;Salvinia molesta;Salvinia mayor.;Helechos;helecho;;;;;;;;;;NE
 F00060;Salvinia natans;Oreja de ratón;Helechos;helecho;;;;;;;;;;LC
 F00001;Selaginella denticulata;Helecho treintanudos;Helechos;helecho;;0.15;altura;Centinela (claves de identificación);;;;;;LC
@@ -391,7 +391,7 @@ F00002;Selaginella kraussiana;;Helechos;helecho;;0.1;altura;Wikipedia (es);;;;;P
 F00003;Selaginella selaginoides;;Helechos;helecho;;;;;;;;;;NE
 F00783;Struthiopteris spicant;;Helechos;helecho;;;;;;;;;Perenne;NE
 F00056;Struthiopteris spicant subsp. spicant;Helecho peine;Helechos;helecho;;;;;;;;;Perenne;NE
-F00026;Vandenboschia speciosa;Helecho de cristal;Helechos;helecho;0.4;0.5;longitud;Centinela (claves de identificación);;;;;;LC
+F00026;Vandenboschia speciosa;Helecho de cristal;Helechos;helecho;;;;;;;;;;LC
 F00057;Woodwardia radicans;Píjara;Helechos;helecho;;;;;;;;;;NE
 V00144;Ammotragus lervia;Arruí;Mamíferos;mamifero;;1.65;longitud;Wikipedia (es);92.5;AnAge;21.7;AnAge;;VU
 V00149;Atelerix algirus;Erizo moruno;Mamíferos;mamifero;;0.2;longitud;Wikipedia (es);0.745;AnAge;;;;LC
@@ -405,7 +405,7 @@ E00351;Balaenoptera musculus musculus;Rorcual azul;Mamíferos;cetaceo;;33.0;long
 E07717;Balaenoptera physalus;Rorcual común;Mamíferos;cetaceo;;27.0;longitud;Wikipedia (es);70000.0;AnAge;114.0;AnAge;;VU
 E00352;Balaenoptera physalus physalus;Rorcual común;Mamíferos;cetaceo;;27.0;longitud;Wikipedia (es);70000.0;AnAge;114.0;AnAge;;VU
 V00104;Barbastella barbastellus;;Mamíferos;murcielago;0.035;0.043;longitud;Wikipedia (es);0.0103;AnAge;23.0;AnAge;;NT
-V00005;Barbastella barbastellus guanchae;Murciélago canario de bosque;Mamíferos;murcielago;0.035;0.042;longitud;Centinela (claves de identificación);0.0103;AnAge;23.0;AnAge;;NT
+V00005;Barbastella barbastellus guanchae;Murciélago canario de bosque;Mamíferos;murcielago;0.035;0.043;longitud;Wikipedia (es);0.0103;AnAge;23.0;AnAge;;NT
 V00134;Canariomys bravoi;Rata gigante de Tenerife;Mamíferos;mamifero;;0.07;longitud;Wikipedia (es);;;;;;
 V00142;Canariomys tamarani;Rata gigante de Gran Canaria;Mamíferos;mamifero;;0.25;longitud;Wikipedia (es);;;;;;NE
 E06848;Capra hircus;Cabra;Mamíferos;mamifero;;;;;61.0;AnAge;20.8;AnAge;;NE
@@ -443,9 +443,9 @@ V00143;Ovis aries musimon;Muflón;Mamíferos;mamifero;;;;;80.0;AnAge;22.8;AnAge;
 E10607;Peponocephala electra;Orca enana;Mamíferos;cetaceo;;3.0;longitud;Wikipedia (es);206.0;AnAge;47.0;AnAge;;LC
 E07200;Phocoena phocoena;Marsopa común;Mamíferos;cetaceo;;1.4;longitud;Wikipedia (es);52.5;AnAge;20.4;AnAge;;LC
 E00398;Physeter macrocephalus;Cachalote;Mamíferos;cetaceo;;18.0;longitud;Centinela (claves de identificación);28500.0;AnAge;77.0;AnAge;;VU
-V00003;Pipistrellus kuhlii;Murciélago de borde claro;Mamíferos;murcielago;;0.045;longitud;Wikipedia (es);0.006;AnAge;8.0;AnAge;;LC
+V00003;Pipistrellus kuhlii;Murciélago de borde claro;Mamíferos;murcielago;;;;;0.006;AnAge;8.0;AnAge;;LC
 V00007;Pipistrellus maderensis;Murciélago de Madeira;Mamíferos;murcielago;;;;;;;;;;EN
-V00006;Plecotus teneriffae;Orejudo canario;Mamíferos;murcielago;0.04;0.046;longitud;Centinela (claves de identificación);;;;;;CR
+V00006;Plecotus teneriffae;Orejudo canario;Mamíferos;murcielago;;0.046;longitud;Wikipedia (es);;;;;;CR
 E00379;Pseudorca crassidens;Falsa orca;Mamíferos;cetaceo;3.7;5.5;longitud;Wikipedia (es);748.0;AnAge;62.5;AnAge;;NT
 V00213;Rattus norvegicus;Rata parda;Mamíferos;mamifero;0.27;0.32;longitud;Wikipedia (es);0.3;AnAge;3.8;AnAge;;LC
 V00212;Rattus rattus;Rata negra;Mamíferos;mamifero;0.16;0.22;longitud;Wikipedia (es);0.2;AnAge;4.2;AnAge;;LC
@@ -540,7 +540,7 @@ E07775;Azurina multilineata;Fula azul rayada;Peces;pez;;0.2;longitud total máxi
 E03208;Balistes capriscus;;Peces;pez;;0.66;longitud total máxima;FishBase;6.15;FishBase;15.0;FishBase;;VU
 E03209;Balistes punctatus;Gallo africano;Peces;pez;;0.6;longitud total máxima;FishBase;1.8;FishBase;;;;VU
 E01726;Barbantus curvifrons;;Peces;pez;;0.131;longitud estándar máxima;FishBase;;;;;;LC
-V00194;Barbus bocagei;Barbo;Peces;pez;;;;;;;;;;NT
+V00194;Barbus bocagei;Barbo;Peces;pez;;0.4;longitud;Wikipedia (es);;;;;;NT
 E03080;Bathophilus brevis;;Peces;pez;;0.055;longitud estándar máxima;FishBase;;;;;;LC
 E03077;Bathophilus digitatus;;Peces;pez;;0.17;longitud total máxima;FishBase;;;;;;LC
 E03085;Bathophilus longipinnis;Peje dragón aletudo;Peces;pez;;0.109;longitud estándar máxima;FishBase;;;;;;LC
@@ -1308,12 +1308,12 @@ E03245;Zeus faber;Gallo de San Pedro;Peces;pez;;0.9;longitud total máxima;FishB
 E01518;Zu cristatus;Peje cinta crestado;Peces;pez;;1.18;longitud estándar máxima;FishBase;;;;;;LC
 E01523;Zu elongatus;;Peces;pez;;1.2;longitud total máxima;FishBase;;;;;;LC
 E10450;Abutilon albidum;;Plantas con flor;arbusto;1.0;2.5;altura;Wikipedia (es);;;;;Anual;NE
-F01000;Abutilon grandifolium;Abutilo;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01000;Abutilon grandifolium;Abutilo;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00456;Acacia cyclops;Acacia cíclope;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
 F00457;Acacia dealbata;Acacia;Plantas con flor;árbol;10.0;12.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00458;Acacia farnesiana;Acacia;Plantas con flor;planta;;;;;;;;;;LC
 E09383;Acacia mearnsii;;Plantas con flor;árbol;7.0;10.0;altura;Wikipedia (es);;;;;Perenne;NE
-F02309;Acacia melanoxylon;Acacia negra;Plantas con flor;árbol;;;;;;;;;Perenne;NE
+F02309;Acacia melanoxylon;Acacia negra;Plantas con flor;árbol;;45.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00723;Acacia salicina;Acacia de hoja de sauce;Plantas con flor;árbol;;;;;;;;;Perenne;LC
 F00455;Acacia saligna;Acacia azul;Plantas con flor;árbol;3.0;8.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00072;Acanthus mollis;Acanto;Plantas con flor;hierba;0.3;0.7;altura;Wikipedia (es);;;;;Perenne;NE
@@ -1330,7 +1330,7 @@ F00609;Adenocarpus viscosus spartioides;Codeso del pico;Plantas con flor;palmera
 F00477;Adenocarpus viscosus subsp. viscosus;Codeso del pico;Plantas con flor;palmera;0.3;1.0;altura;Wikipedia (es);;;;;Perenne;
 F00110;Adonis microcarpa;Ojo de perdiz;Plantas con flor;hierba;;0.15;altura;Wikipedia (es);;;;;Anual;NE
 F01875;Aegilops biuncialis;Rompesacos peloso;Plantas con flor;planta;;;;;;;;;;LC
-F01877;Aegilops geniculata;Rompesacos inflado;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;;LC
+F01877;Aegilops geniculata;Rompesacos inflado;Plantas con flor;hierba;;;;;;;;;;LC
 F01876;Aegilops neglecta;Rompesacos estéril;Plantas con flor;hierba;0.1;0.5;altura;Wikipedia (es);;;;;;LC
 E11454;Aegilops triuncialis;;Plantas con flor;hierba;0.2;0.45;altura;Wikipedia (es);;;;;;LC
 F00404;Aeonium aizoon;Bea de Güímar;Plantas con flor;roseta;;;;;;;;;;NE
@@ -1338,20 +1338,20 @@ F00380;Aeonium appendiculatum;Bejeque puntero gomero;Plantas con flor;roseta;;1.
 F02362;Aeonium arboreum;Bejeque arbóreo;Plantas con flor;roseta;;0.9;altura;Wikipedia (es);;;;;;NE
 F00347;Aeonium arboreum subsp. arboreum;Bejeque;Plantas con flor;roseta;;0.9;altura;Wikipedia (es);;;;;;NE
 F02363;Aeonium arboreum subsp. holochrysum;;Plantas con flor;roseta;;0.9;altura;Wikipedia (es);;;;;;NE
-F00405;Aeonium aureum;Bea dorada;Plantas con flor;roseta;;0.45;altura;Wikipedia (es);;;;;;NE
+F00405;Aeonium aureum;Bea dorada;Plantas con flor;roseta;;;;;;;;;;NE
 F00348;Aeonium balsamiferum;Bejeque farrobo;Plantas con flor;roseta;;1.0;altura;Centinela (claves de identificación);;;;;Perenne;VU
 E11404;Aeonium calderense;;Plantas con flor;roseta;;;;;;;;;;
-F02367;Aeonium canariense;Góngaro canario;Plantas con flor;roseta;0.1;0.15;longitud;Wikipedia (es);;;;;;NE
-F02364;Aeonium canariense subsp. canariense;;Plantas con flor;roseta;0.1;0.15;longitud;Wikipedia (es);;;;;;NE
-F00349;Aeonium canariense subsp. christii;Oreja del abad;Plantas con flor;roseta;0.1;0.15;longitud;Wikipedia (es);;;;;;NE
-F02365;Aeonium canariense subsp. latifolium;Pastel de Risco;Plantas con flor;roseta;0.1;0.15;longitud;Wikipedia (es);;;;;;NE
-E11374;Aeonium canariense subsp. reyesbetancortianum;;Plantas con flor;roseta;0.1;0.15;longitud;Wikipedia (es);;;;;;
-F02366;Aeonium canariense subsp. virgineum;Góngaro canario;Plantas con flor;roseta;0.1;0.15;longitud;Wikipedia (es);;;;;;NE
+F02367;Aeonium canariense;Góngaro canario;Plantas con flor;roseta;;;;;;;;;;NE
+F02364;Aeonium canariense subsp. canariense;;Plantas con flor;roseta;;;;;;;;;;NE
+F00349;Aeonium canariense subsp. christii;Oreja del abad;Plantas con flor;roseta;;;;;;;;;;NE
+F02365;Aeonium canariense subsp. latifolium;Pastel de Risco;Plantas con flor;roseta;;;;;;;;;;NE
+E11374;Aeonium canariense subsp. reyesbetancortianum;;Plantas con flor;roseta;;;;;;;;;;
+F02366;Aeonium canariense subsp. virgineum;Góngaro canario;Plantas con flor;roseta;;;;;;;;;;NE
 F00350;Aeonium castello-paivae;Bejequillo gomero;Plantas con flor;roseta;;;;;;;;;;NE
 F00351;Aeonium ciliatum;Bejeque de Anaga;Plantas con flor;roseta;;;;;;;;;;NE
 F00607;Aeonium cuneatum;Góngaro de Anaga;Plantas con flor;roseta;;;;;;;;;;NE
 F00353;Aeonium davidbramwellii;Bejeque palmero;Plantas con flor;roseta;;;;;;;;;;NE
-F00354;Aeonium decorum;Bejequillo ornado;Plantas con flor;roseta;0.025;0.03;longitud;Wikipedia (es);;;;;Perenne;NE
+F00354;Aeonium decorum;Bejequillo ornado;Plantas con flor;roseta;;;;;;;;;Perenne;NE
 F00406;Aeonium diplocyclum;Bea simple;Plantas con flor;roseta;;;;;;;;;;NE
 F00407;Aeonium dodrantale;Bea tinerfeña;Plantas con flor;roseta;;;;;;;;;;NE
 E09646;Aeonium escobarii;;Plantas con flor;roseta;;;;;;;;;;NE
@@ -1374,7 +1374,7 @@ F00370;Aeonium sedifolium;Bejequillo menudo;Plantas con flor;roseta;;0.4;altura;
 F00371;Aeonium simsii;Góngaro flor de piedra;Plantas con flor;roseta;;;;;;;;;Perenne;NE
 F00372;Aeonium smithii;Bejequillo peludo de Tenerife;Plantas con flor;roseta;;;;;;;;;;NE
 F00373;Aeonium spathulatum;Bejequillo canario;Plantas con flor;roseta;;0.9;altura;Wikipedia (es);;;;;;NE
-F00375;Aeonium tabuliforme;Góngaro pastel de risco;Plantas con flor;roseta;;0.1;longitud;Wikipedia (es);;;;;;NE
+F00375;Aeonium tabuliforme;Góngaro pastel de risco;Plantas con flor;roseta;;0.1;altura;Wikipedia (es);;;;;;NE
 F00608;Aeonium undulatum;Bejeque de Gran Canaria;Plantas con flor;roseta;;0.9;altura;Wikipedia (es);;;;;;NE
 E09764;Aeonium urbicum;Bejeque puntero de Tenerife;Plantas con flor;roseta;;0.9;altura;Wikipedia (es);;;;;;NE
 E09460;Aeonium urbicum subsp. boreale;;Plantas con flor;roseta;;0.9;altura;Wikipedia (es);;;;;;NE
@@ -1388,29 +1388,29 @@ E11219;Afrosalsola divaricata;;Plantas con flor;planta;;;;;;;;;;
 F01382;Afrosalsola divaricata subsp. divaricata;Matabrusca negra;Plantas con flor;planta;;;;;;;;;;
 F02173;Agapanthus praecox;;Plantas con flor;planta;;;;;;;;;;NE
 F01769;Agapanthus praecox subsp. orientalis;Agapanto azul;Plantas con flor;planta;;;;;;;;;;NE
-F00962;Agave americana;Pitera común;Plantas con flor;hierba;;0.01;longitud;Wikipedia (es);;;;;Perenne;LC
-E09137;Agave angustifolia;;Plantas con flor;planta;;;;;;;;;;LC
+F00962;Agave americana;Pitera común;Plantas con flor;hierba;;;;;;;;;Perenne;LC
+E09137;Agave angustifolia;;Plantas con flor;árbol;3.0;5.0;altura;Wikipedia (es);;;;;;LC
 E08925;Agave attenuata;Cuello de cisne;Plantas con flor;arbusto;1.9;2.5;altura;Wikipedia (es);;;;;;LC
 E09143;Agave filifera;;Plantas con flor;roseta;;0.5;altura;Wikipedia (es);;;;;;LC
-F01738;Agave fourcroydes;Pitón;Plantas con flor;arbusto;;2.5;altura;Wikipedia (es);;;;;Monocárpica (florece una vez y muere);NE
+F01738;Agave fourcroydes;Pitón;Plantas con flor;arbusto;1.0;2.0;altura;Wikipedia (es);;;;;Monocárpica (florece una vez y muere);NE
 E09135;Agave franzosinii;;Plantas con flor;arbusto;;3.0;altura;Wikipedia (es);;;;;;NE
-E09141;Agave lechuguilla;;Plantas con flor;planta;;;;;;;;;;LC
-E09138;Agave macroacantha;;Plantas con flor;roseta;;0.55;longitud;Wikipedia (es);;;;;;EN
+E09141;Agave lechuguilla;;Plantas con flor;árbol;;4.0;altura;Wikipedia (es);;;;;;LC
+E09138;Agave macroacantha;;Plantas con flor;roseta;;3.0;altura;Wikipedia (es);;;;;;EN
 E09136;Agave murpheyi;;Plantas con flor;planta;;;;;;;;;;NE
 E09142;Agave oteroi;;Plantas con flor;planta;;;;;;;;;;NE
 F01126;Agave salmiana;Pitera armada;Plantas con flor;planta;;;;;;;;;;LC
-F01739;Agave sisalana;Sisal;Plantas con flor;planta;;;;;;;;;Monocárpica (florece una vez y muere);NE
-E09140;Agave vivipara;;Plantas con flor;planta;;;;;;;;;;VU
+F01739;Agave sisalana;Sisal;Plantas con flor;arbusto;0.4;1.0;altura;Wikipedia (es);;;;;Monocárpica (florece una vez y muere);NE
+E09140;Agave vivipara;;Plantas con flor;árbol;3.0;5.0;altura;Wikipedia (es);;;;;;VU
 F01416;Ageratina adenophora;Matoespuma;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F01417;Ageratina riparia;Matoespuma fino;Plantas con flor;hierba;0.004;0.005;altura;Wikipedia (es);;;;;Perenne;NE
+F01417;Ageratina riparia;Matoespuma fino;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01415;Ageratum houstonianum;;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;;NE
 F00431;Agrimonia eupatoria;Agrimonia;Plantas con flor;árbol;;;;;;;;;Perenne;NE
 F00153;Agrostemma githago;Neguillón;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Anual;NE
 F01878;Agrostis capillaris;Yerbafina común;Plantas con flor;hierba;0.1;0.7;altura;Wikipedia (es);;;;;Perenne;NE
 F01879;Agrostis castellana;Yerbafina de Castilla;Plantas con flor;hierba;0.4;1.3;altura;Wikipedia (es);;;;;Perenne;NE
-F02374;Agrostis stolonifera;;Plantas con flor;hierba;;;;;;;;;Perenne;LC
-F02377;Agrostis stolonifera subsp. filifolia;;Plantas con flor;hierba;;;;;;;;;Perenne;LC
-F02373;Agrostis stolonifera subsp. stolonifera;;Plantas con flor;hierba;;;;;;;;;Perenne;LC
+F02374;Agrostis stolonifera;;Plantas con flor;hierba;0.35;0.8;altura;Wikipedia (es);;;;;Perenne;LC
+F02377;Agrostis stolonifera subsp. filifolia;;Plantas con flor;hierba;0.35;0.8;altura;Wikipedia (es);;;;;Perenne;LC
+F02373;Agrostis stolonifera subsp. stolonifera;;Plantas con flor;hierba;0.35;0.8;altura;Wikipedia (es);;;;;Perenne;LC
 F01793;Aichryson bituminosum;Gongarillo de Tenteniguada;Plantas con flor;roseta;;0.25;altura;Centinela (claves de identificación);;;;;;NE
 F00383;Aichryson bollei;Gongarillo de Bolle;Plantas con flor;roseta;;;;;;;;;;NE
 F00384;Aichryson brevipetalum;Gongarillo de Las Nieves;Plantas con flor;roseta;0.07;0.08;altura;Centinela (claves de identificación);;;;;;NE
@@ -1437,7 +1437,7 @@ F01880;Aira caryophyllea subsp. caryophyllea;Heno común;Plantas con flor;hierba
 F02375;Aira caryophyllea subsp. plesiantha;;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00417;Aira cupaniana;Heno lampiño;Plantas con flor;planta;;;;;;;;;;NE
 F01881;Aira elegans;Heno elegante;Plantas con flor;planta;;;;;;;;;;NE
-F01882;Aira praecox;Heno temprano;Plantas con flor;hierba;0.05;0.3;longitud;Wikipedia (es);;;;;Anual;NE
+F01882;Aira praecox;Heno temprano;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00077;Aizoanthemopsis hispanica;Gazul;Plantas con flor;planta;;;;;;;;;;NE
 F00076;Aizoon canariense;Pata perro;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;Anual;NE
 F01285;Ajuga iva;Hierba clin;Plantas con flor;hierba;0.1;0.4;altura;Wikipedia (es);;;;;Perenne;NE
@@ -1449,7 +1449,7 @@ F01757;Allium ampeloprasum;Ajo porro;Plantas con flor;arbusto;;1.0;altura;Wikipe
 E09095;Allium canariense;;Plantas con flor;planta;;;;;;;;;;NE
 F01762;Allium canariense subsp. canariense;Ajo de bruja;Plantas con flor;planta;;;;;;;;;;NE
 F02168;Allium canariense subsp. obtusitepalum;Ajo de Lanzarote;Plantas con flor;planta;;;;;;;;;;NE
-F01758;Allium cepa;Cebolla;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Bienal;NE
+F01758;Allium cepa;Cebolla;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Bienal;NE
 F01760;Allium nigrum;Ajo negro;Plantas con flor;hierba;;;;;;;;;;NE
 E06796;Allium pallens;;Plantas con flor;planta;;;;;;;;;;NE
 F01761;Allium paniculatum;Ajo abierto;Plantas con flor;hierba;;;;;;;;;;VU
@@ -1459,19 +1459,19 @@ F01765;Allium sphaerocephalum;Ajo montesino;Plantas con flor;hierba;0.3;1.2;altu
 F01766;Allium subhirsutum;Gamonilla;Plantas con flor;hierba;;;;;;;;;;NE
 F02301;Allium triquetrum;Ajo simple;Plantas con flor;hierba;0.1;0.45;altura;Wikipedia (es);;;;;Perenne;LC
 F01768;Allium vineale;Puerro de viña;Plantas con flor;hierba;0.3;1.2;altura;Wikipedia (es);;;;;;NE
-F01740;Aloe arborescens;Sábila árborea roja;Plantas con flor;cactiforme;;0.6;longitud;Wikipedia (es);;;;;Perenne;LC
-F01741;Aloe ciliaris;Sábila culebra;Plantas con flor;trepadora;;10.0;longitud;Wikipedia (es);;;;;;NE
+F01740;Aloe arborescens;Sábila árborea roja;Plantas con flor;cactiforme;;0.6;altura;Wikipedia (es);;;;;Perenne;LC
+F01741;Aloe ciliaris;Sábila culebra;Plantas con flor;trepadora;;10.0;altura;Wikipedia (es);;;;;;NE
 E08591;Aloe maculata;;Plantas con flor;planta;;;;;;;;;;NE
 F01742;Aloe vera;Sábila común;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Perenne;NE
 F01883;Alopecurus geniculatus;Cola de zorra mansa;Plantas con flor;arbusto;;0.6;altura;Wikipedia (es);;;;;Perenne;NE
 F02395;Alopecurus myosuroides;;Plantas con flor;hierba;;0.8;altura;Wikipedia (es);;;;;;NE
 F01814;Alpinia zerumbet;Jengibre de concha;Plantas con flor;hierba;2.4;3.0;altura;Wikipedia (es);;;;;Perenne;DD
-E08415;Alstroemeria ligtu;;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;;NE
+E08415;Alstroemeria ligtu;;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;;NE
 F01804;Alstroemeria pulchella;Altromeria rosada;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Perenne;NE
 F00088;Alternanthera caracasana;Sangradera de Caracas;Plantas con flor;hierba;0.15;0.35;altura;Wikipedia (es);;;;;;NE
 F01002;Althaea longiflora;Malvavisco menuda;Plantas con flor;planta;;;;;;;;;;NE
 E08058;Alyssum granatense;;Plantas con flor;hierba;0.05;0.12;altura;Wikipedia (es);;;;;;NE
-F00902;Alyssum simplex;;Plantas con flor;hierba;;0.4;longitud;Wikipedia (es);;;;;Anual;NE
+F00902;Alyssum simplex;;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Anual;NE
 F00089;Amaranthus albus;Mastrancillo;Plantas con flor;hierba;0.1;0.7;altura;Wikipedia (es);;;;;;NE
 F00090;Amaranthus blitoides;;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;;NE
 E06170;Amaranthus blitum;;Plantas con flor;hierba;0.2;0.6;altura;Wikipedia (es);;;;;Anual;NE
@@ -1487,11 +1487,11 @@ F00094;Amaranthus hybridus subsp. hybridus;Bleco;Plantas con flor;hierba;;;;;;;;
 F00098;Amaranthus hybridus subsp. quitensis;;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00097;Amaranthus muricatus;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 E08922;Amaranthus powellii;;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;;NE
-F00099;Amaranthus retroflexus;;Plantas con flor;hierba;;3.0;longitud;Wikipedia (es);;;;;Anual;NE
+F00099;Amaranthus retroflexus;;Plantas con flor;hierba;;3.0;altura;Wikipedia (es);;;;;Anual;NE
 F00100;Amaranthus standleyanus;;Plantas con flor;planta;;;;;;;;;;NE
 F00101;Amaranthus viridis;Bledo verde;Plantas con flor;hierba;0.3;0.6;altura;Wikipedia (es);;;;;Anual;LC
 F01771;Amaryllis belladonna;Azucena rosada;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F00806;Ammi majus;Ameo bastardo;Plantas con flor;hierba;0.06;0.35;longitud;Wikipedia (es);;;;;Anual;NE
+F00806;Ammi majus;Ameo bastardo;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00807;Ammi procerum;;Plantas con flor;planta;;;;;;;;;;NE
 F00808;Ammi visnaga;Biznaga;Plantas con flor;planta;;;;;;;;;Bienal;NE
 F01884;Ammochloa pungens;;Plantas con flor;planta;;;;;;;;;;NE
@@ -1508,7 +1508,7 @@ F02180;Androcymbium hierrense;Cebollín;Plantas con flor;hierba;;;;;;;;;;NE
 E11100;Andropogon abyssinicus;;Plantas con flor;planta;;;;;;;;;;NE
 F01886;Andropogon distachyos;Saina cerrillera;Plantas con flor;hierba;;0.9;altura;Wikipedia (es);;;;;Perenne;NE
 F01437;Andryala integrifolia;Tosienta lanuda;Plantas con flor;hierba;0.4;0.5;altura;Wikipedia (es);;;;;;NE
-F01438;Andryala laxiflora;Trapera;Plantas con flor;hierba;0.012;0.018;longitud;Wikipedia (es);;;;;Anual;NE
+F01438;Andryala laxiflora;Trapera;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01436;Andryala perezii;Pedorrera;Plantas con flor;planta;;;;;;;;;;NE
 F02080;Andryala pinnatifida;Estornudera;Plantas con flor;hierba;;;;;;;;;;NE
 E06793;Andryala pinnatifida subsp. cuneifolia;;Plantas con flor;hierba;;;;;;;;;;NE
@@ -1524,10 +1524,10 @@ F00842;Anethum ridolfia;Cilantro salvaje;Plantas con flor;planta;;;;;;;;;;NE
 F00244;Anredera cordifolia;Enredadera tuberosa;Plantas con flor;árbol;;;;;;;;;Perenne;NE
 F01423;Anthemis arvensis;Manzanilla de burro;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Anual;NE
 F01424;Anthemis cotula;Manzanilla hedionda;Plantas con flor;hierba;0.28;0.56;altura;Wikipedia (es);;;;;Anual;NE
-F01887;Anthoxanthum aristatum;Greña menuda;Plantas con flor;hierba;0.005;0.008;longitud;Wikipedia (es);;;;;Anual;NE
-F01888;Anthoxanthum odoratum;Grama de olor;Plantas con flor;hierba;0.003;0.005;altura;Wikipedia (es);;;;;Perenne;NE
+F01887;Anthoxanthum aristatum;Greña menuda;Plantas con flor;hierba;;;;;;;;;Anual;NE
+F01888;Anthoxanthum odoratum;Grama de olor;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00811;Anthriscus caucalis;Ahogagatos;Plantas con flor;planta;;;;;;;;;;NE
-E04092;Antigonon leptopus;;Plantas con flor;trepadora;0.01;0.1;longitud;Wikipedia (es);;;;;;NE
+E04092;Antigonon leptopus;;Plantas con flor;trepadora;0.01;0.1;altura;Wikipedia (es);;;;;;NE
 F01210;Antirrhinum majus;Conejito mayor;Plantas con flor;arbusto;0.5;2.0;altura;Wikipedia (es);;;;;Bienal;NE
 F00432;Aphanes microcarpa;Miseria de camino;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00812;Apium graveolens;Apio;Plantas con flor;planta;;;;;;;;;;LC
@@ -1541,7 +1541,7 @@ F01031;Arbutus unedo;Madroño;Plantas con flor;arbusto;4.0;10.0;altura;Wikipedia
 F00154;Arenaria leptoclados;Morujilla fina;Plantas con flor;hierba;;0.2;altura;Wikipedia (es);;;;;Anual;NE
 F02105;Arenaria serpyllifolia;Morujilla tomillo;Plantas con flor;hierba;0.1;0.3;altura;Wikipedia (es);;;;;Bienal;NE
 F00129;Argemone mexicana;Cardosanto;Plantas con flor;arbusto;;0.8;altura;Wikipedia (es);;;;;Anual;NE
-F00724;Argemone ochroleuca;Chicalote pálido;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Anual;NE
+F00724;Argemone ochroleuca;Chicalote pálido;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02144;Argyranthemum adauctum;;Plantas con flor;hierba;;;;;;;;;;NE
 F01442;Argyranthemum adauctum subsp. adauctum;Magarza tinerfeña de cumbre;Plantas con flor;hierba;;;;;;;;;;NE
 F01443;Argyranthemum adauctum subsp. canariense;Magarza grancanaria de cumbre;Plantas con flor;hierba;;;;;;;;;;NE
@@ -1555,7 +1555,7 @@ E10261;Argyranthemum callichrysum;;Plantas con flor;hierba;;;;;;;;;;NE
 F01451;Argyranthemum callichrysum subsp. callichrysum;Margarita gomera amarilla;Plantas con flor;hierba;;;;;;;;;;NE
 F01450;Argyranthemum callichrysum subsp. gomerensis;Margarita gomera de monte;Plantas con flor;hierba;;;;;;;;;;NE
 F01452;Argyranthemum coronopifolium;Magarza azulada;Plantas con flor;hierba;;;;;;;;;;NE
-F01453;Argyranthemum escarrei;Magarza de La Aldea;Plantas con flor;hierba;;0.03;altura;Wikipedia (es);;;;;;NE
+F01453;Argyranthemum escarrei;Magarza de La Aldea;Plantas con flor;hierba;;;;;;;;;;NE
 F01454;Argyranthemum filifolium;Magarza fina;Plantas con flor;arbusto;;0.8;altura;Wikipedia (es);;;;;Perenne;NE
 F01455;Argyranthemum foeniculaceum;Magarza de Santiago;Plantas con flor;hierba;;;;;;;;;;NE
 F02087;Argyranthemum frutescens;Magarza;Plantas con flor;planta;;;;;;;;;;NE
@@ -1593,9 +1593,9 @@ F01426;Artemisia ramosa;Incienso morisco;Plantas con flor;arbusto;;2.0;altura;Wi
 F01427;Artemisia reptans;Amuley;Plantas con flor;arbusto;0.12;0.3;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01428;Artemisia thuscula;Incienso canario;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00248;Arthrocaulon macrostachyum;Sapillo;Plantas con flor;arbusto;;1.5;altura;Centinela (claves de identificación);;;;;Perenne;NE
-E08190;Arum italicum;;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;Perenne;NE
-F01867;Arum italicum subsp. canariense;Orejaburro;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;Perenne;NE
-F01893;Arundo donax;Caña;Plantas con flor;hierba;;;;;;;;;;LC
+E08190;Arum italicum;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F01867;Arum italicum subsp. canariense;Orejaburro;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F01893;Arundo donax;Caña;Plantas con flor;hierba;3.0;6.0;altura;Wikipedia (es);;;;;;LC
 F01069;Asclepias curassavica;Bandera española;Plantas con flor;arbusto;;1.0;altura;Wikipedia (es);;;;;Perenne;LC
 F02414;Asparagus aethiopicus;;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Perenne;LC
 F01776;Asparagus arborescens;Esparragón;Plantas con flor;arbusto;;0.04;altura;Wikipedia (es);;;;;Perenne;VU
@@ -1615,11 +1615,11 @@ F01745;Asphodelus fistulosus;Gamonilla tiesa;Plantas con flor;hierba;;0.7;altura
 F02188;Asphodelus ramosus;;Plantas con flor;hierba;;0.9;altura;Wikipedia (es);;;;;Perenne;NE
 F01743;Asphodelus ramosus subsp. distalis;Gamona;Plantas con flor;hierba;;0.9;altura;Wikipedia (es);;;;;Perenne;NE
 F02305;Asphodelus ramosus subsp. ramosus;;Plantas con flor;hierba;;0.9;altura;Wikipedia (es);;;;;Perenne;NE
-F01746;Asphodelus tenuifolius;Gamonilla fina;Plantas con flor;hierba;;0.2;altura;Wikipedia (es);;;;;Anual;NE
+F01746;Asphodelus tenuifolius;Gamonilla fina;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01607;Asteriscus aquaticus;Joriada;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Anual;NE
-F02192;Asteriscus graveolens;;Plantas con flor;hierba;;0.02;altura;Wikipedia (es);;;;;;NE
-F01608;Asteriscus graveolens subsp. odorus;Botonera menuda;Plantas con flor;hierba;;0.02;altura;Wikipedia (es);;;;;;NE
-F01609;Asteriscus graveolens subsp. stenophyllus;Botonera grancanaria;Plantas con flor;hierba;;0.02;altura;Wikipedia (es);;;;;;NE
+F02192;Asteriscus graveolens;;Plantas con flor;planta;;;;;;;;;;NE
+F01608;Asteriscus graveolens subsp. odorus;Botonera menuda;Plantas con flor;planta;;;;;;;;;;NE
+F01609;Asteriscus graveolens subsp. stenophyllus;Botonera grancanaria;Plantas con flor;planta;;;;;;;;;;NE
 F01610;Asteriscus intermedius;Tojia;Plantas con flor;planta;;;;;;;;;;NE
 F01611;Asteriscus schultzii;Tojia blanca;Plantas con flor;arbusto;;0.3;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01612;Asteriscus sericeus;Jorado;Plantas con flor;arbusto;;;;;;;;;;NE
@@ -1627,12 +1627,12 @@ F00480;Astragalus boeticus;Chabuscón;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00481;Astragalus edulis;;Plantas con flor;hierba;;;;;;;;;;NE
 F00482;Astragalus hamosus;Chabusquillo anilloperro;Plantas con flor;hierba;;;;;;;;;;NE
 F00483;Astragalus mareoticus;Chabusquillo de Jandía;Plantas con flor;hierba;;;;;;;;;;NE
-F02399;Astragalus pelecinus;;Plantas con flor;hierba;0.03;0.3;longitud;Wikipedia (es);;;;;;NE
-F00485;Astragalus pelecinus subsp. pelecinus;Aserruche;Plantas con flor;hierba;0.03;0.3;longitud;Wikipedia (es);;;;;;NE
+F02399;Astragalus pelecinus;;Plantas con flor;hierba;0.03;0.3;altura;Wikipedia (es);;;;;;NE
+F00485;Astragalus pelecinus subsp. pelecinus;Aserruche;Plantas con flor;hierba;0.03;0.3;altura;Wikipedia (es);;;;;;NE
 F00484;Astragalus sinaicus;Chabusquillo del Sinaí;Plantas con flor;hierba;;0.35;altura;Wikipedia (es);;;;;Anual;NE
 F02294;Astragalus solandri;;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02150;Astragalus stella;Chabusquillo estrellado;Plantas con flor;hierba;;0.35;altura;Wikipedia (es);;;;;Anual;NE
-F00815;Astydamia latifolia;Lechuga de mar;Plantas con flor;hierba;0.06;0.12;altura;Wikipedia (es);;;;;Perenne;NE
+F00815;Astydamia latifolia;Lechuga de mar;Plantas con flor;planta;;;;;;;;;Perenne;NE
 F01387;Athamanta cervariifolia;Apio de risco;Plantas con flor;hierba;0.6;1.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01388;Athamanta montana;Cañaheja blanca;Plantas con flor;hierba;;;;;;;;;;NE
 E00509;Atractylis arbuscula;Piñamar mayor;Plantas con flor;arbusto;;0.5;altura;Centinela (claves de identificación);;;;;Perenne;EN
@@ -1673,15 +1673,15 @@ F02418;Avena strigosa;;Plantas con flor;planta;;;;;;;;;;DD
 F01479;Babcockia platylepis;Cerrajón plateado;Plantas con flor;planta;;;;;;;;;;NE
 E09400;Balanites aegyptiaca;Datilero del desierto;Plantas con flor;árbol;;8.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01294;Ballota nigra;Marrubio negro;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F01904;Bambusa vulgaris;Bambú común;Plantas con flor;árbol;;15.0;altura;Wikipedia (es);;;;;;NE
-F00906;Barbarea verna;Berrillo;Plantas con flor;hierba;0.25;0.8;longitud;Wikipedia (es);;;;;Bienal;DD
+F01904;Bambusa vulgaris;Bambú común;Plantas con flor;planta;;;;;;;;;;NE
+F00906;Barbarea verna;Berrillo;Plantas con flor;hierba;0.25;0.8;altura;Wikipedia (es);;;;;Bienal;DD
 F00254;Bassia hyssopifolia;Basia hisopo;Plantas con flor;planta;;;;;;;;;;NE
 F00268;Bassia scoparia;Pinillo salado;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00257;Bassia tomentosa;Algahuera;Plantas con flor;planta;;;;;;;;;;NE
 E02950;Begonia schmidtiana;;Plantas con flor;planta;;;;;;;;;;NE
 F01211;Bellardia trixago;Gallocresta;Plantas con flor;arbusto;;0.6;altura;Wikipedia (es);;;;;;NE
 F01480;Bellis annua;Pascueta;Plantas con flor;roseta;;;;;;;;;Anual;NE
-E09384;Bellis perennis;;Plantas con flor;hierba;0.004;0.02;altura;Wikipedia (es);;;;;Perenne;NE
+E09384;Bellis perennis;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00433;Bencomia brachystachya;Bencomia de Tirajana;Plantas con flor;arbusto;;1.5;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F00434;Bencomia caudata;Bencomia de monte;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;NT
 F00435;Bencomia exstipulata;Bencomia de cumbre;Plantas con flor;arbusto;;1.0;altura;Centinela (claves de identificación);;;;;Perenne;VU
@@ -1701,7 +1701,7 @@ F01385;Bituminaria bituminosa;Tedera;Plantas con flor;arbusto;0.2;1.0;altura;Wik
 E11597;Bituminaria crassiuscula;;Plantas con flor;planta;;;;;;;;;;
 F01061;Blackstonia imperfoliata;Centaura amarilla;Plantas con flor;planta;;;;;;;;;;NE
 E06818;Bolboschoenus glaucus;;Plantas con flor;planta;;;;;;;;;;LC
-F01855;Bolboschoenus maritimus;Junquillo marino;Plantas con flor;hierba;;0.005;altura;Wikipedia (es);;;;;;LC
+F01855;Bolboschoenus maritimus;Junquillo marino;Plantas con flor;planta;;;;;;;;;;LC
 F01166;Borago officinalis;Borraja;Plantas con flor;arbusto;0.6;1.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00102;Bosea yervamora;Yerbamora;Plantas con flor;arbusto;;3.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01937;Bothriochloa insculpta;Pasto morisco;Plantas con flor;planta;;;;;;;;;;NE
@@ -1720,7 +1720,7 @@ F00909;Brassica nigra;;Plantas con flor;hierba;;2.5;altura;Wikipedia (es);;;;;An
 F00910;Brassica oleracea;Col común;Plantas con flor;roseta;;;;;;;;;Bienal;DD
 F01906;Briza maxima;Tembladera mayor;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;Anual;NE
 F01907;Briza media;Tembladera media;Plantas con flor;hierba;;;;;;;;;;NE
-F01908;Briza minor;Tembladera menor;Plantas con flor;hierba;0.03;0.08;longitud;Wikipedia (es);;;;;;NE
+F01908;Briza minor;Tembladera menor;Plantas con flor;hierba;;;;;;;;;;NE
 F01920;Bromus catharticus;Chirato de Willdenow;Plantas con flor;hierba;0.1;1.0;altura;Wikipedia (es);;;;;Bienal;NE
 E06814;Bromus commutatus;;Plantas con flor;hierba;0.4;1.2;altura;Wikipedia (es);;;;;Perenne;NE
 E06815;Bromus commutatus subsp. decipiens;;Plantas con flor;hierba;0.4;1.2;altura;Wikipedia (es);;;;;Perenne;NE
@@ -1728,18 +1728,18 @@ F01909;Bromus diandrus;Espiguilla chirata;Plantas con flor;hierba;;1.1;altura;Wi
 F02198;Bromus hordeaceus;;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;;NE
 F01910;Bromus hordeaceus subsp. hordeaceus;Chirato peludo;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;;NE
 F01911;Bromus hordeaceus subsp. molliformis;Chirato;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;;NE
-F01912;Bromus lanceolatus;Chirato de lanza;Plantas con flor;hierba;0.02;0.04;longitud;Wikipedia (es);;;;;Anual;NE
+F01912;Bromus lanceolatus;Chirato de lanza;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01913;Bromus lepidus;Espiguilla grácil;Plantas con flor;planta;;;;;;;;;;NE
 F01917;Bromus madritensis;Espiguilla de Madrid;Plantas con flor;hierba;0.1;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F02398;Bromus parvispiculatus;;Plantas con flor;planta;;;;;;;;;;NE
-F01916;Bromus rigidus;Barba de macho;Plantas con flor;hierba;0.024;0.037;altura;Wikipedia (es);;;;;Anual;NE
+F01916;Bromus rigidus;Barba de macho;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02134;Bromus rubens;Chiratillo;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F01915;Bromus rubens subsp. kunkelii;Espiguilla de Kunkel;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F01914;Bromus rubens subsp. rubens;Espiguilla roja;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F01918;Bromus squarrosus;Chirato temblón;Plantas con flor;planta;;;;;;;;;;NE
 F02376;Bromus sterilis;;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;;NE
 F01919;Bromus tectorum;Espiguilla colgante;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Anual;NE
-F01101;Brugmansia suaveolens;Floripondio;Plantas con flor;arbusto;;3.0;longitud;Wikipedia (es);;;;;Perenne;NE
+F01101;Brugmansia suaveolens;Floripondio;Plantas con flor;arbusto;;3.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00993;Bryonia verrucosa;Venenillo;Plantas con flor;planta;;;;;;;;;;NE
 F00155;Bufonia paniculata;Escobilla estrellada;Plantas con flor;planta;;;;;;;;;;NE
 F01167;Buglossoides arvensis;Mijo de sol;Plantas con flor;planta;;;;;;;;;Anual;NE
@@ -1786,7 +1786,7 @@ F00912;Capsella bursa-pastoris;Bolsa de pastor;Plantas con flor;hierba;;;;;;;;;A
 F00913;Capsella rubella;Bolsa de pastor menuda;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01071;Caralluma burchardii;Cuernúa;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00914;Cardamine hirsuta;Mastuerzo amargo;Plantas con flor;hierba;;;;;;;;;;NE
-F00699;Cardiospermum grandiflorum;Farolito trepador;Plantas con flor;trepadora;;10.0;longitud;Wikipedia (es);;;;;;NE
+F00699;Cardiospermum grandiflorum;Farolito trepador;Plantas con flor;trepadora;;;;;;;;;;NE
 F01490;Carduncellus caeruleus;Azafrán azul;Plantas con flor;planta;;;;;;;;;;NE
 F02219;Carduus baeocephalus;;Plantas con flor;planta;;;;;;;;;;NE
 F02321;Carduus baeocephalus subsp. baeocephalus;Cardo de costa;Plantas con flor;planta;;;;;;;;;;NE
@@ -1806,7 +1806,7 @@ F02200;Carex divulsa;Cuchillera común;Plantas con flor;hierba;;;;;;;;;;NE
 E09663;Carex enokii;;Plantas con flor;planta;;;;;;;;;;NE
 E09092;Carex muricata;;Plantas con flor;hierba;0.2;0.5;altura;Wikipedia (es);;;;;;NE
 F01831;Carex muricata subsp. pairae;Cuchillera ovoide;Plantas con flor;hierba;0.2;0.5;altura;Wikipedia (es);;;;;;NE
-F01830;Carex otrubae;Cuchillera densa;Plantas con flor;hierba;0.3;0.9;longitud;Wikipedia (es);;;;;;LC
+F01830;Carex otrubae;Cuchillera densa;Plantas con flor;hierba;;;;;;;;;;LC
 F02201;Carex paniculata;;Plantas con flor;hierba;;;;;;;;;;LC
 F01832;Carex paniculata subsp. calderae;Cuchillera de Las Cañadas;Plantas con flor;hierba;;;;;;;;;;LC
 F01833;Carex perraudieriana;Cuchillera ancha;Plantas con flor;hierba;;;;;;;;;Perenne;NE
@@ -1815,12 +1815,12 @@ F01496;Carlina canariensis;Cardoyesca amarilla;Plantas con flor;planta;;;;;;;;;;
 F02154;Carlina falcata;Malpica brillante;Plantas con flor;hierba;;;;;;;;;;LC
 F01497;Carlina salicifolia;Malpica cabezote;Plantas con flor;hierba;;;;;;;;;;LC
 F01498;Carlina texedae;Cardoyesca de cumbre;Plantas con flor;planta;;;;;;;;;;NE
-F01499;Carlina xeranthemoides;Malpica de cumbre;Plantas con flor;hierba;;0.01;altura;Wikipedia (es);;;;;;NE
+F01499;Carlina xeranthemoides;Malpica de cumbre;Plantas con flor;hierba;;;;;;;;;;NE
 F00273;Caroxylon tetrandrum;Matabrusca quebradiza;Plantas con flor;planta;;;;;;;;;;NE
 F00274;Caroxylon vermiculatum;Matabrusca carambilla;Plantas con flor;planta;;;;;;;;;;NE
-F00079;Carpobrotus acinaciformis;Hierba del cuchillo;Plantas con flor;hierba;;1.5;longitud;Wikipedia (es);;;;;Perenne;NE
-F00080;Carpobrotus edulis;Hierba del cuchillo;Plantas con flor;hierba;;0.1;longitud;Wikipedia (es);;;;;Perenne;NE
-F00915;Carrichtera annua;Cucharilla;Plantas con flor;hierba;0.05;0.4;longitud;Wikipedia (es);;;;;Anual;NE
+F00079;Carpobrotus acinaciformis;Hierba del cuchillo;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F00080;Carpobrotus edulis;Hierba del cuchillo;Plantas con flor;planta;;;;;;;;;Perenne;NE
+F00915;Carrichtera annua;Cucharilla;Plantas con flor;hierba;0.05;0.4;altura;Wikipedia (es);;;;;Anual;NE
 F01500;Carthamus lanatus;Alazor;Plantas con flor;hierba;0.1;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F01501;Carthamus tinctorius;Azafrán de la tierra;Plantas con flor;hierba;;1.5;altura;Wikipedia (es);;;;;;NE
 E10329;Cascabela thevetia;;Plantas con flor;árbol;2.0;6.0;altura;Wikipedia (es);;;;;Perenne;LC
@@ -1853,7 +1853,7 @@ F01505;Centaurea diluta;;Plantas con flor;hierba;;2.5;altura;Wikipedia (es);;;;;
 F01506;Centaurea eriophora;;Plantas con flor;hierba;0.15;0.7;altura;Wikipedia (es);;;;;Anual;NE
 F01507;Centaurea melitensis;Abrepuño;Plantas con flor;arbusto;0.1;1.0;altura;Wikipedia (es);;;;;Anual;NE
 E09427;Centaurea sulphurea;;Plantas con flor;planta;;;;;;;;;;NE
-F01062;Centaurium erythraea;Centaura roja;Plantas con flor;hierba;;0.008;altura;Wikipedia (es);;;;;Anual;LC
+F01062;Centaurium erythraea;Centaura roja;Plantas con flor;hierba;0.1;0.5;altura;Wikipedia (es);;;;;Anual;LC
 F01063;Centaurium maritimum;Centaura marítima;Plantas con flor;planta;;;;;;;;;;NE
 F01064;Centaurium spicatum;Centaura espigada;Plantas con flor;planta;;;;;;;;;;NE
 F02203;Centaurium tenuiflorum;;Plantas con flor;planta;;;;;;;;;;NE
@@ -1880,7 +1880,7 @@ F00488;Chamaecytisus proliferus subsp. angustifolius;Escobón de pinar;Plantas c
 F00489;Chamaecytisus proliferus subsp. meridionalis;Escobón blanco del sur;Plantas con flor;planta;;;;;;;;;;LC
 F00487;Chamaecytisus proliferus subsp. proliferus;Tagasaste;Plantas con flor;planta;;;;;;;;;;NE
 F02401;Chamaemelum fuscatum;;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Anual;NE
-F01796;Chasmanthe aethiopica;Crestagallo de El Cabo;Plantas con flor;hierba;0.02;0.03;longitud;Wikipedia (es);;;;;Perenne;NE
+F01796;Chasmanthe aethiopica;Crestagallo de El Cabo;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 E08414;Chasmanthe bicolor;;Plantas con flor;hierba;0.7;0.9;altura;Wikipedia (es);;;;;Perenne;VU
 E07789;Chasmanthe floribunda;;Plantas con flor;hierba;;1.2;altura;Wikipedia (es);;;;;Perenne;NE
 F01510;Cheirolophus arboreus;Cabezón arbóreo;Plantas con flor;arbusto;;3.5;altura;Centinela (claves de identificación);;;;;Perenne;NE
@@ -1905,14 +1905,14 @@ F01525;Cheirolophus webbianus;Cabezón de Webb;Plantas con flor;arbusto;;2.0;alt
 F00130;Chelidonium majus;Verruguera;Plantas con flor;hierba;0.3;0.8;altura;Wikipedia (es);;;;;Perenne;NE
 F00260;Chenopodiastrum coronopus;Cenizo de flecos;Plantas con flor;planta;;;;;;;;;;NE
 F00263;Chenopodiastrum murale;Cenizo común;Plantas con flor;hierba;;;;;;;;;;NE
-F00258;Chenopodium album;Cenizo blanco;Plantas con flor;hierba;;3.0;altura;Wikipedia (es);;;;;;NE
-E09402;Chenopodium album subsp. borbasii;;Plantas con flor;hierba;;3.0;altura;Wikipedia (es);;;;;;NE
+F00258;Chenopodium album;Cenizo blanco;Plantas con flor;hierba;;;;;;;;;;NE
+E09402;Chenopodium album subsp. borbasii;;Plantas con flor;hierba;;;;;;;;;;NE
 F00261;Chenopodium giganteum;Cenizo gigante;Plantas con flor;hierba;;3.0;altura;Wikipedia (es);;;;;Anual;NE
 F00266;Chenopodium nutans;Amuelle colgante;Plantas con flor;planta;;;;;;;;;;NE
-E07790;Chenopodium probstii;;Plantas con flor;hierba;;3.0;altura;Wikipedia (es);;;;;;NE
+E07790;Chenopodium probstii;;Plantas con flor;hierba;;;;;;;;;;NE
 F00265;Chenopodium vulvaria;Cenizo urbano;Plantas con flor;hierba;;;;;;;;;;NE
 E08172;Chloris barbata;;Plantas con flor;planta;;;;;;;;;;NE
-F01925;Chloris gayana;Zacate gordura;Plantas con flor;hierba;;0.15;longitud;Wikipedia (es);;;;;Perenne;NE
+F01925;Chloris gayana;Zacate gordura;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 E06798;Chloris pycnothrix;;Plantas con flor;planta;;;;;;;;;;NE
 F01926;Chloris truncata;Zacate partido;Plantas con flor;planta;;;;;;;;;;NE
 E06795;Chlorophytum comosum;;Plantas con flor;roseta;;;;;;;;;Perenne;NE
@@ -1923,7 +1923,7 @@ F02143;Chrysoprenanthes pendula subsp. pendula;Cerraja de risco;Plantas con flor
 F00490;Cicer arietinum;Garbancera común;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Anual;NE
 F00491;Cicer canariense;Garbancera canaria;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;EN
 F01528;Cichorium pumilum;Achicoria silvestre;Plantas con flor;planta;;;;;;;;;;NE
-F02402;Cirsium vulgare;;Plantas con flor;arbusto;;2.0;longitud;Wikipedia (es);;;;;Bienal;NE
+F02402;Cirsium vulgare;;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Bienal;NE
 F01264;Cistanche phelypaea;Jopo amarillo;Plantas con flor;planta;;;;;;;;;;NE
 F02339;Cistus asper;;Plantas con flor;planta;;;;;;;;;;NE
 F02206;Cistus chinamadensis;Jara;Plantas con flor;planta;;;;;;;;;;EN
@@ -1954,17 +1954,17 @@ F01078;Coffea arabica;Cafetero;Plantas con flor;arbusto;9.0;12.0;altura;Wikipedi
 F01927;Coix lacryma-jobi;Lágrimas de Job;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01791;Colchicum psammophilum;Cebollín estrellado de jable;Plantas con flor;hierba;;;;;;;;;;VU
 F01529;Coleostephus myconis;Giralda;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Anual;NE
-F01868;Colocasia esculenta;Ñamera;Plantas con flor;hierba;;0.06;altura;Wikipedia (es);;;;;Perenne;LC
+F01868;Colocasia esculenta;Ñamera;Plantas con flor;hierba;;;;;;;;;Perenne;LC
 F01858;Commelina benghalensis;Tejedera de Bengala;Plantas con flor;planta;;;;;;;;;;LC
 F01859;Commelina diffusa;Tejedera azul;Plantas con flor;planta;;;;;;;;;;LC
 E07791;Commelina latifolia;;Plantas con flor;planta;;;;;;;;;;NE
 F00246;Commicarpus helenae;;Plantas con flor;planta;;;;;;;;;;NE
 F00824;Conium maculatum;Cicuta;Plantas con flor;hierba;1.5;2.5;altura;Wikipedia (es);;;;;Bienal;NE
-F00112;Consolida ajacis;Espuela pelosa;Plantas con flor;hierba;;0.012;altura;Wikipedia (es);;;;;Anual;NE
+F00112;Consolida ajacis;Espuela pelosa;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02208;Consolida regalis;;Plantas con flor;planta;;;;;;;;;;NE
 F00113;Consolida regalis subsp. regalis;Espuela de caballero;Plantas con flor;planta;;;;;;;;;;NE
-E07795;Convolvulus althaeoides;;Plantas con flor;trepadora;0.02;0.03;longitud;Wikipedia (es);;;;;Perenne;NE
-F01136;Convolvulus althaeoides althaeoides;Corregüela rosada;Plantas con flor;trepadora;0.02;0.03;longitud;Wikipedia (es);;;;;Perenne;
+E07795;Convolvulus althaeoides;;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
+F01136;Convolvulus althaeoides althaeoides;Corregüela rosada;Plantas con flor;trepadora;;;;;;;;;Perenne;
 F01137;Convolvulus arvensis;Corregüela blanca;Plantas con flor;trepadora;0.5;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01138;Convolvulus canariensis;Corregüelón de monte;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 F01139;Convolvulus caput-medusae;Chaparro canario;Plantas con flor;arbusto;;0.6;altura;Wikipedia (es);;;;;Perenne;NT
@@ -2020,7 +2020,7 @@ E07788;Crassula tetragona;;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00403;Crassula tillaea;Crásula musgosa;Plantas con flor;planta;;;;;;;;;;LC
 F01537;Crepis bursifolia;;Plantas con flor;planta;;;;;;;;;;NE
 F01538;Crepis canariensis;Lechugilla de risco;Plantas con flor;hierba;;0.5;altura;Centinela (claves de identificación);;;;;;NE
-F01539;Crepis capillaris;Chicoria loquilla;Plantas con flor;planta;;;;;;;;;Bienal;NE
+F01539;Crepis capillaris;Chicoria loquilla;Plantas con flor;arbusto;0.2;1.0;altura;Wikipedia (es);;;;;Bienal;NE
 F01541;Crepis foetida;Falsa achicoria;Plantas con flor;hierba;0.15;0.7;altura;Wikipedia (es);;;;;Bienal;NE
 F01542;Crepis juvenalis;;Plantas con flor;planta;;;;;;;;;;NE
 F01543;Crepis taraxacifolia;;Plantas con flor;hierba;;1.2;altura;Wikipedia (es);;;;;Bienal;NE
@@ -2037,21 +2037,21 @@ F02379;Cutandia dichotoma;;Plantas con flor;planta;;;;;;;;;;NE
 F02107;Cutandia divaricata;Cután mediterráneo;Plantas con flor;planta;;;;;;;;;;NE
 F01929;Cutandia maritima;Cután marítimo;Plantas con flor;planta;;;;;;;;;;NE
 F01930;Cutandia memphitica;Cután moruno;Plantas con flor;planta;;;;;;;;;;NE
-F00823;Cyclospermum leptophyllum;;Plantas con flor;hierba;0.004;0.025;longitud;Wikipedia (es);;;;;Anual;NE
-F00437;Cydonia oblonga;Membrillero;Plantas con flor;árbol;0.07;0.12;longitud;Wikipedia (es);;;;;Perenne;LC
+F00823;Cyclospermum leptophyllum;;Plantas con flor;hierba;;;;;;;;;Anual;NE
+F00437;Cydonia oblonga;Membrillero;Plantas con flor;árbol;;;;;;;;;Perenne;LC
 E08383;Cylindropuntia bigelovii;;Plantas con flor;arbusto;0.3;1.5;altura;Wikipedia (es);;;;;Perenne;NE
 E08046;Cylindropuntia fulgida;;Plantas con flor;árbol;1.5;4.0;altura;Wikipedia (es);;;;;Perenne;LC
-E08384;Cylindropuntia imbricata;;Plantas con flor;arbusto;;1.0;altura;Wikipedia (es);;;;;Perenne;LC
-E07189;Cylindropuntia pallida;;Plantas con flor;arbusto;1.0;1.5;altura;Wikipedia (es);;;;;Perenne;LC
+E08384;Cylindropuntia imbricata;;Plantas con flor;árbol;;4.6;altura;Wikipedia (es);;;;;Perenne;LC
+E07189;Cylindropuntia pallida;;Plantas con flor;planta;;;;;;;;;Perenne;LC
 E06948;Cylindropuntia prolifera;;Plantas con flor;arbusto;0.6;2.5;altura;Wikipedia (es);;;;;Perenne;LC
 E08047;Cylindropuntia tunicata;;Plantas con flor;arbusto;0.3;0.6;altura;Wikipedia (es);;;;;Perenne;LC
 F01214;Cymbalaria muralis;Flor de muralla;Plantas con flor;hierba;;0.05;altura;Wikipedia (es);;;;;Perenne;NE
 E04120;Cymodocea nodosa;Seba;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Perenne;LC
 F01075;Cynanchum acutum;Matacán;Plantas con flor;trepadora;;4.0;altura;Wikipedia (es);;;;;Perenne;LC
-F01544;Cynara cardunculus;Alcachofa silvestre;Plantas con flor;roseta;;1.5;longitud;Wikipedia (es);;;;;Perenne;NE
+F01544;Cynara cardunculus;Alcachofa silvestre;Plantas con flor;roseta;;1.5;altura;Wikipedia (es);;;;;Perenne;NE
 F01545;Cynara humilis;Alcachofilla;Plantas con flor;arbusto;;0.6;altura;Wikipedia (es);;;;;;NE
-F01931;Cynodon dactylon;Césped común;Plantas con flor;hierba;0.04;0.15;longitud;Wikipedia (es);;;;;;NE
-E09403;Cynodon nlemfuensis;;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01931;Cynodon dactylon;Césped común;Plantas con flor;hierba;0.01;0.3;altura;Wikipedia (es);;;;;;NE
+E09403;Cynodon nlemfuensis;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01169;Cynoglossum creticum;Lenguaperro;Plantas con flor;roseta;0.2;0.8;altura;Wikipedia (es);;;;;Perenne;NE
 F02313;Cynomorium coccineum;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00756;Cynomorium coccineum subsp. coccineum;Pingatierra;Plantas con flor;hierba;;;;;;;;;Perenne;NE
@@ -2059,22 +2059,22 @@ F01932;Cynosurus echinatus;Colaperro estrellada;Plantas con flor;hierba;0.1;0.5;
 F01933;Cynosurus effusus;Colaperro;Plantas con flor;planta;;;;;;;;;;NE
 F01837;Cyperus alopecuroides;Juncia colazorro;Plantas con flor;planta;;;;;;;;;;LC
 E04482;Cyperus brevifolius;;Plantas con flor;planta;;;;;;;;;;LC
-F01838;Cyperus capitatus;Juncia marina;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F01838;Cyperus capitatus;Juncia marina;Plantas con flor;hierba;0.1;0.5;altura;Wikipedia (es);;;;;Perenne;NE
 F01844;Cyperus distachyos;Juncia desnuda oscura;Plantas con flor;planta;;;;;;;;;;LC
 F01839;Cyperus eragrostis;Juncia amorosa;Plantas con flor;hierba;0.4;0.6;altura;Wikipedia (es);;;;;Perenne;LC
 F01840;Cyperus esculentus;Chufa;Plantas con flor;hierba;0.4;0.5;altura;Wikipedia (es);;;;;Perenne;LC
 F01841;Cyperus fuscus;Juncia negra;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Anual;LC
 E06838;Cyperus gracilis;;Plantas con flor;hierba;0.1;0.3;altura;Wikipedia (es);;;;;;NE
-F01842;Cyperus involucratus;Juncia paragüitas;Plantas con flor;hierba;;0.013;longitud;Wikipedia (es);;;;;Perenne;
+F01842;Cyperus involucratus;Juncia paragüitas;Plantas con flor;hierba;;;;;;;;;Perenne;
 F02156;Cyperus laevigatus;;Plantas con flor;planta;;;;;;;;;;LC
 F01843;Cyperus laevigatus subsp. laevigatus;Juncia desnuda clara;Plantas con flor;planta;;;;;;;;;;LC
-F01845;Cyperus longus;Juncia olorosa;Plantas con flor;hierba;0.005;0.01;altura;Wikipedia (es);;;;;Perenne;LC
+F01845;Cyperus longus;Juncia olorosa;Plantas con flor;hierba;;2.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01846;Cyperus michelianus;Juncia enana;Plantas con flor;planta;;;;;;;;;;LC
 F01853;Cyperus polystachyos;Juncilla abigarrada;Plantas con flor;planta;;;;;;;;;;LC
 F01847;Cyperus rotundus;Jucia batatillera;Plantas con flor;hierba;0.15;0.5;altura;Wikipedia (es);;;;;Perenne;LC
 F01848;Cyperus rubicundus;Juncia rubia;Plantas con flor;planta;;;;;;;;;;LC
 F00757;Cytinus hypocistis;Melera de jaguarzo;Plantas con flor;planta;;;;;;;;;;NE
-F00758;Cytinus ruber;Melera roja;Plantas con flor;hierba;;0.005;longitud;Wikipedia (es);;;;;;NE
+F00758;Cytinus ruber;Melera roja;Plantas con flor;planta;;;;;;;;;;NE
 F00494;Cytisus scoparius;Retama negra;Plantas con flor;arbusto;1.0;2.0;altura;Wikipedia (es);;;;;;NE
 F02217;Dactylis glomerata;;Plantas con flor;hierba;0.6;1.2;altura;Wikipedia (es);;;;;Perenne;NE
 F01934;Dactylis glomerata subsp. glomerata;Jopillo áspero;Plantas con flor;hierba;0.6;1.2;altura;Wikipedia (es);;;;;Perenne;NE
@@ -2113,8 +2113,8 @@ F01153;Dichondra micrantha;Césped de riñón;Plantas con flor;árbol;;;;;;;;;Pe
 F01216;Digitalis canariensis;Crestagallo;Plantas con flor;palmera;;;;;;;;;;NE
 F01217;Digitalis chalcantha;Crestagallo de Doramas;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01218;Digitalis isabelliana;Crestagallo de pinar;Plantas con flor;trepadora;;1.5;altura;Centinela (claves de identificación);;;;;Perenne;EN
-F01215;Digitalis purpurea;Dedalera púrpura;Plantas con flor;roseta;0.5;2.5;longitud;Wikipedia (es);;;;;Bienal;NE
-E06817;Digitalis purpurea subsp. purpurea;;Plantas con flor;roseta;0.5;2.5;longitud;Wikipedia (es);;;;;Bienal;NE
+F01215;Digitalis purpurea;Dedalera púrpura;Plantas con flor;roseta;0.5;2.5;altura;Wikipedia (es);;;;;Bienal;NE
+E06817;Digitalis purpurea subsp. purpurea;;Plantas con flor;roseta;0.5;2.5;altura;Wikipedia (es);;;;;Bienal;NE
 F01938;Digitaria ciliaris;Garranchuelo de pestañas;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Perenne;NE
 E09405;Digitaria ischaemum;;Plantas con flor;planta;;;;;;;;;;NE
 F01939;Digitaria nodosa;Garranchuelo de nudos;Plantas con flor;planta;;;;;;;;;;NE
@@ -2123,39 +2123,39 @@ F02167;Digitaria radicosa;;Plantas con flor;planta;;;;;;;;;;NE
 F01940;Digitaria sanguinalis;Garranchuelo de sangre;Plantas con flor;hierba;;;;;;;;;Anual;NE
 E01385;Digitaria violascens;;Plantas con flor;planta;;;;;;;;;;NE
 F01733;Dioscorea edulis;Norsa;Plantas con flor;planta;;;;;;;;;;
-F01794;Dipcadi serotinum;Tarabaste gato;Plantas con flor;roseta;0.012;0.015;longitud;Wikipedia (es);;;;;Perenne;NE
+F01794;Dipcadi serotinum;Tarabaste gato;Plantas con flor;roseta;0.1;0.4;altura;Wikipedia (es);;;;;Perenne;NE
 F02070;Diplachne fusca;Joyo fino;Plantas con flor;planta;;;;;;;;;;LC
 E08694;Diplachne fusca subsp. uninervia;;Plantas con flor;planta;;;;;;;;;;LC
 F00935;Diplotaxis catholica;Jaramago;Plantas con flor;planta;;;;;;;;;;NE
 F01365;Diplotaxis muralis;;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;;NE
 E06856;Diplotaxis tenuifolia;Rúcula;Plantas con flor;hierba;0.2;0.8;altura;Wikipedia (es);;;;;Perenne;NE
 F01048;Dipsacus fullonum;Cardencha;Plantas con flor;hierba;;1.5;altura;Wikipedia (es);;;;;Bienal;NE
-E08390;Disocactus speciosus;;Plantas con flor;arbusto;;1.0;longitud;Wikipedia (es);;;;;Perenne;LC
-F00081;Disphyma crassifolium;;Plantas con flor;arbusto;;2.0;longitud;Wikipedia (es);;;;;Perenne;NE
+E08390;Disocactus speciosus;;Plantas con flor;arbusto;;1.0;altura;Wikipedia (es);;;;;Perenne;LC
+F00081;Disphyma crassifolium;;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01282;Distictis buccinatoria;Trompetero mexicano;Plantas con flor;planta;;;;;;;;;;NE
 F01546;Dittrichia viscosa;Altabaca;Plantas con flor;hierba;;1.5;altura;Wikipedia (es);;;;;Perenne;NE
 F00496;Dorycnium broussonetii;Trébol de risco de Broussonet;Plantas con flor;arbusto;;5.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F00497;Dorycnium eriophthalmum;Trébol de risco blanco;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F00498;Dorycnium spectabile;Trébol de risco rosado;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;EN
-F02220;Dracaena draco;Drago;Plantas con flor;árbol;0.5;0.6;longitud;Wikipedia (es);;;;;Perenne;EN
-F01736;Dracaena draco subsp. draco;Drago;Plantas con flor;árbol;;0.1;longitud;Centinela (claves de identificación);;;;;Perenne;EN
+F02220;Dracaena draco;Drago;Plantas con flor;árbol;;1.0;altura;Wikipedia (es);;;;;Perenne;EN
+F01736;Dracaena draco subsp. draco;Drago;Plantas con flor;árbol;;1.0;altura;Wikipedia (es);;;;;Perenne;EN
 F02149;Dracaena tamaranae;Drago de Gran Canaria;Plantas con flor;árbol;;8.0;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F01302;Dracocephalum thymiflorum;Cabeza de dragón;Plantas con flor;planta;;;;;;;;;;NE
 F01869;Dracunculus canariensis;Taraguntia;Plantas con flor;arbusto;;1.5;altura;Wikipedia (es);;;;;;NE
 E05101;Drimia hesperia;;Plantas con flor;planta;;;;;;;;;;NE
 F01750;Drimia maritima;Cebolla almorrana desnuda;Plantas con flor;hierba;0.45;1.5;altura;Wikipedia (es);;;;;Perenne;LC
 F01756;Drimiopsis maculata;Cebolleta de El Cabo;Plantas con flor;planta;;;;;;;;;;NE
-F00082;Drosanthemum floribundum;Velo de Magdalena;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Perenne;NE
-F02063;Drosanthemum hispidum;;Plantas con flor;arbusto;0.3;0.6;altura;Wikipedia (es);;;;;Perenne;NE
-F00831;Drusa glandulosa;Pegajosa;Plantas con flor;hierba;;0.6;longitud;Wikipedia (es);;;;;;NE
+F00082;Drosanthemum floribundum;Velo de Magdalena;Plantas con flor;planta;;;;;;;;;Perenne;NE
+F02063;Drosanthemum hispidum;;Plantas con flor;planta;;;;;;;;;Perenne;NE
+F00831;Drusa glandulosa;Pegajosa;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;;NE
 F00259;Dysphania ambrosioides;Pasote;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Anual;NE
 E06936;Dysphania anthelmintica;;Plantas con flor;hierba;;;;;;;;;;NE
-F00262;Dysphania multifida;Cenizo fino;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F00262;Dysphania multifida;Cenizo fino;Plantas con flor;hierba;;0.9;altura;Wikipedia (es);;;;;Perenne;NE
 E11457;Dysphania pumilio;;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;;NE
-F00996;Ecballium elaterium;Pepinillo del diablo;Plantas con flor;hierba;;0.025;altura;Wikipedia (es);;;;;Perenne;NE
+F00996;Ecballium elaterium;Pepinillo del diablo;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01941;Echinochloa colonum;Barba de indio;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Anual;LC
-F01942;Echinochloa crus-galli;Mijo japonés;Plantas con flor;arbusto;0.3;1.2;longitud;Wikipedia (es);;;;;Anual;LC
-F02381;Echinochloa crus-galli subsp. spiralis;;Plantas con flor;arbusto;0.3;1.2;longitud;Wikipedia (es);;;;;Anual;LC
+F01942;Echinochloa crus-galli;Mijo japonés;Plantas con flor;arbusto;0.3;1.2;altura;Wikipedia (es);;;;;Anual;LC
+F02381;Echinochloa crus-galli subsp. spiralis;;Plantas con flor;arbusto;0.3;1.2;altura;Wikipedia (es);;;;;Anual;LC
 E10228;Echinopsis cuzcoensis;;Plantas con flor;árbol;5.0;6.0;altura;Wikipedia (es);;;;;;LC
 E08053;Echinopsis huascha;;Plantas con flor;arbusto;;1.0;altura;Wikipedia (es);;;;;;NE
 E10229;Echinopsis macrogona;;Plantas con flor;arbusto;2.0;3.0;altura;Wikipedia (es);;;;;;NE
@@ -2175,7 +2175,7 @@ F01180;Echium giganteum;Taginaste gigante;Plantas con flor;arbusto;;;;;;;;;Peren
 F01181;Echium handiense;Taginaste de Jandía;Plantas con flor;arbusto;;1.0;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F01182;Echium hierrense;Ajinajo herreño;Plantas con flor;planta;;;;;;;;;;NE
 F02354;Echium horridum;;Plantas con flor;planta;;;;;;;;;;NE
-F01183;Echium lancerottense;Viborina de Lanzarote;Plantas con flor;hierba;;0.025;altura;Wikipedia (es);;;;;Anual;NE
+F01183;Echium lancerottense;Viborina de Lanzarote;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01184;Echium leucophaeum;Taginaste de Anaga;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F02222;Echium onosmifolium;;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01185;Echium onosmifolium subsp. onosmifolium;Taginaste negro;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
@@ -2183,7 +2183,7 @@ F01186;Echium onosmifolium subsp. spectabile;Taginaste de Güí-Güí;Plantas co
 F01199;Echium perezii;Taginaste rosado;Plantas con flor;arbusto;;3.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01187;Echium pininana;Pininana;Plantas con flor;roseta;;3.0;altura;Centinela (claves de identificación);;;;;Perenne;EN
 F01188;Echium plantagineum;Palomina;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;Bienal;NE
-F01189;Echium simplex;Taginaste simple;Plantas con flor;roseta;;;;;;;;;Bienal;NE
+F01189;Echium simplex;Taginaste simple;Plantas con flor;roseta;1.0;3.0;altura;Wikipedia (es);;;;;Bienal;NE
 F02093;Echium strictum;Tajinaste rosado;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01191;Echium strictum subsp. exasperatum;Taginaste chico tinerfeño;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01192;Echium strictum subsp. gomerae;Taginaste chico gomero;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
@@ -2194,7 +2194,7 @@ F01195;Echium triste subsp. nivariense;Viborina triste;Plantas con flor;hierba;;
 F01194;Echium triste subsp. triste;Viborina triste de Gran Canaria;Plantas con flor;hierba;;0.6;altura;Centinela (claves de identificación);;;;;Anual;NE
 F01196;Echium virescens;Taginaste azul de Tenerife;Plantas con flor;palmera;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01197;Echium webbii;Arrebol azul;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
-F01198;Echium wildpretii;Taginaste rojo;Plantas con flor;roseta;;;;;;;;;Bienal;NE
+F01198;Echium wildpretii;Taginaste rojo;Plantas con flor;roseta;1.0;3.0;altura;Wikipedia (es);;;;;Bienal;NE
 E06937;Eclipta prostrata;;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Anual;LC
 F01943;Ehrharta longiflora;Avenilla fina;Plantas con flor;planta;;;;;;;;;;NE
 E09549;Eichhornia crassipes;Jacinto de agua;Plantas con flor;planta;;;;;;;;;;NE
@@ -2212,14 +2212,14 @@ F00065;Ephedra altissima;Tepopote de cumbre;Plantas con flor;planta;;;;;;;;;;LC
 F00066;Ephedra fragilis;Tepopote frágil;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
 F00067;Ephedra nebrodensis;Tepopote fino;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00669;Epilobium angustifolium;Adelfilla de San Antonio;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Perenne;
-E09109;Epilobium glandulosum;;Plantas con flor;hierba;;0.15;longitud;Wikipedia (es);;;;;Perenne;LC
+E09109;Epilobium glandulosum;;Plantas con flor;planta;;;;;;;;;Perenne;LC
 F02098;Epilobium hirsutum;Adelfilla pelosa;Plantas con flor;hierba;;2.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00670;Epilobium obscurum;Adelfilla oscura;Plantas con flor;arbusto;;1.1;altura;Wikipedia (es);;;;;Perenne;NE
+F00670;Epilobium obscurum;Adelfilla oscura;Plantas con flor;planta;;;;;;;;;Perenne;NE
 F00671;Epilobium palustre;Adelfilla palustre;Plantas con flor;hierba;;5.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00672;Epilobium parviflorum;Adelfilla parca;Plantas con flor;arbusto;;0.75;altura;Wikipedia (es);;;;;;LC
-F02085;Epilobium tetragonum;;Plantas con flor;arbusto;;1.1;altura;Wikipedia (es);;;;;Perenne;NE
-F00674;Epilobium tetragonum subsp. lamyi;Adelfilla de Lamy;Plantas con flor;arbusto;;1.1;altura;Wikipedia (es);;;;;Perenne;NE
-F00673;Epilobium tetragonum subsp. tetragonum;Adelfilla de rizos;Plantas con flor;arbusto;;1.1;altura;Wikipedia (es);;;;;Perenne;NE
+F00672;Epilobium parviflorum;Adelfilla parca;Plantas con flor;planta;;;;;;;;;;LC
+F02085;Epilobium tetragonum;;Plantas con flor;planta;;;;;;;;;Perenne;NE
+F00674;Epilobium tetragonum subsp. lamyi;Adelfilla de Lamy;Plantas con flor;planta;;;;;;;;;Perenne;NE
+F00673;Epilobium tetragonum subsp. tetragonum;Adelfilla de rizos;Plantas con flor;planta;;;;;;;;;Perenne;NE
 F01949;Eragrostis barrelieri;Aceitilla bermeja;Plantas con flor;planta;;;;;;;;;;NE
 F02421;Eragrostis barrelieri subsp. pygmaea;;Plantas con flor;planta;;;;;;;;;;NE
 E09446;Eragrostis papposa;;Plantas con flor;planta;;;;;;;;;;NE
@@ -2228,7 +2228,7 @@ F02382;Eragrostis virescens;;Plantas con flor;planta;;;;;;;;;;NE
 F01032;Erica canariensis;Brezo;Plantas con flor;árbol;;9.0;altura;Wikipedia (es);;;;;Perenne;NE
 F02428;Erica platycodon;;Plantas con flor;arbusto;4.0;6.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01033;Erica platycodon subsp. platycodon;Tejo;Plantas con flor;arbusto;4.0;6.0;altura;Wikipedia (es);;;;;Perenne;NE
-F01531;Erigeron bonariensis;Simonillo;Plantas con flor;arbusto;;5.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01531;Erigeron bonariensis;Simonillo;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01547;Erigeron calderae;Pompón de Las Cañadas;Plantas con flor;hierba;;0.2;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01532;Erigeron canadensis;Simonillo florido;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01534;Erigeron gouanii;;Plantas con flor;planta;;;;;;;;;;
@@ -2238,7 +2238,7 @@ F00440;Eriobotrya japonica;Nisperero;Plantas con flor;árbol;6.0;8.0;altura;Wiki
 F00717;Erodium botrys;Alfilerillo mayor;Plantas con flor;roseta;0.1;0.9;altura;Wikipedia (es);;;;;;NE
 F00718;Erodium brachycarpum;Alfilerillo medio;Plantas con flor;planta;;;;;;;;;;NE
 F02127;Erodium chium;Alfilerillo común;Plantas con flor;planta;;;;;;;;;;NE
-F00721;Erodium ciconium;Alfilerillo agrelleta;Plantas con flor;hierba;;0.01;longitud;Wikipedia (es);;;;;Perenne;NE
+F00721;Erodium ciconium;Alfilerillo agrelleta;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F02129;Erodium cicutarium;Alfilenejo manso;Plantas con flor;hierba;0.05;0.6;altura;Wikipedia (es);;;;;;NE
 F00725;Erodium laciniatum;Alfilerillo picado;Plantas con flor;planta;;;;;;;;;;NE
 F00726;Erodium malacoides;Alfilerillo cigüeña malva;Plantas con flor;hierba;;;;;;;;;Perenne;NE
@@ -2248,7 +2248,7 @@ F00729;Erodium neuradifolium;Alfilerillo sahariano;Plantas con flor;planta;;;;;;
 F02304;Erodium touchyanum;;Plantas con flor;planta;;;;;;;;;;NE
 E06823;Erophila verna;;Plantas con flor;roseta;;;;;;;;;;
 F00936;Eruca vesicaria;Calacera;Plantas con flor;hierba;0.2;1.0;altura;Wikipedia (es);;;;;Anual;NE
-F00937;Erucastrum canariense;Relinchón canario;Plantas con flor;hierba;0.008;0.009;altura;Wikipedia (es);;;;;;NE
+F00937;Erucastrum canariense;Relinchón canario;Plantas con flor;planta;;;;;;;;;;NE
 F00938;Erucastrum cardaminoides;Relinchón menor;Plantas con flor;planta;;;;;;;;;;NE
 F00940;Erysimum scoparium;Alhelí de cumbre;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00939;Erysimum virescens;Alhelí de medianía;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
@@ -2265,7 +2265,7 @@ E09385;Eucalyptus cladocalyx;;Plantas con flor;árbol;;35.0;altura;Wikipedia (es
 E08217;Eucalyptus conferruminata;;Plantas con flor;árbol;;;;;;;;;Perenne;NT
 E09105;Eucalyptus conferruminata recherche;;Plantas con flor;árbol;;;;;;;;;Perenne;NT
 E08218;Eucalyptus cornuta;;Plantas con flor;árbol;2.0;25.0;altura;Wikipedia (es);;;;;Perenne;NT
-E09106;Eucalyptus diversicolor;;Plantas con flor;árbol;0.09;0.12;longitud;Wikipedia (es);;;;;Perenne;LC
+E09106;Eucalyptus diversicolor;;Plantas con flor;árbol;;;;;;;;;Perenne;LC
 E08219;Eucalyptus dwyeri;;Plantas con flor;planta;;;;;;;;;;LC
 E10542;Eucalyptus erythrocorys;;Plantas con flor;planta;;;;;;;;;;LC
 E10538;Eucalyptus fibrosa;;Plantas con flor;árbol;;30.0;altura;Wikipedia (es);;;;;Perenne;LC
@@ -2295,8 +2295,8 @@ F00763;Euphorbia bourgaeana;Tabaiba amarilla de Tenerife;Plantas con flor;arbust
 F00764;Euphorbia bravoana;Tabaiba de Bravo;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00765;Euphorbia calyptrata;;Plantas con flor;planta;;;;;;;;;;NE
 F00766;Euphorbia canariensis;Cardón;Plantas con flor;cactiforme;;;;;;;;;Perenne;LC
-F00767;Euphorbia chamaesyce;Chirrigüela cana;Plantas con flor;hierba;;;;;;;;;;NE
-F00768;Euphorbia cyathophora;;Plantas con flor;hierba;;0.5;longitud;Wikipedia (es);;;;;Anual;LC
+F00767;Euphorbia chamaesyce;Chirrigüela cana;Plantas con flor;hierba;;0.45;altura;Wikipedia (es);;;;;;NE
+F00768;Euphorbia cyathophora;;Plantas con flor;hierba;;;;;;;;;Anual;LC
 F00769;Euphorbia exigua;Lechetrezna enana;Plantas con flor;arbusto;;0.25;altura;Wikipedia (es);;;;;;NE
 F00770;Euphorbia granulata;Lechetrezna golondrina;Plantas con flor;planta;;;;;;;;;;NE
 F00771;Euphorbia handiensis;Cardón de Jandía;Plantas con flor;cactiforme;;1.0;altura;Centinela (claves de identificación);;;;;Perenne;VU
@@ -2315,10 +2315,10 @@ F00779;Euphorbia mellifera;Tabaiba de monteverde;Plantas con flor;árbol;;15.0;a
 F00780;Euphorbia milii;Espina de Cristo;Plantas con flor;roseta;;1.5;altura;Wikipedia (es);;;;;Perenne;LC
 F00781;Euphorbia nutans;Chirigüela nutante;Plantas con flor;hierba;;;;;;;;;Anual;LC
 F00782;Euphorbia paralias;Lechetrezna de playa;Plantas con flor;hierba;;0.75;altura;Wikipedia (es);;;;;Perenne;NE
-F02286;Euphorbia peplis;Chirrigüela vestida;Plantas con flor;hierba;0.1;0.2;longitud;Wikipedia (es);;;;;;NE
-F00785;Euphorbia peplus;Lechetrezna tornagallo;Plantas con flor;hierba;;0.25;longitud;Wikipedia (es);;;;;;NE
+F02286;Euphorbia peplis;Chirrigüela vestida;Plantas con flor;hierba;0.1;0.2;altura;Wikipedia (es);;;;;;NE
+F00785;Euphorbia peplus;Lechetrezna tornagallo;Plantas con flor;hierba;;;;;;;;;;NE
 F00786;Euphorbia platyphyllos;Lechetrezna;Plantas con flor;hierba;;0.8;altura;Wikipedia (es);;;;;Anual;NE
-F00787;Euphorbia prostrata;Chirrigüela postrada;Plantas con flor;hierba;;0.2;longitud;Wikipedia (es);;;;;Anual;NE
+F00787;Euphorbia prostrata;Chirrigüela postrada;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00788;Euphorbia pterococca;;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;Anual;NE
 F01392;Euphorbia regis-jubae;Tabaiba amarga;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00790;Euphorbia scordifolia;;Plantas con flor;planta;;;;;;;;;;NE
@@ -2335,24 +2335,24 @@ F00284;Fallopia convolvulus;Falsa corregüela;Plantas con flor;planta;;;;;;;;;;N
 F01600;Farfugium japonicum;Capa de la reina;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Perenne;NE
 F01797;Ferraria crispa;Lirio araña;Plantas con flor;planta;;;;;;;;;;NE
 E06850;Ferula arnoldiana;;Plantas con flor;planta;;;;;;;;;;NE
-F00832;Ferula lancerotensis;Tajasnoyo;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F00833;Ferula latipinna;Cañaheja palmera;Plantas con flor;hierba;;1.0;longitud;Centinela (claves de identificación);;;;;;VU
+F00832;Ferula lancerotensis;Tajasnoyo;Plantas con flor;hierba;;3.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
+F00833;Ferula latipinna;Cañaheja palmera;Plantas con flor;hierba;;;;;;;;;;VU
 F00834;Ferula linkii;Cañaheja;Plantas con flor;planta;;;;;;;;;;LC
 F01951;Festuca agustinii;Cerrillo de risco;Plantas con flor;planta;;;;;;;;;;NE
 F02057;Festuca myuros;Pelillo burro;Plantas con flor;hierba;;;;;;;;;Anual;NE
-F00446;Festuca rubra;Cerrillo rojo;Plantas con flor;hierba;;0.006;altura;Wikipedia (es);;;;;;NE
-F00118;Ficaria verna;Ranúnculo de almorrana;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F00446;Festuca rubra;Cerrillo rojo;Plantas con flor;hierba;;;;;;;;;;NE
+F00118;Ficaria verna;Ranúnculo de almorrana;Plantas con flor;hierba;0.03;0.4;altura;Wikipedia (es);;;;;Perenne;NE
 F00331;Ficus carica;Higuera;Plantas con flor;árbol;7.0;8.0;altura;Wikipedia (es);;;;;Perenne;LC
 E06835;Ficus lyrata;;Plantas con flor;árbol;12.0;15.0;altura;Wikipedia (es);;;;;Perenne;LC
 E06785;Ficus microcarpa;;Plantas con flor;árbol;;15.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00332;Ficus pumila;Ficus trepador;Plantas con flor;planta;;;;;;;;;Perenne;NE
-F01601;Filago arvensis;;Plantas con flor;hierba;0.005;0.006;longitud;Wikipedia (es);;;;;Anual;NE
+F01601;Filago arvensis;;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02132;Filago clementei;;Plantas con flor;planta;;;;;;;;;;NE
 F01592;Filago desertorum;Yesquerilla rastrera;Plantas con flor;planta;;;;;;;;;;NE
 F01602;Filago gallica;Yesquerillla de la fiebre;Plantas con flor;planta;;;;;;;;;;NE
 F01593;Filago germanica;Yesquerilla lanosa;Plantas con flor;planta;;;;;;;;;;NE
-F02228;Filago lutescens;;Plantas con flor;planta;;;;;;;;;;NE
-F01595;Filago lutescens subsp. atlantica;Yesquerilla amarilla;Plantas con flor;planta;;;;;;;;;;NE
+F02228;Filago lutescens;;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;;NE
+F01595;Filago lutescens subsp. atlantica;Yesquerilla amarilla;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;;NE
 F01603;Filago minima;Tacillas de algodón;Plantas con flor;planta;;;;;;;;;;NE
 F01591;Filago pygmaea;Blanquilla mansa;Plantas con flor;planta;;;;;;;;;;NE
 F01594;Filago pyramidata;Yesquerilla tiesa;Plantas con flor;hierba;0.1;0.25;altura;Wikipedia (es);;;;;;NE
@@ -2366,7 +2366,7 @@ F02124;Frankenia ericifolia;Matilla parda;Plantas con flor;planta;;;;;;;;;;NE
 F00897;Frankenia ericifolia subsp. ericifolia;Tomillo marino común;Plantas con flor;planta;;;;;;;;;;NE
 F00898;Frankenia ericifolia subsp. latifolia;Tomillo marino frondoso;Plantas con flor;planta;;;;;;;;;;NE
 F00900;Frankenia pulverulenta;Tomillo marino herbáceo;Plantas con flor;planta;;;;;;;;;;NE
-F02059;Freesia refracta;Córdula;Plantas con flor;hierba;0.2;0.45;altura;Wikipedia (es);;;;;Perenne;NE
+F02059;Freesia refracta;Córdula;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00675;Fuchsia boliviana;Fucsia de Bolivia;Plantas con flor;árbol;;3.5;altura;Wikipedia (es);;;;;Perenne;LC
 F00676;Fuchsia coccinea;Fucsia roja de Brasil;Plantas con flor;planta;;;;;;;;;;NE
 F00142;Fumaria agraria;Mellorina campestre;Plantas con flor;trepadora;;3.0;altura;Wikipedia (es);;;;;;NE
@@ -2385,8 +2385,8 @@ E09144;Furcraea hexapetala;;Plantas con flor;planta;;;;;;;;;;LC
 E09134;Furcraea selloana;Falso ágave;Plantas con flor;planta;;;;;;;;;;NE
 F01549;Galactites tomentosus;Cardo común;Plantas con flor;planta;;;;;;;;;;NE
 F01550;Galinsoga parviflora;Soldado galante;Plantas con flor;hierba;0.2;0.7;altura;Wikipedia (es);;;;;Anual;NE
-F01551;Galinsoga quadriradiata;;Plantas con flor;hierba;0.01;0.02;longitud;Wikipedia (es);;;;;Anual;NE
-F01079;Galium aparine;Raspilla cuajaleches;Plantas con flor;hierba;;2.0;longitud;Wikipedia (es);;;;;Anual;NE
+F01551;Galinsoga quadriradiata;;Plantas con flor;hierba;;;;;;;;;Anual;NE
+F01079;Galium aparine;Raspilla cuajaleches;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01080;Galium elongatum;Raspilla larga;Plantas con flor;planta;;;;;;;;;;NE
 F01081;Galium geminiflorum;Raspilla gemela;Plantas con flor;planta;;;;;;;;;;NE
 F01082;Galium murale;Raspilla menuda;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;Anual;NE
@@ -2394,7 +2394,7 @@ F01083;Galium parisiense;Raspilla de París;Plantas con flor;hierba;;;;;;;;;Anua
 F01084;Galium scabrum;Raspilla de sombra;Plantas con flor;hierba;0.25;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F01085;Galium setaceum;Raspilla sedosa;Plantas con flor;planta;;;;;;;;;;NE
 F01086;Galium spurium;Raspilla bastarda;Plantas con flor;hierba;;;;;;;;;;NE
-F01087;Galium tricornutum;Raspilla tricorne;Plantas con flor;trepadora;;0.35;longitud;Wikipedia (es);;;;;Anual;NE
+F01087;Galium tricornutum;Raspilla tricorne;Plantas con flor;trepadora;;0.35;altura;Wikipedia (es);;;;;Anual;NE
 F01088;Galium verrucosum;Raspilla verrucosa;Plantas con flor;planta;;;;;;;;;;NE
 F02125;Gamochaeta antillana;;Plantas con flor;planta;;;;;;;;;;NE
 F01599;Gamochaeta pensylvanica;Borriza americana;Plantas con flor;planta;;;;;;;;;;NE
@@ -2409,7 +2409,7 @@ F00733;Geranium molle;Patagallo blando;Plantas con flor;hierba;;0.4;altura;Wikip
 F00734;Geranium purpureum;Patagallo púrpura;Plantas con flor;planta;;;;;;;;;;NE
 F00731;Geranium reuteri;Patagallo canario;Plantas con flor;planta;;;;;;;;;;NE
 F00735;Geranium robertianum;Patagallo de Roberto;Plantas con flor;hierba;0.1;0.45;altura;Wikipedia (es);;;;;Anual;NE
-F00736;Geranium rotundifolium;Patagallo redondo;Plantas con flor;planta;;;;;;;;;;NE
+F00736;Geranium rotundifolium;Patagallo redondo;Plantas con flor;hierba;0.1;0.3;altura;Wikipedia (es);;;;;;NE
 F01712;Geropogon hybridus;;Plantas con flor;hierba;0.1;0.8;altura;Wikipedia (es);;;;;Anual;NE
 F00337;Gesnouinia arborea;Estrelladera;Plantas con flor;planta;;;;;;;;;;EN
 F01798;Gladiolus italicus;Gladiolo salvaje;Plantas con flor;planta;;;;;;;;;Perenne;LC
@@ -2418,17 +2418,17 @@ F00133;Glaucium flavum;Amapola cornuda pálida;Plantas con flor;arbusto;0.1;1.0;
 F01526;Glebionis coronaria;Ojo de buey;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Anual;NE
 F01527;Glebionis segetum;;Plantas con flor;hierba;;0.8;altura;Wikipedia (es);;;;;Perenne;NE
 F00473;Gleditsia triacanthos;Acacia de tres espinas;Plantas con flor;árbol;20.0;30.0;altura;Wikipedia (es);;;;;Perenne;LC
-F02297;Glinus lotoides;;Plantas con flor;hierba;;0.35;longitud;Wikipedia (es);;;;;Anual;LC
+F02297;Glinus lotoides;;Plantas con flor;hierba;;0.35;altura;Wikipedia (es);;;;;Anual;LC
 F01250;Globularia ascanii;Mosquera de Tamadaba;Plantas con flor;arbusto;;0.4;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F01251;Globularia salicina;Mosquera común;Plantas con flor;planta;;;;;;;;;;LC
-F01252;Globularia sarcophylla;Mosquera de Tirajana;Plantas con flor;arbusto;0.5;2.0;longitud;Centinela (claves de identificación);;;;;Perenne;VU
+F01252;Globularia sarcophylla;Mosquera de Tirajana;Plantas con flor;arbusto;0.02;0.07;altura;Centinela (claves de identificación);;;;;Perenne;VU
 F01955;Glyceria declinata;Triguillo mamá;Plantas con flor;planta;;;;;;;;;;NE
 F00802;Gnidia polystachya;;Plantas con flor;planta;;;;;;;;;;NE
 F01076;Gomphocarpus fruticosus;Mata de la seda;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01552;Gonospermum canariense;Faro;Plantas con flor;arbusto;;2.5;altura;Wikipedia (es);;;;;Perenne;NE
 F01698;Gonospermum ferulaceum;Magarza pegajosa;Plantas con flor;planta;;;;;;;;;;NE
-F01554;Gonospermum fruticosum;Corona de la reina;Plantas con flor;arbusto;;0.005;altura;Wikipedia (es);;;;;Perenne;NE
-F01555;Gonospermum gomerae;Corona gomera;Plantas con flor;arbusto;0.004;0.005;altura;Wikipedia (es);;;;;Perenne;NE
+F01554;Gonospermum fruticosum;Corona de la reina;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
+F01555;Gonospermum gomerae;Corona gomera;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01699;Gonospermum oshanahanii;Magarza de Guayedra;Plantas con flor;arbusto;0.5;1.0;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F01701;Gonospermum ptarmiciflorum;Margarita plateada;Plantas con flor;arbusto;;0.8;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01604;Gonospermum revolutum;Margarita de Lugo;Plantas con flor;planta;;;;;;;;;;NE
@@ -2441,7 +2441,7 @@ F01556;Guizotia abyssinica;;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00162;Gymnocarpos decandrus;Matocosta milengrana;Plantas con flor;planta;;;;;;;;;;NE
 F00196;Gymnocarpos sclerocephalus;;Plantas con flor;planta;;;;;;;;;;NE
 F00743;Gymnosporia cassinoides;Peralillo;Plantas con flor;árbol;;;;;;;;;Perenne;NT
-F00744;Gymnosporia cryptopetala;Peralillo espino;Plantas con flor;arbusto;;;;;;;;;;NE
+F00744;Gymnosporia cryptopetala;Peralillo espino;Plantas con flor;arbusto;;1.5;altura;Centinela (claves de identificación);;;;;;NE
 F00163;Gypsophila elegans;Albada;Plantas con flor;hierba;0.1;0.6;altura;Wikipedia (es);;;;;Anual;NE
 E08048;Haageocereus kagenekii;;Plantas con flor;planta;;;;;;;;;;LC
 F01807;Habenaria tridactylites;Orquídea de tres dedos;Plantas con flor;planta;;;;;;;;;;LC
@@ -2546,10 +2546,10 @@ F01029;Ilex perado subsp. platyphylla;Naranjo salvaje;Plantas con flor;árbol;;;
 F00168;Illecebrum verticillatum;;Plantas con flor;hierba;0.05;0.3;altura;Wikipedia (es);;;;;Anual;NE
 F00741;Impatiens sodenii;Balsamina;Plantas con flor;planta;;;;;;;;;;NE
 F00742;Impatiens walleriana;Periquito;Plantas con flor;hierba;0.15;0.6;altura;Wikipedia (es);;;;;Perenne;NE
-F01967;Imperata cylindrica;Cisca;Plantas con flor;hierba;0.2;1.2;longitud;Wikipedia (es);;;;;Perenne;NE
+F01967;Imperata cylindrica;Cisca;Plantas con flor;hierba;0.2;1.2;altura;Wikipedia (es);;;;;Perenne;NE
 E11379;Inaguochloa pajonalensis;Pajón de Inagua;Plantas con flor;planta;;;;;;;;;;
 F02293;Ipomoea arenaria;;Plantas con flor;planta;;;;;;;;;;
-F01154;Ipomoea batatas;Batatera;Plantas con flor;trepadora;0.05;0.1;longitud;Wikipedia (es);;;;;Perenne;DD
+F01154;Ipomoea batatas;Batatera;Plantas con flor;trepadora;;;;;;;;;Perenne;DD
 F01155;Ipomoea cairica;Campanilla palmeada;Plantas con flor;trepadora;;;;;;;;;Perenne;LC
 F01156;Ipomoea hederacea;;Plantas con flor;planta;;;;;;;;;;NE
 F01157;Ipomoea indica;Campanilla morada;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
@@ -2557,7 +2557,7 @@ F02110;Ipomoea pes-caprae;Batatilla de playa;Plantas con flor;trepadora;;;;;;;;;
 F01158;Ipomoea purpurea;Campanilla morada;Plantas con flor;hierba;;6.0;altura;Wikipedia (es);;;;;Anual;NE
 F01799;Iris albicans;Lirio blanco;Plantas con flor;hierba;;0.45;altura;Wikipedia (es);;;;;;NE
 F01800;Iris foetidissima;Lirio hediondo;Plantas con flor;planta;;;;;;;;;Perenne;NE
-F01801;Iris germanica;Lirio azul;Plantas con flor;hierba;;0.4;longitud;Wikipedia (es);;;;;Perenne;NE
+F01801;Iris germanica;Lirio azul;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01802;Iris pallida;Lirio pálido;Plantas con flor;planta;;;;;;;;;;NE
 F00944;Isatis tinctoria;Hierba pastel;Plantas con flor;hierba;0.3;1.2;altura;Wikipedia (es);;;;;Bienal;NE
 F01854;Isolepis cernua;Juncia simple;Plantas con flor;planta;;;;;;;;;;LC
@@ -2575,7 +2575,7 @@ F01819;Juncus bufonius;Junco de ranas;Plantas con flor;hierba;;;;;;;;;;LC
 F01820;Juncus capitatus;Junco cabezón;Plantas con flor;hierba;;0.1;altura;Wikipedia (es);;;;;Anual;NE
 F01821;Juncus effusus;Junco fino;Plantas con flor;hierba;0.3;1.0;altura;Wikipedia (es);;;;;;LC
 F01822;Juncus inflexus;Junco azul;Plantas con flor;planta;;;;;;;;;;LC
-F01823;Juncus maritimus;Junco marino;Plantas con flor;arbusto;;1.0;longitud;Wikipedia (es);;;;;;NE
+F01823;Juncus maritimus;Junco marino;Plantas con flor;arbusto;;1.0;altura;Wikipedia (es);;;;;;NE
 F02356;Juniperus cedrus;;Plantas con flor;palmera;5.0;20.0;altura;Wikipedia (es);;;;;Perenne;EN
 F00064;Juniperus cedrus subsp. cedrus;Cedro canario;Plantas con flor;árbol;;10.0;altura;Centinela (claves de identificación);;;;;Perenne;
 F02231;Juniperus turbinata;;Plantas con flor;árbol;;8.0;altura;Wikipedia (es);;;;;Perenne;NT
@@ -2600,17 +2600,17 @@ F01224;Kickxia spuria subsp. spuria;;Plantas con flor;planta;;;;;;;;;;NE
 F01577;Kleinia aizoides;;Plantas con flor;planta;;;;;;;;;;NE
 F01578;Kleinia neriifolia;Verode;Plantas con flor;arbusto;;1.5;altura;Wikipedia (es);;;;;Perenne;LC
 F00822;Krubera peregrina;Piojopuerco;Plantas con flor;planta;;;;;;;;;;NE
-E06938;Lablab purpureus;;Plantas con flor;árbol;;6.0;longitud;Wikipedia (es);;;;;;NE
+E06938;Lablab purpureus;;Plantas con flor;árbol;;6.0;altura;Wikipedia (es);;;;;;NE
 F01579;Lactuca palmensis;Lechuga palmera;Plantas con flor;planta;;;;;;;;;;LC
 F01580;Lactuca sativa;Lechuga común;Plantas con flor;hierba;0.15;0.3;altura;Wikipedia (es);;;;;Anual;NE
 F01581;Lactuca serriola;Escarola;Plantas con flor;hierba;;;;;;;;;Bienal;NE
-F01582;Lactuca viminea;Lechuga de burro;Plantas con flor;hierba;;0.017;longitud;Wikipedia (es);;;;;Bienal;NE
-E07799;Lactuca viminea subsp. ramosissima;;Plantas con flor;hierba;;0.017;longitud;Wikipedia (es);;;;;Bienal;NE
+F01582;Lactuca viminea;Lechuga de burro;Plantas con flor;hierba;;0.1;altura;Wikipedia (es);;;;;Bienal;NE
+E07799;Lactuca viminea subsp. ramosissima;;Plantas con flor;hierba;;0.1;altura;Wikipedia (es);;;;;Bienal;NE
 F02102;Lactucosonchus beltraniae;Lechuguilla de Tijarafe;Plantas con flor;planta;;;;;;;;;;NE
 F01576;Lactucosonchus webbii;Lechuguilla de Webb;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 E06828;Lagenaria siceraria;;Plantas con flor;trepadora;;9.0;altura;Wikipedia (es);;;;;Anual;NE
 F01968;Lagurus ovatus;Rabillo de conejo;Plantas con flor;planta;;;;;;;;;;NE
-F01969;Lamarckia aurea;Cepillito dorado;Plantas con flor;hierba;0.006;0.01;longitud;Wikipedia (es);;;;;Anual;NE
+F01969;Lamarckia aurea;Cepillito dorado;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01303;Lamium amplexicaule;Lamio común;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;;NE
 F01305;Lamium purpureum;Lamio púrpura;Plantas con flor;hierba;;;;;;;;;Anual;NE
 E07800;Landoltia punctata;;Plantas con flor;planta;;;;;;;;;;NE
@@ -2637,14 +2637,14 @@ F01587;Launaea nudicaulis;Aulaguilla;Plantas con flor;planta;;;;;;;;;;NE
 F00106;Laurus novocanariensis;Loro;Plantas con flor;árbol;;20.0;altura;Wikipedia (es);;;;;Perenne;NE
 F02338;Lavandula bramwellii;;Plantas con flor;planta;;;;;;;;;;NE
 F01306;Lavandula buchii;Matorrisco tinerfeño;Plantas con flor;planta;;;;;;;;;;NE
-E09113;Lavandula canariensis;Matorrisco común;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
-E09110;Lavandula canariensis subsp. canariae;;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
-F01309;Lavandula canariensis subsp. canariensis;;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
-E09114;Lavandula canariensis subsp. fuerteventurae;;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
-E09112;Lavandula canariensis subsp. gomerensis;;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
-E09111;Lavandula canariensis subsp. hierrensis;;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
-E09115;Lavandula canariensis subsp. lancerottensis;;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
-E09116;Lavandula canariensis subsp. palmensis;;Plantas con flor;hierba;0.015;0.06;longitud;Wikipedia (es);;;;;;NE
+E09113;Lavandula canariensis;Matorrisco común;Plantas con flor;planta;;;;;;;;;;NE
+E09110;Lavandula canariensis subsp. canariae;;Plantas con flor;planta;;;;;;;;;;NE
+F01309;Lavandula canariensis subsp. canariensis;;Plantas con flor;planta;;;;;;;;;;NE
+E09114;Lavandula canariensis subsp. fuerteventurae;;Plantas con flor;planta;;;;;;;;;;NE
+E09112;Lavandula canariensis subsp. gomerensis;;Plantas con flor;planta;;;;;;;;;;NE
+E09111;Lavandula canariensis subsp. hierrensis;;Plantas con flor;planta;;;;;;;;;;NE
+E09115;Lavandula canariensis subsp. lancerottensis;;Plantas con flor;planta;;;;;;;;;;NE
+E09116;Lavandula canariensis subsp. palmensis;;Plantas con flor;planta;;;;;;;;;;NE
 F01307;Lavandula dentata;Alhucema rizada;Plantas con flor;hierba;0.3;0.45;altura;Wikipedia (es);;;;;Perenne;NE
 F01308;Lavandula minutolii;Matorrisco de Gran Canaria;Plantas con flor;planta;;;;;;;;;;NE
 F01312;Lavandula pedunculata;Cantueso pendunculado;Plantas con flor;planta;;;;;;;;;;NE
@@ -2657,15 +2657,15 @@ F01006;Lavatera cretica;Malva bastarda;Plantas con flor;hierba;0.2;2.0;altura;Wi
 F01007;Lavatera mauritanica;Malva mora;Plantas con flor;planta;;;;;;;;;;NE
 F01375;Legousia falcata;Campanita de hoz;Plantas con flor;arbusto;;0.7;altura;Wikipedia (es);;;;;;NE
 F01376;Legousia hybrida;Campanilla bastarda;Plantas con flor;hierba;;0.35;altura;Wikipedia (es);;;;;Anual;NE
-F01872;Lemna gibba;Lenteja de agua petuda;Plantas con flor;hierba;0.002;0.005;longitud;Wikipedia (es);;;;;;LC
+F01872;Lemna gibba;Lenteja de agua petuda;Plantas con flor;planta;;;;;;;;;;LC
 F01873;Lemna minor;Lenteja de agua;Plantas con flor;planta;;;;;;;;;;LC
 E06939;Lemna minuta;;Plantas con flor;planta;;;;;;;;;;LC
-F00515;Lens culinaris;Lenteja;Plantas con flor;hierba;;;;;;;;;Anual;NE
+F00515;Lens culinaris;Lenteja;Plantas con flor;hierba;0.3;0.4;altura;Wikipedia (es);;;;;Anual;NE
 F00516;Lens nigricans;Lenteja negra;Plantas con flor;planta;;;;;;;;;;NE
 F01313;Leonotis nepetifolia;Oreja de león;Plantas con flor;arbusto;;3.0;altura;Wikipedia (es);;;;;;NE
 F00945;Lepidium bonariense;Mastuerzo argentino;Plantas con flor;hierba;0.2;0.7;altura;Wikipedia (es);;;;;Anual;NE
 F00917;Lepidium coronopus;Servellina verrugosa;Plantas con flor;planta;;;;;;;;;;NE
-F00916;Lepidium didymum;Servellina;Plantas con flor;hierba;;0.4;longitud;Wikipedia (es);;;;;Bienal;NE
+F00916;Lepidium didymum;Servellina;Plantas con flor;hierba;;;;;;;;;Bienal;NE
 F00946;Lepidium sativum;Martuerzo;Plantas con flor;hierba;0.3;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F00947;Lepidium virginicum;Mastuerzo americano;Plantas con flor;hierba;0.1;0.5;altura;Wikipedia (es);;;;;Bienal;NE
 F00462;Leucaena leucocephala;Aromo blanco;Plantas con flor;árbol;2.0;6.0;altura;Wikipedia (es);;;;;Perenne;NE
@@ -2700,7 +2700,7 @@ F00318;Limonium sventenii;Siempreviva azul;Plantas con flor;arbusto;0.5;0.7;altu
 F00319;Limonium thouinii;Siempreviva celeste;Plantas con flor;planta;;;;;;;;;;NE
 F00479;Limonium tuberculatum;Siempreviva espinocha;Plantas con flor;arbusto;;0.8;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F02322;Limonium vigaroense;Siempreviva de Inagua;Plantas con flor;arbusto;;0.8;altura;Centinela (claves de identificación);;;;;Perenne;NE
-F01225;Linaria arvensis;Linaria de campo;Plantas con flor;hierba;0.08;0.14;altura;Wikipedia (es);;;;;;NE
+F01225;Linaria arvensis;Linaria de campo;Plantas con flor;hierba;;;;;;;;;;NE
 F00412;Linaria micrantha;Linaria de flor chica;Plantas con flor;planta;;;;;;;;;;NE
 F01226;Linaria simplex;Linaria simple;Plantas con flor;planta;;;;;;;;;;NE
 F01227;Linaria spartea;Linaria espartera;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Anual;NE
@@ -2743,7 +2743,7 @@ F01038;Lonicera nitida;Madreselva lustrosa;Plantas con flor;planta;;;;;;;;;;NE
 E08387;Lophocereus schottii;;Plantas con flor;árbol;1.0;3.0;altura;Wikipedia (es);;;;;;LC
 F00517;Lotus angustissimus;Corazoncillo fino;Plantas con flor;planta;;;;;;;;;;NE
 F02120;Lotus arinagensis;Corazoncillo de Arinaga;Plantas con flor;hierba;0.3;0.5;altura;Centinela (claves de identificación);;;;;Perenne;NE
-F00518;Lotus berthelotii;Pico paloma;Plantas con flor;arbusto;0.01;0.02;longitud;Wikipedia (es);;;;;Perenne;NE
+F00518;Lotus berthelotii;Pico paloma;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 E11400;Lotus brezalis;;Plantas con flor;planta;;;;;;;;;;
 F00519;Lotus callis-viridis;Corazoncillo de Andén Verde;Plantas con flor;hierba;;0.4;altura;Centinela (claves de identificación);;;;;Perenne;EN
 F02372;Lotus campylocladus;Corazoncillo de Tenerife;Plantas con flor;planta;;;;;;;;;;NE
@@ -2768,7 +2768,7 @@ F00535;Lotus ornithopodioides;Cuernecillo;Plantas con flor;planta;;;;;;;;;;NE
 F00536;Lotus parviflorus;Cuernecillo de flor chica;Plantas con flor;planta;;;;;;;;;;NE
 F00540;Lotus pedunculatus;Cuernecillo grande;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Perenne;NE
 E11398;Lotus pseudodumetorum;;Plantas con flor;planta;;;;;;;;;;
-F00537;Lotus pyranthus;Pico de fuego;Plantas con flor;arbusto;;1.0;longitud;Centinela (claves de identificación);;;;;Perenne;CR
+F00537;Lotus pyranthus;Pico de fuego;Plantas con flor;planta;;;;;;;;;Perenne;CR
 E11399;Lotus reyes-betancorti;;Plantas con flor;planta;;;;;;;;;;
 F02371;Lotus sessilifolius;Corazoncillo canario;Plantas con flor;planta;;;;;;;;;;NE
 F00538;Lotus sessilifolius subsp. sessilifolius;Corazoncillo;Plantas con flor;planta;;;;;;;;;;NE
@@ -2830,7 +2830,7 @@ F00547;Medicago intertexta subsp. intertexta;;Plantas con flor;hierba;0.3;0.7;al
 F00548;Medicago laciniata;Carretón de hoja partida;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Anual;NE
 F00549;Medicago littoralis;Carretón caíl;Plantas con flor;planta;;;;;;;;;;LC
 F00550;Medicago lupulina;Alfalfa lupulina;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;;NE
-F00551;Medicago marina;Alfalfa común;Plantas con flor;hierba;0.015;0.02;altura;Wikipedia (es);;;;;Perenne;NE
+F00551;Medicago marina;Alfalfa común;Plantas con flor;hierba;0.1;0.5;altura;Wikipedia (es);;;;;Perenne;NE
 F00552;Medicago minima;Carretón menor;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00553;Medicago orbicularis;Carretón torteruelo;Plantas con flor;hierba;0.1;0.8;altura;Wikipedia (es);;;;;Anual;NE
 F00554;Medicago polymorpha;Carretón común;Plantas con flor;hierba;;;;;;;;;Anual;NE
@@ -2853,7 +2853,7 @@ F00563;Melilotus sulcatus;Meliloto real;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01983;Melinis minutiflora;Capín melado;Plantas con flor;hierba;;1.5;altura;Wikipedia (es);;;;;Anual;NE
 F02241;Melinis repens;;Plantas con flor;planta;;;;;;;;;;NE
 F01984;Melinis repens subsp. repens;Yerbarrubí;Plantas con flor;planta;;;;;;;;;;NE
-F01315;Melissa officinalis;Toronjil;Plantas con flor;hierba;;0.07;altura;Wikipedia (es);;;;;Perenne;NE
+F01315;Melissa officinalis;Toronjil;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01747;Melomphis arabica;Lágrimas de San Pedro;Plantas con flor;planta;;;;;;;;;;NE
 E09450;Mentha aquatica;;Plantas con flor;hierba;;0.9;altura;Wikipedia (es);;;;;Perenne;LC
 F01316;Mentha arvensis;Yerbabuena de burro;Plantas con flor;hierba;0.1;0.6;altura;Wikipedia (es);;;;;Perenne;LC
@@ -2861,11 +2861,11 @@ F01317;Mentha longifolia;Mastranto;Plantas con flor;hierba;0.4;1.2;altura;Wikipe
 F01318;Mentha pulegium;Menta poleo;Plantas con flor;hierba;0.3;0.4;altura;Wikipedia (es);;;;;Perenne;LC
 F01319;Mentha spicata;Yerbahuerto;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;;LC
 F01320;Mentha suaveolens;Mastranto menor;Plantas con flor;hierba;;;;;;;;;Perenne;LC
-F00798;Mercurialis annua;Ortiga mansa;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Anual;NE
+F00798;Mercurialis annua;Ortiga mansa;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02349;Mercurialis canariensis;;Plantas con flor;planta;;;;;;;;;;NE
 F00078;Mesembryanthemum cordifolium;;Plantas con flor;planta;;;;;;;;;;NE
 F00083;Mesembryanthemum crystallinum;Barrilla;Plantas con flor;planta;;;;;;;;;;NE
-F00084;Mesembryanthemum nodiflorum;Cosco;Plantas con flor;hierba;0.01;0.04;longitud;Wikipedia (es);;;;;;NE
+F00084;Mesembryanthemum nodiflorum;Cosco;Plantas con flor;hierba;0.02;0.22;altura;Wikipedia (es);;;;;;NE
 F00085;Mesembryanthemum theurkauffii;Cosco de Jandía;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01397;Micromeria benthamii;Tomillo de Bentham;Plantas con flor;planta;;;;;;;;;;NE
 F01404;Micromeria canariensis;;Plantas con flor;planta;;;;;;;;;;NE
@@ -2900,9 +2900,9 @@ F01399;Micromeria tenuis subsp. linkii;Tomillo de Link;Plantas con flor;planta;;
 F01398;Micromeria tenuis subsp. tenuis;Tomillo pálido;Plantas con flor;planta;;;;;;;;;;NE
 F02171;Micromeria tragothymus;Tomillo;Plantas con flor;planta;;;;;;;;;;NE
 F02404;Minuartia mediterranea;;Plantas con flor;planta;;;;;;;;;;NE
-F00247;Mirabilis jalapa;Don Diego de noche;Plantas con flor;hierba;0.6;1.5;altura;Wikipedia (es);;;;;Perenne;NE
+F00247;Mirabilis jalapa;Don Diego de noche;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F02136;Misopates calycinum;Conejito pálido;Plantas con flor;planta;;;;;;;;;;NE
-F01229;Misopates orontium;Conejillo menor;Plantas con flor;hierba;0.02;0.05;longitud;Wikipedia (es);;;;;Anual;NE
+F01229;Misopates orontium;Conejillo menor;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02411;Misopates salvagense;;Plantas con flor;planta;;;;;;;;;;NE
 F00173;Moehringia pentandra;Moruja de sombra;Plantas con flor;planta;;;;;;;;;;NE
 E06824;Momordica charanthia;;Plantas con flor;planta;;;;;;;;;;NE
@@ -2920,13 +2920,13 @@ F02283;Monanthes polyphylla subsp. amydros;Pelotilla de La Gomera;Plantas con fl
 F00419;Monanthes polyphylla subsp. polyphylla;Pelotilla profusa;Plantas con flor;roseta;;;;;;;;;;NE
 E06199;Monanthes subrosulata;;Plantas con flor;roseta;;;;;;;;;;NE
 F00408;Monanthes wildpretii;Pelotilla de Chinamada;Plantas con flor;roseta;;;;;;;;;;CR
-E09728;Monstera deliciosa;;Plantas con flor;trepadora;;20.0;longitud;Wikipedia (es);;;;;Perenne;NE
+E09728;Monstera deliciosa;;Plantas con flor;trepadora;;20.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01606;Montanoa bipinnatifida;Árbol margarita;Plantas con flor;árbol;;10.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00326;Morella faya;Faya canaria;Plantas con flor;árbol;3.0;8.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00327;Morella rivas-martinezii;Faya herreña;Plantas con flor;árbol;8.0;10.0;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F00961;Moricandia arvensis;Collejón;Plantas con flor;roseta;;0.75;altura;Wikipedia (es);;;;;Anual;NE
 F00334;Morus alba;Morera;Plantas con flor;árbol;;15.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00335;Morus nigra;Moral;Plantas con flor;árbol;10.0;13.0;longitud;Wikipedia (es);;;;;Perenne;DD
+F00335;Morus nigra;Moral;Plantas con flor;árbol;10.0;13.0;altura;Wikipedia (es);;;;;Perenne;DD
 F01813;Musa acuminata;Platanera;Plantas con flor;árbol;;7.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01755;Muscari comosum;Jacinto silvestre;Plantas con flor;planta;;;;;;;;;;NE
 F01286;Myoporum laetum;Transparente;Plantas con flor;árbol;;10.0;altura;Wikipedia (es);;;;;Perenne;LC
@@ -2935,21 +2935,21 @@ F02245;Myosotis discolor;;Plantas con flor;hierba;;;;;;;;;;NE
 F01206;Myosotis discolor subsp. canariensis;Nomeolvides canaria;Plantas con flor;hierba;;;;;;;;;;NE
 F01207;Myosotis latifolia;Nomeolvides de monte;Plantas con flor;planta;;;;;;;;;;NE
 F01208;Myosotis ramosissima;Nomeolvides menuda;Plantas con flor;roseta;;0.3;altura;Wikipedia (es);;;;;Bienal;NE
-E09546;Myriophyllum aquaticum;Milenrama brasileño;Plantas con flor;hierba;0.02;0.05;longitud;Wikipedia (es);;;;;;NE
-F00685;Myriophyllum spicatum;Filigrana de agua;Plantas con flor;hierba;;0.04;longitud;Wikipedia (es);;;;;;LC
+E09546;Myriophyllum aquaticum;Milenrama brasileño;Plantas con flor;hierba;;;;;;;;;;NE
+F00685;Myriophyllum spicatum;Filigrana de agua;Plantas con flor;hierba;;;;;;;;;;LC
 F00667;Myrtus communis;Mirto;Plantas con flor;arbusto;;5.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01731;Najas marina;Náyade marina;Plantas con flor;planta;;;;;;;;;;LC
-E04149;Nanozostera noltei;Seba fina;Plantas con flor;hierba;;0.03;altura;Centinela (claves de identificación);;;;;;LC
+E04149;Nanozostera noltei;Seba fina;Plantas con flor;hierba;;;;;;;;;;LC
 F01772;Narcissus tazetta;Nardo simple;Plantas con flor;hierba;0.2;0.65;altura;Wikipedia (es);;;;;Perenne;NE
 F02041;Nassella neesiana;Flechilla;Plantas con flor;planta;;;;;;;;;;NE
 F01008;Navaea phoenicea;Malvarrisco encarnada;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
-F01209;Neatostema apulum;Alacranillo chico;Plantas con flor;hierba;;0.15;altura;Wikipedia (es);;;;;;NE
+F01209;Neatostema apulum;Alacranillo chico;Plantas con flor;hierba;;;;;;;;;;NE
 E06799;Nemesia melissifolia;;Plantas con flor;planta;;;;;;;;;;NE
 F00697;Neochamaelea pulverulenta;Orijama;Plantas con flor;arbusto;;1.5;altura;Wikipedia (es);;;;;Perenne;LC
 F02416;Neoschischkinia pourretii;;Plantas con flor;planta;;;;;;;;;;NE
-F01808;Neotinea maculata;Orquídea manchada;Plantas con flor;hierba;;0.06;altura;Wikipedia (es);;;;;;NE
+F01808;Neotinea maculata;Orquídea manchada;Plantas con flor;planta;;;;;;;;;;NE
 F01321;Nepeta teydea;Tonática;Plantas con flor;planta;;;;;;;;;;NE
-F00454;Neurada procumbens;Patacamello;Plantas con flor;hierba;0.1;0.322;longitud;Wikipedia (es);;;;;;NE
+F00454;Neurada procumbens;Patacamello;Plantas con flor;hierba;;;;;;;;;;NE
 F01105;Nicandra physalodes;Tomatera de culebra;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Anual;NE
 F01106;Nicotiana alata;Tabaco jazmín;Plantas con flor;planta;;;;;;;;;;NE
 F01107;Nicotiana glauca;Tabaco moruno;Plantas con flor;árbol;;6.0;altura;Wikipedia (es);;;;;Perenne;LC
@@ -2961,11 +2961,11 @@ F00115;Nigella damascena;Arañuela;Plantas con flor;hierba;0.05;0.7;altura;Wikip
 E09784;Nitraria retusa;Arbusto de nitro o Arbusto de dillon.;Plantas con flor;planta;;;;;;;;;;NE
 F01770;Nothoscordum gracile;Ajo inodoro;Plantas con flor;planta;;;;;;;;;;NE
 F01613;Notobasis syriaca;Cardo de Siria;Plantas con flor;hierba;0.3;1.0;altura;Wikipedia (es);;;;;Anual;NE
-F00963;Notoceras bicorne;Patagallina;Plantas con flor;hierba;;0.3;longitud;Wikipedia (es);;;;;;NE
-E06830;Ocimum basilicum;;Plantas con flor;hierba;0.03;0.11;longitud;Wikipedia (es);;;;;Anual;NE
+F00963;Notoceras bicorne;Patagallina;Plantas con flor;planta;;;;;;;;;;NE
+E06830;Ocimum basilicum;;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00107;Ocotea foetens;Til;Plantas con flor;árbol;;40.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00677;Oenothera biennis;Yerbavino bienal;Plantas con flor;hierba;0.3;1.5;altura;Wikipedia (es);;;;;Bienal;NE
-F00678;Oenothera glazioviana;Yerbavino de luz;Plantas con flor;arbusto;;1.5;altura;Wikipedia (es);;;;;Bienal;NE
+F00678;Oenothera glazioviana;Yerbavino de luz;Plantas con flor;planta;;;;;;;;;Bienal;NE
 F02092;Oenothera indecora;Yerbavino mustia;Plantas con flor;planta;;;;;;;;;;NE
 F00679;Oenothera jamesii;Yerbavino de James;Plantas con flor;planta;;;;;;;;;;NE
 F00680;Oenothera parodiana;;Plantas con flor;planta;;;;;;;;;;NE
@@ -3000,24 +3000,24 @@ F01614;Onopordum carduelium;Cardo de Tenteniguada;Plantas con flor;hierba;;;;;;;
 F01615;Onopordum nogalesii;Cardo de Jandía;Plantas con flor;hierba;;0.5;altura;Centinela (claves de identificación);;;;;Bienal;NE
 F01809;Ophrys bombyliflora;Orquídea abejona;Plantas con flor;planta;;;;;;;;;;NE
 F01985;Oplismenus hirtellus;;Plantas con flor;planta;;;;;;;;;;NE
-E08923;Opuntia basilaris;;Plantas con flor;hierba;;0.14;longitud;Wikipedia (es);;;;;;LC
+E08923;Opuntia basilaris;;Plantas con flor;planta;;;;;;;;;;LC
 E10223;Opuntia elatior;;Plantas con flor;árbol;;5.0;altura;Wikipedia (es);;;;;Perenne;LC
 E10224;Opuntia engelmannii;;Plantas con flor;arbusto;;3.5;altura;Wikipedia (es);;;;;Perenne;LC
 E06800;Opuntia leucotricha;Nopal blanco;Plantas con flor;planta;;;;;;;;;;LC
 E08385;Opuntia lindheimeri;;Plantas con flor;planta;;;;;;;;;;LC
 E08050;Opuntia macrocentra;;Plantas con flor;arbusto;0.6;0.9;altura;Wikipedia (es);;;;;;LC
-F00238;Opuntia maxima;Tunera común;Plantas con flor;arbusto;0.3;0.4;longitud;Wikipedia (es);;;;;Perenne;NE
+F00238;Opuntia maxima;Tunera común;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 E06949;Opuntia microdasys;Oreja de conejo espinoso;Plantas con flor;arbusto;;1.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00242;Opuntia monacantha;Tunera salvaje;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;LC
-E10225;Opuntia phaeacantha;;Plantas con flor;arbusto;;0.9;altura;Wikipedia (es);;;;;;LC
+F00242;Opuntia monacantha;Tunera salvaje;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
+E10225;Opuntia phaeacantha;;Plantas con flor;arbusto;;;;;;;;;;LC
 E08051;Opuntia pilifera;;Plantas con flor;arbusto;;4.0;altura;Wikipedia (es);;;;;;LC
 F00239;Opuntia robusta;Tunera arbórea;Plantas con flor;arbusto;;4.5;altura;Wikipedia (es);;;;;;NE
 E10226;Opuntia stricta;Chumbera;Plantas con flor;planta;;;;;;;;;;LC
 F00240;Opuntia tomentosa;Tunera de terciopelo;Plantas con flor;árbol;;0.4;altura;Wikipedia (es);;;;;;LC
-F00241;Opuntia tuna;Tunera india;Plantas con flor;arbusto;;0.05;altura;Wikipedia (es);;;;;Perenne;NE
+F00241;Opuntia tuna;Tunera india;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01811;Orchis canariensis;Orquídea canaria;Plantas con flor;planta;;;;;;;;;;NE
-F01810;Orchis mascula;Orquídea macho;Plantas con flor;hierba;;0.06;altura;Wikipedia (es);;;;;;NE
-E07291;Orchis mascula subsp. lapalmensis;;Plantas con flor;hierba;;0.06;altura;Wikipedia (es);;;;;;NE
+F01810;Orchis mascula;Orquídea macho;Plantas con flor;hierba;0.075;0.125;altura;Wikipedia (es);;;;;;NE
+E07291;Orchis mascula subsp. lapalmensis;;Plantas con flor;hierba;0.075;0.125;altura;Wikipedia (es);;;;;;NE
 E07265;Oreocereus pseudofossulatus;;Plantas con flor;planta;;;;;;;;;;NT
 F02091;Origanum vulgare;Orégano;Plantas con flor;hierba;;0.45;altura;Wikipedia (es);;;;;Perenne;NE
 F01323;Origanum vulgare subsp. virens;Orégano verde;Plantas con flor;hierba;;0.45;altura;Wikipedia (es);;;;;Perenne;NE
@@ -3029,7 +3029,7 @@ E11126;Orobanche andryalae;Jopo morado;Plantas con flor;planta;;;;;;;;;;
 F00970;Orobanche cernua;Jopo negro;Plantas con flor;planta;;;;;;;;;;NE
 F01254;Orobanche crenata;Jopo blanco;Plantas con flor;planta;;;;;;;;;;NE
 F01256;Orobanche hederae;Jopo de la yedra;Plantas con flor;planta;;;;;;;;;;NE
-F01258;Orobanche minor;Jopo menor;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F01258;Orobanche minor;Jopo menor;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Perenne;NE
 F02336;Oropetium capense;;Plantas con flor;planta;;;;;;;;;;NE
 F02337;Oropetium capense subsp. hesperidum;;Plantas con flor;planta;;;;;;;;;;NE
 F01986;Oryza sativa;Arroz;Plantas con flor;hierba;0.4;1.5;altura;Wikipedia (es);;;;;Anual;NE
@@ -3049,18 +3049,18 @@ F02292;Oxybasis glauca;Cenizo pálido;Plantas con flor;hierba;0.05;0.4;altura;Wi
 F00264;Oxybasis urbica;Cenizo urbano;Plantas con flor;hierba;0.2;1.0;altura;Wikipedia (es);;;;;Anual;NE
 F01432;Pallenis hierochuntica;;Plantas con flor;planta;;;;;;;;;;NE
 F01433;Pallenis maritima;;Plantas con flor;arbusto;0.3;0.4;altura;Wikipedia (es);;;;;Perenne;NE
-F02249;Pallenis spinosa;;Plantas con flor;arbusto;0.6;0.7;altura;Wikipedia (es);;;;;;NE
-E06825;Pallenis spinosa subsp. maroccana;;Plantas con flor;arbusto;0.6;0.7;altura;Wikipedia (es);;;;;;NE
-F01434;Pallenis spinosa subsp. spinosa;Estrellada espinosa;Plantas con flor;arbusto;0.6;0.7;altura;Wikipedia (es);;;;;;NE
-F01773;Pancratium canariense;Lágrimas de virgen;Plantas con flor;hierba;;0.8;longitud;Wikipedia (es);;;;;;NE
-F01774;Pancratium maritimum;Pancrasia de mar;Plantas con flor;hierba;;0.8;altura;Wikipedia (es);;;;;;NE
+F02249;Pallenis spinosa;;Plantas con flor;planta;;;;;;;;;;NE
+E06825;Pallenis spinosa subsp. maroccana;;Plantas con flor;planta;;;;;;;;;;NE
+F01434;Pallenis spinosa subsp. spinosa;Estrellada espinosa;Plantas con flor;planta;;;;;;;;;;NE
+F01773;Pancratium canariense;Lágrimas de virgen;Plantas con flor;hierba;;0.8;altura;Wikipedia (es);;;;;;NE
+F01774;Pancratium maritimum;Pancrasia de mar;Plantas con flor;hierba;;;;;;;;;;NE
 F01987;Panicum capillare;Mijo de pelo;Plantas con flor;planta;;;;;;;;;;NE
 F02108;Panicum miliaceum;Mijo;Plantas con flor;hierba;0.3;1.5;altura;Wikipedia (es);;;;;;NE
 F02386;Panicum miliaceum subsp. agricolum;;Plantas con flor;hierba;0.3;1.5;altura;Wikipedia (es);;;;;;NE
 F02397;Panicum miliaceum subsp. miliaceum;;Plantas con flor;hierba;0.3;1.5;altura;Wikipedia (es);;;;;;NE
 F01989;Panicum repens;Panizo;Plantas con flor;planta;;;;;;;;;;LC
 F00135;Papaver argemone;Amapola macho;Plantas con flor;hierba;;0.02;altura;Wikipedia (es);;;;;Anual;NE
-F00136;Papaver dubium;Amapola borracha;Plantas con flor;hierba;0.015;0.02;longitud;Wikipedia (es);;;;;;NE
+F00136;Papaver dubium;Amapola borracha;Plantas con flor;planta;;;;;;;;;;NE
 F00137;Papaver hybridum;Amapola mestiza;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00138;Papaver pinnatifidum;Amapola fina;Plantas con flor;planta;;;;;;;;;;NE
 F00139;Papaver rhoeas;Amapola roja;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;;NE
@@ -3093,13 +3093,13 @@ F00749;Parthenocissus tricuspidata;Parra virgen;Plantas con flor;trepadora;;;;;;
 E10563;Pascalia glauca;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01992;Paspalidium geminatum;Panizo fino;Plantas con flor;planta;;;;;;;;;;LC
 F01993;Paspalum dilatatum;Caguazo;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F01995;Paspalum distichum;Panizo pulgonero;Plantas con flor;hierba;;0.06;longitud;Wikipedia (es);;;;;Perenne;LC
+F01995;Paspalum distichum;Panizo pulgonero;Plantas con flor;hierba;;;;;;;;;Perenne;LC
 E06833;Paspalum notatum;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01727;Paspalum urvillei;Panizo d´Urville;Plantas con flor;planta;;;;;;;;;;NE
 E06809;Paspalum vaginatum;;Plantas con flor;hierba;;;;;;;;;Perenne;LC
 E07449;Passiflora mollissima;;Plantas con flor;planta;;;;;;;;;;NE
 E08416;Passiflora morifolia;;Plantas con flor;trepadora;;3.0;altura;Wikipedia (es);;;;;Perenne;NE
-F00872;Passiflora suberosa;Pasionaria de corcho;Plantas con flor;hierba;;0.11;longitud;Wikipedia (es);;;;;;NE
+F00872;Passiflora suberosa;Pasionaria de corcho;Plantas con flor;hierba;;;;;;;;;;NE
 F00269;Patellifolia patellaris;Tebete común;Plantas con flor;planta;;;;;;;;;;NE
 F00270;Patellifolia procumbens;Marmojaya;Plantas con flor;planta;;;;;;;;;;NE
 F00271;Patellifolia webbiana;Tebete canario;Plantas con flor;planta;;;;;;;;;;CR
@@ -3123,18 +3123,18 @@ F01625;Pericallis steetzii;Arcila;Plantas con flor;planta;;;;;;;;;;NE
 E09647;Pericallis tirmensis;;Plantas con flor;planta;;;;;;;;;;NE
 F01626;Pericallis tussilaginis;Tusilago canario;Plantas con flor;planta;;;;;;;;;;NE
 F01627;Pericallis webbii;Flor de mayo;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F01077;Periploca laevigata;Cornical;Plantas con flor;arbusto;;0.04;longitud;Wikipedia (es);;;;;Perenne;NE
+F01077;Periploca laevigata;Cornical;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F02181;Persea barbujana;Barbusano;Plantas con flor;árbol;;25.0;altura;Wikipedia (es);;;;;Perenne;NT
 F00104;Persea barbujana subsp. barbujana;Barbusano;Plantas con flor;árbol;;25.0;altura;Wikipedia (es);;;;;Perenne;
 F00105;Persea barbujana subsp. ceballosi;Barbusano negro;Plantas con flor;árbol;;25.0;altura;Wikipedia (es);;;;;Perenne;
 F00108;Persea indica;Viñátigo;Plantas con flor;árbol;;30.0;altura;Wikipedia (es);;;;;Perenne;LC
-E06803;Persicaria capitata;;Plantas con flor;hierba;0.2;0.5;longitud;Wikipedia (es);;;;;Perenne;NE
+E06803;Persicaria capitata;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 E09683;Persicaria hydropiperoides;;Plantas con flor;planta;;;;;;;;;;LC
-F00287;Persicaria maculosa;Sanguinaria pejiguera;Plantas con flor;hierba;0.08;0.1;longitud;Wikipedia (es);;;;;Anual;LC
-F00288;Persicaria salicifolia;Sanguinaria de agua;Plantas con flor;hierba;0.08;0.1;longitud;Wikipedia (es);;;;;Anual;NE
+F00287;Persicaria maculosa;Sanguinaria pejiguera;Plantas con flor;hierba;;;;;;;;;Anual;LC
+F00288;Persicaria salicifolia;Sanguinaria de agua;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00179;Petrorhagia dubia;;Plantas con flor;planta;;;;;;;;;;NE
 F00178;Petrorhagia nanteuilii;Clavelito silvestre;Plantas con flor;hierba;0.1;0.4;altura;Wikipedia (es);;;;;;NE
-F00837;Petroselinum crispum;Perejil común;Plantas con flor;roseta;;;;;;;;;Bienal;NE
+F00837;Petroselinum crispum;Perejil común;Plantas con flor;roseta;;1.2;altura;Wikipedia (es);;;;;Bienal;NE
 E06802;Petunia axillaris;;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;Perenne;NE
 F01628;Phagnalon purpurascens;Mecha rojiza;Plantas con flor;planta;;;;;;;;;;NE
 F02104;Phagnalon rupestre;Mecha yesquera;Plantas con flor;arbusto;0.1;0.5;altura;Wikipedia (es);;;;;Perenne;NE
@@ -3149,8 +3149,8 @@ F02008;Phalaris minor;Alpiste menor;Plantas con flor;hierba;;;;;;;;;;NE
 F02009;Phalaris paradoxa;Alpiste bastardo;Plantas con flor;planta;;;;;;;;;;NE
 F01159;Pharbitis preauxii;;Plantas con flor;planta;;;;;;;;;;NE
 E06940;Phaseolus acutifolius;;Plantas con flor;planta;;;;;;;;;;LC
-E09407;Phaseolus lunatus;;Plantas con flor;hierba;0.03;0.13;longitud;Wikipedia (es);;;;;Anual;LC
-F00583;Phaseolus vulgaris;Judía;Plantas con flor;hierba;0.04;0.15;altura;Wikipedia (es);;;;;;LC
+E09407;Phaseolus lunatus;;Plantas con flor;hierba;;;;;;;;;Anual;LC
+F00583;Phaseolus vulgaris;Judía;Plantas con flor;planta;;;;;;;;;;LC
 F01255;Phelipanche gratiosa;Jopo de La Graciosa;Plantas con flor;planta;;;;;;;;;;NE
 F01257;Phelipanche lavandulacea;Jopo violeta;Plantas con flor;planta;;;;;;;;;;NE
 F01263;Phelipanche lavandulacea subsp. trichocalyx;Jopo violeta canario;Plantas con flor;planta;;;;;;;;;;NE
@@ -3175,7 +3175,7 @@ F01112;Physalis peruviana;Cápuli;Plantas con flor;arbusto;1.0;1.6;altura;Wikipe
 F00233;Phytolacca americana;Hierba tintorera;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 E08924;Phytolacca dioica;;Plantas con flor;árbol;;;;;;;;;Perenne;LC
 F01060;Picconia excelsa;Paloblanco;Plantas con flor;árbol;;10.0;altura;Wikipedia (es);;;;;Perenne;LC
-F01632;Picnomon acarna;Cardo blanco;Plantas con flor;hierba;0.08;0.12;longitud;Wikipedia (es);;;;;Anual;NE
+F01632;Picnomon acarna;Cardo blanco;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F02288;Picris hieracioides;Raspasayo;Plantas con flor;planta;;;;;;;;;;NE
 E10227;Pilosocereus polygonus;;Plantas con flor;árbol;3.0;10.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00838;Pimpinella anagodendron;Perejil de Anaga;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
@@ -3186,14 +3186,14 @@ F02334;Pimpinella rupicola;Perejil de risco;Plantas con flor;arbusto;;;;;;;;;Per
 F00068;Pinus canariensis;Pino canario;Plantas con flor;palmera;;40.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00069;Pinus halepensis;Pino carrasco;Plantas con flor;árbol;;25.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00070;Pinus pinaster;Pino ródeno;Plantas con flor;árbol;20.0;35.0;altura;Wikipedia (es);;;;;Perenne;LC
-E06783;Pinus pinea;Piñonero;Plantas con flor;árbol;0.1;0.15;longitud;Wikipedia (es);;;;;Perenne;LC
+E06783;Pinus pinea;Piñonero;Plantas con flor;árbol;;;;;;;;;Perenne;LC
 F00071;Pinus radiata;Pino de Monterrey;Plantas con flor;árbol;;45.0;altura;Wikipedia (es);;;;;Perenne;EN
 F02011;Piptatherum coerulescens;Cerrillón granudo;Plantas con flor;planta;;;;;;;;;;NE
 F02012;Piptatherum miliaceum;Cerrillón fino;Plantas con flor;hierba;;1.5;altura;Wikipedia (es);;;;;Perenne;NE
 F00692;Pistacia atlantica;Almácigo;Plantas con flor;árbol;8.0;12.0;altura;Wikipedia (es);;;;;Perenne;NT
 F00693;Pistacia lentiscus;Lentisco;Plantas con flor;arbusto;;7.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01870;Pistia stratiotes;Lechuga de agua;Plantas con flor;planta;;;;;;;;;Perenne;LC
-F00584;Pisum sativum;Arveja;Plantas con flor;trepadora;;0.04;altura;Wikipedia (es);;;;;Anual;NE
+F00584;Pisum sativum;Arveja;Plantas con flor;trepadora;;;;;;;;;Anual;NE
 F00803;Pittosporum undulatum;Azarero;Plantas con flor;árbol;;15.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01265;Plantago afra;Zaragatona;Plantas con flor;hierba;;;;;;;;;;NE
 F01266;Plantago albicans;Llantén blanco;Plantas con flor;planta;;;;;;;;;;NE
@@ -3213,7 +3213,7 @@ F01278;Plantago major;Llantén común;Plantas con flor;hierba;0.14;0.5;altura;Wi
 F01279;Plantago ovata;Llantén lanudo;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Anual;NE
 F01280;Plantago phaeostoma;;Plantas con flor;planta;;;;;;;;;;NE
 F01281;Plantago webbii;Pinillo blanco;Plantas con flor;planta;;;;;;;;;;NE
-F00152;Platycapnos spicata;Palomita espigada;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Anual;NE
+F00152;Platycapnos spicata;Palomita espigada;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01020;Pleiomeris canariensis;Delfino;Plantas con flor;árbol;;15.0;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F01327;Pleudia aegyptiaca;Conservilla;Plantas con flor;hierba;;;;;;;;;;NE
 F01332;Pleudia herbanica;Conservilla majorera;Plantas con flor;arbusto;;0.5;altura;Centinela (claves de identificación);;;;;Perenne;CR
@@ -3239,8 +3239,8 @@ F00181;Polycarpaea carnosa;Pataconejo carnosa;Plantas con flor;planta;;;;;;;;;;N
 F00182;Polycarpaea divaricata;Pataconejo común;Plantas con flor;planta;;;;;;;;;;NE
 F00183;Polycarpaea filifolia;Pataconejo fina;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00184;Polycarpaea latifolia;Pataconejo basta;Plantas con flor;planta;;;;;;;;;;NE
-F00185;Polycarpaea nivea;Saladillo blanco común;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
-F00186;Polycarpaea robusta;Saladillo blanco de Timanfaya;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
+F00185;Polycarpaea nivea;Saladillo blanco común;Plantas con flor;arbusto;;0.032;altura;Wikipedia (es);;;;;Perenne;NE
+F00186;Polycarpaea robusta;Saladillo blanco de Timanfaya;Plantas con flor;arbusto;;0.032;altura;Wikipedia (es);;;;;Perenne;NE
 F00187;Polycarpaea smithii;Pataconejo de risco;Plantas con flor;planta;;;;;;;;;;NE
 F00188;Polycarpaea tenuis;Pataconejo de cumbre;Plantas con flor;planta;;;;;;;;;;NE
 F00189;Polycarpon alsinifolium;;Plantas con flor;planta;;;;;;;;;;NE
@@ -3260,7 +3260,7 @@ F02022;Polypogon monspeliensis;Lanita;Plantas con flor;planta;;;;;;;;;;LC
 F02023;Polypogon viridis;Heno apretado;Plantas con flor;planta;;;;;;;;;;LC
 F02388;Polypogon viridis subsp. pauciflorus;;Plantas con flor;planta;;;;;;;;;;LC
 F00989;Populus alba;Álamo blanco;Plantas con flor;árbol;;30.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00990;Populus nigra;Álamo negro;Plantas con flor;árbol;20.0;30.0;altura;Wikipedia (es);;;;;Perenne;DD
+F00990;Populus nigra;Álamo negro;Plantas con flor;árbol;;;;;;;;;Perenne;DD
 F02423;Portulaca canariensis;;Plantas con flor;planta;;;;;;;;;;NE
 F02409;Portulaca granulatostellulata;;Plantas con flor;planta;;;;;;;;;;NE
 F02425;Portulaca nicaraguensis;;Plantas con flor;planta;;;;;;;;;;NE
@@ -3270,10 +3270,10 @@ F02426;Portulaca papillatostellulata;;Plantas con flor;planta;;;;;;;;;;NE
 E09408;Portulaca trituberculata;;Plantas con flor;planta;;;;;;;;;;NE
 F01726;Potamogeton nodosus;Hierba de agua foliosa;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;;LC
 F01553;Potamogeton pusillus;Hierba de agua grácil;Plantas con flor;planta;;;;;;;;;;LC
-F01728;Potamogeton trichoides;Hierba de agua pelosa;Plantas con flor;hierba;;1.0;longitud;Wikipedia (es);;;;;Perenne;LC
+F01728;Potamogeton trichoides;Hierba de agua pelosa;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Perenne;LC
 E06834;Potentilla indica;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F00443;Potentilla reptans;Cinco en rama;Plantas con flor;hierba;;1.0;longitud;Wikipedia (es);;;;;Perenne;NE
-F01324;Prasium majus;Aranjí;Plantas con flor;arbusto;;1.5;longitud;Wikipedia (es);;;;;;NE
+F00443;Potentilla reptans;Cinco en rama;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01324;Prasium majus;Aranjí;Plantas con flor;arbusto;;1.5;altura;Wikipedia (es);;;;;;NE
 E06942;Prosopis juliflora;Mezquite;Plantas con flor;árbol;;20.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01325;Prunella vulgaris;Mazoquera;Plantas con flor;planta;;;;;;;;;;LC
 E06804;Prunus cerasus;;Plantas con flor;árbol;4.0;10.0;altura;Wikipedia (es);;;;;Perenne;NE
@@ -3284,7 +3284,7 @@ F00447;Prunus lusitanica subsp. hixa;Jija;Plantas con flor;árbol;;15.0;altura;W
 F01596;Pseudognaphalium luteoalbum;Borriza común;Plantas con flor;arbusto;;0.7;altura;Wikipedia (es);;;;;;NE
 E03278;Pseudorlaya pumila;;Plantas con flor;planta;;;;;;;;;;LC
 F01892;Pseudosasa japonica;Bambú japonés;Plantas con flor;hierba;;5.0;altura;Wikipedia (es);;;;;;NE
-E07448;Psidium guajava;;Plantas con flor;árbol;;2.5;altura;Wikipedia (es);;;;;Perenne;LC
+E07448;Psidium guajava;;Plantas con flor;árbol;;;;;;;;;Perenne;LC
 F00191;Pteranthus dichotomus;Hierba barroca;Plantas con flor;hierba;0.05;0.25;altura;Wikipedia (es);;;;;Anual;NE
 F01049;Pterocephalus dumetorus;Rosalito salvaje;Plantas con flor;planta;;;;;;;;;;NE
 F01050;Pterocephalus lasiospermus;Rosalito de cumbre;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
@@ -3296,13 +3296,13 @@ F02420;Pulicaria arabica subsp. hispanica;Hierba pulguera;Plantas con flor;plant
 F02254;Pulicaria burchardii;Dama;Plantas con flor;planta;;;;;;;;;;NE
 F01635;Pulicaria burchardii subsp. burchardii;Pulicaria majorera;Plantas con flor;arbusto;;0.3;altura;Centinela (claves de identificación);;;;;;NE
 F02255;Pulicaria canariensis;;Plantas con flor;planta;;;;;;;;;;NE
-F01636;Pulicaria canariensis subsp. canariensis;Pulicaria purpuraria;Plantas con flor;arbusto;;0.04;altura;Centinela (claves de identificación);;;;;Perenne;NE
-F01637;Pulicaria canariensis subsp. lanata;;Plantas con flor;hierba;;0.04;altura;Centinela (claves de identificación);;;;;Perenne;NE
+F01636;Pulicaria canariensis subsp. canariensis;Pulicaria purpuraria;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
+F01637;Pulicaria canariensis subsp. lanata;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01638;Pulicaria odora;;Plantas con flor;roseta;;;;;;;;;;NE
 F02256;Pulicaria undulata;;Plantas con flor;planta;;;;;;;;;;NE
 F01639;Pulicaria undulata subsp. undulata;;Plantas con flor;planta;;;;;;;;;;NE
 F00668;Punica granatum;Granadero;Plantas con flor;árbol;;5.0;altura;Wikipedia (es);;;;;Perenne;LC
-F01283;Pyrostegia venusta;Bignonia de fuego;Plantas con flor;trepadora;0.04;0.08;longitud;Wikipedia (es);;;;;Perenne;NE
+F01283;Pyrostegia venusta;Bignonia de fuego;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 F00448;Pyrus communis;Peral;Plantas con flor;árbol;2.0;20.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00322;Quercus ilex;Encina;Plantas con flor;árbol;;30.0;altura;Wikidata;;;;;Perenne;LC
 F00323;Quercus robur;Roble;Plantas con flor;árbol;;40.0;altura;Wikipedia (es);;;;;Perenne;LC
@@ -3317,17 +3317,17 @@ F00121;Ranunculus ololeucos;Ranúnculo blanco;Plantas con flor;planta;;;;;;;;;;D
 F00122;Ranunculus ophioglossifolius;Ranúnculo lengua de serpiente;Plantas con flor;planta;;;;;;;;;;LC
 E11459;Ranunculus paludosus;;Plantas con flor;roseta;;0.5;altura;Wikipedia (es);;;;;Perenne;NE
 F00123;Ranunculus parviflorus;Ranúnculo menudo;Plantas con flor;planta;;;;;;;;;;NE
-F01634;Ranunculus peltatus;;Plantas con flor;hierba;0.002;0.006;longitud;Wikipedia (es);;;;;Anual;LC
-E09122;Ranunculus peltatus subsp. peltatus;;Plantas con flor;hierba;0.002;0.006;longitud;Wikipedia (es);;;;;Anual;LC
-F00125;Ranunculus peltatus subsp. saniculifolius;Ranúnculo plumoso;Plantas con flor;hierba;0.002;0.006;longitud;Wikipedia (es);;;;;Anual;LC
+F01634;Ranunculus peltatus;;Plantas con flor;hierba;;;;;;;;;Anual;LC
+E09122;Ranunculus peltatus subsp. peltatus;;Plantas con flor;hierba;;;;;;;;;Anual;LC
+F00125;Ranunculus peltatus subsp. saniculifolius;Ranúnculo plumoso;Plantas con flor;hierba;;;;;;;;;Anual;LC
 F01785;Ranunculus penicillatus;Ranúnculo pincel;Plantas con flor;planta;;;;;;;;;;LC
 F00124;Ranunculus repens;Ranúnculo rastrero;Plantas con flor;hierba;;;;;;;;;;NE
 F00126;Ranunculus sardous;Ranúnculo sardo;Plantas con flor;planta;;;;;;;;;;NE
 F00127;Ranunculus trichophyllus;Ranúnculo greña;Plantas con flor;planta;;;;;;;;;;LC
 F00128;Ranunculus trilobus;Ranúnculo perejil;Plantas con flor;planta;;;;;;;;;;NE
-F02164;Raphanus raphanistrum;;Plantas con flor;roseta;0.01;0.015;longitud;Wikipedia (es);;;;;Anual;NE
-F00969;Raphanus raphanistrum subsp. raphanistrum;Jaramago;Plantas con flor;roseta;0.01;0.015;longitud;Wikipedia (es);;;;;Anual;NE
-F00971;Raphanus sativus;Rábano común;Plantas con flor;hierba;0.008;0.015;longitud;Wikipedia (es);;;;;Bienal;NE
+F02164;Raphanus raphanistrum;;Plantas con flor;roseta;;;;;;;;;Anual;NE
+F00969;Raphanus raphanistrum subsp. raphanistrum;Jaramago;Plantas con flor;roseta;;;;;;;;;Anual;NE
+F00971;Raphanus sativus;Rábano común;Plantas con flor;arbusto;0.2;1.0;altura;Wikipedia (es);;;;;Bienal;NE
 F00972;Rapistrum rugosum;Relinchón bastardo;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Anual;NE
 F01641;Reichardia crystallina;Cerraja de mar;Plantas con flor;planta;;;;;;;;;;NE
 F01642;Reichardia famarae;Cerraja de Famara;Plantas con flor;planta;;;;;;;;;;NE
@@ -3369,14 +3369,14 @@ F01092;Rubia fruticosa subsp. fruticosa;Tasaigo;Plantas con flor;trepadora;;;;;;
 F01093;Rubia fruticosa subsp. melanocarpa;Tasaigo negro;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 F01094;Rubia fruticosa subsp. periclymenum;Tasaigo trepador;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 F01095;Rubia occidens;Ruiviño;Plantas con flor;planta;;;;;;;;;;NE
-F02257;Rubia peregrina;;Plantas con flor;trepadora;;6.0;longitud;Wikipedia (es);;;;;;NE
-F02330;Rubia peregrina subsp. longifolia;;Plantas con flor;trepadora;;6.0;longitud;Wikipedia (es);;;;;;NE
+F02257;Rubia peregrina;;Plantas con flor;trepadora;;;;;;;;;;NE
+F02330;Rubia peregrina subsp. longifolia;;Plantas con flor;trepadora;;;;;;;;;;NE
 F00450;Rubus bollei;Zarza de monte;Plantas con flor;planta;;;;;;;;;;NE
 F00452;Rubus palmensis;Zarza palmera;Plantas con flor;planta;;;;;;;;;;NE
-F00451;Rubus ulmifolius;Zarza común;Plantas con flor;arbusto;0.01;0.015;altura;Wikipedia (es);;;;;Perenne;NE
+F00451;Rubus ulmifolius;Zarza común;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 E09388;Ruellia dipteracanthus;;Plantas con flor;planta;;;;;;;;;;NE
-F02258;Rumex acetosella;;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Perenne;NE
-F00289;Rumex acetosella subsp. angiocarpus;Acederilla;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Perenne;NE
+F02258;Rumex acetosella;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F00289;Rumex acetosella subsp. angiocarpus;Acederilla;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00290;Rumex bipinnatus;;Plantas con flor;planta;;;;;;;;;;NE
 F02163;Rumex bucephalophorus;;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;;NE
 F00291;Rumex bucephalophorus subsp. canariensis;Vinagrerilla canaria;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;;NE
@@ -3391,14 +3391,14 @@ F00296;Rumex maderensis;Aceda de Madeira;Plantas con flor;planta;;;;;;;;;;NE
 F02259;Rumex obtusifolius;;Plantas con flor;roseta;;1.5;altura;Wikipedia (es);;;;;;NE
 F00297;Rumex obtusifolius subsp. obtusifolius;Labasa mayor;Plantas con flor;roseta;;1.5;altura;Wikipedia (es);;;;;;NE
 E08177;Rumex palustris;;Plantas con flor;hierba;0.5;1.0;altura;Wikipedia (es);;;;;;LC
-F02260;Rumex pulcher;;Plantas con flor;hierba;0.3;0.6;altura;Wikipedia (es);;;;;Perenne;NE
-E07806;Rumex pulcher subsp. pulcher;;Plantas con flor;hierba;0.3;0.6;altura;Wikipedia (es);;;;;Perenne;NE
-F00298;Rumex pulcher subsp. woodsii;Labasa timplera;Plantas con flor;hierba;0.3;0.6;altura;Wikipedia (es);;;;;Perenne;NE
+F02260;Rumex pulcher;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+E07806;Rumex pulcher subsp. pulcher;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F00298;Rumex pulcher subsp. woodsii;Labasa timplera;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00283;Rumex spinosus;Alcatripa;Plantas con flor;planta;;;;;;;;;;NE
 F00300;Rumex vesicarius;Vinagrerilla roja;Plantas con flor;hierba;0.5;0.6;altura;Wikipedia (es);;;;;Anual;NE
 F01724;Ruppia maritima;Algomarina;Plantas con flor;hierba;;;;;;;;;Perenne;LC
 F01787;Ruscus aculeatus;Brusco;Plantas con flor;arbusto;0.3;0.8;altura;Wikipedia (es);;;;;Perenne;NE
-F01788;Ruscus hypoglossum;Bislingua;Plantas con flor;arbusto;0.5;1.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01788;Ruscus hypoglossum;Bislingua;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F00687;Ruta chalepensis;Ruda salvaje;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00688;Ruta graveolens;Ruda común;Plantas con flor;arbusto;0.7;1.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00689;Ruta microcarpa;Ruda gomera;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
@@ -3409,29 +3409,29 @@ F00691;Ruta pinnata;Ruda canaria;Plantas con flor;planta;;;;;;;;;;NE
 F00843;Rutheopsis herbanica;Tájame;Plantas con flor;hierba;;1.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F00846;Rutheopsis tortuosa;Apio marino;Plantas con flor;planta;;;;;;;;;;NE
 F02417;Rytidosperma pilosa;;Plantas con flor;planta;;;;;;;;;;NE
-F02025;Saccharum officinarum;Cañadulce;Plantas con flor;hierba;3.0;6.0;altura;Wikipedia (es);;;;;Perenne;NE
+F02025;Saccharum officinarum;Cañadulce;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00192;Sagina apetala;Morujilla desnuda;Plantas con flor;planta;;;;;;;;;;NE
 F00193;Sagina maritima;Morujilla de costa;Plantas con flor;planta;;;;;;;;;;NE
 F00194;Sagina procumbens;Morujilla de manantial;Plantas con flor;planta;;;;;;;;;;NE
 F00276;Salicornia perennis;Salado de marisma;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
 F00991;Salix canariensis;Sauce canario;Plantas con flor;árbol;;10.0;altura;Centinela (claves de identificación);;;;;Perenne;NT
 F01113;Salpichroa origanifolia;Huevito de gallo;Plantas con flor;hierba;;;;;;;;;Perenne;NE
-F00272;Salsola kali;Matabrusca pinchuda;Plantas con flor;hierba;0.005;0.009;altura;Wikipedia (es);;;;;Anual;NE
+F00272;Salsola kali;Matabrusca pinchuda;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01328;Salvia africana;Salvia mora;Plantas con flor;arbusto;0.6;0.9;altura;Wikipedia (es);;;;;Perenne;NE
 F01329;Salvia broussonetii;Salvia orejaburro;Plantas con flor;arbusto;;0.6;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01330;Salvia canariensis;Salvia canaria;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01331;Salvia coccinea;Salvia flor de azúcar;Plantas con flor;hierba;;0.76;altura;Wikipedia (es);;;;;Perenne;NE
-F01335;Salvia fruticosa;Salvia de jardín;Plantas con flor;hierba;;0.6;altura;Wikipedia (es);;;;;Perenne;NE
+F01335;Salvia fruticosa;Salvia de jardín;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Perenne;NE
 F01333;Salvia leucantha;Salvia rabo de gato;Plantas con flor;hierba;;;;;;;;;;NE
 F01334;Salvia officinalis;Salvia;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;Perenne;LC
 F01326;Salvia rosmarinus;Romero;Plantas con flor;hierba;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
-F01336;Salvia verbenaca;Verbenaca;Plantas con flor;hierba;0.05;0.1;longitud;Wikipedia (es);;;;;Perenne;NE
-F01035;Sambucus canadensis;Saúco del Canadá;Plantas con flor;arbusto;;3.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01336;Salvia verbenaca;Verbenaca;Plantas con flor;planta;;;;;;;;;Perenne;NE
+F01035;Sambucus canadensis;Saúco del Canadá;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F02358;Sambucus nigra;;Plantas con flor;árbol;4.0;6.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01036;Sambucus nigra subsp. palmensis;Saúco canario;Plantas con flor;arbusto;;6.0;altura;Centinela (claves de identificación);;;;;Perenne;EN
 F01025;Samolus valerandi;Jabonera de manantial;Plantas con flor;hierba;;0.35;altura;Wikipedia (es);;;;;Perenne;LC
 F00453;Sanguisorba megacarpa;Algáfita;Plantas con flor;planta;;;;;;;;;;NE
-F01737;Sansevieria trifasciata;Lenguatigre;Plantas con flor;arbusto;0.4;1.4;longitud;Wikipedia (es);;;;;;NE
+F01737;Sansevieria trifasciata;Lenguatigre;Plantas con flor;planta;;;;;;;;;;NE
 F00430;Saxifraga stolonifera;Consuelda de estolones;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01053;Scabiosa atropurpurea;Viudita silvestre;Plantas con flor;arbusto;0.2;0.6;altura;Wikipedia (es);;;;;Bienal;NE
 F02086;Scandix pecten-veneris;Peine de Venus;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;;NE
@@ -3447,7 +3447,7 @@ F01647;Schizogyne glaberrima;Salado verde;Plantas con flor;planta;;;;;;;;;;NE
 F01648;Schizogyne sericea;Salado blanco;Plantas con flor;planta;;;;;;;;;;LC
 F01856;Schoenoplectus supinus;Junquillo rastrero;Plantas con flor;planta;;;;;;;;;;LC
 F02300;Schoenoplectus triqueter;Junquillo triangular;Plantas con flor;planta;;;;;;;;;;LC
-F01754;Scilla peruviana;Cebolla almorrana estrellada;Plantas con flor;hierba;0.06;0.08;altura;Wikipedia (es);;;;;Perenne;NE
+F01754;Scilla peruviana;Cebolla almorrana estrellada;Plantas con flor;hierba;0.15;0.4;altura;Wikipedia (es);;;;;Perenne;NE
 F02006;Scirpoides holoschoenus;Junco manso;Plantas con flor;planta;;;;;;;;;Perenne;LC
 F02263;Scleranthus annuus;;Plantas con flor;planta;;;;;;;;;;NE
 F00195;Scleranthus annuus subsp. annuus;Escleranto anual;Plantas con flor;planta;;;;;;;;;;NE
@@ -3479,8 +3479,8 @@ F02264;Sedum nudum;;Plantas con flor;planta;;;;;;;;;;NE
 F00426;Sedum nudum subsp. lancerottense;Pelotilla de Lanzarote;Plantas con flor;planta;;;;;;;;;;NE
 F00427;Sedum rubens;Crásula jabonera;Plantas con flor;roseta;;;;;;;;;;NE
 F00236;Selenicerus undatus;Culebra vegetal;Plantas con flor;planta;;;;;;;;;;
-F01789;Semele androgyna;Gibalbera;Plantas con flor;trepadora;0.1;0.12;longitud;Wikipedia (es);;;;;;NE
-F01790;Semele gayae;Aureola de risco;Plantas con flor;trepadora;0.1;0.12;longitud;Wikipedia (es);;;;;;NE
+F01789;Semele androgyna;Gibalbera;Plantas con flor;trepadora;;;;;;;;;;NE
+F01790;Semele gayae;Aureola de risco;Plantas con flor;trepadora;;;;;;;;;;NE
 F01653;Senecio angulatus;;Plantas con flor;trepadora;;;;;;;;;;NE
 F01654;Senecio bollei;Moqueguirre de Bolle;Plantas con flor;hierba;0.3;0.5;altura;Centinela (claves de identificación);;;;;Anual;NE
 F01656;Senecio flavus;Sanguinaria cenicienta;Plantas con flor;planta;;;;;;;;;;NE
@@ -3491,7 +3491,7 @@ F01660;Senecio incrassatus;Moqueguirre de costa;Plantas con flor;hierba;0.05;0.4
 F01661;Senecio leucanthemifolius;Moqueguirre hediondo;Plantas con flor;hierba;0.05;0.4;altura;Wikipedia (es);;;;;Anual;NE
 F01662;Senecio massaicus;;Plantas con flor;planta;;;;;;;;;;NT
 F01666;Senecio teneriffae;Casamelos canario;Plantas con flor;planta;;;;;;;;;;NE
-E09500;Senecio viscosus;;Plantas con flor;hierba;;;;;;;;;;NE
+E09500;Senecio viscosus;;Plantas con flor;hierba;0.2;0.6;altura;Wikipedia (es);;;;;;NE
 F01667;Senecio vulgaris;Casamelos común;Plantas con flor;hierba;;0.52;altura;Wikipedia (es);;;;;Anual;NE
 E10565;Senna artemisioides;;Plantas con flor;planta;;;;;;;;;;LC
 F00466;Senna bicapsularis;;Plantas con flor;arbusto;;3.5;altura;Wikipedia (es);;;;;Perenne;LC
@@ -3506,7 +3506,7 @@ F00086;Sesuvium portulacastrum;Verdolaga de litoral;Plantas con flor;hierba;;0.3
 E08228;Sesuvium portulacastrum subsp. portulacastrum;;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;Perenne;LC
 E07535;Sesuvium verrucosum;;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F02029;Setaria adhaerens;Pegapega;Plantas con flor;hierba;;;;;;;;;;NE
-E09452;Setaria italica;;Plantas con flor;hierba;;0.3;longitud;Wikipedia (es);;;;;;NE
+E09452;Setaria italica;;Plantas con flor;hierba;;0.2;altura;Wikipedia (es);;;;;;NE
 F02030;Setaria megaphyla;Almorejo de Chevalier;Plantas con flor;planta;;;;;;;;;;NE
 F02031;Setaria parviflora;Almorejo doblado;Plantas con flor;hierba;0.3;0.9;altura;Wikipedia (es);;;;;Perenne;LC
 F02032;Setaria pumila;Falsa pegapega;Plantas con flor;hierba;;0.2;altura;Wikipedia (es);;;;;;NE
@@ -3568,7 +3568,7 @@ F00203;Silene colorata;Conejera colorada;Plantas con flor;planta;;;;;;;;;;NE
 F00204;Silene conica;;Plantas con flor;planta;;;;;;;;;;NE
 F00205;Silene conoidea;;Plantas con flor;planta;;;;;;;;;;NE
 F00206;Silene cretica;;Plantas con flor;planta;;;;;;;;;;NE
-F00207;Silene gallica;Conejera carmelitilla;Plantas con flor;hierba;0.1;0.45;altura;Wikipedia (es);;;;;;NE
+F00207;Silene gallica;Conejera carmelitilla;Plantas con flor;planta;;;;;;;;;;NE
 F00211;Silene gracilis;;Plantas con flor;planta;;;;;;;;;;NE
 F00208;Silene inaperta;Conejera cerrada;Plantas con flor;planta;;;;;;;;;;NE
 F00210;Silene lagunensis;Canutillo de Anaga;Plantas con flor;planta;;;;;;;;;;NE
@@ -3600,17 +3600,17 @@ F02427;Smilax aspera;Zarzaparrilla común;Plantas con flor;trepadora;;;;;;;;;Per
 F01734;Smilax aspera subsp. mauritanica;Zarzaparrilla;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 F01735;Smilax canariensis;Zarzaparrilla canaria;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 F00847;Smyrnium olusatrum;Apio caballuno;Plantas con flor;arbusto;;1.5;altura;Wikipedia (es);;;;;;NE
-E06640;Solandra maxima;;Plantas con flor;trepadora;;12.0;longitud;Wikipedia (es);;;;;Perenne;NE
+E06640;Solandra maxima;;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 E06837;Solanum abutiloides;Fruta dorada;Plantas con flor;árbol;;9.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01128;Solanum americanum;Yerbamora blanca;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Anual;NE
 F01116;Solanum bonariense;Tomatillo de Buenos Aires;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01119;Solanum chenopodioides;Yerbamora vellosa;Plantas con flor;arbusto;0.5;0.8;altura;Wikipedia (es);;;;;Perenne;NE
 E06943;Solanum chrysotrichum;;Plantas con flor;arbusto;;3.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01118;Solanum giganteum;Jurubeba gigante;Plantas con flor;planta;;;;;;;;;;LC
-F01120;Solanum laxum;Enredadera de papa;Plantas con flor;trepadora;;5.0;longitud;Wikipedia (es);;;;;;NE
+F01120;Solanum laxum;Enredadera de papa;Plantas con flor;trepadora;;;;;;;;;;NE
 F01121;Solanum lidii;Pimentero de Temisas;Plantas con flor;arbusto;;0.7;altura;Centinela (claves de identificación);;;;;Perenne;CR
 F01104;Solanum lycopersicum;Tomatera;Plantas con flor;hierba;;2.5;altura;Wikipedia (es);;;;;Anual;NE
-F01123;Solanum marginatum;Tomatillo blanco;Plantas con flor;arbusto;;0.015;longitud;Wikipedia (es);;;;;Perenne;LC
+F01123;Solanum marginatum;Tomatillo blanco;Plantas con flor;arbusto;;8.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01124;Solanum mauritianum;Tomatillo de Mauricio;Plantas con flor;árbol;;10.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01721;Solanum nava;Tomatillo de Nava;Plantas con flor;arbusto;;1.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01127;Solanum nigrum;Yerbamora negra;Plantas con flor;hierba;0.3;0.8;altura;Wikipedia (es);;;;;Anual;NE
@@ -3636,9 +3636,9 @@ F01672;Sonchus asper subsp. glaucescens;;Plantas con flor;roseta;;0.1;altura;Wik
 F01673;Sonchus bornmuelleri;Cerrajón brillante;Plantas con flor;planta;;;;;;;;;;NE
 F01674;Sonchus bourgeaui;Cerrajilla moruna;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;;NE
 F01675;Sonchus brachylobus;Cerraja brillante;Plantas con flor;planta;;;;;;;;;;NE
-F02272;Sonchus canariensis;;Plantas con flor;roseta;;0.015;altura;Wikipedia (es);;;;;;NE
-F01676;Sonchus canariensis subsp. canariensis;Cerrajón arbóreo;Plantas con flor;roseta;;0.015;altura;Wikipedia (es);;;;;;NE
-F01677;Sonchus canariensis subsp. orotavensis;Cerrajón arbóreo de la Orotava;Plantas con flor;roseta;;0.015;altura;Wikipedia (es);;;;;;NE
+F02272;Sonchus canariensis;;Plantas con flor;roseta;;;;;;;;;;NE
+F01676;Sonchus canariensis subsp. canariensis;Cerrajón arbóreo;Plantas con flor;roseta;;;;;;;;;;NE
+F01677;Sonchus canariensis subsp. orotavensis;Cerrajón arbóreo de la Orotava;Plantas con flor;roseta;;;;;;;;;;NE
 F01572;Sonchus capillaris;Balillo fino;Plantas con flor;planta;;;;;;;;;;NE
 F01678;Sonchus congestus;Pipe;Plantas con flor;arbusto;;;;;;;;;;NE
 F01679;Sonchus fauces-orci;Cerraja de Adeje;Plantas con flor;planta;;;;;;;;;;NE
@@ -3649,7 +3649,7 @@ F01683;Sonchus hierrensis;Cerrajón herreño;Plantas con flor;planta;;;;;;;;;;NE
 F01574;Sonchus leptocephalus;balillo alpispillo;Plantas con flor;hierba;;;;;;;;;;NE
 F01684;Sonchus lidii;Cerrajón de Lid;Plantas con flor;planta;;;;;;;;;;NE
 F01573;Sonchus microcarpus;Balillo tinerfeño del sur;Plantas con flor;planta;;;;;;;;;;NE
-F01685;Sonchus oleraceus;Cerrajilla común;Plantas con flor;roseta;0.15;0.8;altura;Wikipedia (es);;;;;Bienal;NE
+F01685;Sonchus oleraceus;Cerrajilla común;Plantas con flor;roseta;;;;;;;;;Bienal;NE
 F02061;Sonchus ortunoi;Cerrajón gomero;Plantas con flor;planta;;;;;;;;;;NE
 F01686;Sonchus palmensis;Cerrajón palmero;Plantas con flor;planta;;;;;;;;;;LC
 F01687;Sonchus pinnatifidus;Cerrajón de risco;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
@@ -3659,7 +3659,7 @@ F01575;Sonchus regisjubae;Balillo copudo;Plantas con flor;planta;;;;;;;;;;NE
 F01571;Sonchus sventenii;Balillo gomero;Plantas con flor;planta;;;;;;;;;;NE
 F01690;Sonchus tectifolius;Angoja de Anaga;Plantas con flor;planta;;;;;;;;;;NE
 F01691;Sonchus tenerrimus;Cerrajilla menuda;Plantas con flor;hierba;;0.2;altura;Wikipedia (es);;;;;Bienal;NE
-F01692;Sonchus tuberifer;Cerrajilla de Teno;Plantas con flor;hierba;;;;;;;;;Perenne;NE
+F01692;Sonchus tuberifer;Cerrajilla de Teno;Plantas con flor;hierba;;0.3;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01693;Sonchus wildpretii;Balillo de Agando;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F02034;Sorghum bicolor;Sorgo;Plantas con flor;hierba;;;;;;;;;;NE
 F02035;Sorghum halepense;Millaca;Plantas con flor;arbusto;0.5;2.0;altura;Wikipedia (es);;;;;Perenne;NE
@@ -3673,7 +3673,7 @@ F00224;Spergularia bocconei;Esparcilla mayor;Plantas con flor;planta;;;;;;;;;;LC
 F02291;Spergularia bourgeaui;;Plantas con flor;planta;;;;;;;;;;LC
 F00225;Spergularia diandra;Esparcilla menor;Plantas con flor;planta;;;;;;;;;;NE
 F00227;Spergularia fimbriata;Romerillo manso;Plantas con flor;planta;;;;;;;;;;NE
-F00228;Spergularia marina;Romerillo marino;Plantas con flor;hierba;;0.35;longitud;Wikipedia (es);;;;;Anual;NE
+F00228;Spergularia marina;Romerillo marino;Plantas con flor;hierba;;0.35;altura;Wikipedia (es);;;;;Anual;NE
 F00229;Spergularia media;Romerillo medio;Plantas con flor;planta;;;;;;;;;;LC
 F02036;Sphenopus divaricatus;Poa extendida;Plantas con flor;planta;;;;;;;;;;NE
 F00277;Spinacia oleracea;Espinaca;Plantas con flor;hierba;;;;;;;;;Anual;NE
@@ -3689,7 +3689,7 @@ F01366;Stachys ocymastrum;Alfabega;Plantas con flor;hierba;0.12;0.7;altura;Wikip
 F00114;Staphisagria macrosperma;Espuela matapiojos;Plantas con flor;planta;;;;;;;;;;NE
 F00230;Stellaria media;Hierba pajarera;Plantas con flor;hierba;;;;;;;;;Bienal;NE
 F00231;Stellaria pallida;Hierba pajarera pálida;Plantas con flor;planta;;;;;;;;;;NE
-F02039;Stenotaphrum secundatum;Gramón americano;Plantas con flor;planta;;;;;;;;;Perenne;LC
+F02039;Stenotaphrum secundatum;Gramón americano;Plantas con flor;hierba;0.05;0.3;altura;Wikipedia (es);;;;;Perenne;LC
 F02043;Stipagrostis ciliata;Esparto plumoso;Plantas con flor;planta;;;;;;;;;;NE
 F02040;Stipellula capensis;Japito;Plantas con flor;planta;;;;;;;;;;NE
 F02285;Suaeda ifniensis;Matomoro moruno;Plantas con flor;arbusto;;0.5;altura;Wikipedia (es);;;;;Perenne;NE
@@ -3711,7 +3711,7 @@ E11381;Tamaranychia aldeae meridionalis;;Plantas con flor;planta;;;;;;;;;;
 F00894;Tamarix africana;Tarajal africano;Plantas con flor;arbusto;;4.0;altura;Wikipedia (es);;;;;Perenne;LC
 F02353;Tamarix boveana;;Plantas con flor;árbol;;;;;;;;;Perenne;VU
 F00895;Tamarix canariensis;Tarajal canario;Plantas con flor;árbol;;;;;;;;;Perenne;LC
-F01700;Tanacetum parthenium;Hierba de Santa María;Plantas con flor;hierba;;0.08;longitud;Wikipedia (es);;;;;Perenne;NE
+F01700;Tanacetum parthenium;Hierba de Santa María;Plantas con flor;hierba;0.1;0.6;altura;Wikipedia (es);;;;;Perenne;NE
 E07793;Taraxacum canariense;;Plantas con flor;planta;;;;;;;;;;NE
 E07794;Taraxacum degelii;;Plantas con flor;planta;;;;;;;;;;NE
 E08931;Taraxacum duplidentifrons;;Plantas con flor;planta;;;;;;;;;;NE
@@ -3722,7 +3722,7 @@ E08935;Taraxacum lidianum;;Plantas con flor;planta;;;;;;;;;;NE
 E05384;Taraxacum lucidum;;Plantas con flor;planta;;;;;;;;;;NE
 F01702;Taraxacum vulgare;Diente de león;Plantas con flor;planta;;;;;;;;;;NE
 E06944;Tecoma stans;;Plantas con flor;árbol;;;;;;;;;Perenne;LC
-F01284;Tecomaria capensis;Bignonia;Plantas con flor;arbusto;3.0;8.0;altura;Wikipedia (es);;;;;Perenne;LC
+F01284;Tecomaria capensis;Bignonia;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
 F00593;Teline canariensis;Retamón canario;Plantas con flor;planta;;;;;;;;;;LC
 F00594;Teline microphylla;Retama amarilla;Plantas con flor;planta;;;;;;;;;;NE
 F00595;Teline nervosa;Gildana peluda;Plantas con flor;arbusto;;4.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
@@ -3767,14 +3767,14 @@ F00753;Thesium subsucculentum;Escobilla carnosa;Plantas con flor;arbusto;;0.8;al
 F00982;Thlaspi arvense;;Plantas con flor;hierba;;0.7;altura;Wikipedia (es);;;;;Anual;NE
 F01590;Thrincia hispida;Lechuguilla dienteleón;Plantas con flor;planta;;;;;;;;;;NE
 F01369;Thymus origanoides;Tomillo tahoce;Plantas con flor;planta;;;;;;;;;;NE
-F01370;Thymus vulgaris;Tomillo común;Plantas con flor;arbusto;0.005;0.008;longitud;Wikipedia (es);;;;;Perenne;LC
+F01370;Thymus vulgaris;Tomillo común;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
 E07443;Tillandsia bergeri;;Plantas con flor;planta;;;;;;;;;Perenne;NE
 E06787;Tipuana tipu;;Plantas con flor;árbol;10.0;25.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01703;Tithonia diversifolia;Girasol arbóreo;Plantas con flor;árbol;1.0;4.0;altura;Wikipedia (es);;;;;Perenne;NE
 F02277;Todaroa aurea;;Plantas con flor;palmera;;;;;;;;;;NE
 F01389;Todaroa aurea subsp. aurea;Cañaheja;Plantas con flor;palmera;;;;;;;;;;NE
 F01390;Todaroa aurea subsp. suaveolens;Cañaheja olorosa;Plantas con flor;palmera;;;;;;;;;;NE
-F01705;Tolpis barbata;Lechuguilla salvaje;Plantas con flor;hierba;0.06;0.9;altura;Wikipedia (es);;;;;Anual;NE
+F01705;Tolpis barbata;Lechuguilla salvaje;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01706;Tolpis calderae;Lechuguilla de La Caldera;Plantas con flor;planta;;;;;;;;;;NE
 F01540;Tolpis coronopifolia;Cerraja de la vieja;Plantas con flor;planta;;;;;;;;;;NE
 F01707;Tolpis crassiuscula;Lechuguilla de Teno;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
@@ -3797,9 +3797,9 @@ F01862;Tradescantia fluminensis;Amor de hombre;Plantas con flor;planta;;;;;;;;;;
 F01860;Tradescantia pallida;Tejedera púrpura;Plantas con flor;hierba;0.2;0.4;altura;Wikipedia (es);;;;;Perenne;NE
 F01863;Tradescantia zebrina;Orejagato rayada;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00281;Traganum moquinii;Balancón;Plantas con flor;arbusto;;1.5;altura;Centinela (claves de identificación);;;;;Perenne;NE
-F01713;Tragopogon porrifolius;Barbón;Plantas con flor;hierba;0.3;0.4;altura;Wikipedia (es);;;;;Bienal;NE
+F01713;Tragopogon porrifolius;Barbón;Plantas con flor;hierba;;;;;;;;;Bienal;NE
 F02046;Tragus racemosus;Aceitilla de calcetines;Plantas con flor;planta;;;;;;;;;;NE
-F00714;Tribulus terrestris;Abrojo terrestre;Plantas con flor;hierba;;0.007;longitud;Wikipedia (es);;;;;Anual;LC
+F00714;Tribulus terrestris;Abrojo terrestre;Plantas con flor;hierba;;;;;;;;;Anual;LC
 F02047;Tricholaena teneriffae;Cerrillo blanco;Plantas con flor;planta;;;;;;;;;;NE
 F00614;Trifolium angustifolium;Trébol jopito;Plantas con flor;hierba;0.4;0.5;altura;Wikipedia (es);;;;;Anual;LC
 F00615;Trifolium arvense;Trébol silvestre;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Bienal;NE
@@ -3807,9 +3807,9 @@ F00616;Trifolium aureum;Trébol dorado;Plantas con flor;hierba;0.12;0.6;altura;W
 F00617;Trifolium bocconei;Trébol de Boccone;Plantas con flor;hierba;0.05;0.35;altura;Wikipedia (es);;;;;Anual;NE
 F00618;Trifolium campestre;Trébol común;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Bienal;NE
 E06826;Trifolium cernuum;;Plantas con flor;hierba;0.05;0.35;altura;Wikipedia (es);;;;;;NE
-F00619;Trifolium cherleri;Trébol rabogato;Plantas con flor;hierba;;0.05;altura;Wikipedia (es);;;;;;NE
+F00619;Trifolium cherleri;Trébol rabogato;Plantas con flor;hierba;;;;;;;;;;NE
 F00620;Trifolium dubium;Trébol ambiguo;Plantas con flor;hierba;0.2;0.3;altura;Wikipedia (es);;;;;;NE
-F00621;Trifolium fragiferum;Trébol fresa;Plantas con flor;hierba;;0.016;altura;Wikipedia (es);;;;;Perenne;NE
+F00621;Trifolium fragiferum;Trébol fresa;Plantas con flor;hierba;;0.45;altura;Wikipedia (es);;;;;Perenne;NE
 F00622;Trifolium gemellum;Trébol gemelo;Plantas con flor;hierba;0.1;0.35;altura;Wikipedia (es);;;;;;NE
 F00623;Trifolium glomeratum;Trébol glomeratum;Plantas con flor;planta;;;;;;;;;Anual;NE
 F00624;Trifolium hirtum;Trébol peludo;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;;NE
@@ -3819,12 +3819,12 @@ F00627;Trifolium micranthum;Trébol simple;Plantas con flor;planta;;;;;;;;;;NE
 F00628;Trifolium obscurum;Trébol oscuro;Plantas con flor;planta;;;;;;;;;;LC
 F00629;Trifolium pratense;Trébol rojo;Plantas con flor;hierba;0.1;0.6;altura;Wikipedia (es);;;;;Perenne;LC
 F00630;Trifolium repens;Trébol blanco;Plantas con flor;hierba;;0.1;altura;Wikipedia (es);;;;;Perenne;NE
-F00631;Trifolium resupinatum;Trébol persa;Plantas con flor;hierba;0.005;0.008;longitud;Wikipedia (es);;;;;Anual;NE
+F00631;Trifolium resupinatum;Trébol persa;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00632;Trifolium scabrum;Trébol áspero;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;;LC
 F00633;Trifolium spumosum;Trébol espumoso;Plantas con flor;planta;;;;;;;;;;NE
 F00634;Trifolium squamosum;Trébol de escama;Plantas con flor;planta;;;;;;;;;;NE
 F00635;Trifolium squarrosum;Trébol basto;Plantas con flor;planta;;;;;;;;;;NE
-F00636;Trifolium stellatum;Trébol estrellado;Plantas con flor;hierba;0.008;0.012;longitud;Wikipedia (es);;;;;Anual;NE
+F00636;Trifolium stellatum;Trébol estrellado;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00637;Trifolium striatum;Trébol listado;Plantas con flor;planta;;;;;;;;;;NE
 E09098;Trifolium subterraneum;;Plantas con flor;hierba;;;;;;;;;Anual;LC
 F00638;Trifolium subterraneum subsp. oxaloides;Trébol subterráneo;Plantas con flor;hierba;;;;;;;;;Anual;LC
@@ -3843,14 +3843,14 @@ F02050;Triticum aestivum;Trigo;Plantas con flor;planta;;;;;;;;;;NE
 F02391;Triticum aestivum subsp. hadropyrum;;Plantas con flor;planta;;;;;;;;;;NE
 E09094;Triticum turgidum;;Plantas con flor;planta;;;;;;;;;;LC
 F02392;Triticum turgidum subsp. durum;;Plantas con flor;planta;;;;;;;;;;LC
-F00988;Tropaeolum majus;Marañuela;Plantas con flor;hierba;0.03;0.1;altura;Wikipedia (es);;;;;Anual;NE
+F00988;Tropaeolum majus;Marañuela;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F00892;Tuberaria guttata;Hierba turmera;Plantas con flor;roseta;;;;;;;;;;NE
 F00893;Tuberaria lignosa;Hierba turmera leñosa;Plantas con flor;roseta;;0.4;altura;Wikipedia (es);;;;;Perenne;NE
 F01160;Turbina corymbosa;;Plantas con flor;trepadora;;;;;;;;;Perenne;NE
 E06805;Turnera ulmifolia;;Plantas con flor;planta;;;;;;;;;;LC
 F01857;Typha domingensis;Anea;Plantas con flor;hierba;;2.5;altura;Wikipedia (es);;;;;Perenne;LC
-F02279;Ulex europaeus;Tojo;Plantas con flor;arbusto;;0.04;longitud;Wikipedia (es);;;;;Perenne;LC
-F00643;Ulex europaeus subsp. europaeus;Tojo;Plantas con flor;arbusto;;0.04;longitud;Wikipedia (es);;;;;Perenne;LC
+F02279;Ulex europaeus;Tojo;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
+F00643;Ulex europaeus subsp. europaeus;Tojo;Plantas con flor;arbusto;;;;;;;;;Perenne;LC
 F00330;Ulmus minor;Olmo común;Plantas con flor;árbol;;40.0;altura;Wikipedia (es);;;;;Perenne;DD
 F00429;Umbilicus gaditanus;Sombrerillo común;Plantas con flor;planta;;;;;;;;;;NE
 F00428;Umbilicus heylandianus;Sombrerillo de cumbre;Plantas con flor;arbusto;;0.8;altura;Wikipedia (es);;;;;;NE
@@ -3864,11 +3864,11 @@ F00346;Urtica urens;Ortiga común;Plantas con flor;hierba;0.1;0.5;altura;Wikiped
 F00232;Vaccaria hispanica;;Plantas con flor;planta;;;;;;;;;Anual;NE
 F01097;Valantia hispida;Raspilla enana;Plantas con flor;hierba;;0.25;altura;Wikipedia (es);;;;;;NE
 F01039;Valeriana calcitrapae;Valeriana española;Plantas con flor;planta;;;;;;;;;;NE
-F01040;Valeriana rubra;Hierba de San Jorge;Plantas con flor;arbusto;0.3;0.6;longitud;Wikipedia (es);;;;;;NE
+F01040;Valeriana rubra;Hierba de San Jorge;Plantas con flor;arbusto;0.3;0.6;altura;Wikipedia (es);;;;;;NE
 F01041;Valerianella carinata;Canónigo de costillas;Plantas con flor;roseta;0.07;0.4;altura;Wikipedia (es);;;;;Anual;NE
 F01042;Valerianella coronata;Canónigo coronado;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;;NE
 F01043;Valerianella dentata;Canónigo simple;Plantas con flor;hierba;;0.2;altura;Wikipedia (es);;;;;Anual;NE
-F01044;Valerianella discoidea;Canónigo rosado;Plantas con flor;hierba;;0.3;longitud;Wikipedia (es);;;;;;NE
+F01044;Valerianella discoidea;Canónigo rosado;Plantas con flor;hierba;;0.3;altura;Wikipedia (es);;;;;;NE
 F01045;Valerianella eriocarpa;Canónigo de fruto rojo;Plantas con flor;planta;;;;;;;;;;NE
 F01046;Valerianella locusta;Canónigo europeo;Plantas con flor;roseta;0.07;0.4;altura;Wikipedia (es);;;;;Anual;NE
 E06827;Valerianella microcarpa;;Plantas con flor;hierba;;;;;;;;;Anual;NE
@@ -3884,28 +3884,28 @@ F01293;Verbena supina;Verbena menor;Plantas con flor;hierba;;0.5;altura;Wikipedi
 F01715;Verbesina encelioides;;Plantas con flor;planta;;;;;;;;;;NE
 F01242;Veronica agrestis;Verónica basta;Plantas con flor;hierba;0.05;0.4;altura;Wikipedia (es);;;;;Anual;NE
 F01243;Veronica anagallis-aquatica;Majapelo;Plantas con flor;planta;;;;;;;;;;LC
-F01244;Veronica arvensis;Verónica vellosa;Plantas con flor;planta;;;;;;;;;;NE
+F01244;Veronica arvensis;Verónica vellosa;Plantas con flor;hierba;0.09;0.4;altura;Wikipedia (es);;;;;;NE
 F01245;Veronica beccabunga;Verónica becabunga;Plantas con flor;planta;;;;;;;;;Perenne;LC
 E11460;Veronica cymbalaria;;Plantas con flor;planta;;;;;;;;;;NE
-F01246;Veronica hederifolia;Verónica gallinera;Plantas con flor;arbusto;0.1;0.6;altura;Wikipedia (es);;;;;Anual;NE
+F01246;Veronica hederifolia;Verónica gallinera;Plantas con flor;planta;;;;;;;;;Anual;NE
 F01247;Veronica persica;Verónica de Persia;Plantas con flor;planta;;;;;;;;;;NE
 F01248;Veronica polita;Verónica primorosa;Plantas con flor;hierba;0.05;0.25;altura;Wikipedia (es);;;;;Anual;NE
 F01249;Veronica serpyllifolia;Verónica tomillera;Plantas con flor;hierba;0.08;0.3;altura;Wikipedia (es);;;;;Perenne;LC
 F01037;Viburnum rugosum;Follado canario;Plantas con flor;árbol;;7.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00647;Vicia aphylla;Chicharilla canaria florida;Plantas con flor;planta;;;;;;;;;;NE
-F00644;Vicia articulata;Chicharilla articulada;Plantas con flor;hierba;;0.4;longitud;Wikipedia (es);;;;;Anual;LC
-F00645;Vicia benghalensis;Chicharilla india;Plantas con flor;trepadora;;0.03;longitud;Wikipedia (es);;;;;;NE
+F00644;Vicia articulata;Chicharilla articulada;Plantas con flor;hierba;;0.4;altura;Wikipedia (es);;;;;Anual;LC
+F00645;Vicia benghalensis;Chicharilla india;Plantas con flor;trepadora;;;;;;;;;;NE
 F00646;Vicia chaetocalyx;Chinipita canaria;Plantas con flor;planta;;;;;;;;;;NE
 F00648;Vicia disperma;Chicharilla de dos semillas;Plantas con flor;planta;;;;;;;;;;NE
 F00649;Vicia ervilia;Chicharilla alcaruna;Plantas con flor;hierba;0.2;0.4;altura;Wikipedia (es);;;;;Anual;LC
 F00650;Vicia faba;Haba;Plantas con flor;hierba;;1.6;altura;Wikipedia (es);;;;;Anual;NE
-F00651;Vicia filicaulis;Chicharilla canaria fina;Plantas con flor;trepadora;;;;;;;;;Anual;NE
-F00652;Vicia hirsuta;Chicharilla áspera;Plantas con flor;planta;;;;;;;;;;NE
-F00653;Vicia lutea;;Plantas con flor;planta;;;;;;;;;Perenne;LC
-F00423;Vicia lutea subsp. lutea;Chinipita amarilla;Plantas con flor;planta;;;;;;;;;Perenne;LC
+F00651;Vicia filicaulis;Chicharilla canaria fina;Plantas con flor;trepadora;;0.4;altura;Wikipedia (es);;;;;Anual;NE
+F00652;Vicia hirsuta;Chicharilla áspera;Plantas con flor;arbusto;0.2;0.7;altura;Wikipedia (es);;;;;;NE
+F00653;Vicia lutea;;Plantas con flor;arbusto;;0.6;altura;Wikipedia (es);;;;;Perenne;LC
+F00423;Vicia lutea subsp. lutea;Chinipita amarilla;Plantas con flor;arbusto;;0.6;altura;Wikipedia (es);;;;;Perenne;LC
 F00654;Vicia monantha;Chicharilla simple;Plantas con flor;trepadora;;;;;;;;;Anual;NE
 F00379;Vicia nataliae;Chicharilla gomera;Plantas con flor;planta;;;;;;;;;;NE
-F00660;Vicia parviflora;Chicharilla pobre;Plantas con flor;planta;;;;;;;;;;NE
+F00660;Vicia parviflora;Chicharilla pobre;Plantas con flor;arbusto;0.2;0.7;altura;Wikipedia (es);;;;;;NE
 F00655;Vicia pubescens;Chicharilla de seda;Plantas con flor;planta;;;;;;;;;;NE
 E00009;Vicia sabinarum;;Plantas con flor;planta;;;;;;;;;;NE
 F02089;Vicia sativa;Alverjana;Plantas con flor;hierba;0.3;0.8;altura;Wikipedia (es);;;;;Anual;LC
@@ -3930,11 +3930,11 @@ F00864;Viola anagae;Violeta de Anaga;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F00865;Viola arvensis;Violeta campestre;Plantas con flor;hierba;;;;;;;;;;NE
 F00866;Viola cheiranthifolia;Violeta del Teide;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 E09148;Viola guaxarensis;;Plantas con flor;planta;;;;;;;;;;NE
-F00867;Viola kitaibeliana;;Plantas con flor;trepadora;0.02;0.05;longitud;Wikipedia (es);;;;;;NE
+F00867;Viola kitaibeliana;;Plantas con flor;trepadora;;;;;;;;;;NE
 F00868;Viola odorata;Violeta común;Plantas con flor;hierba;0.1;0.15;altura;Wikipedia (es);;;;;Perenne;NE
 F00869;Viola palmensis;Violeta de La Palma;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F02302;Viola plantaginea;;Plantas con flor;planta;;;;;;;;;;NE
-F00870;Viola riviniana;Violeta de monte;Plantas con flor;roseta;;0.2;altura;Wikipedia (es);;;;;Perenne;NE
+F00870;Viola riviniana;Violeta de monte;Plantas con flor;roseta;;;;;;;;;Perenne;NE
 F00871;Viola tricolor;Violeta tricolor;Plantas con flor;hierba;;0.15;altura;Wikipedia (es);;;;;Perenne;NE
 F00855;Visnea mocanera;Mocán;Plantas con flor;árbol;4.0;8.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00750;Vitis vinifera;Parra común;Plantas con flor;trepadora;;30.0;altura;Wikipedia (es);;;;;Perenne;LC
@@ -3971,9 +3971,9 @@ E09273;Anolis porcatus;Anolis verde cubano;Reptiles;lagarto;;0.2;longitud;Wikipe
 E00409;Caretta caretta;Tortuga boba;Reptiles;tortuga;;1.2;longitud;Centinela (claves de identificación);156.5;AnAge;77.0;AnAge;;VU
 V00136;Centrochelys burchardi;Tortuga terrestre de Tenerife;Reptiles;tortuga;;;;;;;;;;NE
 V00139;Centrochelys vulcanica;Tortuga terrestre de Gran Canaria;Reptiles;tortuga;;;;;;;;;;NE
-E10444;Chalcides coeruleopunctatus;Lisa pintada;Reptiles;lagarto;;0.091;longitud;Wikipedia (es);;;;;;LC
-E10445;Chalcides coeruleopunctatus coeruleopunctatus;;Reptiles;lagarto;;0.091;longitud;Wikipedia (es);;;;;;
-V00124;Chalcides coeruleopunctatus garciamarquezi;;Reptiles;lagarto;;0.091;longitud;Wikipedia (es);;;;;;
+E10444;Chalcides coeruleopunctatus;Lisa pintada;Reptiles;lagarto;;0.091;longitud cabeza-cuerpo;Wikipedia (es);;;;;;LC
+E10445;Chalcides coeruleopunctatus coeruleopunctatus;;Reptiles;lagarto;;0.091;longitud cabeza-cuerpo;Wikipedia (es);;;;;;
+V00124;Chalcides coeruleopunctatus garciamarquezi;;Reptiles;lagarto;;0.091;longitud cabeza-cuerpo;Wikipedia (es);;;;;;
 V00158;Chalcides sexlineatus;Lisa de Gran Canaria;Reptiles;lagarto;;;;;;;;;;EN
 V00126;Chalcides sexlineatus bistriatus;Lisa variable;Reptiles;lagarto;;;;;;;;;;EN
 V00125;Chalcides sexlineatus sexlineatus;Lisa rayada;Reptiles;lagarto;;;;;;;;;;EN
@@ -4008,11 +4008,11 @@ E06202;Lepidochelys olivacea;Tortuga olivácea;Reptiles;tortuga;;0.79;longitud;C
 E10441;Tarentola angustimentalis;;Reptiles;lagarto;;0.076;longitud;Wikipedia (es);;;;;;LC
 V00127;Tarentola angustimentalis angustimentalis;;Reptiles;lagarto;;0.076;longitud;Wikipedia (es);;;;;;
 E10442;Tarentola angustimentalis unamunoi;Perenquén majorero;Reptiles;lagarto;;0.076;longitud;Wikipedia (es);;;;;;
-V00186;Tarentola boettgeri;Perenquén de Boettger;Reptiles;lagarto;;0.074;longitud;Wikipedia (es);;;;;;LC
-V00128;Tarentola boettgeri boettgeri;Perenquén de Gran Canaria;Reptiles;lagarto;;0.074;longitud;Centinela (claves de identificación);;;;;;LC
-V00129;Tarentola boettgeri hierrensis;Perenquén herreño;Reptiles;lagarto;;0.074;longitud;Wikipedia (es);;;;;;LC
+V00186;Tarentola boettgeri;Perenquén de Boettger;Reptiles;lagarto;;0.074;longitud cabeza-cuerpo;Wikipedia (es);;;;;;LC
+V00128;Tarentola boettgeri boettgeri;Perenquén de Gran Canaria;Reptiles;lagarto;;0.074;longitud cabeza-cuerpo;Centinela (claves de identificación);;;;;;LC
+V00129;Tarentola boettgeri hierrensis;Perenquén herreño;Reptiles;lagarto;;0.074;longitud cabeza-cuerpo;Wikipedia (es);;;;;;LC
 V00130;Tarentola delalandii;Perenquén común;Reptiles;lagarto;;0.07;longitud cabeza-cuerpo;Centinela (claves de identificación);;;;;;LC
-V00131;Tarentola gomerensis;Pracan;Reptiles;lagarto;;0.075;longitud cabeza-cuerpo;Centinela (claves de identificación);;;;;;LC
+V00131;Tarentola gomerensis;Pracan;Reptiles;lagarto;;0.072;longitud;Wikipedia (es);;;;;;LC
 E06683;Teira dugesii;Lagartija de Madeira;Reptiles;lagarto;;;;;0.0073;AnAge;4.8;AnAge;;LC
 E08249;Trachemys scripta;Galápago americano o de Florida;Reptiles;tortuga;0.2;0.3;longitud;Wikipedia (es);0.24;AnAge;41.3;AnAge;;LC
 V00224;Virgotyphlops braminus;Culebrilla ciega de las macetas;Reptiles;serpiente;;;;;;;;;;LC
