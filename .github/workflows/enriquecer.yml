@@ -34,12 +34,13 @@ jobs:
         continue-on-error: true
       - run: python scripts/conservacion.py
         continue-on-error: true
-      - run: python scripts/registros.py
+      - run: python scripts/registros.py --minutos 70
         continue-on-error: true
       - run: python scripts/sonidos.py
         continue-on-error: true
         env:
           XC_KEY: ${{ secrets.XC_KEY }}
+          MINUTOS_SONIDOS: "50"
       - name: Guardar datos
         if: ${{ !cancelled() }}
         run: |
