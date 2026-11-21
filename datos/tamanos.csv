@@ -4,19 +4,19 @@ V00217;Pelophylax perezi;Rana común;Anfibios;rana;;0.11;longitud;Wikipedia (es)
 V00079;Pelophylax saharicus;Rana del Sáhara;Anfibios;rana;;0.11;longitud;Wikipedia (es);;;;;;LC
 V00150;Accipiter nisus;Gavilán común;Aves;ave;0.29;0.34;longitud;Wikipedia (es);0.2375;AnAge;20.2;AnAge;;LC
 V00041;Accipiter nisus granti;Gavilán común;Aves;ave;0.28;0.37;longitud;Centinela (claves de identificación);0.2375;AnAge;20.2;AnAge;;LC
-V00146;Acridotheres tristis;Miná;Aves;ave;;0.23;longitud;Wikipedia (es);0.0071;Wikidata;;;;LC
+V00146;Acridotheres tristis;Miná;Aves;ave;;0.23;longitud;Wikipedia (es);;;;;;LC
 E08356;Acrocephalus schoenobaenus;Carricerín común;Aves;ave;0.115;0.13;longitud;Wikipedia (es);0.0118;AnAge;11.8;AnAge;;LC
 E08357;Acrocephalus scirpaceus;Carricero común;Aves;ave;;0.12;longitud;Wikidata;0.0123;AnAge;16.9;AnAge;;LC
 E08305;Actitis hypoleucos;Andarríos chico;Aves;ave;0.18;0.2;longitud;Wikipedia (es);0.048;AnAge;14.5;AnAge;;LC
 V00204;Agapornis fischeri;Inseparable de Fischer;Aves;ave;;0.14;longitud;Wikipedia (es);0.0483;AnAge;12.6;AnAge;;NT
-V00203;Agapornis personatus;Inseparable cabecinegro;Aves;ave;0.145;0.15;longitud;Wikipedia (es);0.0036;Wikidata;;;;LC
+V00203;Agapornis personatus;Inseparable cabecinegro;Aves;ave;0.145;0.15;longitud;Wikipedia (es);;;;;;LC
 E08338;Alauda arvensis;Alondra común;Aves;ave;;;;;0.0375;AnAge;10.1;AnAge;;LC
 V00193;Alaudala rufescens;Terrera marismeña;Aves;ave;;;;;;;;;;NE
 V00075;Alaudala rufescens rufescens;Calandra canaria;Aves;ave;;0.14;longitud;Centinela (claves de identificación);;;;;;NE
-V00151;Alectoris barbara;Perdiz moruna;Aves;ave;;;;;0.0196;Wikidata;;;;LC
-V00009;Alectoris barbara koenigi;Perdiz moruna;Aves;ave;;;;;0.0196;Wikidata;;;;LC
+V00151;Alectoris barbara;Perdiz moruna;Aves;ave;;;;;;;;;;LC
+V00009;Alectoris barbara koenigi;Perdiz moruna;Aves;ave;;;;;;;;;;LC
 V00010;Alectoris rufa;Perdiz roja;Aves;ave;0.34;0.38;longitud;Wikipedia (es);0.528;AnAge;6.2;AnAge;;NT
-V00226;Amandava amandava;Bengalí rojo;Aves;ave;;;;;0.0099;Wikidata;;;;LC
+V00226;Amandava amandava;Bengalí rojo;Aves;ave;;;;;;;;;;LC
 V00242;Amazona ochrocephala;Amazona real;Aves;ave;0.35;0.37;longitud;Wikipedia (es);0.43;AnAge;56.0;AnAge;;LC
 V00035;Anarhynchus alexandrinus;Chorlitejo patinegro;Aves;ave;0.15;0.17;longitud;Wikipedia (es);;;;;;LC
 E08268;Anas acuta;Ánade rabudo;Aves;ave;0.59;0.76;longitud;Wikipedia (es);0.721;AnAge;27.4;AnAge;;LC
@@ -24,20 +24,20 @@ E08270;Anas crecca;Cerceta común;Aves;ave;;0.35;longitud;Wikipedia (es);0.3438;
 E08272;Anas platyrhynchos;Ánade azulón;Aves;ave;0.5;0.65;longitud;Wikipedia (es);1.0481;AnAge;29.1;AnAge;;LC
 V00207;Anthus berthelotii;Caminero;Aves;ave;;;;;;;;;;LC
 V00082;Anthus berthelotii berthelotii;Caminero;Aves;ave;;0.14;longitud;Centinela (claves de identificación);;;;;;LC
-E08346;Anthus campestris;Bisbita campestre;Aves;ave;;;;;0.022;Wikidata;;;;LC
+E08346;Anthus campestris;Bisbita campestre;Aves;ave;;;;;;;;;;LC
 E08347;Anthus cervinus;Bisbita gorgirrojo;Aves;ave;;0.15;longitud;Wikipedia (es);0.0209;AnAge;4.5;AnAge;;LC
 E08348;Anthus pratensis;Bisbita pratense;Aves;ave;;;;;0.0184;AnAge;13.1;AnAge;;LC
 E08349;Anthus trivialis;Bisbita arbóreo;Aves;ave;;;;;0.0234;AnAge;8.8;AnAge;;LC
 V00018;Apus apus;Andoriña común;Aves;ave;0.16;0.17;longitud;Wikipedia (es);0.0376;AnAge;21.1;AnAge;;LC
-E11578;Apus pallidus;Andoriña pálida;Aves;ave;;;;;0.0413;Wikidata;;;;LC
-V00017;Apus pallidus brehmorum;Andoriña pálida;Aves;ave;;;;;0.0413;Wikidata;;;;LC
-V00016;Apus unicolor;Andoriña unicolor;Aves;ave;;;;;0.0024;Wikidata;;;;LC
+E11578;Apus pallidus;Andoriña pálida;Aves;ave;;;;;;;;;;LC
+V00017;Apus pallidus brehmorum;Andoriña pálida;Aves;ave;;;;;;;;;;LC
+V00016;Apus unicolor;Andoriña unicolor;Aves;ave;;;;;;;;;;LC
 E08279;Ardea cinerea;Garza real;Aves;ave;0.9;0.95;longitud;Wikipedia (es);1.443;AnAge;37.5;AnAge;;LC
 V00049;Ardea ibis;Garcilla bueyera;Aves;ave;0.46;0.56;longitud;Wikipedia (es);;;;;;LC
 E08280;Ardea purpurea;Garza imperial;Aves;ave;0.78;0.97;longitud;Wikipedia (es);1.0655;AnAge;25.4;AnAge;;LC
 E10632;Ardenna gravis;Pardela capirotada;Aves;ave;0.43;0.51;longitud;Wikipedia (es);;;;;;LC
 E10631;Ardenna grisea;Pardela sombría;Aves;ave;;0.45;longitud;Wikipedia (es);;;;;;NT
-E08281;Ardeola ralloides;Garcilla cangrejera;Aves;ave;0.44;0.47;longitud;Wikipedia (es);0.016;Wikidata;;;;LC
+E08281;Ardeola ralloides;Garcilla cangrejera;Aves;ave;0.44;0.47;longitud;Wikipedia (es);;;;;;LC
 E08300;Arenaria interpres;Vuelvepiedras común;Aves;ave;0.21;0.25;longitud;Wikipedia (es);0.136;AnAge;22.3;AnAge;;NT
 E08333;Asio flammeus;Búho campestre;Aves;ave;;;;;0.406;AnAge;21.8;AnAge;;LC
 V00152;Asio otus;Búho chico;Aves;ave;0.31;0.37;longitud;Wikipedia (es);0.2497;AnAge;27.8;AnAge;;LC
@@ -46,7 +46,7 @@ E09823;Astur gentilis;;Aves;ave;0.48;0.58;longitud;Wikipedia (es);;;;;;
 E08275;Aythya ferina;Porrón europeo;Aves;ave;0.42;0.49;longitud;Wikipedia (es);0.823;AnAge;23.2;AnAge;;VU
 E08276;Aythya fuligula;Porrón moñudo;Aves;ave;;0.43;longitud;Wikipedia (es);0.7015;AnAge;45.2;AnAge;;LC
 E09153;Bostrychia hagedash;Ibis hadada;Aves;ave;0.65;0.76;longitud;Wikipedia (es);1.238;AnAge;16.0;AnAge;;LC
-V00050;Botaurus minutus;Avetorillo común;Aves;ave;0.25;0.36;longitud;Wikipedia (es);0.013;Wikidata;;;;
+V00050;Botaurus minutus;Avetorillo común;Aves;ave;0.25;0.36;longitud;Wikipedia (es);;;;;;
 V00182;Bucanetes githagineus;Camachuelo trompetero;Aves;ave;;0.12;longitud;Wikipedia (es);;;;;;LC
 V00094;Bucanetes githagineus amantum;Pájaro moro;Aves;ave;;0.12;longitud;Centinela (claves de identificación);;;;;;LC
 V00051;Bulweria bulwerii;Perrito;Aves;ave;0.25;0.29;longitud;Wikipedia (es);0.099;AnAge;22.9;AnAge;;LC
@@ -55,14 +55,14 @@ V00031;Burhinus oedicnemus distinctus;Alcaraván común;Aves;ave;;0.41;longitud;
 V00032;Burhinus oedicnemus insularum;Alcaraván majorero;Aves;ave;;0.41;longitud;Centinela (claves de identificación);0.459;AnAge;17.9;AnAge;;LC
 V00154;Buteo buteo;Ratonero común;Aves;ave;0.46;0.58;longitud;Wikipedia (es);1.012;AnAge;28.8;AnAge;;LC
 V00042;Buteo buteo insularum;Aguililla canaria;Aves;ave;0.46;0.58;longitud;Wikipedia (es);1.012;AnAge;28.8;AnAge;;LC
-E06638;Cairina moschata;Pato criollo;Aves;ave;;;;;0.074;Wikidata;;;;LC
+E06638;Cairina moschata;Pato criollo;Aves;ave;;;;;;;;;;LC
 E08339;Calandrella brachydactyla;Terrera común;Aves;ave;;;;;;;;;;LC
 E08306;Calidris alba;Correlimos tridáctilo;Aves;ave;;;;;0.05;AnAge;18.6;AnAge;;LC
 E08307;Calidris alpina;Correlimos común;Aves;ave;;;;;0.0525;AnAge;28.8;AnAge;;NT
 E08308;Calidris canutus;Correlimos gordo;Aves;ave;;;;;0.135;AnAge;27.3;AnAge;;NT
 E08309;Calidris ferruginea;Correlimos zarapitín;Aves;ave;0.195;0.21;longitud;Wikipedia (es);0.0581;AnAge;19.7;AnAge;;VU
 E08310;Calidris minuta;Correlimos menudo;Aves;ave;;;;;0.0211;AnAge;14.7;AnAge;;LC
-E08319;Calidris pugnax;Combatiente;Aves;ave;;;;;0.102;Wikidata;;;;LC
+E08319;Calidris pugnax;Combatiente;Aves;ave;;;;;;;;;;LC
 V00052;Calonectris borealis;Pardela cenicienta atlántica;Aves;ave;;0.46;longitud;Centinela (claves de identificación);;;;;;LC
 V00197;Carduelis carduelis;Pájaro pinto;Aves;ave;0.11;0.135;longitud;Wikipedia (es);0.016;AnAge;27.0;AnAge;;LC
 V00091;Carduelis carduelis parva;Pájaro pinto;Aves;ave;0.11;0.135;longitud;Wikipedia (es);0.016;AnAge;27.0;AnAge;;LC
@@ -80,10 +80,10 @@ E08282;Ciconia ciconia;Cigüeña blanca;Aves;ave;1.0;1.15;longitud;Wikipedia (es
 E08286;Circus aeruginosus;Aguilucho lagunero occidental;Aves;ave;;;;;0.7115;AnAge;20.1;AnAge;;LC
 E08287;Circus cyaneus;Aguilucho pálido;Aves;ave;;0.5;longitud;Wikipedia (es);0.392;AnAge;17.1;AnAge;;LC
 E08288;Circus pygargus;Aguilucho cenizo;Aves;ave;0.4;0.45;longitud;Wikipedia (es);0.3155;AnAge;16.3;AnAge;;LC
-E08331;Clamator glandarius;Críalo europeo;Aves;ave;0.35;0.39;longitud;Wikipedia (es);0.138;Wikidata;;;;LC
+E08331;Clamator glandarius;Críalo europeo;Aves;ave;0.35;0.39;longitud;Wikipedia (es);;;;;;LC
 V00023;Columba bollii;Paloma turqué;Aves;ave;;;;;;;;;;LC
-V00230;Columba guinea;Paloma de Guinea;Aves;ave;;;;;0.0157;Wikidata;;;;LC
-V00024;Columba junoniae;Paloma rabiche;Aves;ave;;0.39;longitud;Centinela (claves de identificación);0.0198;Wikidata;;;;NT
+V00230;Columba guinea;Paloma de Guinea;Aves;ave;;;;;;;;;;LC
+V00024;Columba junoniae;Paloma rabiche;Aves;ave;;0.39;longitud;Centinela (claves de identificación);;;;;;NT
 V00161;Columba livia;Paloma bravía;Aves;ave;0.29;0.37;longitud;Wikipedia (es);0.3587;AnAge;35.0;AnAge;;LC
 V00022;Columba livia livia;Paloma bravía;Aves;ave;0.29;0.37;longitud;Wikipedia (es);0.3587;AnAge;35.0;AnAge;;LC
 E09661;Columba palumbus;Paloma torcaz;Aves;ave;0.38;0.445;longitud;Wikipedia (es);0.49;AnAge;17.7;AnAge;;LC
@@ -96,12 +96,12 @@ V00012;Coturnix coturnix confisa;Codorniz común;Aves;ave;;;;;0.0965;AnAge;14.6;
 V00112;Coturnix gomerae;Codorniz canaria;Aves;ave;;;;;;;;;;NE
 E08332;Cuculus canorus;Cuco común;Aves;ave;0.32;0.34;longitud;Wikipedia (es);0.1115;AnAge;12.9;AnAge;;LC
 E08364;Curruca cantillans;Curruca carrasqueña;Aves;ave;;;;;;;;;;LC
-E08365;Curruca communis;Curruca zarcera;Aves;ave;;0.14;longitud;Wikipedia (es);0.0145;Wikidata;;;;LC
+E08365;Curruca communis;Curruca zarcera;Aves;ave;;0.14;longitud;Wikipedia (es);;;;;;LC
 V00184;Curruca conspicillata;Curruca tomillera;Aves;ave;;;;;;;;;;LC
 V00074;Curruca conspicillata orbitalis;Curruca tomillera;Aves;ave;;;;;;;;;;LC
-V00185;Curruca melanocephala;Curruca cabecinegra;Aves;ave;;;;;0.0017;Wikidata;;;;LC
-V00073;Curruca melanocephala leucogastra;Curruca cabecinegra;Aves;ave;;;;;0.0017;Wikidata;;;;LC
-V00036;Cursorius cursor;Engaña;Aves;ave;;;;;0.0139;Wikidata;;;;LC
+V00185;Curruca melanocephala;Curruca cabecinegra;Aves;ave;;;;;;;;;;LC
+V00073;Curruca melanocephala leucogastra;Curruca cabecinegra;Aves;ave;;;;;;;;;;LC
+V00036;Cursorius cursor;Engaña;Aves;ave;;;;;;;;;;LC
 V00175;Cyanistes teneriffae;Herrerillo común;Aves;ave;;0.12;longitud;Wikipedia (es);;;;;;LC
 V00066;Cyanistes teneriffae degener;Herrerillo majorero;Aves;ave;;0.11;longitud;Centinela (claves de identificación);;;;;;LC
 V00245;Cyanistes teneriffae hedwigae;Herrerillo común;Aves;ave;;0.11;longitud;Centinela (claves de identificación);;;;;;LC
@@ -119,10 +119,10 @@ E07461;Erithacus marionae;Petirrojo de Gran Canaria;Aves;ave;;;;;;;;;;
 V00164;Erithacus rubecula;Petirrojo;Aves;ave;0.125;0.14;longitud;Wikipedia (es);0.0173;AnAge;19.3;AnAge;;LC
 V00062;Erithacus rubecula rubecula;Petirrojo común;Aves;ave;0.14;0.165;longitud;Centinela (claves de identificación);0.0173;AnAge;19.3;AnAge;;LC
 V00061;Erithacus superbus;Petirrojo tinerfeño;Aves;ave;0.14;0.165;longitud;Centinela (claves de identificación);;;;;;NE
-V00210;Estrilda astrild;Pico de Coral;Aves;ave;;;;;0.0082;Wikidata;;;;LC
-V00011;Estrilda melpoda;Estrilda carinaranja;Aves;ave;;;;;0.0078;Wikidata;;;;LC
+V00210;Estrilda astrild;Pico de Coral;Aves;ave;;;;;;;;;;LC
+V00011;Estrilda melpoda;Estrilda carinaranja;Aves;ave;;;;;;;;;;LC
 E08295;Eudromias morinellus;Chorlito carambolo;Aves;ave;;;;;;;;;;NE
-V00232;Euplectes orix;Tejedor Rojo;Aves;ave;;;;;0.0255;Wikidata;;;;LC
+V00232;Euplectes orix;Tejedor Rojo;Aves;ave;;;;;;;;;;LC
 E08289;Falco columbarius;Esmerejón;Aves;ave;;;;;0.195;AnAge;12.7;AnAge;;LC
 V00045;Falco eleonorae;Aleta;Aves;ave;;;;;0.39;AnAge;11.2;AnAge;;LC
 E08290;Falco naumanni;Cernícalo primilla;Aves;ave;0.3;0.35;longitud;Wikipedia (es);0.1525;AnAge;10.9;AnAge;;LC
@@ -143,15 +143,15 @@ V00085;Fringilla canariensis palmae;Pinzón palmero;Aves;ave;0.14;0.16;longitud;
 E08343;Fringilla coelebs;Pinzón vulgar;Aves;ave;;;;;0.0207;AnAge;29.0;AnAge;;LC
 E08392;Fringilla coelebs coelebs;Pinzón vulgar;Aves;ave;;;;;0.0207;AnAge;29.0;AnAge;;LC
 V00087;Fringilla polatzeki;Pinzul;Aves;ave;;0.16;longitud;Wikipedia (es);;;;;;EN
-V00086;Fringilla teydea;Pinzón azul;Aves;ave;;0.165;longitud;Centinela (claves de identificación);0.0034;Wikidata;;;;NT
+V00086;Fringilla teydea;Pinzón azul;Aves;ave;;0.165;longitud;Centinela (claves de identificación);;;;;;NT
 V00028;Fulica atra;Focha común;Aves;ave;0.32;0.42;longitud;Wikipedia (es);0.7343;AnAge;20.6;AnAge;;LC
 E08311;Gallinago gallinago;Agachadiza común;Aves;ave;;;;;0.1316;AnAge;18.2;AnAge;;LC
 V00027;Gallinula chloropus;Gallineta común;Aves;ave;0.3;0.38;longitud;Wikipedia (es);0.392;AnAge;18.6;AnAge;;LC
 E08327;Gelochelidon nilotica;Pagaza piconegra;Aves;ave;;;;;0.221;AnAge;16.0;AnAge;;LC
-E08299;Glareola pratincola;Canastera común;Aves;ave;;;;;0.0101;Wikidata;;;;LC
+E08299;Glareola pratincola;Canastera común;Aves;ave;;;;;;;;;;LC
 V00038;Haematopus meadewaldoi;Ostrero canario;Aves;ave;;0.08;longitud;Wikipedia (es);;;;;;EX
 E08301;Haematopus ostralegus;Ostrero euroasiático;Aves;ave;0.4;0.45;longitud;Wikipedia (es);0.48;AnAge;43.3;AnAge;;NT
-E08285;Hieraaetus pennatus;Águila calzada;Aves;ave;0.4;0.55;longitud;Wikipedia (es);0.709;Wikidata;;;;LC
+E08285;Hieraaetus pennatus;Águila calzada;Aves;ave;0.4;0.55;longitud;Wikipedia (es);;;;;;LC
 V00033;Himantopus himantopus;Cigüeñuela común;Aves;ave;;0.38;longitud;Centinela (claves de identificación);0.161;AnAge;16.0;AnAge;;LC
 E08358;Hippolais polyglotta;Zarcero políglota;Aves;ave;0.12;0.13;longitud;Wikipedia (es);0.011;AnAge;8.9;AnAge;;LC
 V00001;Hirundo rustica;Golondrina común;Aves;ave;0.146;0.199;longitud;Wikipedia (es);0.0183;AnAge;16.0;AnAge;;LC
@@ -161,7 +161,7 @@ E10630;Hydrobates leucorhous leucorhous;Paíño boreal;Aves;ave;;;;;;;;;;VU
 V00056;Hydrobates pelagicus;Almamestre;Aves;ave;0.14;0.18;longitud;Wikipedia (es);0.0252;AnAge;33.8;AnAge;;LC
 E08359;Iduna opaca;Zarcero bereber;Aves;ave;;0.13;longitud;Wikipedia (es);;;;;;LC
 E08337;Jynx torquilla;Torcecuello euroasiático;Aves;ave;;0.16;longitud;Wikipedia (es);0.035;AnAge;10.0;AnAge;;LC
-V00233;Lamprotornis purpureus;Bruñido Purpúreo;Aves;ave;;0.26;longitud;Wikipedia (es);0.0059;Wikidata;;;;LC
+V00233;Lamprotornis purpureus;Bruñido Purpúreo;Aves;ave;;0.26;longitud;Wikipedia (es);;;;;;LC
 V00172;Lanius excubitor;Alcaudón real;Aves;ave;0.22;0.26;longitud;Wikipedia (es);0.0635;AnAge;12.0;AnAge;;LC
 V00058;Lanius excubitor koenigi;Alcaudón canario;Aves;ave;;0.25;longitud;Centinela (claves de identificación);0.0635;AnAge;12.0;AnAge;;LC
 E08345;Lanius senator;Alcaudón común;Aves;ave;;0.19;longitud;Wikipedia (es);0.036;AnAge;5.7;AnAge;;NT
@@ -179,7 +179,7 @@ E08366;Luscinia megarhynchos;Ruiseñor común;Aves;ave;0.15;0.165;longitud;Wikip
 E08316;Lymnocryptes minimus;Agachadiza chica;Aves;ave;;;;;0.0502;AnAge;12.3;AnAge;;LC
 E08271;Mareca penelope;Silbón europeo;Aves;ave;0.42;0.5;longitud;Wikipedia (es);;;;;;LC
 E08274;Mareca strepera;Ánade friso;Aves;ave;0.46;0.56;longitud;Wikipedia (es);;;;;;LC
-V00098;Marmaronetta angustirostris;Cerceta pardilla;Aves;ave;0.39;0.42;longitud;Wikipedia (es);0.562;Wikidata;;;;NT
+V00098;Marmaronetta angustirostris;Cerceta pardilla;Aves;ave;0.39;0.42;longitud;Wikipedia (es);;;;;;NT
 V00206;Melopsittacus undulatus;Periquito común;Aves;ave;;0.18;longitud;Wikipedia (es);0.03;AnAge;21.0;AnAge;;LC
 E08336;Merops apiaster;Abejaruco europeo;Aves;ave;;0.25;longitud;Wikipedia (es);0.0566;AnAge;5.9;AnAge;;LC
 V00236;Milvus migrans;Milano negro;Aves;ave;0.5;0.6;longitud;Wikipedia (es);1.0;AnAge;24.0;AnAge;;LC
@@ -226,7 +226,7 @@ V00105;Phylloscopus canariensis canariensis;Mosquitero canario;Aves;ave;;0.1;lon
 V00106;Phylloscopus canariensis exsul;Mosquitero majorero;Aves;ave;;;;;;;;;;LC
 E08377;Phylloscopus collybita;Mosquitero común;Aves;ave;;0.1;longitud;Wikipedia (es);0.0083;AnAge;8.0;AnAge;;LC
 E08378;Phylloscopus collybita collybita;Mosquitero común;Aves;ave;;0.1;longitud;Wikipedia (es);0.0083;AnAge;8.0;AnAge;;LC
-E08361;Phylloscopus sibilatrix;Mosquitero silbador;Aves;ave;;;;;0.01;Wikidata;;;;LC
+E08361;Phylloscopus sibilatrix;Mosquitero silbador;Aves;ave;;;;;;;;;;LC
 E08362;Phylloscopus trochilus;Mosquitero musical;Aves;ave;;;;;0.0087;AnAge;11.8;AnAge;;LC
 E08284;Platalea leucorodia;Espátula común;Aves;ave;0.8;0.93;longitud;Wikipedia (es);1.868;AnAge;30.1;AnAge;;LC
 E08283;Plegadis falcinellus;Morito común;Aves;ave;0.48;0.66;longitud;Wikipedia (es);0.4312;AnAge;26.8;AnAge;;LC
@@ -234,10 +234,10 @@ E08296;Pluvialis apricaria;Chorlito dorado europeo;Aves;ave;0.26;0.29;longitud;W
 E08297;Pluvialis squatarola;Chorlito gris;Aves;ave;;;;;0.224;AnAge;25.6;AnAge;;VU
 E08277;Podiceps nigricollis;Zampullín cuellinegro;Aves;ave;0.28;0.34;longitud;Wikipedia (es);0.392;AnAge;13.1;AnAge;;LC
 V00205;Poicephalus senegalus;Lorito senegalés;Aves;ave;;0.25;longitud;Wikipedia (es);0.155;AnAge;40.0;AnAge;;LC
-E08292;Porzana porzana;Polluela pintoja;Aves;ave;0.19;0.225;longitud;Wikipedia (es);0.0109;Wikidata;;;;LC
+E08292;Porzana porzana;Polluela pintoja;Aves;ave;0.19;0.225;longitud;Wikipedia (es);;;;;;LC
 V00202;Psittacula krameri;Cotorra de Kramer;Aves;ave;;0.4;longitud;Wikipedia (es);0.128;AnAge;34.0;AnAge;;LC
-V00101;Pterocles orientalis;Ganga;Aves;ave;;;;;0.383;Wikidata;;;;LC
-V00029;Pterocles orientalis orientalis;Ganga;Aves;ave;;0.35;longitud;Centinela (claves de identificación);0.383;Wikidata;;;;LC
+V00101;Pterocles orientalis;Ganga;Aves;ave;;;;;;;;;;LC
+V00029;Pterocles orientalis orientalis;Ganga;Aves;ave;;0.35;longitud;Centinela (claves de identificación);;;;;;LC
 V00054;Puffinus baroli;Tajose;Aves;ave;;;;;;;;;;NE
 V00096;Puffinus holeae;Pardela del jable;Aves;ave;;;;;;;;;;NE
 V00140;Puffinus olsoni;Pardela del malpaís;Aves;ave;;;;;;;;;;
@@ -256,9 +256,9 @@ V00071;Regulus regulus teneriffae;Reyezuelo canario;Aves;ave;0.085;0.095;longitu
 E08342;Riparia riparia;Avión zapador;Aves;ave;;0.12;longitud;Wikipedia (es);0.0127;AnAge;10.1;AnAge;;LC
 E10635;Rissa tridactyla;Gaviota tridáctila;Aves;ave;;0.4;longitud;Wikipedia (es);0.317;AnAge;28.5;AnAge;;VU
 E10636;Rissa tridactyla tridactyla;Gaviota tridáctila;Aves;ave;;0.4;longitud;Wikipedia (es);0.317;AnAge;28.5;AnAge;;VU
-V00183;Saxicola dacotiae;Tarabilla canaria;Aves;ave;;;;;0.0019;Wikidata;;;;NT
-V00063;Saxicola dacotiae dacotiae;Caldereta;Aves;ave;;;;;0.0019;Wikidata;;;;NT
-V00064;Saxicola dacotiae murielae;Caldereta de Alegranza;Aves;ave;;;;;0.0019;Wikidata;;;;NT
+V00183;Saxicola dacotiae;Tarabilla canaria;Aves;ave;;;;;;;;;;NT
+V00063;Saxicola dacotiae dacotiae;Caldereta;Aves;ave;;;;;;;;;;NT
+V00064;Saxicola dacotiae murielae;Caldereta de Alegranza;Aves;ave;;;;;;;;;;NT
 E08371;Saxicola rubetra;Tarabilla norteña;Aves;ave;;;;;0.0166;AnAge;6.9;AnAge;;LC
 E08372;Saxicola rubicola;Tarabilla europea;Aves;ave;;;;;;;;;;NE
 V00030;Scolopax rusticola;Gallinuela;Aves;ave;;0.36;longitud;Wikipedia (es);0.3083;AnAge;15.5;AnAge;;LC
@@ -270,7 +270,7 @@ V00227;Spilopelia senegalensis;Tórtola del Senegal;Aves;ave;;;;;;;;;;LC
 E08344;Spinus spinus;Jilguero lúgano;Aves;ave;0.11;0.125;longitud;Wikipedia (es);0.0132;AnAge;13.5;AnAge;;LC
 E11127;Stercorarius longicaudus;Págalo rabero;Aves;ave;;;;;0.298;AnAge;14.0;AnAge;;LC
 E10639;Stercorarius parasiticus;Págalo parásito;Aves;ave;;;;;0.4455;AnAge;31.1;AnAge;;LC
-E10638;Stercorarius pomarinus;Págalo pomarino;Aves;ave;;;;;0.74;Wikidata;;;;LC
+E10638;Stercorarius pomarinus;Págalo pomarino;Aves;ave;;;;;;;;;;LC
 E10637;Stercorarius skua;Págalo grande;Aves;ave;;0.58;longitud;Wikipedia (es);1.34;AnAge;35.9;AnAge;;LC
 V00103;Sterna dougallii;Garajao rosado;Aves;ave;;;;;0.112;AnAge;25.7;AnAge;;LC
 V00102;Sterna hirundo;Garajao común;Aves;ave;0.31;0.35;longitud;Wikipedia (es);0.12;AnAge;33.0;AnAge;;LC
@@ -283,8 +283,8 @@ V00065;Sturnus vulgaris;Estornino pinto;Aves;ave;;0.2;longitud;Wikipedia (es);0.
 V00047;Sylvia atricapilla;Curruca capirotada;Aves;ave;0.13;0.15;longitud;Wikipedia (es);0.0167;AnAge;13.8;AnAge;;LC
 V00072;Sylvia atricapilla heineken;Capirote;Aves;ave;;0.14;longitud;Centinela (claves de identificación);0.0167;AnAge;13.8;AnAge;;LC
 E08363;Sylvia borin;Curruca mosquitera;Aves;ave;;0.14;longitud;Wikipedia (es);0.0246;AnAge;24.0;AnAge;;LC
-E08334;Tachymarptis melba;Vencejo real;Aves;ave;;;;;0.006;Wikidata;;;;LC
-V00097;Tadorna ferruginea;Tarro canelo;Aves;ave;0.58;0.7;longitud;Wikipedia (es);1.36;Wikidata;;;;LC
+E08334;Tachymarptis melba;Vencejo real;Aves;ave;;;;;;;;;;LC
+V00097;Tadorna ferruginea;Tarro canelo;Aves;ave;0.58;0.7;longitud;Wikipedia (es);;;;;;LC
 E08328;Thalasseus sandvicensis;Charrán patinegro;Aves;ave;0.37;0.43;longitud;Wikipedia (es);0.25;AnAge;30.8;AnAge;;LC
 E11579;Thinornis dubius;Chorlitejo chico;Aves;ave;;;;;;;;;;
 V00034;Thinornis dubius curonicus;Chorlitejo chico;Aves;ave;;;;;;;;;;
@@ -305,9 +305,9 @@ V00188;Tyto alba;Lechuza común;Aves;ave;0.33;0.35;longitud;Wikipedia (es);0.58;
 V00020;Tyto alba alba;Lechuza común;Aves;ave;;0.4;longitud;Centinela (claves de identificación);0.58;AnAge;34.0;AnAge;;LC
 V00021;Tyto alba gracilirostris;Lechuza majorera;Aves;ave;;0.4;longitud;Centinela (claves de identificación);0.58;AnAge;34.0;AnAge;;LC
 V00015;Upupa epops;Abubilla;Aves;ave;0.26;0.28;longitud;Wikipedia (es);0.0671;AnAge;11.1;AnAge;;LC
-V00221;Uraeginthus bengalus;Coliazul bengalí;Aves;ave;0.125;0.13;longitud;Wikipedia (es);0.0099;Wikidata;;;;LC
+V00221;Uraeginthus bengalus;Coliazul bengalí;Aves;ave;0.125;0.13;longitud;Wikipedia (es);;;;;;LC
 E08298;Vanellus vanellus;Avefría europea;Aves;ave;0.28;0.31;longitud;Wikipedia (es);0.2185;AnAge;24.5;AnAge;;NT
-E08293;Zapornia parva;Polluela bastarda;Aves;ave;0.18;0.2;longitud;Wikipedia (es);0.0079;Wikidata;;;;LC
+E08293;Zapornia parva;Polluela bastarda;Aves;ave;0.18;0.2;longitud;Wikipedia (es);;;;;;LC
 F00020;Adiantum capillus-veneris;Culantrillo de pozo;Helechos;helecho;0.1;0.4;altura;Wikipedia (es);;;;;Perenne;LC
 F02151;Adiantum hispidulum;;Helechos;helecho;;0.45;altura;Wikipedia (es);;;;;;NE
 F00021;Adiantum raddianum;Culantrillo;Helechos;helecho;;;;;;;;;;NE
@@ -1325,9 +1325,9 @@ F00087;Achyranthes aspera;Malpica;Plantas con flor;hierba;;;;;;;;;Perenne;NE
 F01566;Achyrophorus valdesii;Lechuguilla de paja;Plantas con flor;planta;;;;;;;;;;NE
 F00475;Adenocarpus foliolosus;Codeso de monte;Plantas con flor;planta;;;;;;;;;;LC
 F00476;Adenocarpus ombriosus;Codeso herreño;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;EN
-F02172;Adenocarpus viscosus;Codeso del Pico;Plantas con flor;palmera;0.3;1.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00609;Adenocarpus viscosus spartioides;Codeso del pico;Plantas con flor;palmera;0.3;1.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00477;Adenocarpus viscosus subsp. viscosus;Codeso del pico;Plantas con flor;palmera;0.3;1.0;altura;Wikipedia (es);;;;;Perenne;
+F02172;Adenocarpus viscosus;Codeso del Pico;Plantas con flor;arbusto;0.3;1.0;altura;Wikipedia (es);;;;;Perenne;LC
+F00609;Adenocarpus viscosus spartioides;Codeso del pico;Plantas con flor;arbusto;0.3;1.0;altura;Wikipedia (es);;;;;Perenne;LC
+F00477;Adenocarpus viscosus subsp. viscosus;Codeso del pico;Plantas con flor;arbusto;0.3;1.0;altura;Wikipedia (es);;;;;Perenne;
 F00110;Adonis microcarpa;Ojo de perdiz;Plantas con flor;hierba;;0.15;altura;Wikipedia (es);;;;;Anual;NE
 F01875;Aegilops biuncialis;Rompesacos peloso;Plantas con flor;planta;;;;;;;;;;LC
 F01877;Aegilops geniculata;Rompesacos inflado;Plantas con flor;hierba;;;;;;;;;;LC
@@ -1567,7 +1567,7 @@ F01460;Argyranthemum frutescens subsp. parviflorum;Magarza de flor chica;Plantas
 F01461;Argyranthemum frutescens subsp. pumilum;Magarza chica;Plantas con flor;planta;;;;;;;;;;NE
 F01462;Argyranthemum frutescens subsp. succulentum;Magarza carnosa;Plantas con flor;planta;;;;;;;;;;NE
 F01463;Argyranthemum gracile;Magarza grácil;Plantas con flor;hierba;;;;;;;;;;NE
-F01464;Argyranthemum haouarytheum;Bainena;Plantas con flor;palmera;;;;;;;;;;NE
+F01464;Argyranthemum haouarytheum;Bainena;Plantas con flor;hierba;;;;;;;;;;NE
 F01465;Argyranthemum hierrense;Margarita herreña;Plantas con flor;planta;;;;;;;;;;NE
 F01466;Argyranthemum lemsii;Magarza de Lems;Plantas con flor;planta;;;;;;;;;;NE
 F01467;Argyranthemum lidii;Magarza de Lid;Plantas con flor;arbusto;;0.6;altura;Wikipedia (es);;;;;Perenne;EN
@@ -1606,7 +1606,7 @@ F02186;Asparagus nesiotes;;Plantas con flor;planta;;;;;;;;;;EN
 F01780;Asparagus nesiotes subsp. purpuriensis;Esparraguera majorera;Plantas con flor;hierba;;;;;;;;;Perenne;EN
 F01781;Asparagus pastorianus;Esparraguera espinablanca;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01782;Asparagus plocamoides;Esparragón colgante;Plantas con flor;arbusto;;0.035;altura;Wikipedia (es);;;;;Perenne;VU
-F01783;Asparagus scoparius;Esparragón raboburro;Plantas con flor;palmera;;;;;;;;;Perenne;NE
+F01783;Asparagus scoparius;Esparragón raboburro;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01784;Asparagus setaceus;Esparraguera de jardín;Plantas con flor;helecho;;;;;;;;;Perenne;NE
 F02187;Asparagus umbellatus;;Plantas con flor;trepadora;;;;;;;;;;LC
 F01786;Asparagus umbellatus subsp. umbellatus;Esparraguera común;Plantas con flor;trepadora;;;;;;;;;;LC
@@ -2110,7 +2110,7 @@ F02350;Dichanthium annulatum;;Plantas con flor;planta;;;;;;;;;;NE
 F01950;Dichanthium foveolatum;Pasto del desierto;Plantas con flor;planta;;;;;;;;;;NE
 F00161;Dicheranthus plocamoides;Falso balo de risco;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01153;Dichondra micrantha;Césped de riñón;Plantas con flor;árbol;;;;;;;;;Perenne;LC
-F01216;Digitalis canariensis;Crestagallo;Plantas con flor;palmera;;;;;;;;;;NE
+F01216;Digitalis canariensis;Crestagallo;Plantas con flor;trepadora;;;;;;;;;;NE
 F01217;Digitalis chalcantha;Crestagallo de Doramas;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01218;Digitalis isabelliana;Crestagallo de pinar;Plantas con flor;trepadora;;1.5;altura;Centinela (claves de identificación);;;;;Perenne;EN
 F01215;Digitalis purpurea;Dedalera púrpura;Plantas con flor;roseta;0.5;2.5;altura;Wikipedia (es);;;;;Bienal;NE
@@ -2192,7 +2192,7 @@ F01193;Echium sventenii;Taginaste de Adeje;Plantas con flor;planta;;;;;;;;;;NE
 F02223;Echium triste;;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01195;Echium triste subsp. nivariense;Viborina triste;Plantas con flor;hierba;;0.6;altura;Centinela (claves de identificación);;;;;Anual;NE
 F01194;Echium triste subsp. triste;Viborina triste de Gran Canaria;Plantas con flor;hierba;;0.6;altura;Centinela (claves de identificación);;;;;Anual;NE
-F01196;Echium virescens;Taginaste azul de Tenerife;Plantas con flor;palmera;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01196;Echium virescens;Taginaste azul de Tenerife;Plantas con flor;arbusto;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01197;Echium webbii;Arrebol azul;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
 F01198;Echium wildpretii;Taginaste rojo;Plantas con flor;roseta;1.0;3.0;altura;Wikipedia (es);;;;;Bienal;NE
 E06937;Eclipta prostrata;;Plantas con flor;hierba;;1.0;altura;Wikipedia (es);;;;;Anual;LC
@@ -2576,7 +2576,7 @@ F01820;Juncus capitatus;Junco cabezón;Plantas con flor;hierba;;0.1;altura;Wikip
 F01821;Juncus effusus;Junco fino;Plantas con flor;hierba;0.3;1.0;altura;Wikipedia (es);;;;;;LC
 F01822;Juncus inflexus;Junco azul;Plantas con flor;planta;;;;;;;;;;LC
 F01823;Juncus maritimus;Junco marino;Plantas con flor;arbusto;;1.0;altura;Wikipedia (es);;;;;;NE
-F02356;Juniperus cedrus;;Plantas con flor;palmera;5.0;20.0;altura;Wikipedia (es);;;;;Perenne;EN
+F02356;Juniperus cedrus;;Plantas con flor;árbol;5.0;20.0;altura;Wikipedia (es);;;;;Perenne;EN
 F00064;Juniperus cedrus subsp. cedrus;Cedro canario;Plantas con flor;árbol;;10.0;altura;Centinela (claves de identificación);;;;;Perenne;
 F02231;Juniperus turbinata;;Plantas con flor;árbol;;8.0;altura;Wikipedia (es);;;;;Perenne;NT
 F01380;Juniperus turbinata subsp. canariensis;Sabina canaria;Plantas con flor;árbol;;8.0;altura;Wikipedia (es);;;;;Perenne;LC
@@ -3183,7 +3183,7 @@ F00839;Pimpinella cumbrae;Perejil de cumbre;Plantas con flor;planta;;;;;;;;;;NE
 F00840;Pimpinella dendrotragium;Perejil cabruno;Plantas con flor;planta;;;;;;;;;;NE
 F00841;Pimpinella junionae;Perejil gomero;Plantas con flor;planta;;;;;;;;;;NE
 F02334;Pimpinella rupicola;Perejil de risco;Plantas con flor;arbusto;;;;;;;;;Perenne;NE
-F00068;Pinus canariensis;Pino canario;Plantas con flor;palmera;;40.0;altura;Wikipedia (es);;;;;Perenne;LC
+F00068;Pinus canariensis;Pino canario;Plantas con flor;árbol;;40.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00069;Pinus halepensis;Pino carrasco;Plantas con flor;árbol;;25.0;altura;Wikipedia (es);;;;;Perenne;LC
 F00070;Pinus pinaster;Pino ródeno;Plantas con flor;árbol;20.0;35.0;altura;Wikipedia (es);;;;;Perenne;LC
 E06783;Pinus pinea;Piñonero;Plantas con flor;árbol;;;;;;;;;Perenne;LC
@@ -3665,7 +3665,7 @@ F02034;Sorghum bicolor;Sorgo;Plantas con flor;hierba;;;;;;;;;;NE
 F02035;Sorghum halepense;Millaca;Plantas con flor;arbusto;0.5;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00590;Spartium junceum;Retama de olor;Plantas con flor;arbusto;2.0;4.0;altura;Wikipedia (es);;;;;Perenne;NE
 F00591;Spartocytisus filipes;Retama fina;Plantas con flor;planta;;;;;;;;;;NE
-F00592;Spartocytisus supranubius;Retama del Teide;Plantas con flor;palmera;;;;;;;;;;LC
+F00592;Spartocytisus supranubius;Retama del Teide;Plantas con flor;planta;;;;;;;;;;LC
 F00222;Spergula arvensis;Esparcilla común;Plantas con flor;hierba;;0.5;altura;Wikipedia (es);;;;;Anual;NE
 F00226;Spergula fallax;Esparcilla falsa;Plantas con flor;planta;;;;;;;;;;NE
 F00223;Spergula pentandra;Esparcilla macho;Plantas con flor;planta;;;;;;;;;;NE
@@ -3746,15 +3746,15 @@ F00612;Teline stenopetala subsp. spachiana;Gacia de cumbre;Plantas con flor;plan
 F00604;Teline stenopetala subsp. stenopetala;Gacia de monte;Plantas con flor;planta;;;;;;;;;;NE
 E08052;Tephrocactus articulatus;;Plantas con flor;arbusto;0.3;0.6;altura;Wikipedia (es);;;;;;LC
 E07447;Tetraclinis articulata;;Plantas con flor;árbol;5.0;9.0;altura;Wikipedia (es);;;;;Perenne;LC
-F00715;Tetraena fontanesii;Uva de mar común;Plantas con flor;palmera;;0.5;altura;Wikipedia (es);;;;;Perenne;NE
+F00715;Tetraena fontanesii;Uva de mar común;Plantas con flor;arbusto;;0.5;altura;Wikipedia (es);;;;;Perenne;NE
 E07803;Tetraena gaetula;;Plantas con flor;planta;;;;;;;;;;NE
 F00716;Tetraena gaetula subsp. gaetula;Uva de mar moruna;Plantas con flor;planta;;;;;;;;;;
 F02314;Tetraena gaetula subsp. waterlotii;Uva de mar ceniza;Plantas con flor;planta;;;;;;;;;;NE
 F02413;Tetragonia echinata;;Plantas con flor;planta;;;;;;;;;;NE
 F00282;Tetragonia tetragonoides;Espinaca de Nueva Zelanda;Plantas con flor;planta;;;;;;;;;;NE
 F02045;Tetrapogon villosus;Falso panasco desnudo;Plantas con flor;planta;;;;;;;;;;NE
-F01367;Teucrium heterophyllum;Jócamo;Plantas con flor;palmera;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
-F02069;Teucrium heterophyllum subsp. brevipilosum;Jocama;Plantas con flor;palmera;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
+F01367;Teucrium heterophyllum;Jócamo;Plantas con flor;hierba;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
+F02069;Teucrium heterophyllum subsp. brevipilosum;Jocama;Plantas con flor;hierba;;2.0;altura;Wikipedia (es);;;;;Perenne;NE
 F01903;Teucrium heterophyllum subsp. hierrense;Jocama herreña;Plantas con flor;arbusto;;2.0;altura;Centinela (claves de identificación);;;;;Perenne;NE
 F01368;Teucrium spinosum;Escordio espinoso;Plantas con flor;planta;;;;;;;;;;NE
 F01098;Theligonum cynocrambe;Quebradizo;Plantas con flor;planta;;;;;;;;;;NE
@@ -3771,9 +3771,9 @@ F01370;Thymus vulgaris;Tomillo común;Plantas con flor;arbusto;;;;;;;;;Perenne;L
 E07443;Tillandsia bergeri;;Plantas con flor;planta;;;;;;;;;Perenne;NE
 E06787;Tipuana tipu;;Plantas con flor;árbol;10.0;25.0;altura;Wikipedia (es);;;;;Perenne;LC
 F01703;Tithonia diversifolia;Girasol arbóreo;Plantas con flor;árbol;1.0;4.0;altura;Wikipedia (es);;;;;Perenne;NE
-F02277;Todaroa aurea;;Plantas con flor;palmera;;;;;;;;;;NE
-F01389;Todaroa aurea subsp. aurea;Cañaheja;Plantas con flor;palmera;;;;;;;;;;NE
-F01390;Todaroa aurea subsp. suaveolens;Cañaheja olorosa;Plantas con flor;palmera;;;;;;;;;;NE
+F02277;Todaroa aurea;;Plantas con flor;hierba;;;;;;;;;;NE
+F01389;Todaroa aurea subsp. aurea;Cañaheja;Plantas con flor;hierba;;;;;;;;;;NE
+F01390;Todaroa aurea subsp. suaveolens;Cañaheja olorosa;Plantas con flor;hierba;;;;;;;;;;NE
 F01705;Tolpis barbata;Lechuguilla salvaje;Plantas con flor;hierba;;;;;;;;;Anual;NE
 F01706;Tolpis calderae;Lechuguilla de La Caldera;Plantas con flor;planta;;;;;;;;;;NE
 F01540;Tolpis coronopifolia;Cerraja de la vieja;Plantas con flor;planta;;;;;;;;;;NE
