@@ -465,12 +465,17 @@ function seccionBiologia(f) {
   </section>`;
 }
 
+const TIPO_SONIDO = [[/alarm call/g, "alarma"], [/flight call/g, "reclamo en vuelo"], [/begging call/g, "petición de comida"],
+  [/song/g, "canto"], [/calls?/g, "reclamo"], [/echolocation/g, "ecolocalización"], [/social/g, "social"], [/drumming/g, "tamborileo"],
+  [/female/g, "hembra"], [/male/g, "macho"], [/adult/g, "adulto"], [/juvenile/g, "juvenil"], [/near /g, "cerca de "]];
+const tipoSonido = (t) => TIPO_SONIDO.reduce((x, [re, es]) => x.replace(re, es), t || "");
+
 function seccionSonidos(f) {
   if (!f.sonidos?.length) return "";
   return `<section class="seccion"><h2>Sonidos</h2>
     ${f.sonidos.map((x) => `<figure class="sonido">
       <audio controls preload="none" src="${esc(x.url)}"></audio>
-      <figcaption class="pequeno texto-2">${esc([x.tipo, x.lugar].filter(Boolean).join(" · ") || "Grabación")}${x.canarias ? "" : " (fuera de Canarias)"} · ${esc(x.autor)} · ${enlaceFuente(x.lic, x.licUrl)} · ${enlaceFuente(x.fuente, x.pagina)}</figcaption>
+      <figcaption class="pequeno texto-2">${esc([tipoSonido(x.tipo), tipoSonido(x.lugar)].filter(Boolean).join(" · ") || "Grabación")}${x.canarias ? "" : " (fuera de Canarias)"} · ${esc(x.autor)} · ${enlaceFuente(x.lic, x.licUrl)} · ${enlaceFuente(x.fuente, x.pagina)}</figcaption>
     </figure>`).join("")}
   </section>`;
 }
