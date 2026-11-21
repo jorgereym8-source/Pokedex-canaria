@@ -312,7 +312,7 @@ async function vistaFicha(codigo) {
       <div class="sin-foto" style="position:absolute">${icono(iconoGrupo(e.g))}<span>${fotos.length ? "" : hayFotos ? "Fotos desactivadas en Ajustes" : "Sin fotos"}</span>
         ${!fotos.length && f.evc ? `<a class="boton-evc" href="${esc(f.evc.url)}" target="_blank" rel="noopener">Ver fotos en Especies Vegetales en Canarias ›</a>` : ""}</div>
       ${fotos.length ? `<div class="pista" id="pista" style="position:relative">${fotos.map((im, i) => `<figure>
-        <img ${i ? 'loading="lazy"' : ""} alt="${esc(nombreComun(e))}, foto ${i + 1}" src="${esc(im.src)}" onerror="const p=this.closest('.pista'),c=document.getElementById('contador');this.closest('figure').remove();if(c)c.textContent=p.children.length?'1 / '+p.children.length:'';">
+        <img ${i ? 'loading="lazy"' : ""} alt="${esc(nombreComun(e))}, foto ${i + 1}" src="${esc(im.src)}" onerror="const p=this.closest('.pista'),c=document.getElementById('contador');this.closest('figure').remove();if(c){if(p.children.length)c.textContent='1 / '+p.children.length;else c.remove();}">
         ${im.enlace ? `<figcaption><a href="${esc(im.enlace)}" target="_blank" rel="noopener">${esc(im.pie)}</a></figcaption>` : `<figcaption>${esc(im.pie)}</figcaption>`}</figure>`).join("")}</div>
         <span class="contador" id="contador">1 / ${fotos.length}</span>` : ""}
       <div class="controles">
