@@ -1,13 +1,14 @@
-# Tercera sonda: fuentes para UICN, tamaños y longevidad
-https://api.gbif.org/v1/species/match?name=Fringilla%20teydea&kingdom=Animalia
-https://api.gbif.org/v1/species/match?name=Dracaena%20draco%20subsp.%20draco&kingdom=Plantae
-https://api.gbif.org/v1/species/match?name=Gallotia%20simonyi&kingdom=Animalia
-https://api.gbif.org/v1/species/7069972/iucnRedListCategory
-https://api.gbif.org/v1/species/2494686/iucnRedListCategory
-https://api.gbif.org/v1/species/5229490/iucnRedListCategory
-https://query.wikidata.org/sparql?query=SELECT+%3Fname+%3Fitem+%3Fh+%3Fhu+%3Fl+%3Flu+%3Fm+%3Fmu+%3Fv+%3Fvu+%3Fiucn+WHERE+%7B%0AVALUES+%3Fname+%7B%22Dracaena+draco%22+%22Fringilla+teydea%22+%22Gallotia+simonyi%22+%22Phoenix+canariensis%22+%22Pinus+canariensis%22+%22Tursiops+truncatus%22%7D%0A%3Fitem+wdt%3AP225+%3Fname.%0AOPTIONAL%7B%3Fitem+p%3AP2048%2Fpsv%3AP2048+%5Bwikibase%3AquantityAmount+%3Fh%3B+wikibase%3AquantityUnit+%3Fhu%5D%7D%0AOPTIONAL%7B%3Fitem+p%3AP2043%2Fpsv%3AP2043+%5Bwikibase%3AquantityAmount+%3Fl%3B+wikibase%3AquantityUnit+%3Flu%5D%7D%0AOPTIONAL%7B%3Fitem+p%3AP2067%2Fpsv%3AP2067+%5Bwikibase%3AquantityAmount+%3Fm%3B+wikibase%3AquantityUnit+%3Fmu%5D%7D%0AOPTIONAL%7B%3Fitem+p%3AP2250%2Fpsv%3AP2250+%5Bwikibase%3AquantityAmount+%3Fv%3B+wikibase%3AquantityUnit+%3Fvu%5D%7D%0AOPTIONAL%7B%3Fitem+wdt%3AP141+%3Fiucn%7D%0A%7D&format=json
-https://es.wikipedia.org/w/api.php?action=query&prop=extracts&explaintext=1&redirects=1&format=json&titles=Echium%20wildpretii
-https://es.wikipedia.org/w/api.php?action=query&prop=extracts&exintro=1&explaintext=1&redirects=1&format=json&exlimit=20&titles=Dracaena%20draco%7CFringilla%20teydea%7CGallotia%20simonyi%7CPinus%20canariensis
-https://genomics.senescence.info/species/dataset.zip
-https://huggingface.co/api/datasets/cboettig/fishbase/tree/main?recursive=1
-https://huggingface.co/api/datasets/cboettig/fishbase
+# Cuarta sonda: fotos con licencia libre y la web Especies Vegetales en Canarias
+https://endemicascanarias.com/robots.txt
+https://endemicascanarias.com/
+https://endemicascanarias.com/sitemap.xml
+https://endemicascanarias.com/index.php/es/endemicas-macaronesicas/endemicas-canarias-macaronesia
+https://endemicascanarias.com/es/generos
+https://endemicascanarias.com/es/component/search/?searchword=Echium%20wildpretii&searchphrase=all
+https://endemicascanarias.com/index.php?option=com_search&searchword=wildpretii
+https://api.inaturalist.org/v1/taxa?q=Gallotia%20simonyi&per_page=5
+https://api.inaturalist.org/v1/taxa?q=Dracaena%20draco%20draco&per_page=5
+https://api.inaturalist.org/v1/taxa?q=Aeonium%20canariense%20christii&per_page=5
+https://api.inaturalist.org/v1/taxa/48978,57074
+https://query.wikidata.org/sparql?query=SELECT%20%3Fname%20%3Fimg%20WHERE%20%7B%20VALUES%20%3Fname%20%7B%22Gallotia%20simonyi%22%20%22Dracaena%20draco%22%20%22Echium%20wildpretii%22%7D%20%3Fitem%20wdt%3AP225%20%3Fname%3B%20wdt%3AP18%20%3Fimg%20%7D&format=json
+https://commons.wikimedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url|extmetadata&iiurlwidth=800&iiextmetadatafilter=Artist|LicenseShortName|LicenseUrl|Credit&format=json&titles=File:Dracaena%20draco%20(Icod).jpg|File:Echium%20wildpretii%20Teide.jpg
