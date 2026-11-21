@@ -1,6 +1,6 @@
 """Rango de altitud y primer registro a partir de los registros de GBIF en Canarias.
 
-  - Altitud (especies terrestres): se toman hasta 900 registros con coordenadas precisas
+  - Altitud (especies terrestres): se toman hasta 300 registros con coordenadas precisas
     (incertidumbre ≤ 1 km) dentro de Canarias y se mide la altitud de cada punto en el
     modelo digital del terreno Copernicus GLO-90 (90 m). Se da el intervalo del 5 % al 95 %
     para no dejarse llevar por puntos mal georreferenciados, y también el mínimo y el máximo.
@@ -46,7 +46,7 @@ def get(url, params=None, intentos=4):
             if r.status_code in (200, 204, 404):
                 return r
             if r.status_code == 429:
-                time.sleep(30)
+                time.sleep(int(r.headers.get("Retry-After", 10)))
         except requests.RequestException as e:  # noqa: PERF203
             if n == intentos - 1:
                 print(f"  sin respuesta {url}: {e}", flush=True)
@@ -106,9 +106,7 @@ def cargar_dem():
 
 def puntos(clave: int) -> tuple[list, int]:
     pts, total = [], 0
-    for offset in (0, 300):
-        if offset and len(pts) >= 150:
-            break
+    for offset in (0,):
         r = get("https://api.gbif.org/v1/occurrence/search", params={
             "taxonKey": clave, "geometry": CANARIAS, "hasCoordinate": "true", "hasGeospatialIssue": "false",
             "occurrenceStatus": "PRESENT", "limit": 300, "offset": offset})
@@ -193,7 +191,7 @@ def main() -> int:
         return c, out
 
     try:
-        with ThreadPoolExecutor(6) as ex:
+        with ThreadPoolExecutor(3) as ex:
             for k, (c, out) in enumerate(ex.map(uno, pend), 1):
                 if out is None:
                     continue

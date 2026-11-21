@@ -106,7 +106,7 @@ def uicn_gbif(fichas: dict, cache: dict) -> None:
         f = fichas[cod]
         reino = "Plantae" if f.get("reino") == "Flora" else "Animalia"
         r = get("https://api.gbif.org/v1/species/match", params={"name": f["nombre"], "kingdom": reino})
-        out = {"fecha": HOY, "v": 2}
+        out = {"fecha": HOY, "v": 3}
         if not r or r.status_code != 200:
             return cod, out
         m = r.json()
@@ -341,7 +341,7 @@ def ciclo_texto(texto: str) -> str | None:
 
 def wikipedia(binomios: list[str], cache: dict) -> None:
     # v2: guarda también la sección de etimología
-    pendientes = [b for b in binomios if caducado(cache.get(b, {}).get("fecha"), 180) or cache.get(b, {}).get("v") != 2]
+    pendientes = [b for b in binomios if caducado(cache.get(b, {}).get("fecha"), 180) or cache.get(b, {}).get("v") != 3]
     print(f"Wikipedia: {len(pendientes)} artículos por consultar", flush=True)
 
     def una(nombre):
@@ -362,6 +362,11 @@ def wikipedia(binomios: list[str], cache: dict) -> None:
         intro = partes[0]
         desc = next((x for x in partes[1:] if re.match(r"(descripción|morfología|características)", x, re.I)), "")
         etim = next((x for x in partes[1:] if re.match(r"etimolog", x, re.I)), "")
+        if not etim:
+            # En muchas fichas de plantas la etimología va dentro de «Taxonomía» como un párrafo titulado
+            m = re.search(r"\n\s*Etimolog[íi]a\s*\n(.+?)(?=\n\s*(?:Sinonimia|Nombres? comunes?|Citolog[íi]a|Variedades|Referencias|Véase también|"
+                          r"Enlaces externos|Bibliograf[íi]a|Especies|Subespecies|Taxones infraespecíficos)\s*\n|\n==|$)", texto, re.S)
+            etim = ("Etimología\n" + m.group(1)) if m else ""
         out.update({"titulo": p.get("title"), "url": f"https://es.wikipedia.org/wiki/{quote(p.get('title', '').replace(' ', '_'))}",
                     "texto": (intro[:600] + "\n" + desc[:2500]).strip()})
         if etim:
