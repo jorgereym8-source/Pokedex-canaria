@@ -365,14 +365,16 @@ def main() -> int:
                               **({"taxon": n} if nivel == "especie" else {})})
 
         # iNaturalist
-        t = c_inat.get("nombres", {}).get(e["n"]) or {}
+        t = dict(c_inat.get("nombres", {}).get(e["n"]) or {})
+        if t.get("id") and t.get("nivel") == "taxon" and norm(t["nombre"]) != norm(e["n"]):
+            t["nivel"] = "sinonimo"  # iNaturalist lo trata con otro nombre: se indica en el pie de foto
         if t.get("id"):
             for p in (c_inat.get("taxones", {}).get(str(t["id"])) or {}).get("fotos", []):
                 if len(lista) >= MAX_FOTOS:
                     break
                 lista.append({"fuente": "iNaturalist", "url": p["url"], "autor": p["autor"], "lic": p["lic"],
                               "licUrl": LIC_URL.get(p["lic"], ""), "pagina": f"https://www.inaturalist.org/photos/{p['id']}",
-                              "nivel": t.get("nivel", "taxon"), **({"taxon": t["nombre"]} if t.get("nivel") == "especie" else {})})
+                              "nivel": t.get("nivel", "taxon"), **({"taxon": t["nombre"]} if t.get("nivel") != "taxon" else {})})
 
         if lista:
             f["fotosLibres"] = lista

@@ -291,7 +291,7 @@ async function vistaFicha(codigo) {
     ...(A.get("fotosBiota") ? (f.imagenes || []).map((im) => ({ src: urlImagen(codigo, im.id), pie: `Foto: ${im.credito || "Biota"} · Biota` })) : []),
     ...(A.get("fotosLibres") ? (f.fotosLibres || []).map((x) => ({
       src: x.fuente === "Wikimedia Commons" ? urlLibre(`c:${x.archivo}`, 960) : urlLibre(x.url, 960),
-      pie: `${x.nivel === "especie" ? `Foto de ${x.taxon} · ` : ""}${x.autor} · ${x.lic} · ${x.fuente === "Wikimedia Commons" ? "Commons" : "iNaturalist"}`,
+      pie: `${x.nivel === "especie" ? `Foto de ${x.taxon} · ` : x.nivel === "sinonimo" ? `Como ${x.taxon} en iNaturalist · ` : ""}${x.autor} · ${x.lic} · ${x.fuente === "Wikimedia Commons" ? "Commons" : "iNaturalist"}`,
       enlace: x.pagina,
     })) : []),
   ].slice(0, 10);
