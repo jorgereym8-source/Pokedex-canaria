@@ -106,7 +106,9 @@ def cargar_dem():
 
 def puntos(clave: int) -> tuple[list, int]:
     pts, total = [], 0
-    for offset in (0, 300, 600):
+    for offset in (0, 300):
+        if offset and len(pts) >= 150:
+            break
         r = get("https://api.gbif.org/v1/occurrence/search", params={
             "taxonKey": clave, "geometry": CANARIAS, "hasCoordinate": "true", "hasGeospatialIssue": "false",
             "occurrenceStatus": "PRESENT", "limit": 300, "offset": offset})
@@ -156,6 +158,10 @@ def r10(x: float) -> int:
 
 
 def main() -> int:
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--minutos", type=float, default=75, help="tiempo máximo de consultas; lo que falte se hace en la siguiente ejecución")
+    args = ap.parse_args()
     inicio = time.time()
     EXTRA.mkdir(parents=True, exist_ok=True)
     indice = json.loads((DATOS / "indice.json").read_text(encoding="utf-8"))
@@ -169,6 +175,8 @@ def main() -> int:
 
     def uno(cf):
         c, f = cf
+        if time.time() - inicio > args.minutos * 60:
+            return c, None
         out = {"fecha": HOY}
         clave = f["gbifClave"]
         if f.get("medio") == "Terrestre":
@@ -185,8 +193,10 @@ def main() -> int:
         return c, out
 
     try:
-        with ThreadPoolExecutor(4) as ex:
+        with ThreadPoolExecutor(6) as ex:
             for k, (c, out) in enumerate(ex.map(uno, pend), 1):
+                if out is None:
+                    continue
                 cache[c] = out
                 if k % 250 == 0:
                     print(f"  {k}/{len(pend)}", flush=True)

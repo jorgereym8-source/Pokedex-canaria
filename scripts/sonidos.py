@@ -174,6 +174,9 @@ def main() -> int:
     print(f"Sonidos: {len(pend)} taxones por consultar", flush=True)
     try:
         for k, f in enumerate(pend, 1):
+            if time.time() - inicio > float(os.environ.get("MINUTOS_SONIDOS", "60")) * 60:
+                print(f"  tiempo agotado: quedan {len(pend) - k + 1} para la próxima ejecución", flush=True)
+                break
             n = f["nombre"]
             lista = xeno_canto(n) if xc and f.get("grupo") in ("Aves", "Anfibios", "Mamíferos") else []
             if len(lista) < MAX:
