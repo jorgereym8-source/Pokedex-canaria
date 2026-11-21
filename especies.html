@@ -1,0 +1,7609 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+
+
+
+
+
+
+ 
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ 
+
+<title>Biota
+
+
+
+</title>
+<meta name="description" content="Sitio web que aglutina información sobre las especies de Canarias">
+<meta name="author" content="Consejería de Medio Ambiente y Ordenación Territorial. Gobierno de Canarias">
+<meta name="keywords" content="Centinela,Atlantis,Biodiversidad,Canarias">
+
+<link rel="stylesheet" href="/biota/css/bootstrap.min.css">
+<link rel="stylesheet" href="/biota/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="/biota/css/select2.min.css">
+<link rel="stylesheet" href="/biota/css/select2-bootstrap.min.css">
+<link rel="stylesheet" href="/biota/css/font-awesome.min.css">
+<link rel="stylesheet" href="/biota/css/jquery-ui.min.css">
+
+<link rel="stylesheet" href="/biota/css/jsTree/style.css">
+<link rel="stylesheet" href="/biota/css/colorpicker.css">
+<link rel="stylesheet" href="/biota/css/ol.css">
+<link rel="stylesheet" href="/biota/css/pivot.min.css">
+<link rel="stylesheet" href="/biota/css/site.css?3.4.1">
+<link rel="stylesheet" href="/biota/css/site_taxonomy.css?3.4.1">
+<link rel="stylesheet" href="/biota/css/site_specie.css?3.4.1">
+<link rel="stylesheet" href="/biota/css/site_species.css?3.4.1">
+<link rel="stylesheet" href="/biota/css/site_documents.css?3.4.1">
+<link rel="stylesheet" href="/biota/css/site_statistics.css?3.4.1">
+<link rel="stylesheet" href="/biota/css/site_analysis.css?3.4.1">
+
+<link rel="shortcut icon" href="/biota/images/atlantis-ui.ico" />
+
+<!-- Google tag (gtag.js) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LTG1S2E750"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LTG1S2E750');
+</script>
+</head>
+<body>
+	<nav id="navbar" class="navbar navbar-default atlantis-navbar">
+	
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+			
+<div class="social-links pull-right" style="display: none;">
+	<a id="facebook" href="http://www.facebook.com">
+		<img title="Ir a Facebook" alt="Ir a Facebook"
+			src="/biota/images/header/social-facebook.png"></img>
+	</a>
+	<a id="twitter" href="http://www.twitter.com">
+		<img title="Ir a Twitter" alt="Ir a Twitter" src="/biota/images/header/social-twitter.png"></img>
+	</a>
+</div>
+	
+				
+				<div class="col-xs-12 col-md-10 col-sm-10 col-xs-8 language-flags-position">
+					<a id="lang_de" href="/biota/especies?lang=de" class="pull-right">
+						<img class="country_flag" title="German" alt="German" src="/biota/images/flags/flag_de.png"></img>
+					</a>
+					<a id="lang_fr" href="/biota/especies?lang=fr" class="pull-right">
+						<img class="country_flag" title="French" alt="French" src="/biota/images/flags/flag_fr.png"></img>
+					</a>
+					<a id="lang_pt" href="/biota/especies?lang=pt" class="pull-right">
+						<img class="country_flag" title="Portuguese" alt="Portuguese" src="/biota/images/flags/flag_pt.png"></img>
+					</a>
+					<a id="lang_en" href="/biota/especies?lang=en" class="pull-right">
+						<img class="country_flag" title="English" alt="English" src="/biota/images/flags/flag_en.png"></img>
+					</a>
+					<a id="lang_es" href="/biota/especies?lang=es" class="pull-right">
+						<img class="country_flag" title="Spanish" alt="Spanish" src="/biota/images/flags/flag_es.png"></img>
+					</a>
+				</div>
+				
+			
+		</div>
+	</div>
+<div class="col-md-6 col-sm-6 col-xs-12 social-links-space">
+			<img class="banco-datos-image" title="Banco de Datos de Biodiversidad de Canarias" alt="Banco de Datos de Biodiversidad de Canarias"
+				src="/biota/images/header/bancoDeDatos.png"></img>
+		
+			<img class="gobcan-image" title="Gobierno de Canarias" alt="Gobierno de Canarias"
+				src="/biota/images/header/LogoGobcan.png"></img>
+
+			<img class="ue-image" title="Unión Europea" alt="Unión Europea" src="/biota/images/header/flag_eu.png"></img>
+</div>
+<div class="padreMensajeWarning">
+	<div class="mensaje-contenedor" style="visibility:invisible;">
+		<div class="warningContent">
+			<i class="fa fa-exclamation-triangle icono-warning" ></i>
+		</div>
+		<div class="warningContent">
+			<span>Mantenimiento programado (scheduled maintenance) el <span id="fechaMantenimiento"></span></span>
+		</div>
+		<div class="warningContent">
+			<i class="fa fa-close icono-close" onclick="esconderWarningMantenimiento()"></i>
+		</div>
+	</div>
+</div>
+<div class="row hidden-lg hidden-sm hidden-md">	
+
+<div class="navbar-header pull-right button-top-margin">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" aria-controls="navbar">
+		<span class="sr-only"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+		<span class="icon-bar"></span>
+	</button>
+
+</div>
+</div>
+<div class="row hidden-lg hidden-sm hidden-md"></div>
+<div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse bs-navbar-margin" aria-expanded="false">
+	<div class="">
+	<div class="">
+<!-- 		<div class="col-md-1 hidden-sm"></div> -->
+		<ul class="nav navbar-nav navbar-right menu-position">
+			<li class="collapse-menu-margin">
+				<a href="/biota">
+					Inicio
+				</a>
+			</li>
+			<li class="dropdown collapse-menu-margin">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Datos
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li >
+						<a href="/biota/especies">
+							Especies / subespecies
+						</a>
+					</li>
+					<li>
+						<a href="/biota/galeria">
+							Galería
+						</a>
+					</li>
+					<li>
+						<a href="/biota/taxonomia">
+							Taxonomía
+						</a>
+					</li>
+					<li>
+						<a href="/biota/informeTaxonomia">
+							Informe taxonomía
+						</a>
+					</li>
+					<li>
+						<a href="/biota/documentos">
+							Documentos
+						</a>
+					</li>
+					<li>
+						<a class="hidden-xs" href="/biota/analisis/mapas" target="_blank">
+							Análisis territorial
+						</a>
+					</li>
+					<li>
+						<a href="/biota/estadisticas?se=0&m=0">
+							Estadísticas
+						</a>
+					</li>
+				
+				</ul>
+			</li>
+			<li class="dropdown collapse-menu-margin">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Biota
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="/biota/financiacion">
+							Financiación
+						</a>
+					</li>
+					<li>
+						<a href="/biota/normas">
+							Normas de uso
+						</a>
+					</li>
+					<li>
+						<a href="/biota/manual/Manual.pdf">
+							Ayuda
+						</a>
+					</li>
+				</ul>
+			</li>
+			<li class="dropdown collapse-menu-margin">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Info
+					<span class="caret"></span>
+				</a>
+				<ul class="dropdown-menu">
+					<li>
+						<a href="/biota/acerca">
+							Acerca de
+						</a>
+					</li>
+					
+					<li>
+						<a href="mailto:soporte@biodiversidadcanarias.es?subject=Contacto">
+							Contacta con nosotros
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		</div>
+	</div>
+</div>
+</div>
+</nav>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 text-center header-image header-image-position" style="background-image: url(images/species/busqueda-especies-header-bg.png)">
+				<span class="header-image-title">
+					Búsqueda de especies / subespecies
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row atlantis-breadcrumb-bg-color">
+			<div class="container">
+				<ol class="atlantis-breadcrumb breadcrumb centered-container">
+					<li>
+						<a href="/biota" 
+						title="Accede a&#160;Inicio">
+							Inicio
+						</a>
+					</li>
+					<li class="active">
+						Especies
+					</li>
+				</ol>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		
+		
+		
+		
+		
+			
+		
+		
+		<br />
+		<div id="fastSearchTab" class="row fastSearchSection">
+			<div class="col-md-12">
+				<form id="fastSearchForm" method="GET" action="/biota/especies" class="">
+					<input type="hidden" id="pagina" name="pagina" value="1" />
+					<input type="hidden" id="searchSpeciesTabs" name="searchSpeciesTabs" value="fastSearchTab" />
+					<div class="row">
+						<div class="col-md-11 col-sm-11 col-xs-10">
+							<div class="input-group">
+								<div id="fastSearchFormSubmit" class="input-group-addon atlantis-button clickable">
+									<i class="glyphicon glyphicon-search"></i>
+								</div>
+								<input id="fastSearch" name="fastSearch" type="text" class="form-control search-input-radius" placeholder="Nombre de la especie/subespecie o nombre común/vulgar o sub nomine o código EU-Nomen o código EUNIS o código Natura2000..." aria-describedby="basic-addon1"
+									value=""></input>
+							</div>
+						</div>
+						<div class="col-md-1 col-sm-1 col-xs-2">
+							<button id="fastSearchChangeButton" type="button" class="fastSearchChangeClass" onclick="advancedSearch()">
+								<span class="sr-only"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div id="searchSpeciesDiv" class="row speciesTabSearch hidden">
+			<div class="col-md-12">
+				<div class="" data-example-id="togglable-tabs">
+										<button id="advancedSearchChangeButton" type="button" class="fastSearchChangeClass">
+							<span class="sr-only"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					<ul class="nav nav-tabs" id="searchSpeciesUl" role="tablist">
+						<li role="presentation" class="active">
+							<a href="#scientificTab" id="scientific-tab" role="tab" data-toggle="tab" aria-controls="scientificTab" aria-expanded="false">
+								Científica
+							</a>
+						</li>
+						<li role="presentation" class="">
+							<a href="#informativeTab" id="informative-tab" role="tab" data-toggle="tab" aria-controls="informativeTab" aria-expanded="false">
+								Divulgativa
+							</a>
+						</li>
+
+					</ul>
+					<div class="tab-content" id="searchEspeciesTabsContent">
+						<div class="tab-pane fade active in" role="tabpanel" id="scientificTab" aria-labelledby="scientific-tab">
+							<br />
+							<form id="searchForm" method="GET" action="/biota/especies" class="">
+								<input type="hidden" id="pagina" name="pagina" value="1" />
+								<input type="hidden" id="searchSpeciesTabs" name="searchSpeciesTabs" value="scientificTab" />
+								<div class="row">
+									<div id="nombreCientificoTr" class="form-group col-md-4">
+										<label for="nombreCientifico">
+											Nombre de la especie
+										</label>
+										<input id="nombreCientifico" name="nombreCientifico" class="form-control" placeholder="Nombre de la especie"></input>
+									</div>
+									<div id="subnomineTr" class="form-group col-md-10 hidden">
+										<label path="subnomine">
+											Sub nómine
+										</label>
+										<input id="subnomine" name="subnomine" class="form-control" placeholder="Sub nómine"></input>
+									</div>
+									<div id="nombreComunTr" class="form-group col-md-4">
+										<label for="nombreComun">
+											Nombre común/vulgar
+										</label>
+										<input id="nombreComun" name="nombreComun" class="form-control" placeholder="Nombre común/vulgar"></input>
+									</div>
+									<div id="tipoBusquedaTr" class="form-group col-md-2">
+										<label for="tipoBusqueda">
+											Sub nómine
+										</label>
+										<select name="tipoBusqueda" id="tipoBusqueda" onchange="return changeTipoBusqueda();" class="form-control" style="width:100%;">
+											
+												<option value="NOMBRE">Nombre</option>
+											
+												<option value="SINONIMIA">Sub nómine</option>
+											
+										</select>
+									</div>
+									<div id="codigoTr" class="form-group col-md-2">
+										<label for="codigo">
+											Código especie
+										</label>
+										<input id="codigo" name="codigo" class="form-control" placeholder="Código especie"></input>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-md-3">
+										<label path="reinoPk">
+											Reino
+										</label>
+										<select id="reinoPk" name="reinoPk" class="form-control" style="width:100%;" data-placeholder="Reino"></select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="divisionPk">
+											División
+										</label>
+										<select id="divisionPk" name="divisionPk" class="form-control" style="width:100%;" data-placeholder="División"></select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="subdivisionPk">
+											Subdivisión
+										</label>
+										<select id="subdivisionPk" name="subdivisionPk" class="form-control" style="width:100%;" data-placeholder="Subdivisión"></select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="filoPk">
+											Filo
+										</label>
+										<select id="filoPk" name="filoPk" class="form-control" style="width:100%;" data-placeholder="Filo"></select>
+									</div>
+								</div>
+								<div class="row">
+									<div class="form-group col-md-3">
+										<label for="clasePk">
+											Clase
+										</label>
+										<select id="clasePk" name="clasePk" class="form-control" style="width:100%;" data-placeholder="Clase"></select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="ordenPk">
+											Orden
+										</label>
+										<select id="ordenPk" name="ordenPk" class="form-control" style="width:100%;" data-placeholder="Orden"></select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="familiaPk">
+											Familia
+										</label>
+										<select id="familiaPk" name="familiaPk" class="form-control" style="width:100%;" data-placeholder="Familia"></select>
+									</div>
+									<div class="form-group col-md-3">
+										<label for="generoPk">
+											Género
+										</label>
+										<select id="generoPk" name="generoPk" class="form-control" style="width:100%;" data-placeholder="Género"></select>
+									</div>
+								</div>
+								<div class="row">
+									<div id="tipoTr" class="form-group col-md-3 clearfix">
+										<label for="tipo">
+											Medio
+										</label>
+										<select id="tipo" name="tipo" class="form-control" style="width: 100%;" data-placeholder=" Medio">
+											<option value="" label=""></option>
+											
+												<option value="1">Marino</option>
+											
+												<option value="2">Terrestre</option>
+											
+										</select>
+									</div>
+									<div id="clasificacionFungiTr" class="form-group col-md-3 clearfix" style="display: none;">
+										<label for="clasificacionFungi">
+											Clasificación fungi
+										</label>
+										<select id="clasificacionFungi" name="clasificacionFungi" class="form-control" style="width: 100%;" data-placeholder=" Clasificación fungi">
+											
+												<option value="TODOS">Todos</option>
+											
+												<option value="HO">Hongo</option>
+											
+												<option value="LI">Liquen</option>
+											
+												<option value="HL">Hongo liquenícola</option>
+											
+										</select>
+									</div>
+									<div class="col-md-12">
+										<button id="find" type="submit" class="btn atlantis-button tab-pane-button pull-right">
+											Buscar
+										</button>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-md-12 text-right">
+										<a class="button-link" id="removeSelection" href="/biota/especies?searchSpeciesTabs=scientificTab">
+											Limpiar selección
+										</a>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane fade" role="tabpanel" id="informativeTab" aria-labelledby="informative-tab">
+					<form id="searchForm" method="GET" action="" class="">
+					<input type="hidden" id="divulgativeSearch" name="searchSpeciesTabs" value="divulgativeSearch" />
+					<div class="row">
+						<div class="col-md-12">
+						<br>
+							<label path="title_filter">Filtrar por</label>
+						</div>
+					</div>
+					<div class="row">
+						<div class="form-group col-md-4">
+							<label path="selectLevel1"></label> <select id="selectLevel1" name="selectLevel1" class="form-control" required>
+								
+									<option value="" disabled selected>Nivel 1</option>
+								
+								
+								<option value=""></option>
+								
+									<option  value="1">Algas</option>
+								
+									<option  value="5">Bacterias</option>
+								
+									<option  value="3">Briófitos</option>
+								
+									<option  value="4">Hongos</option>
+								
+									<option  value="7">Invertebrados</option>
+								
+									<option  value="2">Plantas vasculares</option>
+								
+									<option  value="6">Protozoos</option>
+								
+									<option  value="8">Vertebrados y afines</option>
+								
+							</select>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="selectLevel2"> </label> <select id="selectLevel2" name="selectLevel2" class="form-control" required>
+								
+									<option value="" disabled selected>Nivel 2</option>
+								
+								
+								<option value=""></option>
+								
+									<option  value="1">Algas pardas</option>
+								
+									<option  value="2">Algas rojas</option>
+								
+									<option  value="3">Algas verdes</option>
+								
+									<option  value="25">Anfibios</option>
+								
+									<option  value="13">Anélidos (miñocas, lombrices de tierra y sanguijuelas)</option>
+								
+									<option  value="19">Arácnidos</option>
+								
+									<option  value="27">Aves</option>
+								
+									<option  value="15">Briozoos</option>
+								
+									<option  value="11">Cnidarios (medusas, corales y afines)</option>
+								
+									<option  value="20">Crustáceos</option>
+								
+									<option  value="14">Ctenóforos (medusas de peine)</option>
+								
+									<option  value="17">Equinodermos (estrellas, erizos y afines)</option>
+								
+									<option  value="7">Fanerógamas marinas</option>
+								
+									<option  value="6">Fanerógamas terrestres</option>
+								
+									<option  value="5">Helechos</option>
+								
+									<option  value="9">Hepáticas</option>
+								
+									<option  value="30">Hongos</option>
+								
+									<option  value="32">Hongos liquenícolas</option>
+								
+									<option  value="22">Insectos y afines</option>
+								
+									<option  value="31">Líquenes</option>
+								
+									<option  value="28">Mamíferos</option>
+								
+									<option  value="21">Miriápodos (ciempiés y milpiés)</option>
+								
+									<option  value="18">Moluscos</option>
+								
+									<option  value="8">Musgos</option>
+								
+									<option  value="16">Nemátodos</option>
+								
+									<option  value="23">Otros invertebrados</option>
+								
+									<option  value="24">Peces</option>
+								
+									<option  value="12">Platelmintos (gusanos planos y afines)</option>
+								
+									<option  value="10">Poríferos (esponjas)</option>
+								
+									<option  value="4">Protistas, algas unicelulares y afines</option>
+								
+									<option  value="26">Reptiles</option>
+								
+									<option  value="29">Urocordados</option>
+								
+							</select>
+						</div>
+						<div class="form-group col-md-4">
+							<label for="selectLevel3"> </label> <select id="selectLevel3" name="selectLevel3" class="form-control" required>
+								
+									<option value="" disabled selected>Nivel 3</option>
+								
+								
+								<option value=""></option>
+								
+									<option  value="7">Arañas</option>
+								
+									<option  value="2">Babosas y caracoles marinos</option>
+								
+									<option  value="1">Babosas y caracoles terrestres y dulciacuícolas</option>
+								
+									<option  value="4">Bivalvos (almejas y afines)</option>
+								
+									<option  value="18">Blatarios (cucarachas)</option>
+								
+									<option  value="9">Branquiópodos (pulgas de agua y afines)</option>
+								
+									<option  value="3">Cefalópodos (pulpos, calamares y afines)</option>
+								
+									<option  value="28">Coleópteros (escarabajos)</option>
+								
+									<option  value="11">Copépodos (patas de remo)</option>
+								
+									<option  value="21">Dermápteros (tijeretas)</option>
+								
+									<option  value="30">Dípteros (moscas y mosquitos)</option>
+								
+									<option  value="26">Hemípteros (chinches, pulgones y afines)</option>
+								
+									<option  value="31">Himenópteros (abejas, hormigas y afines)</option>
+								
+									<option  value="29">Lepidópteros (mariposas y polillas)</option>
+								
+									<option  value="13">Malacostraceos marinos (cangrejos, camarones y afines)</option>
+								
+									<option  value="14">Malacostraceos terrestres (anfípodos, cochinillas de la humedad y afines)</option>
+								
+									<option  value="39">Mamíferos marinos</option>
+								
+									<option  value="38">Mamíferos terrestres</option>
+								
+									<option  value="17">Mántidos</option>
+								
+									<option  value="27">Neurópteros (hormigas león, crisopas y afines)</option>
+								
+									<option  value="16">Odonatos (libélulas)</option>
+								
+									<option  value="20">Ortópteros (saltamontes)</option>
+								
+									<option  value="10">Ostrácodos</option>
+								
+									<option  value="8">Otros arácnidos</option>
+								
+									<option  value="15">Otros crustáceos</option>
+								
+									<option  value="32">Otros insectos y afines</option>
+								
+									<option  value="35">Peces cartilaginosos</option>
+								
+									<option  value="33">Peces dulciacuícolas</option>
+								
+									<option  value="34">Peces marinos óseos</option>
+								
+									<option  value="22">Psocópteros (piojos de los libros)</option>
+								
+									<option  value="5">Quitones, escafópodos y otros moluscos marinos</option>
+								
+									<option  value="36">Reptiles terrestres</option>
+								
+									<option  value="25">Tisanópteros (trips)</option>
+								
+									<option  value="37">Tortugas marinas</option>
+								
+									<option  value="6">Ácaros</option>
+								
+							</select>
+						</div>
+					</div>
+				</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br /> <br />
+		<div id="speciesTableDiv" class="">
+			<div class="row">
+				<div class="col-md-6 col-xs-4">
+					<span>
+						<span class="list-count-number">26.197</span>
+						<span class="grey-text">
+							Resultados de especies / subespecies
+						</span>
+					</span>
+				</div>
+				<div class="col-md-6 col-xs-8">
+					<div class="ml-1 d-inline-block dropdown pull-right">
+						<i title="Modificar columnas" data-toggle="dropdown" aria-expanded="false" class="fa fa-cog fa-lg clickable dropdown-toggle"></i>
+						<div class="dropdown-menu modificar-tabla">
+							<h4 class="text-center">Modificar columnas</h4>
+							<ul class="sortable">
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="codigoEspecie" type="checkbox" checked id="codigoEspecie_modificar_tabla">
+										<label class="form-check-label" for="codigoEspecie_modificar_tabla">Código</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="nombreCientifico" type="checkbox" checked id="nombreCientifico_modificar_tabla">
+										<label class="form-check-label" for="nombreCientifico_modificar_tabla">Especie</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="nombreComun" type="checkbox" checked id="nombreComun_modificar_tabla">
+										<label class="form-check-label" for="nombreComun_modificar_tabla">Nombre común/vulgar</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="TipoEspecie" type="checkbox" checked id="TipoEspecie_modificar_tabla">
+										<label class="form-check-label" for="TipoEspecie_modificar_tabla">Medio</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="Clases" type="checkbox" checked id="Clases_modificar_tabla">
+										<label class="form-check-label" for="Clases_modificar_tabla">Clase</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="presencia" type="checkbox" checked id="presencia_modificar_tabla">
+										<label class="form-check-label" for="presencia_modificar_tabla">Presencia</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="validez" type="checkbox" checked id="validez_modificar_tabla">
+										<label class="form-check-label" for="validez_modificar_tabla">Validez</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="statusActual" type="checkbox" checked id="statusActual_modificar_tabla">
+										<label class="form-check-label" for="statusActual_modificar_tabla">Status</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="categoriaOrigen" type="checkbox" checked id="categoriaOrigen_modificar_tabla">
+										<label class="form-check-label" for="categoriaOrigen_modificar_tabla">Origen</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="Endemicidad" type="checkbox" checked id="Endemicidad_modificar_tabla">
+										<label class="form-check-label" for="Endemicidad_modificar_tabla">Endemicidad</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+									<li class="form-check form-check-inline">
+										<input class="form-check-input" data-name="image" type="checkbox" checked id="image_modificar_tabla">
+										<label class="form-check-label" for="image_modificar_tabla">Imagen</label>
+										<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+									</li>
+								
+								
+									
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="Familias" type="checkbox" id="Familias_modificar_tabla">
+											<label class="form-check-label" for="Familias_modificar_tabla">Familia</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="reino" type="checkbox" id="reino_modificar_tabla">
+											<label class="form-check-label" for="reino_modificar_tabla">Reino</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="clasificacionFungi" type="checkbox" id="clasificacionFungi_modificar_tabla">
+											<label class="form-check-label" for="clasificacionFungi_modificar_tabla">Clasificación Fungi</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="division" type="checkbox" id="division_modificar_tabla">
+											<label class="form-check-label" for="division_modificar_tabla">División</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="subdivision" type="checkbox" id="subdivision_modificar_tabla">
+											<label class="form-check-label" for="subdivision_modificar_tabla">Subdivisión</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="filo" type="checkbox" id="filo_modificar_tabla">
+											<label class="form-check-label" for="filo_modificar_tabla">Filo</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="orden" type="checkbox" id="orden_modificar_tabla">
+											<label class="form-check-label" for="orden_modificar_tabla">Orden</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									    
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="genero" type="checkbox" id="genero_modificar_tabla">
+											<label class="form-check-label" for="genero_modificar_tabla">Género</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="codigoEuNomen" type="checkbox" id="codigoEuNomen_modificar_tabla">
+											<label class="form-check-label" for="codigoEuNomen_modificar_tabla">Código EU-Nomen</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="codigoEunis" type="checkbox" id="codigoEunis_modificar_tabla">
+											<label class="form-check-label" for="codigoEunis_modificar_tabla">Código EUNIS</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+									
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									  
+									
+									
+										<li class="form-check form-check-inline">
+											<input class="form-check-input" data-name="codigoNatura2000" type="checkbox" id="codigoNatura2000_modificar_tabla">
+											<label class="form-check-label" for="codigoNatura2000_modificar_tabla">Código Natura2000</label>
+											<i class="fa fa-bars draggable pull-right" aria-hidden="true"></i>
+										</li>
+									
+								
+							</ul>
+							<button class="btn atlantis-button pull-left" type="button" onclick="restablecerColumnasEspecies()" style="margin-left: 0.5em;">Restaurar</button>
+							<button class="btn atlantis-button pull-right" type="button" onclick="guardarColumnasEspecies()" style="margin-right: 0.5em;">Guardar</button>
+						</div>
+					</div>
+					<a class="button-link pull-right" id="export" title="Exporta el resultado de la consulta"
+						href="/biota/especies/export?pagina=1&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+						Exportar
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12 table-responsive mb-2">
+					<table class="table table-striped table-bordered atlantis-table">
+						<thead>
+							<tr>
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<th>
+												<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=codigoEspecie&orderForm=true" title="Permite ordernar la tabla por esta columna">
+													Código
+													
+												</a>
+											</th>
+										
+									
+								
+									
+										
+											<th>
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=false"
+														title="Permite ordernar la tabla por esta columna">
+														Especie
+														
+															<span class="fa fa-caret-up fa-lg" aria-hidden="true"></span>
+														
+														
+													</a>
+												
+												
+											</th>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+									
+										
+										
+											<th class="comun-name-species-tab">
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreComun&orderForm=true"
+														title="Permite ordernar la tabla por esta columna">
+														Nombre común/vulgar
+													</a>
+												
+											</th>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+									
+										
+										
+										
+											<th>
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=TipoEspecie&orderForm=true"
+														title="Permite ordernar la tabla por esta columna">
+														Medio
+													</a>
+												
+											</th>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+											<th>
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=Clases&orderForm=true" title="Permite ordernar la tabla por esta columna">
+														Clase
+													</a>
+												
+											</th>
+										
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<th class="text-center">
+												Presencia
+											</th>
+										
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<th>
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=validez&orderForm=true"
+														title="Permite ordernar la tabla por esta columna">
+														Validez
+													</a>
+												
+											</th>
+											
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+										
+											<th>
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=statusActual&orderForm=true"
+														title="Permite ordernar la tabla por esta columna">
+														Status
+													</a>
+												
+											</th>
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+											<th class="text-center">
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=categoriaOrigen&orderForm=true"
+														title="Permite ordernar la tabla por esta columna">
+														Origen
+													</a>
+												
+											</th>
+										
+										
+										
+										
+										
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+											<th class="text-center">
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=Endemicidad&orderForm=true"
+														title="Permite ordernar la tabla por esta columna">
+														Endemicidad
+													</a>
+												
+											</th>
+										
+										
+										
+										
+										
+										
+										
+									
+								
+									
+										
+										
+										
+										
+										
+										
+										
+										
+<!--											<th class="text-center">
+												Imagen
+											</th>-->
+											<th class="text-center">
+												
+												
+													<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=image&orderForm=true"
+														title="Permite ordernar la tabla por esta columna">
+														Imagen
+													</a>
+												
+											</th>
+											
+										
+										
+										
+										
+										
+										
+									
+								
+							</tr>
+						</thead>
+						<tbody>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E04315'>E04315</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E04315"><i>Aaptos aaptos</i> (Schmidt, 1864)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E04315"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E04315">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Porifera > Demospongiae > Hadromerida > Suberitidae > Aaptos" data-toggle="tooltip" href="/biota/especie/E04315#taxonomyTab">Demospongiae</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E04315"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">El Hierro</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">La Palma</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">La Gomera</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Fuerteventura</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Lanzarote</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Mar</span> presencia segura marina (profundidad <200m)' data-html='true' data-toggle='tooltip'><span class='color-pb-S1'>H</span> <span class='color-pb-S1'>P</span> <span class='color-pb-S1'>G</span> <span class='color-pb-S1'>T</span> <span class='color-pb-S1'>C</span> <span class='color-pb-S1'>F</span> <span class='color-pb-S1'>L</span> <span class='color-pb-S1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E04315">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E04315">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E04315">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Porifera > Demospongiae > Hadromerida > Suberitidae > Aaptos" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E04315">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+														<a title="Accede a la ficha de la especie" href="/biota/especie/E04315#galleryTab">
+															<i class="fa fa-camera fa-2x"></i>
+														</a>
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E01470'>E01470</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E01470"><i>Abantennarius nummifer</i> (Cuvier, 1817)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E01470">Peje esponja
+</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E01470">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Chordata > Actinopteri > Lophiiformes > Antennariidae > Abantennarius" data-toggle="tooltip" href="/biota/especie/E01470#taxonomyTab">Actinopteri</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E01470"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Palma</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">La Gomera</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Fuerteventura</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Lanzarote</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Mar</span> presencia segura marina (profundidad <200m)' data-html='true' data-toggle='tooltip'><span class='color-pb-A1'>H</span> <span class='color-pb-S1'>P</span> <span class='color-pb-S1'>G</span> <span class='color-pb-S1'>T</span> <span class='color-pb-S1'>C</span> <span class='color-pb-S1'>F</span> <span class='color-pb-S1'>L</span> <span class='color-pb-S1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E01470">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E01470">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E01470">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Chordata > Actinopteri > Lophiiformes > Antennariidae > Abantennarius" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E01470">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+														<a title="Accede a la ficha de la especie" href="/biota/especie/E01470#galleryTab">
+															<i class="fa fa-camera fa-2x"></i>
+														</a>
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/A06917'>A06917</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/A06917"><i>Ablabesmyia dusoleili</i> Goethghebuer, 1935</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A06917"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A06917">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Arthropoda > Hexapoda > Diptera > Chironomidae > Ablabesmyia" data-toggle="tooltip" href="/biota/especie/A06917#taxonomyTab">Hexapoda</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/A06917"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-A2'>P</span> <span class='color-pb-A2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-S2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A06917">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A06917">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A06917">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Arthropoda > Hexapoda > Diptera > Chironomidae > Ablabesmyia" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/A06917">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/A02806'>A02806</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/A02806"><i>Ablabesmyia longistyla</i> Fittkau, 1962</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02806"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02806">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Arthropoda > Hexapoda > Diptera > Chironomidae > Ablabesmyia" data-toggle="tooltip" href="/biota/especie/A02806#taxonomyTab">Hexapoda</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/A02806"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-A2'>P</span> <span class='color-pb-A2'>G</span> <span class='color-pb-S2'>T</span> <span class='color-pb-A2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02806">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02806">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02806">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Arthropoda > Hexapoda > Diptera > Chironomidae > Ablabesmyia" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/A02806">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/A02859'>A02859</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/A02859"><i>Ablabesmyia monilis</i> (Linnaeus, 1758)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02859"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02859">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Arthropoda > Hexapoda > Diptera > Chironomidae > Ablabesmyia" data-toggle="tooltip" href="/biota/especie/A02859#taxonomyTab">Hexapoda</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/A02859"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Palma</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-S2'>P</span> <span class='color-pb-A2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-S2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02859">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02859">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A02859">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Arthropoda > Hexapoda > Diptera > Chironomidae > Ablabesmyia" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/A02859">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/C00744'>C00744</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/C00744"><i>Abortiporus biennis</i> (Bull.) Sing.</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C00744"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C00744">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Fungi > HO > Basidiomycota > Agaricomycotina > Agaricomycetes > Polyporales > Meruliaceae > Abortiporus" data-toggle="tooltip" href="/biota/especie/C00744#taxonomyTab">Agaricomycetes</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/C00744"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Palma</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-S2'>P</span> <span class='color-pb-A2'>G</span> <span class='color-pb-S2'>T</span> <span class='color-pb-S2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C00744">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C00744">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C00744">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Fungi > HO > Basidiomycota > Agaricomycotina > Agaricomycetes > Polyporales > Meruliaceae > Abortiporus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/C00744">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+														<a title="Accede a la ficha de la especie" href="/biota/especie/C00744#galleryTab">
+															<i class="fa fa-camera fa-2x"></i>
+														</a>
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E05037'>E05037</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E05037"><i>Abra alba</i> (W. Wood, 1802)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05037"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05037">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" href="/biota/especie/E05037#taxonomyTab">Bivalvia</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E05037"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Lanzarote</span> presencia segura marina (profundidad <200m)' data-html='true' data-toggle='tooltip'><span class='color-pb-A1'>H</span> <span class='color-pb-A1'>P</span> <span class='color-pb-A1'>G</span> <span class='color-pb-S1'>T</span> <span class='color-pb-S1'>C</span> <span class='color-pb-A1'>F</span> <span class='color-pb-S1'>L</span> <span class='color-pb-A1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05037">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05037">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05037">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E05037">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+														<a title="Accede a la ficha de la especie" href="/biota/especie/E05037#galleryTab">
+															<i class="fa fa-camera fa-2x"></i>
+														</a>
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E05042'>E05042</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E05042"><i>Abra longicallus</i> (Scacchi, 1835)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05042"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05042">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" href="/biota/especie/E05042#taxonomyTab">Bivalvia</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E05042"><span style='white-space:nowrap;width:100%;display:inline-block' title='Sin presencia' data-html='true' data-toggle='tooltip'><span class='color-pb-A1'>H</span> <span class='color-pb-A1'>P</span> <span class='color-pb-A1'>G</span> <span class='color-pb-A1'>T</span> <span class='color-pb-A1'>C</span> <span class='color-pb-A1'>F</span> <span class='color-pb-A1'>L</span> <span class='color-pb-A1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05042">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05042">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05042">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E05042">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E05045'>E05045</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E05045"><i>Abra prismatica</i> (Montagu, 1808)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05045"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05045">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" href="/biota/especie/E05045#taxonomyTab">Bivalvia</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E05045"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura marina (profundidad <200m)' data-html='true' data-toggle='tooltip'><span class='color-pb-A1'>H</span> <span class='color-pb-A1'>P</span> <span class='color-pb-A1'>G</span> <span class='color-pb-S1'>T</span> <span class='color-pb-S1'>C</span> <span class='color-pb-A1'>F</span> <span class='color-pb-A1'>L</span> <span class='color-pb-A1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05045">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05045">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05045">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E05045">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E05048'>E05048</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E05048"><i>Abra profundorum</i> (E. A. Smith, 1885)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05048"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05048">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" href="/biota/especie/E05048#taxonomyTab">Bivalvia</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E05048"><span style='white-space:nowrap;width:100%;display:inline-block' title='Sin presencia' data-html='true' data-toggle='tooltip'><span class='color-pb-A1'>H</span> <span class='color-pb-A1'>P</span> <span class='color-pb-A1'>G</span> <span class='color-pb-A1'>T</span> <span class='color-pb-A1'>C</span> <span class='color-pb-A1'>F</span> <span class='color-pb-A1'>L</span> <span class='color-pb-A1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05048">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05048">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05048">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Mollusca > Bivalvia > Veneroida > Semelidae > Abra" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E05048">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E05290'>E05290</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E05290"><i>Abralia veranyi</i> (Rüppell, 1844)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05290"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05290">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Mollusca > Cephalopoda > Oegopsida > Enoploteuthidae > Abralia" data-toggle="tooltip" href="/biota/especie/E05290#taxonomyTab">Cephalopoda</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E05290"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura marina (profundidad <200m)' data-html='true' data-toggle='tooltip'><span class='color-pb-A1'>H</span> <span class='color-pb-A1'>P</span> <span class='color-pb-A1'>G</span> <span class='color-pb-S1'>T</span> <span class='color-pb-A1'>C</span> <span class='color-pb-A1'>F</span> <span class='color-pb-A1'>L</span> <span class='color-pb-A1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05290">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05290">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05290">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Mollusca > Cephalopoda > Oegopsida > Enoploteuthidae > Abralia" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E05290">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E05294'>E05294</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E05294"><i>Abraliopsis morisii</i> (Vérany, 1839)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05294"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05294">Marino</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Mollusca > Cephalopoda > Oegopsida > Enoploteuthidae > Abraliopsis" data-toggle="tooltip" href="/biota/especie/E05294#taxonomyTab">Cephalopoda</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E05294"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">El Hierro</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Fuerteventura</span> presencia segura marina (profundidad <200m)<br/><span style="font-weight:bold;width:15ex;display:inline-block">Mar</span> presencia segura marina (profundidad <200m)' data-html='true' data-toggle='tooltip'><span class='color-pb-S1'>H</span> <span class='color-pb-A1'>P</span> <span class='color-pb-A1'>G</span> <span class='color-pb-S1'>T</span> <span class='color-pb-A1'>C</span> <span class='color-pb-S1'>F</span> <span class='color-pb-A1'>L</span> <span class='color-pb-S1'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05294">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05294">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E05294">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Mollusca > Cephalopoda > Oegopsida > Enoploteuthidae > Abraliopsis" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E05294">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/A08095'>A08095</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/A08095"><i>Abrolophus baardi</i> (Haitlinger, 2004)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08095"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08095">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Arthropoda > Arachnida > Trombidiformes > Erythraeidae > Abrolophus" data-toggle="tooltip" href="/biota/especie/A08095#taxonomyTab">Arachnida</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/A08095"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Palma</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-S2'>P</span> <span class='color-pb-A2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-A2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08095">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08095">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08095">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Arthropoda > Arachnida > Trombidiformes > Erythraeidae > Abrolophus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/A08095">
+																	Endémico
+																</a>
+															
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/A08099'>A08099</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/A08099"><i>Abrolophus benoni</i> (Haitlinger, 2002)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08099"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08099">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Arthropoda > Arachnida > Trombidiformes > Erythraeidae > Abrolophus" data-toggle="tooltip" href="/biota/especie/A08099#taxonomyTab">Arachnida</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/A08099"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Palma</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-S2'>P</span> <span class='color-pb-A2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-A2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08099">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08099">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A08099">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Arthropoda > Arachnida > Trombidiformes > Erythraeidae > Abrolophus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/A08099">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E11329'>E11329</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E11329"><i>Abrolophus quisquiliarus</i> (Hermann, 1804)</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E11329"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E11329">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Arthropoda > Arachnida > Trombidiformes > Erythraeidae > Abrolophus" data-toggle="tooltip" href="/biota/especie/E11329#taxonomyTab">Arachnida</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E11329"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Gomera</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-A2'>P</span> <span class='color-pb-S2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-A2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E11329">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E11329">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E11329">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Arthropoda > Arachnida > Trombidiformes > Erythraeidae > Abrolophus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E11329">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/A01225'>A01225</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/A01225"><i>Abrostola canariensis</i> Hampson, 1913</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A01225"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A01225">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Metazoa > Arthropoda > Hexapoda > Lepidoptera > Noctuidae > Abrostola" data-toggle="tooltip" href="/biota/especie/A01225#taxonomyTab">Hexapoda</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/A01225"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">El Hierro</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">La Palma</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">La Gomera</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Fuerteventura</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Lanzarote</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-S2'>H</span> <span class='color-pb-S2'>P</span> <span class='color-pb-S2'>G</span> <span class='color-pb-S2'>T</span> <span class='color-pb-S2'>C</span> <span class='color-pb-S2'>F</span> <span class='color-pb-S2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A01225">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A01225">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/A01225">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Metazoa > Arthropoda > Hexapoda > Lepidoptera > Noctuidae > Abrostola" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/A01225">
+																	Endémico
+																</a>
+															
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+														<a title="Accede a la ficha de la especie" href="/biota/especie/A01225#galleryTab">
+															<i class="fa fa-camera fa-2x"></i>
+														</a>
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E00328'>E00328</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E00328"><i>Abrothallus canariensis</i> Pérez-Ortega, van den Boom & Suija</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E00328"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E00328">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Fungi > HL > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" href="/biota/especie/E00328#taxonomyTab">Incertae sedis (Fungi imperfecti)</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E00328"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">Tenerife</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-A2'>P</span> <span class='color-pb-A2'>G</span> <span class='color-pb-S2'>T</span> <span class='color-pb-A2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E00328">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E00328">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E00328">NS</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Fungi > HL > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E00328">
+																	Endémico
+																</a>
+															
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/C01460'>C01460</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/C01460"><i>Abrothallus cetrariae</i> Kotte</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01460"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01460">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Fungi > HL > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" href="/biota/especie/C01460#taxonomyTab">Incertae sedis (Fungi imperfecti)</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/C01460"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">El Hierro</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">La Gomera</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-S2'>H</span> <span class='color-pb-A2'>P</span> <span class='color-pb-S2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-A2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01460">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01460">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01460">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Fungi > HL > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/C01460">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/E07374'>E07374</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/E07374"><i>Abrothallus chrysanthus</i> Stein</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E07374"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E07374">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Fungi > HL > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" href="/biota/especie/E07374#taxonomyTab">Incertae sedis (Fungi imperfecti)</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/E07374"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Gomera</span> presencia segura<br/><span style="font-weight:bold;width:15ex;display:inline-block">Gran Canaria</span> presencia segura' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-A2'>P</span> <span class='color-pb-S2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-S2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E07374">Válido</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E07374">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/E07374">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Fungi > HL > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/E07374">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+								<tr>
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+												<td>
+													
+														<a title="Accede a la ficha de la especie" href='/biota/especie/C01461'>C01461</a>
+													
+												</td>
+											
+										
+									
+										
+											
+												<td>
+													
+													 
+													 
+													 
+													 
+													 
+													 
+													 
+														<a title="Accede al fichero de la especie" href="/biota/especie/C01461"><i>Abrothallus microspermus</i> Tul.</a>
+													 
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01461"></a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01461">Terrestre</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+												<td>
+													<a title="Fungi > LI > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" href="/biota/especie/C01461#taxonomyTab">Incertae sedis (Fungi imperfecti)</a>
+												</td>
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+												<td  class="text-center">
+												    <a style="text-decoration: none;" href="/biota/especie/C01461"><span style='white-space:nowrap;' title='<span style="font-weight:bold;width:15ex;display:inline-block">La Gomera</span> presencia dudosa, equívoca o extinta' data-html='true' data-toggle='tooltip'><span class='color-pb-A2'>H</span> <span class='color-pb-A2'>P</span> <span class='color-pb-D2'>G</span> <span class='color-pb-A2'>T</span> <span class='color-pb-A2'>C</span> <span class='color-pb-A2'>F</span> <span class='color-pb-A2'>L</span> <span class='color-pb-A2'>M</span></span></a>													
+												</td>
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01461">Por confirmar</a>
+												</td>
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+											
+																						
+																						
+											
+												<td>
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01461">Actual</a>
+												</td>
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													<a title="Accede a la ficha de la especie" href="/biota/especie/C01461">NP</a>
+												</td>
+											
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+												<td title="Fungi > LI > Fungi Imperfecti > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Incertae sedis (Fungi imperfecti) > Abrothallus" data-toggle="tooltip" class="text-center">
+													<span>
+														
+														
+															
+															
+															
+																<a title="Accede a la ficha de la especie" href="/biota/especie/C01461">
+																	No endémico
+																</a>
+															
+														
+													</span>
+												</td>
+											
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+										
+											
+											
+											
+											
+											
+											
+											
+											
+												<td class="text-center">
+													
+												</td>
+											
+											
+											
+											
+																						
+																						
+																						
+											
+										
+									
+								</tr>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<nav class="">
+							<ul class="pagination hidden-xs">
+								<li>
+									<a href="/biota/especies?pagina=1&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true" aria-label="Primera página">
+										<span aria-hidden="true">&lt;</span>
+									</a>
+								</li>
+								
+									
+										<li class="active">
+									
+									
+									<a href="/biota/especies?pagina=1&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>1</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=2&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>2</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=3&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>3</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=4&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>4</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=5&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>5</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=6&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>6</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=7&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>7</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=8&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>8</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=9&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>9</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=10&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>10</span>
+									</a>
+									</li>
+								
+									
+									
+										<li>
+									
+									<a href="/biota/especies?pagina=11&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+										<span>11</span>
+									</a>
+									</li>
+								
+								<li>
+									<a href="/biota/especies?pagina=1310&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true"
+										aria-label="Última página">
+										<span aria-hidden="true">&gt;</span>
+									</a>
+								</li>
+							</ul>
+							<ul class="pagination visible-xs-block">
+							<li>
+								<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true" aria-label="Primera página">
+									<span aria-hidden="true">&lt;</span>
+								</a>
+								</li>
+								
+									
+									
+									
+										<li class="active">
+											<a href="/biota/especies?pagina=1&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+												<span>1</span>
+											</a>
+										</li>
+									
+									
+								
+									
+									
+										<li>
+											<a href="/biota/especies?pagina=2&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true">
+												<span>2</span>
+											</a>
+										</li>
+									
+									
+									
+								
+									
+									
+									
+									
+										<li>
+											<a href="/biota/especies?pagina=3&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreCientifico&orderForm=true" aria-label="Última página">
+												<span aria-hidden="true">&gt;</span>
+											</a>
+										</li>
+									
+								
+									
+									
+									
+									
+								
+									
+									
+									
+									
+								
+									
+									
+									
+									
+								
+									
+									
+									
+									
+								
+									
+									
+									
+									
+								
+									
+									
+									
+									
+								
+									
+									
+									
+									
+								
+									
+									
+									
+									
+								
+							</ul>
+						</nav>
+					</div>
+				</div>
+			
+		</div>
+		<div id="subnomineTableDiv" class="hidden">
+			<div class="row">
+				<div class="col-md-6 col-xs-6">
+					<p>
+						<span class="list-count-number">0</span>
+						<span class="grey-text">
+							resultados
+						</span>
+						<!-- TODO AQUI TAMBIEN -->
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12 col-md-12">
+					<table class="table table-striped table-bordered atlantis-table">
+						<thead>
+							<tr>
+								<th class="">
+									
+									
+										<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=EspeciesSinonimias&orderForm=true"
+											title="Permite ordernar la tabla por esta columna">
+											Sub nomine
+										</a>
+									
+								</th>
+								<th class="hidden-xs">
+									
+									
+										<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=Familias&orderForm=true"
+											title="Permite ordernar la tabla por esta columna">
+											Familia
+										</a>
+									
+								</th>
+								<th class="hidden-xs">
+									
+									
+										<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=Clases&orderForm=true"
+											title="Permite ordernar la tabla por esta columna">
+											Clase
+										</a>
+									
+								</th>
+								<th class="">
+									
+									
+										<a href="/biota/especies?pagina=&tipoBusqueda=NOMBRE&searchSpeciesTabs=fastSearchTab&orderBy=nombreEspecieCompleto&orderForm=true"
+											title="Permite ordernar la tabla por esta columna">
+											Especie
+										</a>
+									
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+<footer>
+	<div class="container-fluid">
+		<div class="row appmobile">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-12">
+						<span>
+							Descárgate de forma gratuita nuestra app y con unos sencillos pasos podrás tener el banco de datos en tu bolsillo.
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<span>
+							Disponible para iOS y Android.
+						</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="col-md-2 col-md-offset-4 col-sm-12 col-xs-12 google-play-section">
+							<img class="" title="Google play" alt="Google play" src="/biota/images/footer/googlePlay.png"></img>
+						</div>
+						<div class="col-xs-12 hidden-md hidden-lg">&nbsp;</div>
+						<div class="col-md-2 col-sm-12 col-xs-12 app-store-section">
+							<img class="" title="App Store" alt="App Store" src="/biota/images/footer/appstore.png"></img>
+						</div>
+						<div class="col-xs-12 col-sm-12 visible-xs-block visible-sm-block">&nbsp;</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row centered">
+					<div class="col-md-4 col-sm-4 center hidden-xs" style="display: none;">
+						<div class="row">
+							Síguenos en nuestras redes
+						</div>
+						<a id="facebook" href="http://www.facebook.com">
+							<img title="Ir a Facebook" alt="Ir a Facebook"
+								src="/biota/images/header/social-facebook.png"></img>
+						</a>
+						<a id="twitter" href="http://www.twitter.com">
+							<img title="Ir a Twitter" alt="Ir a Twitter"
+								src="/biota/images/header/social-twitter.png"></img>
+						</a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4">
+						<img class="gobcanIcon" style="margin-top: 2%; max-width: 100%;" alt="Canarias avanza con Europa" src="/biota/images/canarias-avanza.png" />
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4 centered feder-texto">
+						<p style="font-weight:  bold;">Fondo Europeo de<br>Desarrollo Regional</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<div class="row">
+			<div class="col-md-12 center color-grey">
+				<span>
+					Copyright
+					 
+					
+					2026
+					-
+					Banco de Datos de Biodiversidad de Canarias
+				</span>
+			</div>
+			<div class="col-md-12 center">
+				<a class="color-grey" href="/biota/politica_privacidad">
+					Política de Privacidad
+				</a>
+				<span> / </span>
+				<a class="color-grey" href="/biota/aviso_legal">
+					Aviso legal
+				</a>
+				
+				<span> / </span>
+				<a class="color-grey" href="/biota/acerca">
+					Acerca de
+				</a>
+				
+			</div>
+		</div>
+		<br>
+		<br>
+	</div>
+</footer>
+<script src="/biota/assets/jquery-2.2.4.min.js"></script>
+<script src="/biota/assets/jquery.mobile.custom.min.js"></script>
+<script src="/biota/assets/bootstrap.min.js"></script>
+<script src="/biota/assets/select2.min.js"></script>
+<script src="/biota/assets/i18n/es.js"></script>
+<script src="/biota/assets/i18n/en.js"></script>
+<script src="/biota/assets/i18n/pt.js"></script>
+<script src="/biota/assets/i18n/fr.js"></script>
+<script src="/biota/assets/i18n/de.js"></script>
+<script src="/biota/assets/jquery-ui.min.js"></script>
+<script src="/biota/assets/jstree.min.js"></script>
+<script src="/biota/assets/jstree.checkbox.js"></script>
+<script src="/biota/assets/colorpicker.js"></script>
+<script src="/biota/assets/ol.js"></script>
+<script src="/biota/assets/proj4.js"></script>
+<script src="/biota/assets/jquery.magnify.js"></script>
+<script src="/biota/assets/jquery.justifiedGallery.min.js"></script>
+<script src="/biota/assets/jquery.ui.touch-punch.min.js"></script>
+<script src="/biota/assets/marked.min.js"></script>
+<script src="/biota/assets/pivot.js"></script>
+<script src="/biota/assets/papaparse.min.js"></script>
+<script src="/biota/assets/plotly-basic.min.js"></script>
+<script src="/biota/assets/plotly_renderers.min.js"></script>
+<script src="/biota/assets/pivot.es.js"></script>
+<script src="/biota/assets/pivot.de.js"></script>
+<script src="/biota/assets/pivot.fr.js"></script>
+<script src="/biota/assets/pivot.pt.js"></script>
+
+<script src="/biota/assets/gstatic-charts-loader.js"></script>
+<!--  -->
+
+<script type="text/javascript">
+
+// (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+// 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+// 	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+// 	  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	 
+// 	  ga('create', 'G-LTG1S2E750', 'auto');
+// 	  ga('send', 'pageview');
+// 	  var aaa = 'https://www.biodiversidadcanarias.es/biota';
+	  
+	  
+ /**
+ * Detecta bots devolviendo un true para cuando lo detecta y un false para cuando no
+ * return true Detecta bot
+ * return false No detecta bot
+ */
+ function detectarRobots() {
+ 	var botPattern = "(googlebot\/|Googlebot-Mobile|Googlebot-Image|Google favicon|Mediapartners-Google|bingbot|slurp|java|wget|curl|Commons-HttpClient|Python-urllib|libwww|httpunit|nutch|phpcrawl|msnbot|jyxobot|FAST-WebCrawler|FAST Enterprise Crawler|biglotron|teoma|convera|seekbot|gigablast|exabot|ngbot|ia_archiver|GingerCrawler|webmon |httrack|webcrawler|grub.org|UsineNouvelleCrawler|antibot|netresearchserver|speedy|fluffy|bibnum.bnf|findlink|msrbot|panscient|yacybot|AISearchBot|IOI|ips-agent|tagoobot|MJ12bot|dotbot|woriobot|yanga|buzzbot|mlbot|yandexbot|purebot|Linguee Bot|Voyager|CyberPatrol|voilabot|baiduspider|citeseerxbot|spbot|twengabot|postrank|turnitinbot|scribdbot|page2rss|sitebot|linkdex|Adidxbot|blekkobot|ezooms|dotbot|Mail.RU_Bot|discobot|heritrix|findthatfile|europarchive.org|NerdByNature.Bot|sistrix crawler|ahrefsbot|Aboundex|domaincrawler|wbsearchbot|summify|ccbot|edisterbot|seznambot|ec2linkfinder|gslfbot|aihitbot|intelium_bot|facebookexternalhit|yeti|RetrevoPageAnalyzer|lb-spider|sogou|lssbot|careerbot|wotbox|wocbot|ichiro|DuckDuckBot|lssrocketcrawler|drupact|webcompanycrawler|acoonbot|openindexspider|gnam gnam spider|web-archive-net.com.bot|backlinkcrawler|coccoc|integromedb|content crawler spider|toplistbot|seokicks-robot|it2media-domain-crawler|ip-web-crawler.com|siteexplorer.info|elisabot|proximic|changedetection|blexbot|arabot|WeSEE:Search|niki-bot|CrystalSemanticsBot|rogerbot|360Spider|psbot|InterfaxScanBot|Lipperhey SEO Service|CC Metadata Scaper|g00g1e.net|GrapeshotCrawler|urlappendbot|brainobot|fr-crawler|binlar|SimpleCrawler|Livelapbot|Twitterbot|cXensebot|smtbot|bnf.fr_bot|A6-Indexer|ADmantX|Facebot|Twitterbot|OrangeBot|memorybot|AdvBot|MegaIndex|SemanticScholarBot|ltx71|nerdybot|xovibot|BUbiNG|Qwantify|archive.org_bot|Applebot|TweetmemeBot|crawler4j|findxbot|SemrushBot|yoozBot|lipperhey|y!j-asr|Domain Re-Animator Bot|AddThis|bingbot\/)";
+ 	var re = new RegExp(botPattern, 'i');
+ 	var userAgent = navigator.userAgent;
+ 	if (re.test(userAgent)) {
+ 		return true;
+ 	}else{
+ 		return false;
+ 	}
+ }
+ 	
+ /**
+ * Detecta el prï¿½ximo mantenimiento y muestra un cartel de alerta si es dentro de 24 horas
+ */
+ function detectarMantenimiento() {
+	$.ajax({
+		url : 'https://www.biodiversidadcanarias.es/biota/checkMaintenance'
+	}).done(function(data){
+		var timestampNow = Date.now();
+		var migrationDate = data;
+		var timeToGo = migrationDate - timestampNow;
+		var MAX_TIME_TO_SHOW = 2 * 60 * 60 * 1000; // 2 horas
+		var TIME_AFTER_MIGRATION = 15 * 60 * 1000; // 15 minutos
+
+		if (migrationDate <= 0) {
+			$('.mensaje-contenedor').css('visibility', 'hidden');
+		} else if (timeToGo > MAX_TIME_TO_SHOW) {
+			$('.mensaje-contenedor').css('visibility', 'hidden');
+		} else if (timeToGo <= MAX_TIME_TO_SHOW && timeToGo > -TIME_AFTER_MIGRATION) {
+			// Mostrar el contenedor durante el intervalo de 2 horas antes de la migraciÃ³n
+			$('#fechaMantenimiento').text("");
+			$('#fechaMantenimiento').append(new Date(migrationDate).toLocaleString());
+			$('.mensaje-contenedor').css('visibility', 'visible');
+		} else if (timeToGo <= -TIME_AFTER_MIGRATION) {
+			// Mostrar el contenedor durante 15 minutos despuÃ©s de la migraciÃ³n
+			$('#fechaMantenimiento').text("");
+			$('#fechaMantenimiento').append(new Date(migrationDate).toLocaleString());
+			$('.mensaje-contenedor').css('visibility', 'visible');
+		} else {
+			$('.mensaje-contenedor').css('visibility', 'hidden');
+		}
+ 	});
+ }
+
+ /**
+ * Mï¿½todo que llama el botï¿½n de cerrar la alerta de mantenimiento
+ */
+ function esconderWarningMantenimiento() {
+	 $('.mensaje-contenedor').css('visibility', 'hidden');
+ }
+
+ setTimeout(detectarMantenimiento, 2000);
+ window.setInterval(detectarMantenimiento, 300000);
+
+
+ 
+</script>
+
+	<script src="/biota/scripts/pages/species.js?3.4.1"></script>
+	<script>
+		init('/biota', JSON.parse('{"dataUi":{"pagina":1,"orderForm":true,"orderBy":"nombreCientifico","searchSpeciesTabs":"fastSearchTab","tipoBusqueda":"NOMBRE"}}'), 'es', 'fastSearchTab');
+
+		$('#selectLevel1').change(function() {
+			window.location = "/biota/especies?selectLevel1=" + $(this).val() + "&searchSpeciesTabs=divulgativeSearch";
+		});
+		$('#selectLevel2').change(function() {
+			var nivel1Select_val = $('#selectLevel1').val();
+		    window.location = "/biota/especies?selectLevel1=" + nivel1Select_val + "&selectLevel2=" + $(this).val() +"&searchSpeciesTabs=divulgativeSearch";
+		});
+		$('#selectLevel3').change(function() {
+			var nivel1Select_val = $('#selectLevel1').val();
+			var nivel2Select_val = $('#selectLevel2').val();
+		    window.location = "/biota/especies?selectLevel1=" + nivel1Select_val + "&selectLevel2=" + nivel2Select_val + "&selectLevel3=" + $(this).val() +"&searchSpeciesTabs=divulgativeSearch";
+		});
+
+
+		$('[data-toggle="tooltip"]').tooltip({
+          content: function () {
+              return $(this).prop('title');
+          }
+      });
+	</script>
+</body>
+</html>

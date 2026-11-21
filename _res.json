@@ -1,0 +1,1211 @@
+{
+ "select_tipoBusqueda": [
+  [
+   "NOMBRE",
+   "Nombre"
+  ],
+  [
+   "SINONIMIA",
+   "Sub nómine"
+  ]
+ ],
+ "select_reinoPk": [],
+ "select_divisionPk": [],
+ "select_subdivisionPk": [],
+ "select_filoPk": [],
+ "select_clasePk": [],
+ "select_ordenPk": [],
+ "select_familiaPk": [],
+ "select_generoPk": [],
+ "select_tipo": [
+  [
+   "",
+   ""
+  ],
+  [
+   "1",
+   "Marino"
+  ],
+  [
+   "2",
+   "Terrestre"
+  ]
+ ],
+ "select_clasificacionFungi": [
+  [
+   "TODOS",
+   "Todos"
+  ],
+  [
+   "HO",
+   "Hongo"
+  ],
+  [
+   "LI",
+   "Liquen"
+  ],
+  [
+   "HL",
+   "Hongo liquenícola"
+  ]
+ ],
+ "select_selectLevel1": [
+  [
+   "",
+   "Nivel 1"
+  ],
+  [
+   "",
+   ""
+  ],
+  [
+   "1",
+   "Algas"
+  ],
+  [
+   "5",
+   "Bacterias"
+  ],
+  [
+   "3",
+   "Briófitos"
+  ],
+  [
+   "4",
+   "Hongos"
+  ],
+  [
+   "7",
+   "Invertebrados"
+  ],
+  [
+   "2",
+   "Plantas vasculares"
+  ],
+  [
+   "6",
+   "Protozoos"
+  ],
+  [
+   "8",
+   "Vertebrados y afines"
+  ]
+ ],
+ "select_selectLevel2": [
+  [
+   "",
+   "Nivel 2"
+  ],
+  [
+   "",
+   ""
+  ],
+  [
+   "1",
+   "Algas pardas"
+  ],
+  [
+   "2",
+   "Algas rojas"
+  ],
+  [
+   "3",
+   "Algas verdes"
+  ],
+  [
+   "25",
+   "Anfibios"
+  ],
+  [
+   "13",
+   "Anélidos (miñocas, lombrices de tierra y sanguijuelas)"
+  ],
+  [
+   "19",
+   "Arácnidos"
+  ],
+  [
+   "27",
+   "Aves"
+  ],
+  [
+   "15",
+   "Briozoos"
+  ],
+  [
+   "11",
+   "Cnidarios (medusas, corales y afines)"
+  ],
+  [
+   "20",
+   "Crustáceos"
+  ],
+  [
+   "14",
+   "Ctenóforos (medusas de peine)"
+  ],
+  [
+   "17",
+   "Equinodermos (estrellas, erizos y afines)"
+  ],
+  [
+   "7",
+   "Fanerógamas marinas"
+  ],
+  [
+   "6",
+   "Fanerógamas terrestres"
+  ],
+  [
+   "5",
+   "Helechos"
+  ],
+  [
+   "9",
+   "Hepáticas"
+  ],
+  [
+   "30",
+   "Hongos"
+  ],
+  [
+   "32",
+   "Hongos liquenícolas"
+  ],
+  [
+   "22",
+   "Insectos y afines"
+  ],
+  [
+   "31",
+   "Líquenes"
+  ],
+  [
+   "28",
+   "Mamíferos"
+  ],
+  [
+   "21",
+   "Miriápodos (ciempiés y milpiés)"
+  ],
+  [
+   "18",
+   "Moluscos"
+  ],
+  [
+   "8",
+   "Musgos"
+  ],
+  [
+   "16",
+   "Nemátodos"
+  ],
+  [
+   "23",
+   "Otros invertebrados"
+  ],
+  [
+   "24",
+   "Peces"
+  ],
+  [
+   "12",
+   "Platelmintos (gusanos planos y afines)"
+  ],
+  [
+   "10",
+   "Poríferos (esponjas)"
+  ],
+  [
+   "4",
+   "Protistas, algas unicelulares y afines"
+  ],
+  [
+   "26",
+   "Reptiles"
+  ],
+  [
+   "29",
+   "Urocordados"
+  ]
+ ],
+ "select_selectLevel3": [
+  [
+   "",
+   "Nivel 3"
+  ],
+  [
+   "",
+   ""
+  ],
+  [
+   "7",
+   "Arañas"
+  ],
+  [
+   "2",
+   "Babosas y caracoles marinos"
+  ],
+  [
+   "1",
+   "Babosas y caracoles terrestres y dulciacuícolas"
+  ],
+  [
+   "4",
+   "Bivalvos (almejas y afines)"
+  ],
+  [
+   "18",
+   "Blatarios (cucarachas)"
+  ],
+  [
+   "9",
+   "Branquiópodos (pulgas de agua y afines)"
+  ],
+  [
+   "3",
+   "Cefalópodos (pulpos, calamares y afines)"
+  ],
+  [
+   "28",
+   "Coleópteros (escarabajos)"
+  ],
+  [
+   "11",
+   "Copépodos (patas de remo)"
+  ],
+  [
+   "21",
+   "Dermápteros (tijeretas)"
+  ],
+  [
+   "30",
+   "Dípteros (moscas y mosquitos)"
+  ],
+  [
+   "26",
+   "Hemípteros (chinches, pulgones y afines)"
+  ],
+  [
+   "31",
+   "Himenópteros (abejas, hormigas y afines)"
+  ],
+  [
+   "29",
+   "Lepidópteros (mariposas y polillas)"
+  ],
+  [
+   "13",
+   "Malacostraceos marinos (cangrejos, camarones y afines)"
+  ],
+  [
+   "14",
+   "Malacostraceos terrestres (anfípodos, cochinillas de la humedad y afines)"
+  ],
+  [
+   "39",
+   "Mamíferos marinos"
+  ],
+  [
+   "38",
+   "Mamíferos terrestres"
+  ],
+  [
+   "17",
+   "Mántidos"
+  ],
+  [
+   "27",
+   "Neurópteros (hormigas león, crisopas y afines)"
+  ],
+  [
+   "16",
+   "Odonatos (libélulas)"
+  ],
+  [
+   "20",
+   "Ortópteros (saltamontes)"
+  ],
+  [
+   "10",
+   "Ostrácodos"
+  ],
+  [
+   "8",
+   "Otros arácnidos"
+  ],
+  [
+   "15",
+   "Otros crustáceos"
+  ],
+  [
+   "32",
+   "Otros insectos y afines"
+  ],
+  [
+   "35",
+   "Peces cartilaginosos"
+  ],
+  [
+   "33",
+   "Peces dulciacuícolas"
+  ],
+  [
+   "34",
+   "Peces marinos óseos"
+  ],
+  [
+   "22",
+   "Psocópteros (piojos de los libros)"
+  ],
+  [
+   "5",
+   "Quitones, escafópodos y otros moluscos marinos"
+  ],
+  [
+   "36",
+   "Reptiles terrestres"
+  ],
+  [
+   "25",
+   "Tisanópteros (trips)"
+  ],
+  [
+   "37",
+   "Tortugas marinas"
+  ],
+  [
+   "6",
+   "Ácaros"
+  ]
+ ],
+ "scripts_niveles": [
+  "/biota/especies?selectLevel1="
+ ],
+ "conteos": {
+  "1": {
+   "n": 1737,
+   "cab": [
+    "Código",
+    "Especie",
+    "Nombre común/vulgar",
+    "Medio",
+    "Clase",
+    "Presencia",
+    "Validez",
+    "Status",
+    "Origen",
+    "Endemicidad",
+    "Imagen",
+    ""
+   ],
+   "clases": [
+    [
+     "Florideophyceae",
+     427
+    ],
+    [
+     "Bacillariophyceae",
+     286
+    ],
+    [
+     "Dinophyceae",
+     264
+    ],
+    [
+     "Phaeophyceae",
+     155
+    ],
+    [
+     "Prymnesiophyceae",
+     150
+    ],
+    [
+     "Ulvophyceae",
+     124
+    ],
+    [
+     "Mediophyceae",
+     88
+    ],
+    [
+     "Globothalamea",
+     72
+    ],
+    [
+     "Coscinodiscophyceae",
+     60
+    ],
+    [
+     "Peronosporea",
+     15
+    ],
+    [
+     "Incertae sedis (Haptophyta)",
+     15
+    ],
+    [
+     "Coccolithophyceae",
+     13
+    ],
+    [
+     "Polycystina",
+     11
+    ],
+    [
+     "Trebouxiophyceae",
+     8
+    ],
+    [
+     "Tubothalamea",
+     8
+    ],
+    [
+     "Nodosariata",
+     6
+    ],
+    [
+     "Compsopogonophyceae",
+     5
+    ],
+    [
+     "Bangiophyceae",
+     4
+    ],
+    [
+     "Stylonematophyceae",
+     4
+    ],
+    [
+     "Pelagophyceae",
+     3
+    ],
+    [
+     "Chlorophyceae",
+     3
+    ],
+    [
+     "Conoidasida",
+     2
+    ],
+    [
+     "Dictyochophyceae",
+     2
+    ],
+    [
+     "Incertae sedis (Bacillariophyta)",
+     2
+    ],
+    [
+     "Xanthophyceae",
+     1
+    ],
+    [
+     "Chlorarachniophyceae",
+     1
+    ],
+    [
+     "Incertae sedis (Rhodophyta)",
+     1
+    ],
+    [
+     "Synchromophyceae",
+     1
+    ],
+    [
+     "Monothalamea ",
+     1
+    ],
+    [
+     "Palmophyllophyceae",
+     1
+    ],
+    [
+     "Suctorea",
+     1
+    ],
+    [
+     "Pyramimonadophyceae",
+     1
+    ],
+    [
+     "Chlorodendrophyceae",
+     1
+    ],
+    [
+     "Oligohymenophorea",
+     1
+    ]
+   ],
+   "medio": [
+    [
+     "Marino",
+     1709
+    ],
+    [
+     "Terrestre",
+     28
+    ]
+   ],
+   "endemicos": 36,
+   "origen": [
+    [
+     "NP",
+     1314
+    ],
+    [
+     "NS",
+     390
+    ],
+    [
+     "IP",
+     17
+    ],
+    [
+     "ISI",
+     7
+    ],
+    [
+     "ISF",
+     6
+    ],
+    [
+     "",
+     2
+    ],
+    [
+     "ISN",
+     1
+    ]
+   ]
+  },
+  "5": {
+   "n": 141,
+   "cab": [
+    "Código",
+    "Especie",
+    "Nombre común/vulgar",
+    "Medio",
+    "Clase",
+    "Presencia",
+    "Validez",
+    "Status",
+    "Origen",
+    "Endemicidad",
+    "Imagen",
+    ""
+   ],
+   "clases": [
+    [
+     "Cyanophyceae",
+     74
+    ],
+    [
+     "Gammaproteobacteria",
+     36
+    ],
+    [
+     "Bacilli",
+     9
+    ],
+    [
+     "Alphaproteobacteria",
+     9
+    ],
+    [
+     "Actinomycetes",
+     4
+    ],
+    [
+     "Epsilonproteobacteria",
+     4
+    ],
+    [
+     "Bacillii",
+     2
+    ],
+    [
+     "Zetaproteobacteria",
+     1
+    ],
+    [
+     "Mollicutes",
+     1
+    ],
+    [
+     "Actinobacteria",
+     1
+    ]
+   ],
+   "medio": [
+    [
+     "Marino",
+     99
+    ],
+    [
+     "Terrestre",
+     42
+    ]
+   ],
+   "endemicos": 6,
+   "origen": [
+    [
+     "NS",
+     95
+    ],
+    [
+     "",
+     31
+    ],
+    [
+     "NP",
+     15
+    ]
+   ]
+  },
+  "3": {
+   "n": 380,
+   "cab": [
+    "Código",
+    "Especie",
+    "Nombre común/vulgar",
+    "Medio",
+    "Clase",
+    "Presencia",
+    "Validez",
+    "Status",
+    "Origen",
+    "Endemicidad",
+    "Imagen",
+    ""
+   ],
+   "clases": [
+    [
+     "Bryopsida",
+     368
+    ],
+    [
+     "Polytrichopsida",
+     9
+    ],
+    [
+     "Andreaeopsida",
+     2
+    ],
+    [
+     "Sphagnopsida",
+     1
+    ]
+   ],
+   "medio": [
+    [
+     "Terrestre",
+     380
+    ]
+   ],
+   "endemicos": 7,
+   "origen": [
+    [
+     "NP",
+     371
+    ],
+    [
+     "NS",
+     8
+    ],
+    [
+     "ISP",
+     1
+    ]
+   ]
+  },
+  "4": {
+   "n": 4393,
+   "cab": [
+    "Código",
+    "Especie",
+    "Nombre común/vulgar",
+    "Medio",
+    "Clase",
+    "Presencia",
+    "Validez",
+    "Status",
+    "Origen",
+    "Endemicidad",
+    "Imagen",
+    ""
+   ],
+   "clases": [
+    [
+     "Agaricomycetes",
+     1661
+    ],
+    [
+     "Lecanoromycetes",
+     1301
+    ],
+    [
+     "Incertae sedis (Fungi imperfecti)",
+     219
+    ],
+    [
+     "Sordariomycetes",
+     192
+    ],
+    [
+     "Dothideomycetes",
+     180
+    ],
+    [
+     "Pezizomycetes",
+     158
+    ],
+    [
+     "Leotiomycetes",
+     143
+    ],
+    [
+     "Arthoniomycetes",
+     139
+    ],
+    [
+     "Eurotiomycetes",
+     104
+    ],
+    [
+     "Pucciniomycetes",
+     94
+    ],
+    [
+     "Lichinomycetes",
+     62
+    ],
+    [
+     "Laboulbeniomycetes",
+     28
+    ],
+    [
+     "Orbiliomycetes",
+     27
+    ],
+    [
+     "Tremellomycetes",
+     18
+    ],
+    [
+     "Ustilaginomycetes",
+     13
+    ],
+    [
+     "Exobasidiomycetes",
+     10
+    ],
+    [
+     "Incertae sedis (Ascomycota)*",
+     8
+    ],
+    [
+     "Dacrymycetes",
+     8
+    ],
+    [
+     "Geoglossomycetes",
+     7
+    ],
+    [
+     "Incertae sedis (Pezizomycotina)",
+     4
+    ],
+    [
+     "Glomeromycetes",
+     3
+    ],
+    [
+     "Incertae sedis (Ascomycota)",
+     2
+    ],
+    [
+     "Taphrinomycetes",
+     2
+    ],
+    [
+     "Xylonomycetes",
+     2
+    ],
+    [
+     "Agaricostilbomycetes",
+     1
+    ],
+    [
+     "Cystobasidiomycetes",
+     1
+    ],
+    [
+     "Zygomycetes",
+     1
+    ],
+    [
+     "Atractiellomycetes",
+     1
+    ],
+    [
+     "Microbotryomycetes",
+     1
+    ],
+    [
+     "Blastocladiomycetes",
+     1
+    ],
+    [
+     "Mucoromycetes",
+     1
+    ],
+    [
+     "Chytridiomycetes",
+     1
+    ]
+   ],
+   "medio": [
+    [
+     "Terrestre",
+     4367
+    ],
+    [
+     "Marino",
+     26
+    ]
+   ],
+   "endemicos": 263,
+   "origen": [
+    [
+     "NP",
+     3913
+    ],
+    [
+     "NS",
+     344
+    ],
+    [
+     "IP",
+     90
+    ],
+    [
+     "ISF",
+     25
+    ],
+    [
+     "ISN",
+     10
+    ],
+    [
+     "",
+     8
+    ],
+    [
+     "ISP",
+     3
+    ]
+   ]
+  },
+  "7": {
+   "n": 15070,
+   "cab": [
+    "Código",
+    "Especie",
+    "Nombre común/vulgar",
+    "Medio",
+    "Clase",
+    "Presencia",
+    "Validez",
+    "Status",
+    "Origen",
+    "Endemicidad",
+    "Imagen",
+    ""
+   ],
+   "clases": [
+    [
+     "Hexapoda",
+     7621
+    ],
+    [
+     "Gastropoda",
+     1793
+    ],
+    [
+     "Arachnida",
+     1203
+    ],
+    [
+     "Malacostraca",
+     970
+    ],
+    [
+     "Polychaeta",
+     636
+    ],
+    [
+     "Copepoda",
+     470
+    ],
+    [
+     "Bivalvia",
+     308
+    ],
+    [
+     "Hydrozoa",
+     209
+    ],
+    [
+     "Demospongiae",
+     189
+    ],
+    [
+     "Anthozoa",
+     178
+    ],
+    [
+     "Gymnolaemata",
+     174
+    ],
+    [
+     "Chromadorea",
+     160
+    ],
+    [
+     "Cephalopoda",
+     101
+    ],
+    [
+     "Diplopoda",
+     88
+    ],
+    [
+     "Ostracoda",
+     88
+    ],
+    [
+     "Clitellata",
+     76
+    ],
+    [
+     "Rhabditophora",
+     67
+    ],
+    [
+     "Ophiuroidea",
+     54
+    ],
+    [
+     "Thecostraca",
+     52
+    ],
+    [
+     "Enoplea",
+     50
+    ],
+    [
+     "Asteroidea",
+     42
+    ],
+    [
+     "Cestoda",
+     41
+    ],
+    [
+     "Chilopoda",
+     39
+    ],
+    [
+     "Holothuroidea",
+     38
+    ],
+    [
+     "Echinoidea",
+     37
+    ],
+    [
+     "Incertae sedis (Gastrotricha)",
+     35
+    ],
+    [
+     "Monogenea",
+     29
+    ],
+    [
+     "Trematoda",
+     27
+    ],
+    [
+     "Sagittoidea",
+     25
+    ],
+    [
+     "Rhynchonellata",
+     24
+    ],
+    [
+     "Branchiopoda",
+     24
+    ],
+    [
+     "Polyplacophora",
+     22
+    ],
+    [
+     "Pycnogonida",
+     21
+    ],
+    [
+     "Scyphozoa",
+     16
+    ],
+    [
+     "Scaphopoda",
+     15
+    ],
+    [
+     "Calcarea",
+     15
+    ],
+    [
+     "Sipunculidea",
+     15
+    ],
+    [
+     "Pauropoda",
+     14
+    ],
+    [
+     "Tentaculata",
+     14
+    ],
+    [
+     "Crinoidea",
+     12
+    ]
+   ],
+   "medio": [
+    [
+     "Terrestre",
+     9835
+    ],
+    [
+     "Marino",
+     5235
+    ]
+   ],
+   "endemicos": 4302,
+   "origen": [
+    [
+     "NS",
+     8269
+    ],
+    [
+     "NP",
+     5662
+    ],
+    [
+     "IP",
+     701
+    ],
+    [
+     "ISN",
+     185
+    ],
+    [
+     "ISF",
+     125
+    ],
+    [
+     "ISP",
+     60
+    ],
+    [
+     "ISI",
+     59
+    ],
+    [
+     "",
+     9
+    ]
+   ]
+  },
+  "6": {
+   "n": 199,
+   "cab": [
+    "Código",
+    "Especie",
+    "Nombre común/vulgar",
+    "Medio",
+    "Clase",
+    "Presencia",
+    "Validez",
+    "Status",
+    "Origen",
+    "Endemicidad",
+    "Imagen",
+    ""
+   ],
+   "clases": [
+    [
+     "Myxogastrea",
+     191
+    ],
+    [
+     "Discosea",
+     2
+    ],
+    [
+     "Protostelea",
+     2
+    ],
+    [
+     "Euglenophyceae",
+     1
+    ],
+    [
+     "Heterolobosea",
+     1
+    ],
+    [
+     "Kinetoplastea",
+     1
+    ],
+    [
+     "Tubulinea",
+     1
+    ]
+   ],
+   "medio": [
+    [
+     "Terrestre",
+     198
+    ],
+    [
+     "Marino",
+     1
+    ]
+   ],
+   "endemicos": 2,
+   "origen": [
+    [
+     "NP",
+     181
+    ],
+    [
+     "NS",
+     7
+    ],
+    [
+     "IP",
+     6
+    ],
+    [
+     "",
+     5
+    ]
+   ]
+  }
+ }
+}
