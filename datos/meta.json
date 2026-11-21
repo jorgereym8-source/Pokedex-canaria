@@ -33,7 +33,7 @@
   "Centinela": "https://www.biodiversidadcanarias.es/centinela"
  },
  "enriquecido": {
-  "fecha": "2026-11-21T20:03:24+00:00",
+  "fecha": "2026-11-21T22:10:25+00:00",
   "conDato": {
    "uicn": 3919,
    "tamano": 2098,
@@ -86,8 +86,8 @@
  },
  "registros": {
   "fecha": "2026-11-21",
-  "altitud": 1229,
-  "primerRegistro": 473
+  "altitud": 1958,
+  "primerRegistro": 761
  },
  "sonidos": {
   "fecha": "2026-11-21",
