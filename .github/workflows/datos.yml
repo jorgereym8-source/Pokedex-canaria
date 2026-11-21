@@ -29,10 +29,21 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install requests beautifulsoup4 lxml pandas pyarrow
+      - run: pip install requests beautifulsoup4 lxml pandas pyarrow openpyxl pypdf cryptography rasterio
       - run: python scripts/descargar.py --limite "$LIMITE"
       - run: python scripts/enriquecer.py
       - run: python scripts/fotos.py
+        continue-on-error: true
+      - run: python scripts/rasgos.py
+        continue-on-error: true
+      - run: python scripts/conservacion.py
+        continue-on-error: true
+      - run: python scripts/registros.py
+        continue-on-error: true
+      - run: python scripts/sonidos.py
+        continue-on-error: true
+        env:
+          XC_KEY: ${{ secrets.XC_KEY }}
       - name: Guardar datos
         run: |
           git config user.name "github-actions[bot]"
