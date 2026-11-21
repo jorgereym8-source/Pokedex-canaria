@@ -1,4 +1,5 @@
 // Utilidades de interfaz: iconos, nombres, insignias, mapa de islas y avisos.
+import { MAPA } from "./islas.js";
 
 export const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
@@ -132,25 +133,24 @@ export function miniatura(e, op, ancho = 120) {
   return `<span class="miniatura">${icono(iconoGrupo(e.g))}${img}</span>`;
 }
 
-// Mapa esquemático de las islas, coloreado según la presencia
-const FORMAS = {
-  P: '<polygon points="18,48 30,46 33,58 29,70 24,82 19,70 15,58"/>',
-  H: '<polygon points="4,136 14,130 24,133 18,140 10,146"/>',
-  G: '<circle cx="67" cy="108" r="8"/>',
-  T: '<polygon points="88,88 104,80 120,76 144,68 138,80 128,92 116,106 106,118 96,108 90,98"/>',
-  C: '<circle cx="181" cy="121" r="15"/>',
-  F: '<polygon points="250,118 258,112 272,100 284,86 292,70 300,56 306,58 302,74 294,90 284,104 270,114 258,120"/>',
-  L: '<polygon points="298,50 306,40 318,30 330,20 334,26 326,38 312,46 302,52"/>',
+// Mapa de las islas con su contorno real (OpenStreetMap), coloreado según la presencia
+const ETIQUETAS = {
+  H: [35, 147, "start", "El Hierro"], P: [46, 66, "start", "La Palma"], G: [77.6, 132, "middle", "La Gomera"],
+  T: [127, 71, "middle", "Tenerife"], C: [191.5, 155, "middle", "Gran Canaria"], F: [300, 132, "middle", "Fuerteventura"],
+  L: [307, 44, "end", "Lanzarote"],
 };
-const ETIQUETAS = { P: [38, 62], H: [28, 146], G: [60, 132], T: [140, 98], C: [200, 126], F: [236, 100], L: [284, 34] };
 const CLASE_PRES = { s: "presente", d: "dudosa", t: "traslocada", x: "extinta" };
 
 export function mapaIslas(is) {
   const pr = presencia(is);
-  const islas = Object.entries(FORMAS).map(([k, forma]) => `<g class="${CLASE_PRES[pr[k]] || "ausente"}" stroke-width="1.2">${forma}</g>`).join("");
-  const textos = Object.entries(ETIQUETAS).map(([k, [x, y]]) => `<text x="${x}" y="${y}">${ABREV[k]}</text>`).join("");
+  const { ancho, alto, islas, km50 } = MAPA;
+  const formas = Object.entries(islas).map(([k, ds]) => `<g class="isla ${CLASE_PRES[pr[k]] || "ausente"}">${ds.map((d) => `<path d="${d}"/>`).join("")}</g>`).join("");
+  const textos = Object.entries(ETIQUETAS).map(([, [x, y, a, t]]) => `<text x="${x}" y="${y}" text-anchor="${a}">${t}</text>`).join("");
+  const xe = ancho - 10 - km50, ye = alto - 9;
+  const escala = `<g class="escala"><path d="M${xe},${ye - 3}V${ye}H${xe + km50}V${ye - 3}"/><text x="${xe + km50 / 2}" y="${ye - 5}" text-anchor="middle">50 km</text></g>`;
   const desc = ISLAS.filter(([k]) => pr[k]).map(([k, n]) => `${n}: ${{ s: "presente", d: "dudosa o extinta", t: "traslocada", x: "extinta" }[pr[k]] || pr[k]}`).join("; ");
-  return `<svg class="mapa-islas" viewBox="0 0 340 152" role="img" aria-label="${esc(desc || "Sin presencia en las islas")}">${islas}${textos}</svg>`;
+  return `<svg class="mapa-islas" viewBox="0 0 ${ancho} ${alto}" role="img" aria-label="${esc((desc || "Sin presencia en las islas") + (pr.M ? ". Presente en aguas de Canarias" : ""))}">
+    <rect class="mar ${pr.M ? "con-especie" : ""}" x="0" y="0" width="${ancho}" height="${alto}" rx="8"/>${formas}${textos}${escala}</svg>`;
 }
 
 export function aviso(texto, ms = 2600) {

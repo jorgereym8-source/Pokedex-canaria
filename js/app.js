@@ -8,7 +8,7 @@ import {
   insigniasEntrada, urlImagen, urlLibre, fotoPrincipal, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
 } from "./ui.js";
 
-const VERSION = "0.4.0";
+const VERSION = "0.4.1";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
 const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], ui: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, son: false, novistas: false, ext: false, am: false, pr: false });
@@ -361,7 +361,8 @@ async function vistaFicha(codigo) {
       <h2>Distribución</h2>
       ${mapaIslas(e.is)}
       <div class="leyenda"><span><i style="background:var(--acento)"></i>Presente</span><span><i style="background:var(--acento-suave);border:1px dashed var(--acento)"></i>Dudosa</span>
-        <span><i style="background:#EBC27A"></i>Traslocada</span><span><i style="background:#9AA097"></i>Extinta</span><span><i style="border:1.5px solid #9AA097"></i>Sin citas</span></div>
+        <span><i style="background:#EBC27A"></i>Traslocada</span><span><i style="background:#9AA097"></i>Extinta</span><span><i style="border:1.5px solid #9AA097"></i>Sin citas</span>${presencia(e.is).M ? '<span><i class="mar-leyenda"></i>En aguas de Canarias</span>' : ""}</div>
+      <span class="fuente-dato">Contorno de las islas: © OpenStreetMap. Los islotes se colorean con su isla (La Graciosa, Alegranza y Montaña Clara con Lanzarote; Lobos con Fuerteventura).</span>
       ${cent["Distribución mundial"] ? `<p><b>Mundial:</b> ${esc(cent["Distribución mundial"])}</p>` : ""}
       ${cent["Distribución en Canarias"] ? `<p><b>En Canarias:</b> ${esc(cent["Distribución en Canarias"])}</p>` : ""}
       ${f.mapaPk ? `<img class="mapa-oficial" loading="lazy" alt="Mapa de distribución de Biota en cuadrículas" src="${BIOTA}/minMap?especiePk=${esc(f.mapaPk)}&width=525&height=250" onerror="this.remove()">` : ""}
