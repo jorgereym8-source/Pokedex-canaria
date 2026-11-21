@@ -2,7 +2,7 @@
 // - Estructura de la app: se guarda al instalar (cambia VERSION al publicar cambios).
 // - Índice y fichas: primero la red, y si no hay, lo guardado.
 // - Fotos de Biota y teselas del mapa: lo guardado primero, con límite de tamaño.
-const VERSION = "v0.1.2";
+const VERSION = "v0.2.0";
 const APP = `pokedex-canaria-app-${VERSION}`;
 const DATOS = "pokedex-canaria-datos";
 const FICHAS = "pokedex-canaria-fichas";
@@ -11,7 +11,7 @@ const MAX_IMAGENES = 400;
 
 const ARCHIVOS = [
   "./", "index.html", "manifest.webmanifest", "css/fuentes.css", "css/app.css",
-  "js/app.js", "js/ajustes.js", "js/datos.js", "js/ui.js", "js/avistamientos.js",
+  "js/app.js", "js/ajustes.js", "js/datos.js", "js/ui.js", "js/avistamientos.js", "js/tamano.js",
   "vendor/leaflet/leaflet.js", "vendor/leaflet/leaflet.css", "vendor/leaflet/images/marker-icon.png",
   "vendor/leaflet/images/marker-icon-2x.png", "vendor/leaflet/images/marker-shadow.png",
   "iconos/favicon.png", "iconos/logo.png", "iconos/apple-touch-icon.png",

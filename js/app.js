@@ -2,15 +2,16 @@
 import * as A from "./ajustes.js";
 import * as D from "./datos.js";
 import * as V from "./avistamientos.js";
+import { diagrama, textoTamano, medida } from "./tamano.js";
 import {
   esc, icono, iconoGrupo, ISLAS, NOMBRE_ISLA, NIVELES, ORIGENES, nombreSci, nombreComun, numero, insigniaNivel,
-  insigniasEntrada, urlImagen, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia,
+  insigniasEntrada, urlImagen, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
 } from "./ui.js";
 
-const VERSION = "0.1.2";
+const VERSION = "0.2.0";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
-const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, novistas: false, ext: false, am: false, pr: false });
+const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], ui: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, novistas: false, ext: false, am: false, pr: false });
 const estado = { filtros: FILTROS_VACIOS(), q: "", orden: null, limite: 60, vistas: new Set(), modoVistas: "lista", abierto: null };
 const MESES = ["E", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
 const MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
@@ -137,7 +138,7 @@ function atajo(ic, t, s, filtros) {
 }
 
 function esAmenazada(e) {
-  return [...(e.cc || []), ...(e.ce || [])].some((c) => /peligro|vulnerable/i.test(c));
+  return ["CR", "EN", "VU"].includes(e.ui) || [...(e.cc || []), ...(e.ce || [])].some((c) => /peligro|vulnerable/i.test(c));
 }
 
 // ----------------------------------------------------------------- explorar
@@ -189,6 +190,7 @@ function chipsActivos() {
   f.ce.forEach((v) => add("ce", v, `C. Español: ${v}`));
   f.md.forEach((v) => add("md", v, v));
   f.hb.forEach((v) => add("hb", v, v));
+  (f.ui || []).forEach((v) => add("ui", v, `UICN: ${UICN[v]?.nombre || v}`));
   if (f.inv) add("inv", true, "Invasoras");
   if (f.am) add("am", true, "Amenazadas");
   if (f.pr) add("pr", true, "Protegidas");
@@ -239,6 +241,7 @@ function abrirFiltros() {
     ["g", "Grupo", D.FILTROS.g.valores.map((v) => [v, v])],
     ["i", "Isla", ISLAS.slice().reverse().map(([k, n]) => [k, n])],
     ["nv", "Endemicidad y origen", Object.entries(NIVELES)],
+    ["ui", "Categoría UICN (mundial)", Object.entries(UICN).filter(([k]) => !["EX", "EW"].includes(k)).map(([k, u]) => [k, `${u.nombre} (${k})`])],
     ["cc", "Catálogo Canario de Especies Protegidas", D.FILTROS.cc.valores.map((v) => [v, v])],
     ["ce", "Catálogo Español", D.FILTROS.ce.valores.map((v) => [v, v])],
     ["md", "Medio", [["Terrestre", "Terrestre"], ["Marino", "Marino"]]],
@@ -316,6 +319,7 @@ async function vistaFicha(codigo) {
 
     <div class="insignias">
       ${insigniaNivel(e.nv)}
+      ${f.uicn ? `<span class="insignia uicn-${esc(f.uicn.codigo)}">UICN · ${esc(f.uicn.categoria)} (${esc(f.uicn.codigo)})</span>` : ""}
       <span class="insignia">${esc(f.origen?.nombre || ORIGENES[orig] || orig)}${orig ? ` (${esc(orig)})` : ""}</span>
       ${orig === "ISI" ? '<span class="insignia invasora">Invasora</span>' : orig === "ISP" ? '<span class="insignia invasora">Potencialmente invasora</span>' : ""}
       ${[...new Set([...(e.cc || []).map((c) => `C. Canario: ${c}`), ...(e.ce || []).map((c) => `C. Español: ${c}`)])].map((c) => `<span class="insignia ${/peligro|vulnerable/i.test(c) ? "amenaza" : ""}">${esc(c)}</span>`).join("")}
@@ -324,9 +328,14 @@ async function vistaFicha(codigo) {
     <div class="hechos">
       ${hecho("pin", "Islas", `${islas.length} de 7`, islas.map((k) => ({ H: "EH", P: "LP", G: "LG", T: "TF", C: "GC", F: "FV", L: "LZ" }[k])).join(" · ") || "—")}
       ${hecho(iconoGrupo(e.g), "Grupo", e.g, e.sg || f.clase || "")}
-      ${hecho("montana", "Medio", f.medio || e.md, f.taxonomia?.Clase || "")}
-      ${hecho("camara", "Fotos en Biota", String(f.nImagenes || 0), avs.length ? `${avs.length} avistamiento${avs.length > 1 ? "s" : ""} tuyo${avs.length > 1 ? "s" : ""}` : "Aún no la has visto")}
+      ${f.tamano ? hecho("regla", f.tamano.tipo.charAt(0).toUpperCase() + f.tamano.tipo.slice(1), textoTamano(f.tamano), f.tamano.fuente) : hecho("montana", "Medio", f.medio || e.md, f.taxonomia?.Clase || "")}
+      ${f.longevidad ? hecho("reloj", "Longevidad", `${(Math.round(f.longevidad.anos * 10) / 10).toLocaleString("es")} años`, [f.longevidad.tipo, f.longevidad.origen].filter(Boolean).join(", "))
+        : f.ciclo ? hecho("reloj", "Ciclo de vida", f.ciclo.valor.replace(/ \(.*\)/, ""), f.ciclo.fuente)
+        : f.peso ? hecho("regla", "Peso", pesoTexto(f.peso.kg), f.peso.fuente)
+        : hecho("camara", "Fotos en Biota", String(f.nImagenes || 0), avs.length ? `${avs.length} avistamiento${avs.length > 1 ? "s" : ""} tuyo${avs.length > 1 ? "s" : ""}` : "Aún no la has visto")}
     </div>
+
+    ${seccionTamano(f, e)}
 
     <section class="seccion">
       <h2>Distribución</h2>
@@ -350,8 +359,8 @@ async function vistaFicha(codigo) {
 
     <section class="seccion" id="calendario"><h2>Calendario</h2><div class="cargando pequeno" style="padding:8px 0">Consultando observaciones…</div></section>
 
-    ${Object.keys(f.proteccion || {}).length ? `<section class="seccion"><h2>Amenaza y protección</h2><div class="tabla-prot">${tablaProteccion(f.proteccion)}</div>
-      <span class="fuente-dato">Fuente: Biota${f.centinela ? " · Centinela" : ""}. Categoría por isla según cada catálogo.</span></section>` : ""}
+    ${Object.keys(f.proteccion || {}).length || f.uicn ? `<section class="seccion"><h2>Amenaza y protección</h2><div class="tabla-prot">${filaUicn(f)}${tablaProteccion(f.proteccion || {})}</div>
+      <span class="fuente-dato">Fuente: ${f.uicn ? "UICN vía GBIF · " : ""}Biota${f.centinela ? " · Centinela" : ""}. Categoría por isla según cada catálogo.</span></section>` : ""}
 
     ${f.taxonomia ? `<section class="seccion"><h2>Taxonomía</h2><div class="tax">
       ${Object.entries(f.taxonomia).map(([r, v]) => `<div><span class="r">${esc(r)}</span><span class="v ${/Género|Especie|Subespecie/.test(r) ? "sci" : ""}">${esc(v)}</span></div>`).join("")}</div>
@@ -365,6 +374,10 @@ async function vistaFicha(codigo) {
       <div><span>Nombres, taxonomía, endemicidad y origen</span><span>Biota</span></div>
       <div><span>Presencia por islas y protección</span><span>Biota</span></div>
       ${f.centinela ? "<div><span>Distribución, hábitat y claves</span><span>Centinela</span></div>" : ""}
+      ${f.uicn ? "<div><span>Categoría UICN</span><span>UICN 2022-2 vía GBIF</span></div>" : ""}
+      ${f.tamano ? `<div><span>Tamaño</span><span>${esc(f.tamano.fuente)}</span></div>` : ""}
+      ${f.peso ? `<div><span>Peso</span><span>${esc(f.peso.fuente)}</span></div>` : ""}
+      ${f.longevidad ? `<div><span>Longevidad</span><span>${esc(f.longevidad.fuente)}</span></div>` : f.ciclo ? `<div><span>Ciclo de vida</span><span>${esc(f.ciclo.fuente)}</span></div>` : ""}
       <div><span>Calendario</span><span>iNaturalist</span></div>
       <div><span>Fotos</span><span>Biota (desde su web)</span></div>
       <span class="fuente-dato">Datos descargados el ${esc(f.actualizado || "")}. ${f.referencias ? `Biota cita ${f.referencias} referencias para este taxón.` : ""}</span>
@@ -380,6 +393,34 @@ async function vistaFicha(codigo) {
 
 function hecho(ic, k, v, s) {
   return `<div class="hecho"><span class="k">${icono(ic)}${esc(k)}</span><span class="v">${esc(v)}</span><span class="s">${esc(s)}</span></div>`;
+}
+
+function pesoTexto(kg) {
+  if (kg >= 1000) return `${(Math.round(kg / 100) / 10).toLocaleString("es")} t`;
+  if (kg >= 1) return `${(Math.round(kg * 10) / 10).toLocaleString("es")} kg`;
+  return `${(Math.round(kg * 10000) / 10).toLocaleString("es")} g`;
+}
+
+function seccionTamano(f, e) {
+  if (!f.tamano && !f.peso && !f.longevidad && !f.ciclo) return "";
+  const t = f.tamano;
+  const fuente = (d) => d.url ? `<a href="${esc(d.url)}" target="_blank" rel="noopener">${esc(d.fuente)}</a>` : esc(d.fuente);
+  const lineas = [];
+  if (t) lineas.push(`<p><b>${esc(t.tipo.charAt(0).toUpperCase() + t.tipo.slice(1))}:</b> ${esc(textoTamano(t).toLowerCase())} · ${fuente(t)}${t.nivel === "especie" ? " (dato de la especie)" : ""}</p>${t.cita ? `<p class="pequeno texto-2" style="font-style:italic">«${esc(t.cita)}»</p>` : ""}`);
+  if (f.peso) lineas.push(`<p><b>Peso ${esc(f.peso.tipo)}:</b> ${pesoTexto(f.peso.kg)} · ${fuente(f.peso)}</p>`);
+  if (f.longevidad) lineas.push(`<p><b>Longevidad ${esc(f.longevidad.tipo)}:</b> ${(Math.round(f.longevidad.anos * 10) / 10).toLocaleString("es")} años${f.longevidad.origen ? ` (${esc(f.longevidad.origen)})` : ""} · ${fuente(f.longevidad)}</p>`);
+  if (f.ciclo) lineas.push(`<p><b>Ciclo de vida:</b> ${esc(f.ciclo.valor)} · ${esc(f.ciclo.fuente)}</p>`);
+  return `<section class="seccion"><h2>Tamaño${f.longevidad || f.ciclo ? " y vida" : ""}</h2>
+    ${t ? `<div class="diagrama-tamano">${diagrama(f.forma?.valor || (e.re === "Flora" ? "arbusto" : "mamifero"), t, A.get("altura"))}</div>` : ""}
+    ${lineas.join("")}</section>`;
+}
+
+function filaUicn(f) {
+  if (!f.uicn) return "";
+  const u = f.uicn;
+  return `<div class="p-fila"><span class="codigo uicn-${esc(u.codigo)}">${esc(u.codigo)}</span>
+    <span style="flex:1;display:flex;flex-direction:column;gap:1px;min-width:0"><span class="k">UICN · Lista Roja mundial</span><span class="v">${esc(u.categoria)}</span>
+      <span class="k">Versión 2022-2${u.nivel === "especie" ? " · evaluada a nivel de especie" : ""}${u.url ? ` · <a href="${esc(u.url)}" target="_blank" rel="noopener">GBIF</a>` : ""}</span></span></div>`;
 }
 
 const CORTO = {
@@ -828,6 +869,11 @@ function vistaAjustes() {
       <p class="pequeno texto-2" style="margin:0 4px">Cada estilo guarda su propia personalización. Toca una fila para abrir su menú.</p>
     </section>
 
+    <section class="grupo-ajustes"><h2 class="subtitulo-grupo">Diagrama de tamaño</h2><div class="ajustes-lista">
+      <div class="ajuste" style="cursor:default"><span class="etq"><span>Tu altura</span><small>Tu silueta en el diagrama; las especies de menos de 30 cm se comparan con una mano</small></span>
+        <span class="paso"><button data-accion="altura" data-d="-1" aria-label="Restar 1 cm">−</button><output id="altura">${A.get("altura")} cm</output><button data-accion="altura" data-d="1" aria-label="Sumar 1 cm">+</button></span></div>
+    </div></section>
+
     <section class="grupo-ajustes"><h2 class="subtitulo-grupo">Nombres y orden</h2><div class="ajustes-lista">
       ${selector("nombres", "Nombres comunes", ["Todos", "Solo el principal"])}
       ${interruptor("autoria", "Mostrar autoría del nombre científico")}
@@ -854,6 +900,10 @@ function vistaAjustes() {
       ${enlace("Normas de uso de Biota", `${BIOTA}/normas`)}
       ${enlace("REDEXOS · especies exóticas invasoras", REDEXOS)}
       ${enlace("iNaturalist · calendario de observaciones", "https://www.inaturalist.org")}
+      ${enlace("GBIF · categoría UICN (Lista Roja 2022-2)", "https://www.gbif.org/dataset/19491596-35ae-4a91-9a98-85cf505f1bd3")}
+      ${enlace("FishBase · tamaño y longevidad de peces", "https://www.fishbase.se")}
+      ${enlace("AnAge · longevidad y peso de vertebrados", "https://genomics.senescence.info/species/")}
+      ${enlace("Wikidata y Wikipedia · tamaños y formas", "https://www.wikidata.org")}
       ${enlace("Open-Meteo · tiempo de los avistamientos", "https://open-meteo.com")}
       ${enlace("OpenStreetMap · mapas y nombres de lugares", "https://www.openstreetmap.org/copyright")}
     </div></section>
@@ -916,6 +966,10 @@ function alPulsar(ev) {
   else if (a === "restablecer") { A.restablecer(); estado.abierto = null; vistaAjustes(); }
   else if (a === "desplegar") { estado.abierto = estado.abierto === b.dataset.id ? null : b.dataset.id; vistaAjustes(); }
   else if (a === "elegir") { A.fijar(b.dataset.id, b.dataset.v); if (b.dataset.v !== "Personalizado") estado.abierto = null; vistaAjustes(); }
+  else if (a === "altura") {
+    const v = Math.min(230, Math.max(90, Number(A.get("altura")) + Number(b.dataset.d)));
+    A.set("altura", v); const o = document.getElementById("altura"); if (o) o.textContent = `${v} cm`;
+  }
   else if (a === "interruptor") { A.set(b.dataset.clave, !A.get(b.dataset.clave)); b.setAttribute("aria-pressed", String(A.get(b.dataset.clave))); }
   else if (a === "sin-conexion") guardarSinConexion().catch((e) => aviso(e.message));
   else if (a === "borrar-todo") {

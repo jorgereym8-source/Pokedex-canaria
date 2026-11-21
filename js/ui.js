@@ -71,6 +71,13 @@ export const ORIGENES = {
   ISN: "Introducido no invasor", ISP: "Introducido potencialmente invasor", ISF: "Introducido con falta de datos",
 };
 
+export const UICN = {
+  CR: { nombre: "En peligro crítico", color: "#D81E05" }, EN: { nombre: "En peligro", color: "#FC7F3F" },
+  VU: { nombre: "Vulnerable", color: "#F9E814" }, NT: { nombre: "Casi amenazada", color: "#CCE226" },
+  LC: { nombre: "Preocupación menor", color: "#60C659" }, DD: { nombre: "Datos insuficientes", color: "#D1D1C6" },
+  EX: { nombre: "Extinta", color: "#000000" }, EW: { nombre: "Extinta en estado silvestre", color: "#542344" },
+};
+
 export function presencia(is) {
   // "HsPsTd" -> {H:"s", P:"s", T:"d"}
   const out = {};
@@ -94,6 +101,7 @@ export function insigniasEntrada(e, pequena = true) {
   const out = [insigniaNivel(e.nv, pequena)];
   if (e.o === "ISI") out.push(`<span class="insignia ${pequena ? "pequena" : ""} invasora">Invasora</span>`);
   if (e.o === "ISP") out.push(`<span class="insignia ${pequena ? "pequena" : ""} invasora">Potencialmente invasora</span>`);
+  if (["CR", "EN", "VU"].includes(e.ui)) out.push(`<span class="insignia ${pequena ? "pequena" : ""} uicn-${e.ui}">UICN ${e.ui}</span>`);
   const amen = [...(e.cc || []), ...(e.ce || [])].find((c) => /peligro|vulnerable/i.test(c));
   if (amen) out.push(`<span class="insignia ${pequena ? "pequena" : ""} amenaza">${esc(amen)}</span>`);
   if (e.st === "Extinto") out.push(`<span class="insignia ${pequena ? "pequena" : ""} extinto">Extinto</span>`);

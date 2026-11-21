@@ -103,6 +103,14 @@ h2 { font-size: 1.1em; }
 .invasora { background: #F6D6D2; color: #7A1D14; }
 .amenaza { background: #FFE1CF; color: #6A2A06; }
 .extinto { background: #2A2D2B; color: #F4F5F1; }
+.uicn-CR { background: #D81E05 !important; color: #FFFFFF !important; border-color: #D81E05 !important; }
+.uicn-EN { background: #FC7F3F !important; color: #1C211B !important; border-color: #FC7F3F !important; }
+.uicn-VU { background: #F9E814 !important; color: #1C211B !important; border-color: #F9E814 !important; }
+.uicn-NT { background: #CCE226 !important; color: #1C211B !important; border-color: #CCE226 !important; }
+.uicn-LC { background: #60C659 !important; color: #1C211B !important; border-color: #60C659 !important; }
+.uicn-DD, .uicn-NE { background: #D1D1C6 !important; color: #1C211B !important; border-color: #D1D1C6 !important; }
+.uicn-EX, .uicn-EW { background: #000000 !important; color: #FFFFFF !important; border-color: #000 !important; }
+.diagrama-tamano svg text { font-family: var(--font); }
 
 /* ---------- listas */
 .lista { background: var(--superficie); border: 1px solid var(--borde); border-radius: var(--radio); overflow: hidden; }

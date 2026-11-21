@@ -60,6 +60,7 @@ export function filtrar(f, vistas = new Set(), orden = "no") {
     if (f.g?.length && !f.g.includes(e.g)) return false;
     if (f.i?.length && !f.i.some((i) => e._islas.includes(i))) return false;
     if (f.nv?.length && !f.nv.includes(e.nv)) return false;
+    if (f.ui?.length && !f.ui.includes(e.ui)) return false;
     if (f.inv && e.o !== "ISI") return false;
     if (f.cc?.length && !f.cc.some((c) => (e.cc || []).includes(c))) return false;
     if (f.ce?.length && !f.ce.some((c) => (e.ce || []).includes(c))) return false;
@@ -77,7 +78,7 @@ export function filtrar(f, vistas = new Set(), orden = "no") {
 }
 
 export function cuantosFiltros(f) {
-  return ["g", "i", "nv", "cc", "ce", "md", "hb"].reduce((n, k) => n + (f[k]?.length || 0), 0) + (f.inv ? 1 : 0) + (f.foto ? 1 : 0) + (f.novistas ? 1 : 0) + (f.ext ? 1 : 0);
+  return ["g", "i", "nv", "ui", "cc", "ce", "md", "hb"].reduce((n, k) => n + (f[k]?.length || 0), 0) + (f.inv ? 1 : 0) + (f.foto ? 1 : 0) + (f.novistas ? 1 : 0) + (f.ext ? 1 : 0);
 }
 
 export function cuentaPorGrupo() {
