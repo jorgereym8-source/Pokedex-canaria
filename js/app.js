@@ -8,7 +8,7 @@ import {
   insigniasEntrada, urlImagen, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
 } from "./ui.js";
 
-const VERSION = "0.2.0";
+const VERSION = "0.2.1";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
 const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], ui: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, novistas: false, ext: false, am: false, pr: false });

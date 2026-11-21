@@ -54,6 +54,14 @@ function barraEscala(escala) {
   return opciones.find((l) => l * escala >= 36) || 20;
 }
 
+// Etiqueta centrada que no se sale por los bordes del dibujo
+function etiqueta(x, y, texto, tam, peso, color, W) {
+  const mitad = texto.length * tam * 0.29;
+  let ancla = "middle", xx = x;
+  if (x - mitad < 4) { ancla = "start"; xx = 4; } else if (x + mitad > W - 4) { ancla = "end"; xx = W - 4; }
+  return `<text x="${xx}" y="${y}" text-anchor="${ancla}" font-size="${tam}" font-weight="${peso}" fill="${color}">${esc(texto)}</text>`;
+}
+
 export function diagrama(forma, tam, alturaCm = 180) {
   if (!tam?.max) return "";
   const sil = SIL[ALIAS[forma] || forma] || SIL.arbusto;
@@ -74,14 +82,13 @@ export function diagrama(forma, tam, alturaCm = 180) {
   const barra = barraEscala(escala);
   const etRef = conMano ? `Mano · ${medida(refAlto)}` : `Tú · ${medida(refAlto)}`;
   const etEsp = textoTamano(tam);
-  const tiny = hRef < 14;
 
   return `<svg viewBox="0 0 ${W} 230" role="img" aria-label="${esc(`Comparación de tamaño: ${etEsp} frente a ${etRef}`)}">
     <line x1="6" y1="${suelo}" x2="${W - 6}" y2="${suelo}" stroke="var(--borde)" stroke-width="1.5"/>
     <g transform="translate(${xRef} ${suelo - hRef}) scale(${kRef})" fill="var(--texto)" opacity="0.85"><path d="${ref.d}"/></g>
     <g transform="translate(${xEsp} ${suelo - hEsp}) scale(${kEsp})" fill="var(--acento)"><path d="${sil.d}"/></g>
-    <text x="${xRef + (refAncho * escala) / 2}" y="${suelo - hRef - 8}" text-anchor="${tiny ? "start" : "middle"}" font-size="11" font-weight="600" fill="var(--texto)">${esc(etRef)}</text>
-    <text x="${xEsp + (ancho * escala) / 2}" y="${Math.max(14, suelo - hEsp - 8)}" text-anchor="middle" font-size="12" font-weight="700" fill="var(--acento)">${esc(etEsp)}</text>
+    ${etiqueta(xRef + (refAncho * escala) / 2, suelo - hRef - 8, etRef, 11, 600, "var(--texto)", W)}
+    ${etiqueta(xEsp + (ancho * escala) / 2, Math.max(14, suelo - hEsp - 8), etEsp, 12, 700, "var(--acento)", W)}
     <line x1="${W - 18 - barra * escala}" y1="216" x2="${W - 18}" y2="216" stroke="var(--texto-2)" stroke-width="2"/>
     <line x1="${W - 18 - barra * escala}" y1="211" x2="${W - 18 - barra * escala}" y2="221" stroke="var(--texto-2)" stroke-width="1.5"/>
     <line x1="${W - 18}" y1="211" x2="${W - 18}" y2="221" stroke="var(--texto-2)" stroke-width="1.5"/>

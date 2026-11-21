@@ -246,6 +246,19 @@ RANGO = {"Flora": (0.02, 70), "Aves": (0.07, 1.5), "Reptiles": (0.03, 3), "Anfib
 ETIQ_PLANTA = re.compile(r"altura|alto|alta|talla|porte|alcanza|alcanzan|mide|miden|crece|crecen|de hasta|llega")
 
 
+def cita_frase(texto: str, ini: int, fin: int) -> str:
+    """La frase que contiene la medida, sin restos de formato de Wikipedia."""
+    cortes = [(texto.rfind(". ", 0, ini), 2), (texto.rfind("\n", 0, ini), 1), (texto.rfind("==", 0, ini), 2)]
+    a = max((p + d for p, d in cortes if p >= 0), default=0)
+    if ini - a > 140:
+        a = texto.find(" ", ini - 120) + 1
+    b = min([x for x in (texto.find(". ", fin), texto.find("\n", fin)) if x >= 0] or [len(texto)])
+    if b - fin > 90:
+        b = texto.rfind(" ", fin, fin + 90)
+    frase = re.sub(r"\s+", " ", texto[a:b]).strip(" =,;")
+    return frase[0].upper() + frase[1:] if frase else frase
+
+
 def medidas(texto: str, animal: bool, grupo: str = "") -> dict | None:
     """Primera medida del organismo entero en un texto (ignora órganos, profundidades, envergaduras…)."""
     lo, hi = RANGO.get(grupo, RANGO["Flora"] if not animal else (0.01, 35))
@@ -290,13 +303,13 @@ def medidas(texto: str, animal: bool, grupo: str = "") -> dict | None:
         tipo = "longitud" if animal else "altura"
         if re.search(r"cabeza[- ]cuerpo|cabeza y cuerpo|hocico[- ]cloaca|lhc|svl", cerca + despues):
             tipo = "longitud cabeza-cuerpo"
-        cita = re.sub(r"\s+", " ", texto[max(0, m.start() - 60):m.end() - len(m.group(4) or "") + 25]).strip()
+        cita = cita_frase(texto, m.start(), m.end() - len(m.group(4) or ""))
         return {"min": round(a, 3) if b else None, "max": round(maximo, 3), "tipo": tipo, "cita": cita}
     return None
 
 
 FORMAS_TXT = [
-    ("palmera", r"\bpalmera|palma\b"), ("helecho", r"\bhelecho"), ("roseta", r"\broseta\b"),
+    ("palmera", r"\bpalmera\b"), ("helecho", r"\bhelecho"), ("roseta", r"\broseta\b"),
     ("cactiforme", r"cactiforme|candelabro"),
     ("árbol", r"\bárbol|arbórea|arbóreo|porte arbóreo|(?<!nano)fanerófito"),
     ("trepadora", r"trepadora|enredadera|liana|voluble"),
@@ -498,8 +511,6 @@ def main() -> int:
             elif ag.get(bi, {}).get("peso"):
                 f["peso"] = {"kg": round(ag[bi]["peso"] / 1000, 4), "tipo": "adulto", "fuente": "AnAge",
                              "url": f"https://genomics.senescence.info/species/entry.php?species={quote(bi.replace(' ', '_'))}"}
-            elif wd.get("masa"):
-                f["peso"] = {"kg": round(wd["masa"], 4), "tipo": "adulto", "fuente": "Wikidata", "url": f"https://www.wikidata.org/wiki/{wd.get('item')}"}
 
         # Longevidad (animales) y ciclo de vida (plantas)
         if animal:
