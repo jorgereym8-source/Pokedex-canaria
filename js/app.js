@@ -923,7 +923,9 @@ function vistaAjustes() {
       ${enlace("Centinela · especies protegidas", CENTINELA)}
       ${enlace("Normas de uso de Biota", `${BIOTA}/normas`)}
       ${enlace("REDEXOS · especies exóticas invasoras", REDEXOS)}
-      ${enlace("iNaturalist · calendario de observaciones", "https://www.inaturalist.org")}
+      ${enlace("iNaturalist · calendario y fotos con licencia Creative Commons", "https://www.inaturalist.org")}
+      ${enlace("Wikimedia Commons · fotos con licencia libre", "https://commons.wikimedia.org")}
+      ${enlace("Especies Vegetales en Canarias · Gerardo G. Casanova (enlaces)", "https://endemicascanarias.com")}
       ${enlace("GBIF · categoría UICN (Lista Roja 2022-2)", "https://www.gbif.org/dataset/19491596-35ae-4a91-9a98-85cf505f1bd3")}
       ${enlace("FishBase · tamaño y longevidad de peces", "https://www.fishbase.se")}
       ${enlace("AnAge · longevidad y peso de vertebrados", "https://genomics.senescence.info/species/")}
