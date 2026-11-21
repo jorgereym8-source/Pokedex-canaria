@@ -106,7 +106,7 @@ def uicn_gbif(fichas: dict, cache: dict) -> None:
         f = fichas[cod]
         reino = "Plantae" if f.get("reino") == "Flora" else "Animalia"
         r = get("https://api.gbif.org/v1/species/match", params={"name": f["nombre"], "kingdom": reino})
-        out = {"fecha": HOY}
+        out = {"fecha": HOY, "v": 2}
         if not r or r.status_code != 200:
             return cod, out
         m = r.json()
@@ -340,13 +340,14 @@ def ciclo_texto(texto: str) -> str | None:
 
 
 def wikipedia(binomios: list[str], cache: dict) -> None:
-    pendientes = [b for b in binomios if caducado(cache.get(b, {}).get("fecha"), 180)]
+    # v2: guarda también la sección de etimología
+    pendientes = [b for b in binomios if caducado(cache.get(b, {}).get("fecha"), 180) or cache.get(b, {}).get("v") != 2]
     print(f"Wikipedia: {len(pendientes)} artículos por consultar", flush=True)
 
     def una(nombre):
         r = get("https://es.wikipedia.org/w/api.php", params={
             "action": "query", "prop": "extracts|info", "explaintext": 1, "redirects": 1, "format": "json", "titles": nombre})
-        out = {"fecha": HOY}
+        out = {"fecha": HOY, "v": 2}
         if not r or r.status_code != 200:
             return nombre, out
         paginas = list(r.json().get("query", {}).get("pages", {}).values())
@@ -360,8 +361,11 @@ def wikipedia(binomios: list[str], cache: dict) -> None:
         partes = re.split(r"\n==+\s*", texto)
         intro = partes[0]
         desc = next((x for x in partes[1:] if re.match(r"(descripción|morfología|características)", x, re.I)), "")
+        etim = next((x for x in partes[1:] if re.match(r"etimolog", x, re.I)), "")
         out.update({"titulo": p.get("title"), "url": f"https://es.wikipedia.org/wiki/{quote(p.get('title', '').replace(' ', '_'))}",
                     "texto": (intro[:600] + "\n" + desc[:2500]).strip()})
+        if etim:
+            out["etim"] = re.sub(r"^etimolog[íi]a\s*=*\s*", "", etim, flags=re.I).strip()[:1500]
         return nombre, out
 
     with ThreadPoolExecutor(3) as ex:
