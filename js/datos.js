@@ -66,7 +66,7 @@ export function filtrar(f, vistas = new Set(), orden = "no") {
     if (f.ce?.length && !f.ce.some((c) => (e.ce || []).includes(c))) return false;
     if (f.md?.length && !f.md.includes(e.md)) return false;
     if (f.hb?.length && !f.hb.some((h) => (e.hb || []).includes(h))) return false;
-    if (f.foto && !e.img) return false;
+    if (f.foto && !e.img && !e.fl) return false;
     if (f.novistas && vistas.has(e.c)) return false;
     if (f.ext && e.st === "Extinto") return false;
     return true;

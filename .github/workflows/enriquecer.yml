@@ -1,9 +1,14 @@
 name: Enriquecer fichas
 
 # Añade a las fichas la categoría UICN (GBIF), el tamaño, la forma, el peso,
-# la longevidad y el ciclo de vida. Se ejecuta también al final de «Datos de especies».
+# la longevidad, el ciclo de vida y las fotos con licencia libre (Commons e iNaturalist).
+# Se ejecuta también al final de «Datos de especies».
 on:
   workflow_dispatch:
+    inputs:
+      max_inat:
+        description: "Búsquedas nuevas en iNaturalist (fotos) en esta ejecución"
+        default: "2300"
 
 permissions:
   contents: write
@@ -15,7 +20,7 @@ concurrency:
 jobs:
   enriquecer:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 150
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,12 +28,14 @@ jobs:
           python-version: "3.12"
       - run: pip install requests pandas pyarrow
       - run: python scripts/enriquecer.py
+      - run: python scripts/fotos.py --max-inat "${{ inputs.max_inat || '2300' }}"
       - name: Guardar datos
+        if: ${{ !cancelled() }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add datos
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
-          git commit -qm "Datos: UICN, tamaños y longevidad ($(date -u +%F))"
+          git commit -qm "Datos: UICN, tamaños, longevidad y fotos libres ($(date -u +%F))"
           git pull --rebase -q origin main
           git push -q origin HEAD:main

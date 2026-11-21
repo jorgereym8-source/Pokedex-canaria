@@ -5,10 +5,10 @@ import * as V from "./avistamientos.js";
 import { diagrama, textoTamano, medida } from "./tamano.js";
 import {
   esc, icono, iconoGrupo, ISLAS, NOMBRE_ISLA, NIVELES, ORIGENES, nombreSci, nombreComun, numero, insigniaNivel,
-  insigniasEntrada, urlImagen, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
+  insigniasEntrada, urlImagen, urlLibre, fotoPrincipal, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
 } from "./ui.js";
 
-const VERSION = "0.2.1";
+const VERSION = "0.3.0";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
 const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], ui: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, novistas: false, ext: false, am: false, pr: false });
@@ -76,7 +76,7 @@ function vistaInicio() {
   const cuenta = D.cuentaPorGrupo();
   const dia = D.especieDelDia();
   const vistasN = indice.filter((e) => estado.vistas.has(e.c)).length;
-  const fotos = A.get("fotosBiota");
+  const fotoDia = dia ? fotoPrincipal(dia, opFotos(), 960) : null;
   const grupos = ["Plantas con flor", "Helechos", "Aves", "Reptiles", "Mamíferos", "Anfibios", "Peces"].filter((g) => cuenta[g]);
   const amenazadas = indice.filter(esAmenazada).length;
 
@@ -91,8 +91,8 @@ function vistaInicio() {
     </form>
     ${dia ? `
     <a class="tarjeta destacada" href="#/especie/${dia.c}">
-      <div class="foto">${icono(iconoGrupo(dia.g))}${fotos && dia.img ? `<img alt="" src="${urlImagen(dia.c, dia.img)}" onerror="this.parentNode.querySelector('.credito')?.remove();this.remove()">` : ""}
-        <span class="etiqueta-foto">Especie del día</span>${fotos && dia.img ? '<span class="credito">Foto: Biota</span>' : ""}</div>
+      <div class="foto">${icono(iconoGrupo(dia.g))}${fotoDia ? `<img alt="" src="${fotoDia.src}" onerror="this.parentNode.querySelector('.credito')?.remove();this.remove()">` : ""}
+        <span class="etiqueta-foto">Especie del día</span>${fotoDia ? `<span class="credito">${fotoDia.credito}</span>` : ""}</div>
       <div class="cuerpo">
         <span class="numero">${numero(dia.no)} · ${esc(dia.fa || dia.g)}</span>
         <span class="nombre-comun">${esc(nombreComun(dia))}</span>
@@ -209,7 +209,7 @@ function pintarResultados() {
     caja.outerHTML = `<div class="vacio" id="resultados">${icono("buscar")}<p>No hay especies con esa búsqueda o esos filtros.</p></div>`;
     return;
   }
-  const fotos = A.get("fotosBiota");
+  const fotos = opFotos();
   caja.innerHTML = r.slice(0, estado.limite).map((e) => filaEspecie(e, fotos)).join("") + (r.length > estado.limite ? '<div class="mas-resultados" id="mas"></div>' : "");
   const mas = document.getElementById("mas");
   if (mas) {
@@ -287,7 +287,15 @@ async function vistaFicha(codigo) {
     vista.innerHTML = `<div class="vacio">${icono("alerta")}<p>No se ha podido cargar la ficha. ¿Tienes conexión?</p></div>`; return;
   }
   const avs = await V.deEspecie(codigo);
-  const fotos = A.get("fotosBiota") ? (f.imagenes || []) : [];
+  const fotos = [
+    ...(A.get("fotosBiota") ? (f.imagenes || []).map((im) => ({ src: urlImagen(codigo, im.id), pie: `Foto: ${im.credito || "Biota"} · Biota` })) : []),
+    ...(A.get("fotosLibres") ? (f.fotosLibres || []).map((x) => ({
+      src: x.fuente === "Wikimedia Commons" ? urlLibre(`c:${x.archivo}`, 960) : urlLibre(x.url, 960),
+      pie: `${x.nivel === "especie" ? `Foto de ${x.taxon} · ` : ""}${x.autor} · ${x.lic} · ${x.fuente === "Wikimedia Commons" ? "Commons" : "iNaturalist"}`,
+      enlace: x.pagina,
+    })) : []),
+  ].slice(0, 10);
+  const hayFotos = (f.imagenes || []).length + (f.fotosLibres || []).length;
   const cent = f.centinela?.secciones || {};
   const islas = islasDe(e.is);
   const otrosNombres = A.get("nombres") === "Todos" ? e.cm.slice(1) : [];
@@ -295,10 +303,11 @@ async function vistaFicha(codigo) {
 
   vista.innerHTML = `
     <div class="heroe">
-      <div class="sin-foto" style="position:absolute">${icono(iconoGrupo(e.g))}<span>${fotos.length ? "" : f.nImagenes && !A.get("fotosBiota") ? "Fotos de Biota desactivadas en Ajustes" : "Sin fotos en Biota"}</span></div>
+      <div class="sin-foto" style="position:absolute">${icono(iconoGrupo(e.g))}<span>${fotos.length ? "" : hayFotos ? "Fotos desactivadas en Ajustes" : "Sin fotos"}</span>
+        ${!fotos.length && f.evc ? `<a class="boton-evc" href="${esc(f.evc.url)}" target="_blank" rel="noopener">Ver fotos en Especies Vegetales en Canarias ›</a>` : ""}</div>
       ${fotos.length ? `<div class="pista" id="pista" style="position:relative">${fotos.map((im, i) => `<figure>
-        <img ${i ? 'loading="lazy"' : ""} alt="${esc(nombreComun(e))}, foto ${i + 1}" src="${urlImagen(codigo, im.id)}" onerror="const p=this.closest('.pista'),c=document.getElementById('contador');this.closest('figure').remove();if(c)c.textContent=p.children.length?'1 / '+p.children.length:'';">
-        <figcaption>Foto: ${esc(im.credito || "Biota")} · Biota</figcaption></figure>`).join("")}</div>
+        <img ${i ? 'loading="lazy"' : ""} alt="${esc(nombreComun(e))}, foto ${i + 1}" src="${esc(im.src)}" onerror="const p=this.closest('.pista'),c=document.getElementById('contador');this.closest('figure').remove();if(c)c.textContent=p.children.length?'1 / '+p.children.length:'';">
+        ${im.enlace ? `<figcaption><a href="${esc(im.enlace)}" target="_blank" rel="noopener">${esc(im.pie)}</a></figcaption>` : `<figcaption>${esc(im.pie)}</figcaption>`}</figure>`).join("")}</div>
         <span class="contador" id="contador">1 / ${fotos.length}</span>` : ""}
       <div class="controles">
         <button class="boton-icono" data-accion="atras" aria-label="Volver">${icono("atras")}</button>
@@ -332,7 +341,7 @@ async function vistaFicha(codigo) {
       ${f.longevidad ? hecho("reloj", "Longevidad", `${(Math.round(f.longevidad.anos * 10) / 10).toLocaleString("es")} años`, [f.longevidad.tipo, f.longevidad.origen].filter(Boolean).join(", "))
         : f.ciclo ? hecho("reloj", "Ciclo de vida", f.ciclo.valor.replace(/ \(.*\)/, ""), f.ciclo.fuente)
         : f.peso ? hecho("regla", "Peso", pesoTexto(f.peso.kg), f.peso.fuente)
-        : hecho("camara", "Fotos en Biota", String(f.nImagenes || 0), avs.length ? `${avs.length} avistamiento${avs.length > 1 ? "s" : ""} tuyo${avs.length > 1 ? "s" : ""}` : "Aún no la has visto")}
+        : hecho("camara", "Fotos", String(hayFotos), avs.length ? `${avs.length} avistamiento${avs.length > 1 ? "s" : ""} tuyo${avs.length > 1 ? "s" : ""}` : "Aún no la has visto")}
     </div>
 
     ${seccionTamano(f, e)}
@@ -368,6 +377,8 @@ async function vistaFicha(codigo) {
 
     <section class="seccion"><h2>Webs oficiales</h2>${enlacesOficiales(e, f)}</section>
 
+    ${f.evc ? `<section class="seccion"><h2>Otras webs</h2><a class="enlace-oficial" href="${esc(f.evc.url)}" target="_blank" rel="noopener"><span class="inicial">EV</span><span class="t">Especies Vegetales en Canarias<small>Fotos y ficha · © ${esc(f.evc.autoria)}</small></span>${icono("externo")}</a></section>` : ""}
+
     ${avs.length ? `<section class="seccion"><h2>Tus avistamientos</h2><div>${avs.map((a) => filaAvistamiento(a, e)).join("")}</div></section>` : ""}
 
     <section class="seccion fuentes-ficha"><h2>De dónde sale cada dato</h2>
@@ -379,7 +390,7 @@ async function vistaFicha(codigo) {
       ${f.peso ? `<div><span>Peso</span><span>${esc(f.peso.fuente)}</span></div>` : ""}
       ${f.longevidad ? `<div><span>Longevidad</span><span>${esc(f.longevidad.fuente)}</span></div>` : f.ciclo ? `<div><span>Ciclo de vida</span><span>${esc(f.ciclo.fuente)}</span></div>` : ""}
       <div><span>Calendario</span><span>iNaturalist</span></div>
-      <div><span>Fotos</span><span>Biota (desde su web)</span></div>
+      <div><span>Fotos</span><span>${esc(fuentesFotos(f) || "—")}</span></div>
       <span class="fuente-dato">Datos descargados el ${esc(f.actualizado || "")}. ${f.referencias ? `Biota cita ${f.referencias} referencias para este taxón.` : ""}</span>
     </section>
   `;
@@ -389,6 +400,18 @@ async function vistaFicha(codigo) {
     const c = document.getElementById("contador"); if (c) c.textContent = `${i} / ${pista.children.length}`;
   }, { passive: true });
   pintarCalendario(e);
+}
+
+function opFotos() {
+  return { biota: A.get("fotosBiota"), libres: A.get("fotosLibres") };
+}
+
+function fuentesFotos(f) {
+  const l = [];
+  if ((f.imagenes || []).length) l.push("Biota (desde su web)");
+  for (const x of f.fotosLibres || []) if (!l.includes(x.fuente)) l.push(x.fuente);
+  if (f.evc) l.push("enlace a Especies Vegetales en Canarias");
+  return l.join(" · ");
 }
 
 function hecho(ic, k, v, s) {
@@ -511,7 +534,7 @@ function filaAvistamiento(a, e) {
   const [cielo, ic] = t.codigo != null ? V.cielo(t.codigo) : ["Sin datos del tiempo", "nube"];
   const fecha = new Date(a.fecha);
   return `<button class="fila" data-accion="ver-avistamiento" data-id="${a.id}">
-    ${e ? miniatura(e, A.get("fotosBiota")) : ""}
+    ${e ? miniatura(e, opFotos()) : ""}
     <span class="cuerpo"><span class="principal">${esc(a.comun || a.nombre)}</span>
       <span class="secundario">${esc([a.paraje, a.municipio].filter(Boolean).join(", ") || a.isla || "Sin lugar")}</span>
       <span class="secundario">${fecha.toLocaleDateString("es", { day: "numeric", month: "short" })} · ${fecha.toLocaleTimeString("es", { hour: "2-digit", minute: "2-digit" })}${a.individuos > 1 ? ` · ${a.individuos} individuos` : ""}</span></span>
@@ -531,7 +554,7 @@ function abrirNuevoAvistamiento(codigo) {
   panel.innerHTML = `
     <span class="asa"></span>
     <div class="barra-hoja"><button data-h="cerrar">Cancelar</button><h2>Nuevo avistamiento</h2><button data-h="guardar" style="font-weight:700">Guardar</button></div>
-    <div class="lista"><div class="fila" style="cursor:default">${miniatura(e, A.get("fotosBiota"))}
+    <div class="lista"><div class="fila" style="cursor:default">${miniatura(e, opFotos())}
       <span class="cuerpo"><span class="numero">${numero(e.no)}</span><span class="principal">${esc(nombreComun(e))}</span><span class="secundario">${nombreSci(e.n, "", false)}</span></span></div></div>
     ${A.get("guardarLugar") ? '<div class="mapa" id="mapa-nuevo"><div class="cargando pequeno">Buscando tu posición…</div></div>' : ""}
     <div class="lista">
@@ -890,6 +913,7 @@ function vistaAjustes() {
 
     <section class="grupo-ajustes"><h2 class="subtitulo-grupo">Datos y fotos</h2><div class="ajustes-lista">
       ${interruptor("fotosBiota", "Fotos de Biota", "Se cargan desde su web, con crédito; necesitan conexión")}
+      ${interruptor("fotosLibres", "Fotos con licencia libre", "Wikimedia Commons e iNaturalist, con autor y licencia; completan las de Biota")}
       <button class="ajuste" data-accion="sin-conexion"><span class="etq"><span>Guardar todas las fichas para usar sin conexión</span><small id="estado-descarga">${D.getIndice().length.toLocaleString("es")} fichas</small></span>${icono("descargar")}</button>
       <div class="ajuste" style="cursor:default"><span class="etq"><span>Datos de especies</span><small>${meta ? `${meta.taxones.toLocaleString("es")} taxones · actualizados el ${new Date(meta.actualizado).toLocaleDateString("es")}` : ""}</small></span></div>
     </div><p class="pequeno texto-2" style="margin:0 4px">Los datos se actualizan solos el día 3 de cada mes desde Biota y Centinela.</p></section>

@@ -1,8 +1,8 @@
 // Service worker: la app funciona sin conexión.
 // - Estructura de la app: se guarda al instalar (cambia VERSION al publicar cambios).
 // - Índice y fichas: primero la red, y si no hay, lo guardado.
-// - Fotos de Biota y teselas del mapa: lo guardado primero, con límite de tamaño.
-const VERSION = "v0.2.1";
+// - Fotos (Biota, Commons, iNaturalist) y teselas del mapa: lo guardado primero, con límite de tamaño.
+const VERSION = "v0.3.0";
 const APP = `pokedex-canaria-app-${VERSION}`;
 const DATOS = "pokedex-canaria-datos";
 const FICHAS = "pokedex-canaria-fichas";
@@ -64,6 +64,10 @@ self.addEventListener("fetch", (e) => {
     return e.respondWith(caches.match(e.request, { ignoreSearch: true }).then((g) => g || fetch(e.request)));
   }
   if (url.hostname === "www.biodiversidadcanarias.es" && /\/imagenes\/|\/minMap/.test(url.pathname)) {
+    return e.respondWith(guardadoPrimero(e.request, IMAGENES, MAX_IMAGENES));
+  }
+  if (["inaturalist-open-data.s3.amazonaws.com", "static.inaturalist.org", "upload.wikimedia.org"].includes(url.hostname)
+    || (url.hostname === "commons.wikimedia.org" && url.pathname.includes("Special:FilePath"))) {
     return e.respondWith(guardadoPrimero(e.request, IMAGENES, MAX_IMAGENES));
   }
   if (url.hostname === "tile.openstreetmap.org") return e.respondWith(guardadoPrimero(e.request, IMAGENES, MAX_IMAGENES * 2));

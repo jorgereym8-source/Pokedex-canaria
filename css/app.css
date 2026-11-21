@@ -366,3 +366,7 @@ body.estilo-cua .seccion p { font-size: 1.05em; }
 body.estilo-cua .hoja .panel { border-radius: 0; border-top: 1px solid var(--texto); }
 body.estilo-cua .interruptor { border-radius: 0; }
 body.estilo-cua .interruptor span { border-radius: 0; }
+
+/* Fotos con licencia libre y enlace a Especies Vegetales en Canarias */
+.heroe .pista figcaption a { color: inherit; text-decoration: none; }
+.heroe .sin-foto .boton-evc { margin-top: 6px; padding: 8px 14px; border-radius: 999px; background: var(--superficie, #fff); color: var(--acento); font-weight: 600; font-size: 1.05em; text-decoration: none; border: 1px solid var(--borde, rgba(0,0,0,0.12)); max-width: 86%; text-align: center; }

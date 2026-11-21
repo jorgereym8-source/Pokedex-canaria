@@ -112,8 +112,23 @@ export const BIOTA = "https://www.biodiversidadcanarias.es/biota";
 export const CENTINELA = "https://www.biodiversidadcanarias.es/centinela";
 export const urlImagen = (cod, id, mini = false) => `${BIOTA}/especie/${cod}/imagenes/${id}${mini ? "?thumbnails=true" : ""}`;
 
-export function miniatura(e, fotos) {
-  const img = fotos && e.img ? `<img loading="lazy" alt="" src="${urlImagen(e.c, e.img, true)}" onerror="this.remove()">` : "";
+// Fotos con licencia libre: «c:Archivo.jpg» (Wikimedia Commons) o «i:123/medium.jpg» (iNaturalist)
+export function urlLibre(fl, ancho = 960) {
+  if (fl.startsWith("c:")) return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(fl.slice(2))}?width=${ancho}`;
+  const u = fl.startsWith("i:") ? `https://inaturalist-open-data.s3.amazonaws.com/photos/${fl.slice(2)}` : fl;
+  return u.replace(/\/(medium|small)\./, ancho <= 250 ? "/small." : "/medium.");
+}
+
+// Foto principal de una entrada del índice según los ajustes: { src, credito } o null
+export function fotoPrincipal(e, op, ancho = 960) {
+  if (op.biota && e.img) return { src: urlImagen(e.c, e.img, ancho <= 250), credito: "Foto: Biota" };
+  if (op.libres && e.fl) return { src: urlLibre(e.fl, ancho), credito: e.fl.startsWith("c:") ? "Foto: Wikimedia Commons" : "Foto: iNaturalist" };
+  return null;
+}
+
+export function miniatura(e, op) {
+  const ft = fotoPrincipal(e, op || {}, 120);
+  const img = ft ? `<img loading="lazy" alt="" src="${ft.src}" onerror="this.remove()">` : "";
   return `<span class="miniatura">${icono(iconoGrupo(e.g))}${img}</span>`;
 }
 

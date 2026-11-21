@@ -73,6 +73,7 @@ const GENERALES = {
   precision: "Aprox. si amenazada", // Exacta | Aprox. si amenazada | Siempre aprox.
   guardarTiempo: true,
   fotosBiota: true,
+  fotosLibres: true,
 };
 
 let estado = cargar();
