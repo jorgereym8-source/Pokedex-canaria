@@ -522,7 +522,7 @@ def main() -> int:
     for reino, grupo, params in COMPLETOS:
         filas = exportar(cli, params)
         extra = [f for f in filas if f["codigo"] not in registros]
-        descartes = sorted({f["clase"] for f in extra if f["clase"] not in CLASE_GRUPO})
+        descartes = [] if grupo in POR_DEFECTO else sorted({f["clase"] for f in extra if f["clase"] not in CLASE_GRUPO})
         print(f"{grupo} (completo): {len(filas)}; sin subgrupo: {len(extra)}; clases descartadas: {descartes}", flush=True)
         if not args.limite:
             for fila in extra:
