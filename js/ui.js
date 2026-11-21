@@ -126,8 +126,8 @@ export function fotoPrincipal(e, op, ancho = 960) {
   return null;
 }
 
-export function miniatura(e, op) {
-  const ft = fotoPrincipal(e, op || {}, 120);
+export function miniatura(e, op, ancho = 120) {
+  const ft = fotoPrincipal(e, op || {}, ancho);
   const img = ft ? `<img loading="lazy" alt="" src="${ft.src}" onerror="this.remove()">` : "";
   return `<span class="miniatura">${icono(iconoGrupo(e.g))}${img}</span>`;
 }

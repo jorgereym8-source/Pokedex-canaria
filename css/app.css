@@ -370,3 +370,32 @@ body.estilo-cua .interruptor span { border-radius: 0; }
 /* Fotos con licencia libre y enlace a Especies Vegetales en Canarias */
 .heroe .pista figcaption a { color: inherit; text-decoration: none; }
 .heroe .sin-foto .boton-evc { margin-top: 6px; padding: 8px 14px; border-radius: 999px; background: var(--superficie, #fff); color: var(--acento); font-weight: 600; font-size: 1.05em; text-decoration: none; border: 1px solid var(--borde, rgba(0,0,0,0.12)); max-width: 86%; text-align: center; }
+
+/* Biología, sonidos, distribución ampliada, mismo género y Pokédex por isla */
+.rasgos { display: flex; flex-direction: column; }
+.rasgo { display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 2px 12px; padding: 8px 0; border-bottom: 1px solid var(--borde-2); }
+.rasgo:last-child { border-bottom: 0; }
+.rasgo .k { font-size: 0.82em; color: var(--texto-2); }
+.rasgo .v { font-size: 0.9em; font-weight: 600; }
+.rasgo .f { grid-column: 2; font-size: 0.7em; color: var(--texto-2); }
+.rasgo .f a, .fuente-dato a, .sonido a { color: inherit; text-decoration: underline; text-underline-offset: 2px; }
+.seccion h3 { margin: 6px 0 0; font-size: 0.78em; text-transform: uppercase; letter-spacing: 0.05em; color: var(--texto-2); }
+.sonido { margin: 0; display: flex; flex-direction: column; gap: 4px; }
+.sonido audio { width: 100%; height: 40px; }
+.mapa-gbif { height: 230px; border-radius: var(--radio-p); overflow: hidden; background: var(--superficie-2); border: 1px solid var(--borde); }
+.lista-n2000 { margin: 6px 0 0; padding-left: 18px; font-size: 0.82em; display: flex; flex-direction: column; gap: 4px; }
+.lista-n2000 a { color: var(--acento); }
+.seccion .titulo-seccion { display: flex; justify-content: space-between; align-items: baseline; }
+.seccion .titulo-seccion a { font-size: 0.82em; font-weight: 600; color: var(--acento); }
+.carril.genero { margin: 0 calc(-16px * var(--esp)); padding: 0 calc(16px * var(--esp)) 4px; }
+.mini-especie { flex: none; width: 112px; display: flex; flex-direction: column; gap: 4px; color: var(--texto); }
+.mini-especie .miniatura { width: 112px; height: 84px; border-radius: var(--radio-p); background: var(--acento-suave); color: var(--acento); display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
+.mini-especie .miniatura img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.mini-especie .nombre { font-size: 0.78em; font-weight: 600; line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.mini-especie .sci-mini { font-size: 0.7em; color: var(--texto-2); line-height: 1.2; }
+.isla-prog { gap: 6px; }
+.isla-prog .nombre { font-size: 0.9em; }
+.isla-prog .progreso { margin-top: 2px; }
+body.estilo-poke .mini-especie .miniatura { border: 2px solid var(--texto); border-radius: 4px; background: transparent; }
+body.estilo-cua .mini-especie .miniatura { border: 1px solid var(--texto); border-radius: 0; background: transparent; color: var(--texto); }
+body.estilo-cua .rasgo { border-bottom-style: dashed; }

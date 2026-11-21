@@ -8,10 +8,12 @@ import {
   insigniasEntrada, urlImagen, urlLibre, fotoPrincipal, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
 } from "./ui.js";
 
-const VERSION = "0.3.0";
+const VERSION = "0.4.0";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
-const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], ui: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, novistas: false, ext: false, am: false, pr: false });
+const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], ui: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, son: false, novistas: false, ext: false, am: false, pr: false });
+const ISLAS_ORDEN = ["T", "C", "P", "G", "H", "F", "L"];
+const SIGLA_ISLA = { H: "EH", P: "LP", G: "LG", T: "TF", C: "GC", F: "FV", L: "LZ" };
 const estado = { filtros: FILTROS_VACIOS(), q: "", orden: null, limite: 60, vistas: new Set(), modoVistas: "lista", abierto: null };
 const MESES = ["E", "F", "M", "A", "M", "J", "J", "A", "S", "O", "N", "D"];
 const MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
@@ -77,6 +79,7 @@ function vistaInicio() {
   const dia = D.especieDelDia();
   const vistasN = indice.filter((e) => estado.vistas.has(e.c)).length;
   const fotoDia = dia ? fotoPrincipal(dia, opFotos(), 960) : null;
+  const progIslas = D.progresoIslas(estado.vistas);
   const grupos = ["Plantas con flor", "Helechos", "Aves", "Reptiles", "Mamíferos", "Anfibios", "Peces"].filter((g) => cuenta[g]);
   const amenazadas = indice.filter(esAmenazada).length;
 
@@ -113,9 +116,11 @@ function vistaInicio() {
       </div>
     </section>
     <section class="grupo-ajustes">
-      <div class="titulo-seccion"><h2>Por isla</h2></div>
-      <div class="carril">
-        ${["T", "C", "P", "G", "H", "F", "L"].map((k) => `<a class="chip" href="#/explorar" data-explorar='${JSON.stringify({ i: [k] })}'>${esc(NOMBRE_ISLA[k])}</a>`).join("")}
+      <div class="titulo-seccion"><h2>Pokédex por isla</h2></div>
+      <div class="rejilla-2">
+        ${ISLAS_ORDEN.map((k) => { const p = progIslas[k]; return `<a class="tile isla-prog" href="#/explorar" data-explorar='${JSON.stringify({ i: [k] })}'>
+          <span class="nombre">${esc(NOMBRE_ISLA[k])}</span><span class="cuenta"><b>${p.vistas.toLocaleString("es")}</b> de ${p.total.toLocaleString("es")} vistas</span>
+          <span class="progreso"><i style="width:${p.total ? Math.max(p.vistas ? 2 : 0, (p.vistas / p.total) * 100) : 0}%"></i></span></a>`; }).join("")}
       </div>
     </section>
     <section class="grupo-ajustes">
@@ -195,6 +200,7 @@ function chipsActivos() {
   if (f.am) add("am", true, "Amenazadas");
   if (f.pr) add("pr", true, "Protegidas");
   if (f.foto) add("foto", true, "Con foto");
+  if (f.son) add("son", true, "Con sonido");
   if (f.novistas) add("novistas", true, "No vistas");
   if (f.ext) add("ext", true, "Sin extinguidas");
   return chips.join("");
@@ -225,7 +231,7 @@ function filaEspecie(e, fotos) {
   return `<a class="fila" href="#/especie/${e.c}">
     ${miniatura(e, fotos)}
     <span class="cuerpo">
-      <span class="numero">${numero(e.no)}</span>
+      <span class="numero">${estado.filtros.i.length === 1 && e._reg?.[estado.filtros.i[0]] ? `${SIGLA_ISLA[estado.filtros.i[0]]} ${String(e._reg[estado.filtros.i[0]]).padStart(4, "0")}` : numero(e.no)}</span>
       <span class="principal">${esc(nombreComun(e))}</span>
       <span class="secundario">${nombreSci(e.n, e.a, A.get("autoria"))}</span>
       <span class="insignias" style="margin-top:3px">${insigniasEntrada(e)}</span>
@@ -247,7 +253,7 @@ function abrirFiltros() {
     ["md", "Medio", [["Terrestre", "Terrestre"], ["Marino", "Marino"]]],
     ["hb", "Hábitat (los más frecuentes)", hab.map((v) => [v, v])],
   ];
-  const interruptores = [["inv", "Solo exóticas invasoras"], ["am", "Solo amenazadas"], ["foto", "Solo con fotografía"], ["novistas", "Ocultar las que ya he visto"], ["ext", "Ocultar extinguidas"]];
+  const interruptores = [["inv", "Solo exóticas invasoras"], ["am", "Solo amenazadas"], ["foto", "Solo con fotografía"], ["son", "Solo con canto o sonido"], ["novistas", "Ocultar las que ya he visto"], ["ext", "Ocultar extinguidas"]];
 
   const pintar = () => {
     const n = D.filtrar({ ...borrador, q: estado.q }, estado.vistas).filter((e) => (!borrador.am || esAmenazada(e)) && (!borrador.pr || e.pr)).length;
@@ -324,6 +330,7 @@ async function vistaFicha(codigo) {
       <p class="nombre-cientifico">${nombreSci(f.nombre || e.n, f.autor || e.a, A.get("autoria"))}</p>
       ${otrosNombres.length ? `<p class="pequeno" style="margin:0">Otros nombres: ${esc(otrosNombres.join(" · "))}</p>` : ""}
       <p class="pequeno texto-2" style="margin:0">Código Biota ${esc(codigo)} · ${esc(f.validez || "")}${f.status === "Extinto" ? " · Extinto" : ""}</p>
+      ${Object.keys(e._reg || {}).length ? `<p class="pequeno texto-2" style="margin:0">Pokédex regional: ${ISLAS_ORDEN.filter((k) => e._reg[k]).map((k) => `${SIGLA_ISLA[k]} ${String(e._reg[k]).padStart(4, "0")}`).join(" · ")}</p>` : ""}
     </div>
 
     <div class="insignias">
@@ -346,6 +353,10 @@ async function vistaFicha(codigo) {
 
     ${seccionTamano(f, e)}
 
+    ${seccionBiologia(f)}
+
+    ${seccionSonidos(f)}
+
     <section class="seccion">
       <h2>Distribución</h2>
       ${mapaIslas(e.is)}
@@ -356,7 +367,13 @@ async function vistaFicha(codigo) {
       ${f.mapaPk ? `<img class="mapa-oficial" loading="lazy" alt="Mapa de distribución de Biota en cuadrículas" src="${BIOTA}/minMap?especiePk=${esc(f.mapaPk)}&width=525&height=250" onerror="this.remove()">` : ""}
       <a href="${BIOTA}/especie/${codigo}" target="_blank" rel="noopener" class="pequeno" style="font-weight:600">Ver las cuadrículas de distribución en Biota ›</a>
       <span class="fuente-dato">Fuente: Biota${cent["Distribución en Canarias"] ? " · Centinela" : ""}</span>
+      ${bloqueAltitud(f)}
+      ${bloqueMundo(f)}
+      ${f.gbifClave ? `<h3>Registros en GBIF</h3><div class="mapa-gbif" id="mapa-gbif" data-clave="${esc(f.gbifClave)}" data-amenazada="${esAmenazada(e) ? 1 : 0}"></div>
+        <span class="fuente-dato">Densidad de registros de GBIF${esAmenazada(e) ? " en celdas grandes para no revelar localidades de una especie amenazada" : ""}. <a href="https://www.gbif.org/species/${esc(f.gbifClave)}" target="_blank" rel="noopener">Ver en GBIF</a></span>` : ""}
     </section>
+
+    ${seccionIntroduccion(f, e)}
 
     ${(f.habitats?.length || cent["Hábitat"]) ? `<section class="seccion"><h2>Hábitat</h2>
       ${f.habitats?.length ? `<div class="chips">${[...new Set(f.habitats.map((h) => h.categoria))].map((h) => `<span class="insignia nv-canario">${esc(h)}</span>`).join("")}</div>` : ""}
@@ -368,12 +385,18 @@ async function vistaFicha(codigo) {
 
     <section class="seccion" id="calendario"><h2>Calendario</h2><div class="cargando pequeno" style="padding:8px 0">Consultando observaciones…</div></section>
 
-    ${Object.keys(f.proteccion || {}).length || f.uicn ? `<section class="seccion"><h2>Amenaza y protección</h2><div class="tabla-prot">${filaUicn(f)}${tablaProteccion(f.proteccion || {})}</div>
-      <span class="fuente-dato">Fuente: ${f.uicn ? "UICN vía GBIF · " : ""}Biota${f.centinela ? " · Centinela" : ""}. Categoría por isla según cada catálogo.</span></section>` : ""}
+    ${Object.keys(f.proteccion || {}).length || f.uicn || f.art17 || f.art12 || f.natura2000 ? `<section class="seccion"><h2>Amenaza y protección</h2><div class="tabla-prot">${filaUicn(f)}${filaArt17(f)}${filaArt12(f)}${tablaProteccion(f.proteccion || {})}${filaNatura(f)}</div>
+      <span class="fuente-dato">Fuente: ${[f.uicn ? "UICN vía GBIF" : "", "Biota", f.centinela ? "Centinela" : "", f.art17 || f.art12 ? "informes a la UE (EEA)" : "", f.natura2000 ? "Natura 2000 (EEA)" : ""].filter(Boolean).join(" · ")}. Categoría por isla según cada catálogo.</span></section>` : ""}
+
+    ${seccionVulnerabilidad(f)}
+
+    ${seccionEtimologia(f)}
 
     ${f.taxonomia ? `<section class="seccion"><h2>Taxonomía</h2><div class="tax">
       ${Object.entries(f.taxonomia).map(([r, v]) => `<div><span class="r">${esc(r)}</span><span class="v ${/Género|Especie|Subespecie/.test(r) ? "sci" : ""}">${esc(v)}</span></div>`).join("")}</div>
       ${f.sinonimos ? `<a class="pequeno" style="font-weight:600" href="${BIOTA}/especie/${codigo}#taxonomyTab" target="_blank" rel="noopener">${f.sinonimos} sinónimos (sub nómine) en Biota ›</a>` : ""}</section>` : ""}
+
+    ${seccionGenero(e)}
 
     <section class="seccion"><h2>Webs oficiales</h2>${enlacesOficiales(e, f)}</section>
 
@@ -389,6 +412,17 @@ async function vistaFicha(codigo) {
       ${f.tamano ? `<div><span>Tamaño</span><span>${esc(f.tamano.fuente)}</span></div>` : ""}
       ${f.peso ? `<div><span>Peso</span><span>${esc(f.peso.fuente)}</span></div>` : ""}
       ${f.longevidad ? `<div><span>Longevidad</span><span>${esc(f.longevidad.fuente)}</span></div>` : f.ciclo ? `<div><span>Ciclo de vida</span><span>${esc(f.ciclo.fuente)}</span></div>` : ""}
+      ${f.rasgos ? `<div><span>Biología</span><span>${esc([...new Set(f.rasgos.map((x) => x.fuente))].join(" · "))}</span></div>` : ""}
+      ${f.sonidos ? `<div><span>Sonidos</span><span>${esc([...new Set(f.sonidos.map((x) => x.fuente))].join(" · "))}</span></div>` : ""}
+      ${f.altitud ? "<div><span>Altitud</span><span>GBIF · Copernicus GLO-90</span></div>" : ""}
+      ${f.mundo ? "<div><span>Distribución mundial</span><span>WCVP (Kew)</span></div>" : ""}
+      ${f.art17 || f.art12 ? "<div><span>Estado en la UE</span><span>Informes art. 12 y 17 (EEA)</span></div>" : ""}
+      ${f.natura2000 ? "<div><span>Red Natura 2000</span><span>EEA</span></div>" : ""}
+      ${f.introduccion ? "<div><span>Introducción</span><span>Compendio de especies introducidas (Gob. de Canarias)</span></div>" : ""}
+      ${f.primerRegistro ? "<div><span>Primer registro</span><span>GBIF</span></div>" : ""}
+      ${f.tallaMinima ? "<div><span>Talla mínima</span><span>BOE (RD 560/1995)</span></div>" : ""}
+      ${f.etimologia ? "<div><span>Etimología</span><span>Wikipedia (es)</span></div>" : ""}
+      ${f.vulnerabilidad ? `<div><span>Vulnerabilidad al cambio climático</span><span>${esc(f.vulnerabilidad.fuente)}</span></div>` : ""}
       <div><span>Calendario</span><span>iNaturalist</span></div>
       <div><span>Fotos</span><span>${esc(fuentesFotos(f) || "—")}</span></div>
       <span class="fuente-dato">Datos descargados el ${esc(f.actualizado || "")}. ${f.referencias ? `Biota cita ${f.referencias} referencias para este taxón.` : ""}</span>
@@ -400,6 +434,7 @@ async function vistaFicha(codigo) {
     const c = document.getElementById("contador"); if (c) c.textContent = `${i} / ${pista.children.length}`;
   }, { passive: true });
   pintarCalendario(e);
+  pintarMapaGbif();
 }
 
 function opFotos() {
@@ -412,6 +447,138 @@ function fuentesFotos(f) {
   for (const x of f.fotosLibres || []) if (!l.includes(x.fuente)) l.push(x.fuente);
   if (f.evc) l.push("enlace a Especies Vegetales en Canarias");
   return l.join(" · ");
+}
+
+// ------------------------------------------------------- secciones nuevas
+
+const enlaceFuente = (txt, url) => url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(txt)}</a>` : esc(txt);
+
+function seccionBiologia(f) {
+  const filas = [...(f.rasgos || [])];
+  if (f.tallaMinima) filas.push({ grupo: "Pesca", k: "Talla mínima legal (caladero canario)", v: `${f.tallaMinima.valor} · ${f.tallaMinima.especieNorma}`, fuente: "BOE · RD 560/1995", url: f.tallaMinima.url });
+  if (!filas.length) return "";
+  const grupos = {};
+  for (const x of filas) (grupos[x.grupo] ||= []).push(x);
+  return `<section class="seccion"><h2>Biología</h2>
+    ${Object.entries(grupos).map(([g, xs]) => `<h3>${esc(g)}</h3><div class="rasgos">${xs.map((x) => `<div class="rasgo"><span class="k">${esc(x.k)}</span><span class="v">${esc(x.v)}</span><span class="f">${enlaceFuente(x.fuente, x.url)}</span></div>`).join("")}</div>`).join("")}
+    ${f.tallaMinima ? '<span class="fuente-dato">La talla mínima procede del texto consolidado del BOE; comprueba la normativa vigente (también la europea y la de pesca recreativa) antes de pescar.</span>' : ""}
+  </section>`;
+}
+
+function seccionSonidos(f) {
+  if (!f.sonidos?.length) return "";
+  return `<section class="seccion"><h2>Sonidos</h2>
+    ${f.sonidos.map((x) => `<figure class="sonido">
+      <audio controls preload="none" src="${esc(x.url)}"></audio>
+      <figcaption class="pequeno texto-2">${esc([x.tipo, x.lugar].filter(Boolean).join(" · ") || "Grabación")}${x.canarias ? "" : " (fuera de Canarias)"} · ${esc(x.autor)} · ${enlaceFuente(x.lic, x.licUrl)} · ${enlaceFuente(x.fuente, x.pagina)}</figcaption>
+    </figure>`).join("")}
+  </section>`;
+}
+
+function bloqueAltitud(f) {
+  const a = f.altitud;
+  if (!a) return "";
+  const m = (v) => `${v.toLocaleString("es")} m`;
+  return `<h3>Altitud</h3><p><b>${m(a.p5)} – ${m(a.p95)}</b> (el 90 % central de ${a.n.toLocaleString("es")} registros georreferenciados; extremos ${m(a.min)} – ${m(a.max)})</p>
+    <span class="fuente-dato">Altitud medida en el modelo del terreno Copernicus GLO-90 en cada registro de GBIF con precisión de 1 km o mejor. <a href="${esc(a.url)}" target="_blank" rel="noopener">Ver registros</a></span>`;
+}
+
+function bloqueMundo(f) {
+  const w = f.mundo;
+  if (!w) return "";
+  return `<h3>Distribución mundial</h3>
+    ${w.nativa?.length ? `<p><b>Nativa:</b> ${esc(w.nativa.join(", "))}</p>` : ""}
+    ${w.introducida?.length ? `<p><b>Introducida:</b> ${esc(w.introducida.join(", "))}</p>` : ""}
+    <span class="fuente-dato">Fuente: ${enlaceFuente("WCVP · Plants of the World Online (Kew)", w.url)}${w.nivel === "especie" ? " · dato de la especie" : ""}${w.nombre ? ` · como ${esc(w.nombre)}` : ""}</span>`;
+}
+
+function seccionIntroduccion(f, e) {
+  const d = f.introduccion, p = f.primerRegistro;
+  if (!d && !p) return "";
+  const fila = (k, v) => v ? `<div class="rasgo"><span class="k">${esc(k)}</span><span class="v">${esc(v)}</span></div>` : "";
+  return `<section class="seccion"><h2>Especie introducida</h2>
+    ${d ? `<div class="rasgos">${fila("Origen", d.origen)}${fila("Cuándo llegó", d.fecha)}${fila("Cómo llegó", d.via)}${fila("Cómo se propaga ahora", d.dispersion)}${fila("Islas donde se introdujo", d.islas)}</div>
+      <span class="fuente-dato">${esc(d.autor || "")}${d.ano ? ` (${esc(d.ano)})` : ""}. Ficha de <i>${esc(d.nombre || e.n)}</i> en: ${enlaceFuente("Compendio de fichas de la Base de especies introducidas en Canarias (2008-2011)", d.url)}. Gobierno de Canarias, 2022${d.pagina ? `, pág. ${d.pagina}` : ""}.</span>` : ""}
+    ${p ? `<p><b>Primer registro en GBIF en Canarias:</b> ${p.ano}${p.tipo ? ` (${esc(p.tipo)})` : ""} · <a href="${esc(p.url)}" target="_blank" rel="noopener">ver registro</a></p>
+      <span class="fuente-dato">Es el registro más antiguo publicado en GBIF; la especie pudo llegar antes.</span>` : ""}
+  </section>`;
+}
+
+const SITIO = { A: "ZEPA", B: "ZEC", C: "ZEC y ZEPA" };
+function filaNatura(f) {
+  const n = f.natura2000;
+  if (!n?.espacios?.length) return "";
+  return `<div class="p-fila"><span class="codigo">N2000</span>
+    <span style="flex:1;display:flex;flex-direction:column;gap:1px;min-width:0"><span class="k">Red Natura 2000 en Canarias</span>
+      <span class="v">En el formulario oficial de ${n.espacios.length} espacio${n.espacios.length > 1 ? "s" : ""}</span>
+      <details><summary>Ver los espacios</summary><ul class="lista-n2000">${n.espacios.map((x) => `<li><a href="https://natura2000.eea.europa.eu/Natura2000/SDF.aspx?site=${esc(x.codigo)}" target="_blank" rel="noopener">${esc(x.nombre)}</a> <span class="texto-2">${esc(SITIO[x.tipo] || "")} · ${esc(x.codigo)}</span></li>`).join("")}</ul></details></span></div>`;
+}
+
+const COLOR_ESTADO = { "favorable": "uicn-LC", "desfavorable-inadecuado": "uicn-VU", "desfavorable-malo": "uicn-EN", "desconocido": "uicn-DD" };
+const SIGLA_ESTADO = { "favorable": "FV", "desfavorable-inadecuado": "U1", "desfavorable-malo": "U2", "desconocido": "XX" };
+const PARAM = { range: "área de distribución", population: "población", habitat: "hábitat", future: "perspectivas" };
+function filaArt17(f) {
+  const a = f.art17;
+  if (!a) return "";
+  const params = Object.entries(a.parametros || {}).filter(([, v]) => v).map(([k, v]) => `${PARAM[k] || k}: ${v}`).join(" · ");
+  return `<div class="p-fila"><span class="codigo ${COLOR_ESTADO[a.estado] || ""}">${SIGLA_ESTADO[a.estado] || "?"}</span>
+    <span style="flex:1;display:flex;flex-direction:column;gap:1px;min-width:0"><span class="k">Estado de conservación · ${esc(a.ambito)}</span>
+      <span class="v">${esc(a.estado.charAt(0).toUpperCase() + a.estado.slice(1))}${a.tendencia ? ` · ${esc(a.tendencia)}` : ""}</span>
+      <span class="k">Directiva Hábitats, art. 17 · ${esc(a.periodo)} · <a href="${esc(a.url)}" target="_blank" rel="noopener">EEA</a></span>
+      ${params ? `<details><summary>Por parámetros</summary><span class="pequeno">${esc(params)}</span></details>` : ""}</span></div>`;
+}
+
+function filaArt12(f) {
+  const a = f.art12;
+  if (!a || (!a.poblacion && !a.tendencia)) return "";
+  return `<div class="p-fila"><span class="codigo">Art. 12</span>
+    <span style="flex:1;display:flex;flex-direction:column;gap:1px;min-width:0"><span class="k">Población ${esc(a.estacion || "")} · ${esc(a.ambito)}</span>
+      <span class="v">${esc(a.poblacion || "Sin cifra")}${a.fechaPoblacion ? ` (${esc(a.fechaPoblacion)})` : ""}</span>
+      <span class="k">${a.tendencia ? `Tendencia a corto plazo: ${esc(a.tendencia)}` : ""}${a.tendenciaLarga ? ` · a largo plazo: ${esc(a.tendenciaLarga)}` : ""}</span>
+      <span class="k">Directiva Aves, art. 12 · ${esc(a.periodo)} · <a href="${esc(a.url)}" target="_blank" rel="noopener">EEA</a></span></span></div>`;
+}
+
+function seccionVulnerabilidad(f) {
+  const v = f.vulnerabilidad;
+  if (!v) return "";
+  return `<section class="seccion"><h2>Vulnerabilidad al cambio climático</h2>
+    <div class="rasgos">${v.categoria ? `<div class="rasgo"><span class="k">Categoría</span><span class="v">${esc(v.categoria)}</span></div>` : ""}${v.indice ? `<div class="rasgo"><span class="k">Índice</span><span class="v">${esc(v.indice)}</span></div>` : ""}</div>
+    <span class="fuente-dato">Fuente: ${enlaceFuente(v.fuente, v.url)}</span></section>`;
+}
+
+function seccionEtimologia(f) {
+  const t = f.etimologia;
+  if (!t) return "";
+  return `<section class="seccion"><h2>El nombre</h2><p>${esc(t.texto)}</p><span class="fuente-dato">Fuente: ${enlaceFuente(t.fuente, t.url)}</span></section>`;
+}
+
+function seccionGenero(e) {
+  const otros = D.mismoGenero(e);
+  if (!otros.length) return "";
+  const fotos = opFotos();
+  return `<section class="seccion"><div class="titulo-seccion"><h2>Mismo género en Canarias</h2>
+      <a href="#/explorar" data-explorar='${JSON.stringify({ q: e._gen })}'>Ver ${otros.length + 1}</a></div>
+    <div class="carril genero">${otros.slice(0, 24).map((x) => `<a class="mini-especie" href="#/especie/${x.c}">${miniatura(x, fotos, 250)}
+      <span class="nombre">${esc(nombreComun(x))}</span><span class="sci-mini">${nombreSci(x.n, "", false)}</span></a>`).join("")}</div>
+  </section>`;
+}
+
+function pintarMapaGbif() {
+  const caja = document.getElementById("mapa-gbif");
+  if (!caja) return;
+  const clave = caja.dataset.clave, amenazada = caja.dataset.amenazada === "1";
+  const obs = new IntersectionObserver((ents) => {
+    if (!ents.some((x) => x.isIntersecting)) return;
+    obs.disconnect();
+    cargarLeaflet().then((L) => {
+      const m = L.map(caja, { zoomControl: false, attributionControl: true, scrollWheelZoom: false }).setView([28.3, -15.8], 6);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", { maxZoom: 12, attribution: "© OpenStreetMap" }).addTo(m);
+      const bin = amenazada ? "bin=square&squareSize=128" : "bin=hex&hexPerTile=40";
+      L.tileLayer(`https://api.gbif.org/v2/map/occurrence/density/{z}/{x}/{y}@1x.png?taxonKey=${encodeURIComponent(clave)}&${bin}&style=classic.poly`,
+        { maxZoom: amenazada ? 8 : 12, opacity: 0.85, attribution: "GBIF" }).addTo(m);
+    }).catch(() => { caja.remove(); });
+  }, { rootMargin: "200px" });
+  obs.observe(caja);
 }
 
 function hecho(ic, k, v, s) {
@@ -965,8 +1132,9 @@ function alPulsar(ev) {
   const x = ev.target.closest("[data-explorar]");
   if (x) {
     ev.preventDefault();
-    estado.filtros = { ...FILTROS_VACIOS(), ...JSON.parse(x.dataset.explorar) };
-    estado.q = ""; estado.limite = 60;
+    const { q, ...filtros } = JSON.parse(x.dataset.explorar);
+    estado.filtros = { ...FILTROS_VACIOS(), ...filtros };
+    estado.q = q || ""; estado.limite = 60;
     if (location.hash.startsWith("#/explorar")) vistaExplorar(); else location.hash = "#/explorar";
     return;
   }

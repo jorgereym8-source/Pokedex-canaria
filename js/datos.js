@@ -14,6 +14,13 @@ export async function cargarIndice() {
   for (const e of indice) {
     e._b = normalizar([e.n, e.cm.join(" "), e.fa, e.c, e.cl].join(" "));
     e._islas = islasDe(e.is);
+    e._gen = e.n.split(" ")[0];
+    e._reg = {};
+  }
+  // Pokédex regional: numeración propia de cada isla, en el mismo orden que la general
+  for (const k of ["H", "P", "G", "T", "C", "F", "L"]) {
+    let n = 0;
+    for (const e of [...indice].sort((a, b) => (a.no || 0) - (b.no || 0))) if (e._islas.includes(k)) e._reg[k] = ++n;
   }
   return indice;
 }
@@ -67,6 +74,7 @@ export function filtrar(f, vistas = new Set(), orden = "no") {
     if (f.md?.length && !f.md.includes(e.md)) return false;
     if (f.hb?.length && !f.hb.some((h) => (e.hb || []).includes(h))) return false;
     if (f.foto && !e.img && !e.fl) return false;
+    if (f.son && !e.so) return false;
     if (f.novistas && vistas.has(e.c)) return false;
     if (f.ext && e.st === "Extinto") return false;
     return true;
@@ -78,7 +86,7 @@ export function filtrar(f, vistas = new Set(), orden = "no") {
 }
 
 export function cuantosFiltros(f) {
-  return ["g", "i", "nv", "ui", "cc", "ce", "md", "hb"].reduce((n, k) => n + (f[k]?.length || 0), 0) + (f.inv ? 1 : 0) + (f.foto ? 1 : 0) + (f.novistas ? 1 : 0) + (f.ext ? 1 : 0);
+  return ["g", "i", "nv", "ui", "cc", "ce", "md", "hb"].reduce((n, k) => n + (f[k]?.length || 0), 0) + (f.inv ? 1 : 0) + (f.foto ? 1 : 0) + (f.son ? 1 : 0) + (f.novistas ? 1 : 0) + (f.ext ? 1 : 0);
 }
 
 export function cuentaPorGrupo() {
@@ -95,4 +103,17 @@ export function especieDelDia() {
   const d = new Date();
   const semilla = d.getFullYear() * 1000 + Math.floor((d - new Date(d.getFullYear(), 0, 0)) / 864e5);
   return lista[(semilla * 2654435761) % lista.length];
+}
+
+// Mismo género en Canarias (sin la propia especie)
+export function mismoGenero(e) {
+  return getIndice().filter((x) => x._gen === e._gen && x.c !== e.c).sort((a, b) => (a.no || 0) - (b.no || 0));
+}
+
+// Progreso por isla: { k: { total, vistas } }
+export function progresoIslas(vistas) {
+  const out = {};
+  for (const k of ["H", "P", "G", "T", "C", "F", "L"]) out[k] = { total: 0, vistas: 0 };
+  for (const e of getIndice()) for (const k of e._islas) if (out[k]) { out[k].total++; if (vistas.has(e.c)) out[k].vistas++; }
+  return out;
 }
