@@ -17,9 +17,11 @@ Cada dato se guarda con su fuente.
 - [Centinela](https://www.biodiversidadcanarias.es/centinela): especies protegidas, hábitat, poblaciones, categorías legales.
 - Lista de especies silvestres de Canarias (Gobierno de Canarias).
 - MITECO (Atlas y Libros Rojos), UICN, GBIF, iNaturalist y Wikidata para completar tamaño, longevidad y fenología.
+- [Wikimedia Commons](https://commons.wikimedia.org) e [iNaturalist](https://www.inaturalist.org): fotos con licencia libre (CC0, CC BY, CC BY-SA y, de iNaturalist, también CC BY-NC y CC BY-NC-SA) para completar las de Biota.
+- [Especies Vegetales en Canarias](https://endemicascanarias.com) (Gerardo G. Casanova y colaboradores): solo enlace a la ficha de cada planta. Sus fotos tienen © y la web pide el consentimiento expreso del autor para usarlas, así que no se muestran en la app.
 - Open-Meteo para el tiempo de los avistamientos.
 
-Las fotos de Biota pertenecen a sus autores: la app las muestra desde su web, con crédito, y no las copia.
+Las fotos pertenecen a sus autores: la app las muestra desde la web de origen (Biota, Commons o iNaturalist), con su autor y licencia, y no las copia.
 
 ## Instalar en el iPhone
 
@@ -30,6 +32,8 @@ Abre la app en Safari, pulsa Compartir y elige «Añadir a pantalla de inicio».
 - `index.html`, `css/`, `js/`: la app (sin compilación; HTML, CSS y JavaScript).
 - `datos/`: índice y fichas de especies. Se regeneran solos el día 3 de cada mes (`.github/workflows/datos.yml`).
 - `scripts/descargar.py`: descarga desde Biota y Centinela. Se ejecuta en GitHub Actions.
+- `scripts/enriquecer.py`: categoría UICN, tamaño, peso, longevidad y ciclo de vida.
+- `scripts/fotos.py`: fotos con licencia libre y enlaces a Especies Vegetales en Canarias.
 - `fuentes/`, `vendor/leaflet/`: tipografías y mapas alojados en la propia app (con sus licencias).
 - `sw.js`: permite usar la app sin conexión.
 
