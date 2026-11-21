@@ -21,9 +21,18 @@ Cada dato se guarda con su fuente.
 
 Las fotos de Biota pertenecen a sus autores: la app las muestra desde su web, con crédito, y no las copia.
 
+## Instalar en el iPhone
+
+Abre la app en Safari, pulsa Compartir y elige «Añadir a pantalla de inicio».
+
 ## Estructura
 
-- `scripts/`: scripts de descarga de datos (se ejecutan en GitHub Actions).
-- `.github/workflows/`: tareas automáticas.
+- `index.html`, `css/`, `js/`: la app (sin compilación; HTML, CSS y JavaScript).
+- `datos/`: índice y fichas de especies. Se regeneran solos el día 3 de cada mes (`.github/workflows/datos.yml`).
+- `scripts/descargar.py`: descarga desde Biota y Centinela. Se ejecuta en GitHub Actions.
+- `fuentes/`, `vendor/leaflet/`: tipografías y mapas alojados en la propia app (con sus licencias).
+- `sw.js`: permite usar la app sin conexión.
+
+Los avistamientos y tus fotos se guardan solo en el iPhone (IndexedDB). Desde Ajustes puedes exportarlos a CSV o hacer una copia de seguridad.
 
 Uso personal y sin fines comerciales.

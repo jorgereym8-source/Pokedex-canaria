@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Pokédex Canaria</title>
+  <meta name="description" content="Flora y fauna de Canarias con datos de Biota y Centinela">
+  <meta name="theme-color" content="#F4F5F1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Pokédex">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="iconos/icono.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/fuentes.css">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body class="estilo-nat">
+  <div id="app">
+    <header class="decoracion-poke" aria-hidden="true" style="padding: calc(env(safe-area-inset-top, 0px) + 10px) 18px 0">
+      <span class="lente"><i></i></span>
+      <span class="leds"><i style="background:#FF6B6B"></i><i style="background:#FFD23F"></i><i style="background:#4CC36B"></i></span>
+      <span class="marca">POKÉDEX<small>CANARIA</small></span>
+    </header>
+    <main id="vista" tabindex="-1"><div class="cargando">Cargando especies…</div></main>
+  </div>
+  <div id="hojas"></div>
+  <nav class="pestanas" aria-label="Secciones">
+    <div class="dentro">
+      <a href="#/" data-pagina="inicio"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11l8-7 8 7v9h-5v-6H9v6H4z"/></svg>Inicio</a>
+      <a href="#/explorar" data-pagina="explorar"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z"/></svg>Explorar</a>
+      <a href="#/mapa" data-pagina="mapa"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2-6-2zM9 4v14M15 6v14"/></svg>Mapa</a>
+      <a href="#/vistas" data-pagina="vistas"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18zM8 12l3 3 5-6"/></svg>Vistas</a>
+      <a href="#/ajustes" data-pagina="ajustes"><svg class="icono" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h9M17 7h3M4 17h3M11 17h9M17 7a2 2 0 1 1-4 0 2 2 0 0 1 4 0zM11 17a2 2 0 1 1-4 0 2 2 0 0 1 4 0z"/></svg>Ajustes</a>
+    </div>
+  </nav>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
