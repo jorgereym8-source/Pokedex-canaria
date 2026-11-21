@@ -58,11 +58,24 @@ GRUPOS = [
 ]
 # Exportaciones completas de cada nivel 1, para recoger lo que no caiga en ningún subgrupo
 COMPLETOS = [("Flora", "Plantas vasculares", {"selectLevel1": 2}), ("Fauna", "Vertebrados", {"selectLevel1": 8})]
-GRUPOS_EXCLUIDOS_FAUNA = {"Ascidiacea", "Thaliacea", "Appendicularia"}  # urocordados («vertebrados y afines»)
+# Grupo de los taxones que no caen en ningún subgrupo, según su clase. Las clases que no estén
+# aquí (p. ej. urocordados, incluidos por Biota en «vertebrados y afines») se descartan.
+CLASE_GRUPO = {
+    "Actinopteri": ("Peces", "Marinos óseos"), "Actinopterygii": ("Peces", "Marinos óseos"),
+    "Elasmobranchii": ("Peces", "Cartilaginosos"), "Holocephali": ("Peces", "Cartilaginosos"),
+    "Chondrichthyes": ("Peces", "Cartilaginosos"), "Petromyzonti": ("Peces", None), "Myxini": ("Peces", None),
+    "Sarcopterygii": ("Peces", None), "Aves": ("Aves", None), "Reptilia": ("Reptiles", None),
+    "Squamata": ("Reptiles", "Terrestres"), "Testudines": ("Reptiles", None), "Mammalia": ("Mamíferos", None),
+    "Amphibia": ("Anfibios", None),
+    "Magnoliopsida": ("Plantas con flor", "Terrestres"), "Liliopsida": ("Plantas con flor", "Terrestres"),
+    "Pinopsida": ("Plantas con flor", "Terrestres"), "Gnetopsida": ("Plantas con flor", "Terrestres"),
+    "Filicopsida": ("Helechos", None), "Polypodiopsida": ("Helechos", None), "Lycopsida": ("Helechos", None),
+    "Lycopodiopsida": ("Helechos", None), "Equisetopsida": ("Helechos", None), "Psilotopsida": ("Helechos", None),
+}
 
 ISLAS = {"H": "El Hierro", "P": "La Palma", "G": "La Gomera", "T": "Tenerife", "C": "Gran Canaria",
          "F": "Fuerteventura", "L": "Lanzarote", "M": "Mar"}
-PRESENCIA = {"s": "segura", "d": "dudosa, equívoca o extinta", "t": "traslocada"}
+PRESENCIA = {"s": "segura", "d": "dudosa, equívoca o extinta", "t": "traslocada", "x": "extinta"}
 RANGOS = {"subsp.": "subespecie", "ssp.": "subespecie", "var.": "variedad", "f.": "forma",
           "fo.": "forma", "nothosubsp.": "notosubespecie", "nothovar.": "notovariedad"}
 PARTICULAS = {"de", "da", "del", "van", "von", "der", "la", "le", "du", "des", "ex", "et", "in", "y", "&"}
@@ -410,9 +423,9 @@ def nivel_endemicidad(rec: dict) -> str:
     end = rec.get("endemicidad") or {}
     can = end.get("canarias", {}).get(rango)
     mac = end.get("macaronesia", {}).get(rango)
-    islas_seguras = [k for k, v in rec["presencia"].items() if v == "s" and k != "M"]
+    islas = [k for k, v in rec["presencia"].items() if k != "M" and v != "d"] or [k for k in rec["presencia"] if k != "M"]
     if can or (can is None and rec.get("endemicoCsv")):
-        return "insular" if len(islas_seguras) == 1 else "canario"
+        return "insular" if len(islas) == 1 else "canario"
     if mac:
         return "macaronesico"
     cod = (rec.get("origen") or {}).get("codigo") or rec.get("origenCsv", "")
@@ -448,11 +461,14 @@ def main() -> int:
             registros.setdefault(fila["codigo"], {**fila, "reino": reino, "grupo": grupo, "subgrupo": subgrupo})
     for reino, grupo, params in COMPLETOS:
         filas = exportar(cli, params)
-        extra = [f for f in filas if f["codigo"] not in registros and f["clase"] not in GRUPOS_EXCLUIDOS_FAUNA]
-        print(f"{grupo} (completo): {len(filas)}; sin subgrupo: {len(extra)}", flush=True)
+        extra = [f for f in filas if f["codigo"] not in registros]
+        descartes = sorted({f["clase"] for f in extra if f["clase"] not in CLASE_GRUPO})
+        print(f"{grupo} (completo): {len(filas)}; sin subgrupo: {len(extra)}; clases descartadas: {descartes}", flush=True)
         if not args.limite:
             for fila in extra:
-                registros[fila["codigo"]] = {**fila, "reino": reino, "grupo": "Otros", "subgrupo": None}
+                if fila["clase"] in CLASE_GRUPO:
+                    g, sg = CLASE_GRUPO[fila["clase"]]
+                    registros[fila["codigo"]] = {**fila, "reino": reino, "grupo": g, "subgrupo": sg}
     centinela = exportar_centinela(cli)
     print(f"Centinela: {len(centinela)} taxones protegidos", flush=True)
 
@@ -507,7 +523,7 @@ def main() -> int:
             "fa": rec.get("taxonomia", {}).get("Familia", ""), "md": rec["medio"],
             "is": "".join(f"{k}{v}" for k, v in rec["presencia"].items()),
             "o": (rec.get("origen") or {}).get("codigo") or rec["origenCsv"], "nv": rec["nivel"],
-            "st": rec["status"], "hb": [h["categoria"] for h in rec.get("habitats", [])],
+            "st": rec["status"], "hb": list(dict.fromkeys(h["categoria"] for h in rec.get("habitats", []))),
             "cc": prot.get("Catálogo Canario", []), "ce": prot.get("Catálogo Español/LESRPE", []),
             "pr": bool(rec.get("protegida")), "img": portada, "ni": rec["nImagenes"],
         })
