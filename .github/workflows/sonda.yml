@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   sonda:
@@ -19,8 +19,17 @@ jobs:
           python-version: "3.12"
       - run: pip install requests
       - run: python scripts/sonda.py
-      - uses: actions/upload-artifact@v4
-        with:
-          name: sonda
-          path: sonda/
-          retention-days: 7
+      # Los resultados se suben a una rama aparte (sonda-resultados), nunca a main
+      - name: Guardar resultados en la rama sonda-resultados
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          mkdir -p /tmp/s && cp -r sonda/. /tmp/s/
+          git checkout -q --orphan sonda-resultados
+          git rm -rfq .
+          rm -rf sonda
+          cp -r /tmp/s/. .
+          rm -f *.js
+          git add -A
+          git commit -qm "Resultados de la sonda"
+          git push -qf origin sonda-resultados
