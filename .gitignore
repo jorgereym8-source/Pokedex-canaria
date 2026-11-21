@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.venv/
+sonda/
+.DS_Store
+node_modules/

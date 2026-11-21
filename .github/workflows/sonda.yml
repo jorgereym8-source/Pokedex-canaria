@@ -1,0 +1,26 @@
+name: Sonda de fuentes
+
+# Descarga unas pocas páginas de Biota y Centinela para estudiar su estructura.
+# Se lanza a mano desde la pestaña Actions o con `gh workflow run sonda.yml`.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  sonda:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - run: python scripts/sonda.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sonda
+          path: sonda/
+          retention-days: 7
