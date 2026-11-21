@@ -230,27 +230,54 @@ def wikidata(nombres: list[str], cache: dict) -> None:
 
 # -------------------------------------------------------------- textos (es)
 
-ORGANOS = r"hoja|hojas|flor|flores|pétalo|fruto|frutos|semilla|sépalo|corola|cáliz|inflorescencia|bráctea|espiga|pedúnculo|limbo|folíolo|foliolo|cápsula|aquenio|pico|cola|ala|alas|huevo|huevos|cabeza|tarso|aleta|antena|raíz|bulbo|frond|pinna|racimo|panícula|capítulo|estambre|espina"
+ORGANOS = (r"hoja|flor|pétalo|fruto|semilla|sépalo|corola|cáliz|cálice|inflorescencia|bráctea|espiga|espiguilla|pedúnculo|pedicelo|"
+           r"limbo|folíolo|foliolo|cápsula|aquenio|pico|cola|ala|huevo|cabeza|tarso|aleta|antena|raíz|raíce|bulbo|fronde|pinna|"
+           r"racimo|panícula|capítulo|estambre|espina|lámina|pecíolo|peciolo|vaina|legumbre|baya|drupa|nuez|gluma|lema|segmento|"
+           r"lóbulo|diente|pelo|escama|tubérculo|rizoma|cono|piña|aguja|acícula|estípula|nervio|garra|uña|oreja|pata|cresta|"
+           r"dedo|antebrazo|trago|uropatagio|patagio|pie|cuello|hocico")
+ORG_RE = re.compile(rf"\b(?:{ORGANOS})(?:s|es)?\b")
+TODO_RE = re.compile(r"\b(planta|arbusto|árbol|ejemplar|individuo|adulto|adultos|mata|cuerpo total|total|porte|tallos?|cañas?)\b")
+EXCLUIR_RE = re.compile(r"profundidad|diámetro|grosor|ancho|anchura|espesor|distancia|separad|siembra|sembrar|circunferencia|perímetro|altitud|metros sobre|m s\. ?n\. ?m|msnm|cota|kilómetro")
 MEDIDA = re.compile(
     r"(\d+(?:[.,]\d+)?)(?:\s*(?:-|–|a|y|hasta)\s*(\d+(?:[.,]\d+)?))?\s*(milímetros|mm|centímetros|cm|metros|m)\b(?!²|2)(.{0,40})",
     re.I | re.S)
 FACTOR = {"mm": 0.001, "milímetros": 0.001, "cm": 0.01, "centímetros": 0.01, "m": 1, "metros": 1}
-CLAVES_TAM = r"altura|alto|alta|talla|longitud|largo|mide|miden|medir|alcanza|alcanzan|porte|tamaño|de hasta|envergadura"
+RANGO = {"Flora": (0.02, 70), "Aves": (0.07, 1.5), "Reptiles": (0.03, 3), "Anfibios": (0.02, 0.3), "Mamíferos": (0.03, 35), "Peces": (0.01, 20)}
+ETIQ_PLANTA = re.compile(r"altura|alto|alta|talla|porte|alcanza|alcanzan|mide|miden|crece|crecen|de hasta|llega")
 
 
-def medidas(texto: str, animal: bool) -> dict | None:
-    """Primera medida del organismo entero en un texto (ignora hojas, flores, picos…)."""
+def medidas(texto: str, animal: bool, grupo: str = "") -> dict | None:
+    """Primera medida del organismo entero en un texto (ignora órganos, profundidades, envergaduras…)."""
+    lo, hi = RANGO.get(grupo, RANGO["Flora"] if not animal else (0.01, 35))
     for m in MEDIDA.finditer(texto):
         antes = texto[max(0, m.start() - 70):m.start()].lower()
         despues = (m.group(4) or "").lower()
-        contexto = antes[-45:] + " " + despues
-        if re.search(rf"\b({ORGANOS})\b", antes[-45:]) and not re.search(r"\b(planta|arbusto|árbol|ejemplar|individuo|adulto|mata|cuerpo total|total)\b", antes[-45:]):
+        cerca = antes[-45:]
+        org = ORG_RE.search(cerca)
+        if org and not TODO_RE.search(cerca[-30:]):
+            # En plantas en roseta (tajinastes) la inflorescencia marca la altura de la planta
+            if not (not animal and org.group(0).startswith("inflorescencia") and m.group(3).lower() in ("m", "metros")):
+                continue
+        if EXCLUIR_RE.search(cerca[-35:] + " " + despues[:25]):
             continue
-        if "envergadura" in contexto[-60:] and "longitud" not in contexto:
-            continue  # la envergadura no es la longitud
-        if not re.search(CLAVES_TAM, contexto) and not re.match(r"\s*(de\s+)?(altura|alto|longitud|largo)", despues):
-            # aceptar «Arbusto de hasta 1 m» / «de 16,5 cm de longitud»
-            if not re.search(r"\b(arbusto|árbol|planta|hierba|mata|semiarbusto|pájaro|ave|lagarto|pez|mide|de unos|de hasta)\b", antes[-40:]):
+        if re.search(r"(\d\s*(por|x|×)\s*$)", antes[-8:]) or re.match(r"\s*(por|x|×)\s*\d", despues):
+            continue  # «9 por 4 cm»: dimensiones de un órgano
+        # La etiqueta más cercana decide qué se mide
+        etiquetas = [(cerca.rfind(k), k) for k in ("envergadura", "longitud", "largo", "altura", "alto", "talla", "mide", "alcanza")]
+        previa = max(etiquetas)[1] if max(etiquetas)[0] >= 0 else ""
+        siguiente = re.match(r"\s*(de\s+)?(envergadura|longitud|largo|altura|alto|alta|talla)", despues)
+        etiqueta = siguiente.group(2) if siguiente else previa
+        if etiqueta == "envergadura":
+            continue
+        if animal:
+            if not re.search(r"longitud|largo|mide|miden|medir|talla|tamaño|alcanza|de hasta|de unos|cuerpo|total", cerca + " " + despues) \
+                    and not re.search(r"\b(pájaro|ave|lagarto|pez|ballena|delfín|murciélago|rata|musaraña|tortuga|culebra|rana|ejemplar|adulto)\b", cerca):
+                continue
+        else:
+            if etiqueta in ("largo", "longitud") and not re.search(r"\btallos?\b|\bcañas?\b|\bplanta\b", cerca):
+                continue
+            if not (ETIQ_PLANTA.search(cerca[-30:] + " " + despues[:20]) or re.match(r"\s*(de\s+)?(altura|alto|alta)", despues)
+                    or re.search(r"\b(arbusto|árbol|planta|hierba|mata|semiarbusto|subarbusto|matorral|tallos?)\b[^.]{0,25}$", cerca)):
                 continue
         f = FACTOR[m.group(3).lower()]
         a = num(m.group(1)) * f
@@ -258,12 +285,10 @@ def medidas(texto: str, animal: bool) -> dict | None:
         if b is not None and b < a:
             a, b = b, a
         maximo = b or a
-        if not (0.005 <= maximo <= (35 if animal else 70)):
+        if not (lo <= maximo <= hi):
             continue
-        tipo = "altura"
-        if animal or re.search(r"longitud|largo", contexto):
-            tipo = "longitud"
-        if re.search(r"cabeza[- ]cuerpo|hocico[- ]cloaca|lhc|svl", contexto):
+        tipo = "longitud" if animal else "altura"
+        if re.search(r"cabeza[- ]cuerpo|cabeza y cuerpo|hocico[- ]cloaca|lhc|svl", cerca + despues):
             tipo = "longitud cabeza-cuerpo"
         cita = re.sub(r"\s+", " ", texto[max(0, m.start() - 60):m.end() - len(m.group(4) or "") + 25]).strip()
         return {"min": round(a, 3) if b else None, "max": round(maximo, 3), "tipo": tipo, "cita": cita}
@@ -419,6 +444,7 @@ def main() -> int:
     cuenta = {"uicn": 0, "tamano": 0, "peso": 0, "longevidad": 0, "ciclo": 0}
     for cod, f in fichas.items():
         animal = f.get("reino") == "Fauna"
+        grupo = f.get("grupo") if animal else "Flora"
         bi = binomio(f["nombre"])
         sub = bi != f["nombre"]
         wd, wp = c_wd.get(bi, {}), c_wp.get(bi, {})
@@ -447,16 +473,17 @@ def main() -> int:
             tam = {"min": None, "max": round(x["longitud"] / 100, 3), "tipo": f"{tipo} máxima", "fuente": "FishBase",
                    "url": f"https://www.fishbase.se/summary/{x['codigo']}"}
         if not tam and primera:
-            t = medidas(primera, animal) or medidas(cent[:600], animal)
+            t = medidas(primera, animal, grupo) or medidas(cent[:600], animal, grupo)
             if t:
                 tam = {**t, "fuente": "Centinela (claves de identificación)", "url": f"https://www.biodiversidadcanarias.es/centinela/especie/{cod}"}
         if not tam and (wd.get("altura") or wd.get("longitud")):
             v = wd.get("longitud") if animal and wd.get("longitud") else (wd.get("altura") or wd.get("longitud"))
-            if 0.005 <= v <= (35 if animal else 70):
+            lo, hi = RANGO.get(grupo, (0.01, 70))
+            if lo <= v <= hi:
                 tam = {"min": None, "max": round(v, 3), "tipo": "longitud" if animal else "altura", "fuente": "Wikidata",
                        "url": f"https://www.wikidata.org/wiki/{wd.get('item')}"}
         if not tam and wp.get("texto"):
-            t = medidas(wp["texto"], animal)
+            t = medidas(wp["texto"], animal, grupo)
             if t:
                 tam = {**t, "fuente": "Wikipedia (es)", "url": wp.get("url")}
         if tam:

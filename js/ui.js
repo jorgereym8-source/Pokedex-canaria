@@ -75,7 +75,7 @@ export const UICN = {
   CR: { nombre: "En peligro crítico", color: "#D81E05" }, EN: { nombre: "En peligro", color: "#FC7F3F" },
   VU: { nombre: "Vulnerable", color: "#F9E814" }, NT: { nombre: "Casi amenazada", color: "#CCE226" },
   LC: { nombre: "Preocupación menor", color: "#60C659" }, DD: { nombre: "Datos insuficientes", color: "#D1D1C6" },
-  EX: { nombre: "Extinta", color: "#000000" }, EW: { nombre: "Extinta en estado silvestre", color: "#542344" },
+  NE: { nombre: "No evaluada", color: "#D1D1C6" }, EX: { nombre: "Extinta", color: "#000000" }, EW: { nombre: "Extinta en estado silvestre", color: "#542344" },
 };
 
 export function presencia(is) {
