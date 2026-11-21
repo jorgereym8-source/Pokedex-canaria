@@ -509,7 +509,7 @@ def etimologia(wp: dict) -> dict | None:
     t = (wp or {}).get("etim")
     if not t:
         return None
-    t = re.sub(r"\n{2,}", "\n", t).strip()
+    t = re.sub(r"\n{2,}", "\n", t.replace("\u200b", "")).strip()
     return {"texto": t[:1200], "fuente": "Wikipedia en español", "url": wp.get("url", "")}
 
 

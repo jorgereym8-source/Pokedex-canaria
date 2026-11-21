@@ -549,7 +549,7 @@ function seccionVulnerabilidad(f) {
 function seccionEtimologia(f) {
   const t = f.etimologia;
   if (!t) return "";
-  return `<section class="seccion"><h2>El nombre</h2><p>${esc(t.texto)}</p><span class="fuente-dato">Fuente: ${enlaceFuente(t.fuente, t.url)}</span></section>`;
+  return `<section class="seccion"><h2>El nombre</h2><p>${esc(t.texto.replace(/\u200b/g, ""))}</p><span class="fuente-dato">Fuente: ${enlaceFuente(t.fuente, t.url)}</span></section>`;
 }
 
 function seccionGenero(e) {
