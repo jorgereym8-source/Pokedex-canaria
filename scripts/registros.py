@@ -219,7 +219,8 @@ def main() -> int:
     for c, f in fichas.items():
         rutas[c].write_text(json.dumps(f, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     meta = cargar_json(DATOS / "meta.json", {})
-    meta["registros"] = {"fecha": HOY, "altitud": n_alt, "primerRegistro": n_pr}
+    pendientes = sum(1 for c, f in fichas.items() if f.get("gbifClave") and caducado(cache.get(c, {}).get("fecha"), 180))
+    meta["registros"] = {"fecha": HOY, "altitud": n_alt, "primerRegistro": n_pr, "pendientes": pendientes}
     (DATOS / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Registros: altitud {n_alt}, primer registro {n_pr} · {round((time.time() - inicio) / 60, 1)} min", flush=True)
     return 0

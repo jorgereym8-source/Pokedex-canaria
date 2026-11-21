@@ -5,10 +5,10 @@ import * as V from "./avistamientos.js";
 import { diagrama, textoTamano, medida } from "./tamano.js";
 import {
   esc, icono, iconoGrupo, ISLAS, NOMBRE_ISLA, NIVELES, ORIGENES, nombreSci, nombreComun, numero, insigniaNivel,
-  insigniasEntrada, urlImagen, urlLibre, fotoPrincipal, miniatura, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
+  insigniasEntrada, urlImagen, urlLibre, fotoPrincipal, miniatura, BLOQUES, mapaIslas, aviso, BIOTA, CENTINELA, islasDe, presencia, UICN,
 } from "./ui.js";
 
-const VERSION = "0.4.1";
+const VERSION = "0.5.0";
 const vista = document.getElementById("vista");
 const hojas = document.getElementById("hojas");
 const FILTROS_VACIOS = () => ({ g: [], i: [], nv: [], ui: [], cc: [], ce: [], md: [], hb: [], inv: false, foto: false, son: false, novistas: false, ext: false, am: false, pr: false });
@@ -80,7 +80,7 @@ function vistaInicio() {
   const vistasN = indice.filter((e) => estado.vistas.has(e.c)).length;
   const fotoDia = dia ? fotoPrincipal(dia, opFotos(), 960) : null;
   const progIslas = D.progresoIslas(estado.vistas);
-  const grupos = ["Plantas con flor", "Helechos", "Aves", "Reptiles", "Mamíferos", "Anfibios", "Peces"].filter((g) => cuenta[g]);
+  const bloques = BLOQUES.map(([t, gs]) => [t, gs.filter((g) => cuenta[g])]).filter(([, gs]) => gs.length);
   const amenazadas = indice.filter(esAmenazada).length;
 
   vista.innerHTML = `
@@ -108,13 +108,13 @@ function vistaInicio() {
       <div class="pequeno texto-2">Has visto <b>${vistasN}</b> de ${indice.length.toLocaleString("es")} especies y subespecies</div>
       <div class="progreso"><i style="width:${indice.length ? Math.max(vistasN ? 1 : 0, (vistasN / indice.length) * 100) : 0}%"></i></div>
     </div>
-    <section class="grupo-ajustes">
-      <div class="titulo-seccion"><h2>Grupos</h2><a href="#/explorar" data-explorar='{}'>Ver todo</a></div>
+    ${bloques.map(([t, gs], i) => `<section class="grupo-ajustes">
+      <div class="titulo-seccion"><h2>${esc(t)}</h2>${i === 0 ? `<a href="#/explorar" data-explorar='{}'>Ver todo</a>` : `<a href="#/explorar" data-explorar='${JSON.stringify({ g: gs })}'>Ver ${gs.reduce((n, g) => n + cuenta[g], 0).toLocaleString("es")}</a>`}</div>
       <div class="rejilla">
-        ${grupos.map((g) => `<a class="tile" href="#/explorar" data-explorar='${JSON.stringify({ g: [g] })}'>
+        ${gs.map((g) => `<a class="tile" href="#/explorar" data-explorar='${JSON.stringify({ g: [g] })}'>
           <span class="burbuja">${icono(iconoGrupo(g))}</span><span class="nombre">${esc(g)}</span><span class="cuenta">${cuenta[g].toLocaleString("es")}</span></a>`).join("")}
       </div>
-    </section>
+    </section>`).join("")}
     <section class="grupo-ajustes">
       <div class="titulo-seccion"><h2>Pokédex por isla</h2></div>
       <div class="rejilla-2">
@@ -330,6 +330,7 @@ async function vistaFicha(codigo) {
       <p class="nombre-cientifico">${nombreSci(f.nombre || e.n, f.autor || e.a, A.get("autoria"))}</p>
       ${otrosNombres.length ? `<p class="pequeno" style="margin:0">Otros nombres: ${esc(otrosNombres.join(" · "))}</p>` : ""}
       <p class="pequeno texto-2" style="margin:0">Código Biota ${esc(codigo)} · ${esc(f.validez || "")}${f.status === "Extinto" ? " · Extinto" : ""}</p>
+      ${f.fichaPendiente ? '<p class="pequeno" style="margin:0;color:var(--acento)">Ficha completa de Biota en camino: se está descargando en las actualizaciones automáticas.</p>' : ""}
       ${Object.keys(e._reg || {}).length ? `<p class="pequeno texto-2" style="margin:0">Pokédex regional: ${ISLAS_ORDEN.filter((k) => e._reg[k]).map((k) => `${SIGLA_ISLA[k]} ${String(e._reg[k]).padStart(4, "0")}`).join(" · ")}</p>` : ""}
     </div>
 

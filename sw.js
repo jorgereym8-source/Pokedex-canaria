@@ -2,7 +2,7 @@
 // - Estructura de la app: se guarda al instalar (cambia VERSION al publicar cambios).
 // - Índice y fichas: primero la red, y si no hay, lo guardado.
 // - Fotos (Biota, Commons, iNaturalist) y teselas del mapa: lo guardado primero, con límite de tamaño.
-const VERSION = "v0.4.1";
+const VERSION = "v0.5.0";
 const APP = `pokedex-canaria-app-${VERSION}`;
 const DATOS = "pokedex-canaria-datos";
 const FICHAS = "pokedex-canaria-fichas";

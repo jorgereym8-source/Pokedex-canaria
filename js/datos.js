@@ -40,7 +40,8 @@ export async function cargarFicha(codigo) {
 // ---------------------------------------------------------------- filtros
 
 export const FILTROS = {
-  g: { titulo: "Grupo", valores: ["Plantas con flor", "Helechos", "Aves", "Reptiles", "Mamíferos", "Anfibios", "Peces"] },
+  g: { titulo: "Grupo", valores: ["Plantas con flor", "Helechos", "Aves", "Reptiles", "Mamíferos", "Anfibios", "Peces", "Insectos", "Arácnidos",
+    "Moluscos", "Crustáceos", "Miriápodos", "Anélidos", "Cnidarios", "Equinodermos", "Esponjas", "Otros invertebrados"] },
   i: { titulo: "Isla", valores: ["L", "F", "C", "T", "G", "P", "H"] },
   nv: { titulo: "Endemicidad y origen", valores: ["insular", "canario", "macaronesico", "nativo", "introducido"] },
   inv: { titulo: "Invasoras", valores: ["si"] },

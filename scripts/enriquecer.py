@@ -242,7 +242,10 @@ MEDIDA = re.compile(
     r"(\d+(?:[.,]\d+)?)(?:\s*(?:-|–|a|y|hasta)\s*(\d+(?:[.,]\d+)?))?\s*(milímetros|mm|centímetros|cm|metros|m)\b(?!²|2)(.{0,40})",
     re.I | re.S)
 FACTOR = {"mm": 0.001, "milímetros": 0.001, "cm": 0.01, "centímetros": 0.01, "m": 1, "metros": 1}
-RANGO = {"Flora": (0.02, 70), "Aves": (0.07, 1.5), "Reptiles": (0.03, 3), "Anfibios": (0.02, 0.3), "Mamíferos": (0.03, 35), "Peces": (0.01, 20)}
+RANGO = {"Flora": (0.02, 70), "Aves": (0.07, 1.5), "Reptiles": (0.03, 3), "Anfibios": (0.02, 0.3), "Mamíferos": (0.03, 35), "Peces": (0.01, 20),
+         "Insectos": (0.0005, 0.3), "Arácnidos": (0.0002, 0.2), "Moluscos": (0.001, 15), "Crustáceos": (0.0002, 1),
+         "Miriápodos": (0.002, 0.3), "Anélidos": (0.001, 3), "Cnidarios": (0.0005, 30), "Equinodermos": (0.005, 1),
+         "Esponjas": (0.005, 2), "Otros invertebrados": (0.0001, 30)}
 ETIQ_PLANTA = re.compile(r"altura|alto|alta|talla|porte|alcanza|alcanzan|mide|miden|crece|crecen|de hasta|llega")
 
 
@@ -408,7 +411,16 @@ def forma_animal(f: dict) -> str:
         return "mamifero"
     if g == "Peces":
         return "tiburon" if f.get("subgrupo") == "Cartilaginosos" else "pez"
-    return "mamifero"
+    sg = f.get("subgrupo") or ""
+    if g == "Insectos":
+        return {"Lepidópteros": "mariposa", "Odonatos": "libelula", "Neurópteros": "libelula", "Ortópteros": "saltamontes",
+                "Mántidos": "saltamontes", "Himenópteros": "hormiga", "Dípteros": "mosca"}.get(sg, "escarabajo")
+    if g == "Moluscos":
+        return {"Cefalópodos": "pulpo", "Bivalvos": "concha"}.get(sg, "caracol")
+    if g == "Cnidarios":
+        return "coral" if f.get("clase") == "Anthozoa" else "medusa"
+    return {"Arácnidos": "arana", "Crustáceos": "cangrejo", "Miriápodos": "ciempies", "Anélidos": "gusano",
+            "Equinodermos": "estrella", "Esponjas": "coral", "Otros invertebrados": "gusano"}.get(g, "mamifero")
 
 
 def forma_planta(f: dict, texto_forma: str | None, altura: float | None) -> str:

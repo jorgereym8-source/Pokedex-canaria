@@ -26,7 +26,8 @@ DATOS = RAIZ / "datos"
 EXTRA = DATOS / "extra"
 UA = "PokedexCanaria/0.1 (app personal sin fines comerciales; +https://github.com/jorgereym8-source/pokedex-canaria)"
 HOY = date.today().isoformat()
-GRUPOS = {"Aves", "Anfibios", "Mamíferos", "Reptiles"}
+GRUPOS = {"Aves", "Anfibios", "Mamíferos", "Reptiles", "Insectos"}
+SUBGRUPOS_INSECTOS = {"Ortópteros", "Hemípteros"}  # saltamontes, grillos y cigarras
 PLACES = "130979,108930"  # Canarias (tierra y mar) en iNaturalist
 CAJA = "27.4,-18.5,29.5,-13.2"
 LIC_INAT = {"cc0": "CC0", "cc-by": "CC BY", "cc-by-sa": "CC BY-SA", "cc-by-nc": "CC BY-NC", "cc-by-nc-sa": "CC BY-NC-SA",
@@ -169,7 +170,7 @@ def main() -> int:
     xc = bool(XC_KEY)
     print(f"xeno-canto: {'con clave' if xc else 'sin clave (solo iNaturalist)'}", flush=True)
 
-    objetivos = [f for f in fichas.values() if f.get("grupo") in GRUPOS]
+    objetivos = [f for f in fichas.values() if f.get("grupo") in GRUPOS and (f.get("grupo") != "Insectos" or f.get("subgrupo") in SUBGRUPOS_INSECTOS)]
     pend = [f for f in objetivos if caducado(cache.get(f["nombre"], {}).get("fecha"), 120) or (xc and not cache.get(f["nombre"], {}).get("xc"))]
     print(f"Sonidos: {len(pend)} taxones por consultar", flush=True)
     try:
@@ -178,7 +179,7 @@ def main() -> int:
                 print(f"  tiempo agotado: quedan {len(pend) - k + 1} para la próxima ejecución", flush=True)
                 break
             n = f["nombre"]
-            lista = xeno_canto(n) if xc and f.get("grupo") in ("Aves", "Anfibios", "Mamíferos") else []
+            lista = xeno_canto(n) if xc and f.get("grupo") in ("Aves", "Anfibios", "Mamíferos", "Insectos") else []
             if len(lista) < MAX:
                 tid = inat_id(n, c_inat)
                 if tid:
@@ -206,7 +207,8 @@ def main() -> int:
             e["so"] = 1
     (DATOS / "indice.json").write_text(json.dumps(indice, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     meta = cargar_json(DATOS / "meta.json", {})
-    meta["sonidos"] = {"fecha": HOY, "con_sonido": n_con, "xeno_canto": xc}
+    pend_fin = sum(1 for f in objetivos if caducado(cache.get(f["nombre"], {}).get("fecha"), 120) or (xc and not cache.get(f["nombre"], {}).get("xc")))
+    meta["sonidos"] = {"fecha": HOY, "con_sonido": n_con, "xeno_canto": xc, "pendientes": pend_fin}
     (DATOS / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=1), encoding="utf-8")
     print(f"Sonidos: {n_con} taxones con sonido · {round((time.time() - inicio) / 60, 1)} min", flush=True)
     return 0

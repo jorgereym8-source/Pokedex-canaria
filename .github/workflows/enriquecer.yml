@@ -1,17 +1,21 @@
 name: Enriquecer fichas
 
-# Añade a las fichas la categoría UICN (GBIF), el tamaño, la forma, el peso,
-# la longevidad, el ciclo de vida y las fotos con licencia libre (Commons e iNaturalist).
-# Se ejecuta también al final de «Datos de especies».
+# Añade a las fichas la categoría UICN (GBIF), el tamaño, la forma, el peso, la longevidad,
+# el ciclo de vida, las fotos con licencia libre, los rasgos por grupo, la conservación,
+# la altitud y los sonidos. Si queda trabajo pendiente, lanza otra ronda (máximo 12).
 on:
   workflow_dispatch:
     inputs:
       max_inat:
         description: "Búsquedas nuevas en iNaturalist (fotos) en esta ejecución"
-        default: "2300"
+        default: "3000"
+      ronda:
+        description: "Ronda automática (no cambiar)"
+        default: "0"
 
 permissions:
   contents: write
+  actions: write
 
 concurrency:
   group: datos
@@ -20,7 +24,9 @@ concurrency:
 jobs:
   enriquecer:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 345
+    env:
+      RONDA: ${{ inputs.ronda || '0' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -28,19 +34,20 @@ jobs:
           python-version: "3.12"
       - run: pip install requests pandas pyarrow openpyxl pypdf cryptography rasterio
       - run: python scripts/enriquecer.py
-      - run: python scripts/fotos.py --max-inat "${{ inputs.max_inat || '2300' }}"
+        continue-on-error: true
+      - run: python scripts/fotos.py --max-inat "${{ inputs.max_inat || '3000' }}"
         continue-on-error: true
       - run: python scripts/rasgos.py
         continue-on-error: true
       - run: python scripts/conservacion.py
         continue-on-error: true
-      - run: python scripts/registros.py --minutos 70
+      - run: python scripts/registros.py --minutos 80
         continue-on-error: true
       - run: python scripts/sonidos.py
         continue-on-error: true
         env:
           XC_KEY: ${{ secrets.XC_KEY }}
-          MINUTOS_SONIDOS: "50"
+          MINUTOS_SONIDOS: "40"
       - name: Guardar datos
         if: ${{ !cancelled() }}
         run: |
@@ -48,6 +55,16 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add datos
           if git diff --cached --quiet; then echo "Sin cambios"; exit 0; fi
-          git commit -qm "Datos: enriquecimiento, fotos, rasgos, conservación, registros y sonidos ($(date -u +%F))"
+          git commit -qm "Datos: enriquecimiento, fotos, rasgos, conservación, registros y sonidos ($(date -u +%F), ronda $RONDA)"
           git pull --rebase -q origin main
           git push -q origin HEAD:main
+      - name: Seguir en otra ronda
+        if: ${{ !cancelled() }}
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          resto=$(python scripts/pendientes.py enriquecimiento)
+          echo "Búsquedas pendientes: $resto"
+          if [ "$resto" -gt 0 ] && [ "$RONDA" -lt 12 ]; then
+            gh workflow run enriquecer.yml --ref main -f max_inat="${{ inputs.max_inat || '3000' }}" -f ronda=$((RONDA + 1))
+          fi

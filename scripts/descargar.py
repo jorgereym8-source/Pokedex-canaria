@@ -55,9 +55,53 @@ GRUPOS = [
     ("Fauna", "Aves", None, {"selectLevel1": 8, "selectLevel2": 27}),
     ("Fauna", "Mamíferos", "Terrestres", {"selectLevel1": 8, "selectLevel2": 28, "selectLevel3": 38}),
     ("Fauna", "Mamíferos", "Marinos", {"selectLevel1": 8, "selectLevel2": 28, "selectLevel3": 39}),
+    # Invertebrados (nivel 1 = 7)
+    ("Fauna", "Insectos", "Coleópteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 28}),
+    ("Fauna", "Insectos", "Lepidópteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 29}),
+    ("Fauna", "Insectos", "Himenópteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 31}),
+    ("Fauna", "Insectos", "Dípteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 30}),
+    ("Fauna", "Insectos", "Hemípteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 26}),
+    ("Fauna", "Insectos", "Ortópteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 20}),
+    ("Fauna", "Insectos", "Odonatos", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 16}),
+    ("Fauna", "Insectos", "Neurópteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 27}),
+    ("Fauna", "Insectos", "Mántidos", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 17}),
+    ("Fauna", "Insectos", "Blatarios", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 18}),
+    ("Fauna", "Insectos", "Dermápteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 21}),
+    ("Fauna", "Insectos", "Psocópteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 22}),
+    ("Fauna", "Insectos", "Tisanópteros", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 25}),
+    ("Fauna", "Insectos", "Otros insectos", {"selectLevel1": 7, "selectLevel2": 22, "selectLevel3": 32}),
+    ("Fauna", "Arácnidos", "Arañas", {"selectLevel1": 7, "selectLevel2": 19, "selectLevel3": 7}),
+    ("Fauna", "Arácnidos", "Ácaros", {"selectLevel1": 7, "selectLevel2": 19, "selectLevel3": 6}),
+    ("Fauna", "Arácnidos", "Otros arácnidos", {"selectLevel1": 7, "selectLevel2": 19, "selectLevel3": 8}),
+    ("Fauna", "Moluscos", "Caracoles y babosas terrestres", {"selectLevel1": 7, "selectLevel2": 18, "selectLevel3": 1}),
+    ("Fauna", "Moluscos", "Caracoles y babosas marinos", {"selectLevel1": 7, "selectLevel2": 18, "selectLevel3": 2}),
+    ("Fauna", "Moluscos", "Cefalópodos", {"selectLevel1": 7, "selectLevel2": 18, "selectLevel3": 3}),
+    ("Fauna", "Moluscos", "Bivalvos", {"selectLevel1": 7, "selectLevel2": 18, "selectLevel3": 4}),
+    ("Fauna", "Moluscos", "Quitones y otros", {"selectLevel1": 7, "selectLevel2": 18, "selectLevel3": 5}),
+    ("Fauna", "Crustáceos", "Cangrejos, camarones y afines", {"selectLevel1": 7, "selectLevel2": 20, "selectLevel3": 13}),
+    ("Fauna", "Crustáceos", "Cochinillas de la humedad y afines", {"selectLevel1": 7, "selectLevel2": 20, "selectLevel3": 14}),
+    ("Fauna", "Crustáceos", "Copépodos", {"selectLevel1": 7, "selectLevel2": 20, "selectLevel3": 11}),
+    ("Fauna", "Crustáceos", "Ostrácodos", {"selectLevel1": 7, "selectLevel2": 20, "selectLevel3": 10}),
+    ("Fauna", "Crustáceos", "Branquiópodos", {"selectLevel1": 7, "selectLevel2": 20, "selectLevel3": 9}),
+    ("Fauna", "Crustáceos", "Otros crustáceos", {"selectLevel1": 7, "selectLevel2": 20, "selectLevel3": 15}),
+    ("Fauna", "Miriápodos", None, {"selectLevel1": 7, "selectLevel2": 21}),
+    ("Fauna", "Anélidos", None, {"selectLevel1": 7, "selectLevel2": 13}),
+    ("Fauna", "Cnidarios", None, {"selectLevel1": 7, "selectLevel2": 11}),
+    ("Fauna", "Equinodermos", None, {"selectLevel1": 7, "selectLevel2": 17}),
+    ("Fauna", "Esponjas", None, {"selectLevel1": 7, "selectLevel2": 10}),
+    ("Fauna", "Otros invertebrados", "Briozoos", {"selectLevel1": 7, "selectLevel2": 15}),
+    ("Fauna", "Otros invertebrados", "Ctenóforos", {"selectLevel1": 7, "selectLevel2": 14}),
+    ("Fauna", "Otros invertebrados", "Nemátodos", {"selectLevel1": 7, "selectLevel2": 16}),
+    ("Fauna", "Otros invertebrados", "Platelmintos", {"selectLevel1": 7, "selectLevel2": 12}),
+    ("Fauna", "Otros invertebrados", None, {"selectLevel1": 7, "selectLevel2": 23}),
 ]
+INVERTEBRADOS = {"Insectos", "Arácnidos", "Moluscos", "Crustáceos", "Miriápodos", "Anélidos", "Cnidarios", "Equinodermos",
+                 "Esponjas", "Otros invertebrados"}
 # Exportaciones completas de cada nivel 1, para recoger lo que no caiga en ningún subgrupo
-COMPLETOS = [("Flora", "Plantas vasculares", {"selectLevel1": 2}), ("Fauna", "Vertebrados", {"selectLevel1": 8})]
+COMPLETOS = [("Flora", "Plantas vasculares", {"selectLevel1": 2}), ("Fauna", "Vertebrados", {"selectLevel1": 8}),
+             ("Fauna", "Invertebrados", {"selectLevel1": 7})]
+# Grupo por defecto para lo que no tenga clase reconocida en cada exportación completa
+POR_DEFECTO = {"Invertebrados": ("Otros invertebrados", None)}
 # Grupo de los taxones que no caen en ningún subgrupo, según su clase. Las clases que no estén
 # aquí (p. ej. urocordados, incluidos por Biota en «vertebrados y afines») se descartan.
 CLASE_GRUPO = {
@@ -71,6 +115,20 @@ CLASE_GRUPO = {
     "Pinopsida": ("Plantas con flor", "Terrestres"), "Gnetopsida": ("Plantas con flor", "Terrestres"),
     "Filicopsida": ("Helechos", None), "Polypodiopsida": ("Helechos", None), "Lycopsida": ("Helechos", None),
     "Lycopodiopsida": ("Helechos", None), "Equisetopsida": ("Helechos", None), "Psilotopsida": ("Helechos", None),
+    # Invertebrados sin subgrupo en la búsqueda divulgativa
+    "Hexapoda": ("Insectos", "Otros insectos"), "Insecta": ("Insectos", "Otros insectos"), "Collembola": ("Insectos", "Otros insectos"),
+    "Arachnida": ("Arácnidos", "Otros arácnidos"), "Pycnogonida": ("Arácnidos", "Otros arácnidos"),
+    "Gastropoda": ("Moluscos", None), "Bivalvia": ("Moluscos", "Bivalvos"), "Cephalopoda": ("Moluscos", "Cefalópodos"),
+    "Polyplacophora": ("Moluscos", "Quitones y otros"), "Scaphopoda": ("Moluscos", "Quitones y otros"),
+    "Malacostraca": ("Crustáceos", None), "Copepoda": ("Crustáceos", "Copépodos"), "Ostracoda": ("Crustáceos", "Ostrácodos"),
+    "Branchiopoda": ("Crustáceos", "Branquiópodos"), "Thecostraca": ("Crustáceos", "Otros crustáceos"),
+    "Hexanauplia": ("Crustáceos", "Copépodos"), "Maxillopoda": ("Crustáceos", "Otros crustáceos"),
+    "Diplopoda": ("Miriápodos", None), "Chilopoda": ("Miriápodos", None), "Symphyla": ("Miriápodos", None), "Pauropoda": ("Miriápodos", None),
+    "Polychaeta": ("Anélidos", None), "Clitellata": ("Anélidos", None),
+    "Hydrozoa": ("Cnidarios", None), "Anthozoa": ("Cnidarios", None), "Scyphozoa": ("Cnidarios", None), "Cubozoa": ("Cnidarios", None),
+    "Asteroidea": ("Equinodermos", None), "Echinoidea": ("Equinodermos", None), "Ophiuroidea": ("Equinodermos", None),
+    "Holothuroidea": ("Equinodermos", None), "Crinoidea": ("Equinodermos", None),
+    "Demospongiae": ("Esponjas", None), "Calcarea": ("Esponjas", None), "Hexactinellida": ("Esponjas", None), "Homoscleromorpha": ("Esponjas", None),
 }
 
 ISLAS = {"H": "El Hierro", "P": "La Palma", "G": "La Gomera", "T": "Tenerife", "C": "Gran Canaria",
@@ -446,6 +504,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--limite", type=int, default=0, help="máximo de taxones por grupo (pruebas)")
     ap.add_argument("--sin-fichas", action="store_true", help="solo exportaciones, sin fichas")
+    ap.add_argument("--minutos", type=float, default=150, help="tiempo máximo para descargar fichas; el resto queda para la siguiente ejecución")
+    ap.add_argument("--dias", type=int, default=60, help="una ficha se vuelve a descargar si tiene más de estos días")
     args = ap.parse_args()
 
     cli = Cliente()
@@ -466,18 +526,59 @@ def main() -> int:
         print(f"{grupo} (completo): {len(filas)}; sin subgrupo: {len(extra)}; clases descartadas: {descartes}", flush=True)
         if not args.limite:
             for fila in extra:
-                if fila["clase"] in CLASE_GRUPO:
-                    g, sg = CLASE_GRUPO[fila["clase"]]
+                if fila["clase"] in CLASE_GRUPO or grupo in POR_DEFECTO:
+                    g, sg = CLASE_GRUPO.get(fila["clase"]) or POR_DEFECTO[grupo]
                     registros[fila["codigo"]] = {**fila, "reino": reino, "grupo": g, "subgrupo": sg}
     centinela = exportar_centinela(cli)
     print(f"Centinela: {len(centinela)} taxones protegidos", flush=True)
 
-    # 2. Fichas
+    # 2. Fichas. Se reutilizan las recientes; se descargan primero las que faltan y, entre ellas,
+    # endémicas, protegidas e invasoras; lo que no quepa en el tiempo máximo sigue en la siguiente
+    # ejecución (mientras tanto, la especie aparece con los datos de la exportación).
     documentos: dict[str, dict] = {}
+    previo_docs = SALIDA / "documentos.json"
+    if previo_docs.exists():
+        try:
+            documentos = json.loads(previo_docs.read_text(encoding="utf-8"))
+        except ValueError:
+            documentos = {}
     indice = []
     errores = []
     total = len(registros)
-    for n, (cod, base) in enumerate(sorted(registros.items(), key=lambda x: x[1]["completo"]), 1):
+    hoy = datetime.now(timezone.utc).date()
+
+    def previa(cod):
+        p = SALIDA / "fichas" / f"{cod}.json"
+        if not p.exists():
+            return None
+        try:
+            return json.loads(p.read_text(encoding="utf-8"))
+        except ValueError:
+            return None
+
+    def antiguedad(f):
+        try:
+            return (hoy - datetime.fromisoformat(f.get("actualizado", "2000-01-01")).date()).days
+        except ValueError:
+            return 9999
+
+    previas = {cod: previa(cod) for cod in registros}
+    # Campos del índice que añaden los pasos de enriquecimiento: se conservan hasta que vuelvan a calcularse
+    try:
+        indice_previo = {e["c"]: e for e in json.loads((SALIDA / "indice.json").read_text(encoding="utf-8"))}
+    except (OSError, ValueError):
+        indice_previo = {}
+    EXTRA_INDICE = ("ui", "fm", "tm", "fl", "ev", "so", "n2")
+    def prioridad(item):
+        cod, base = item
+        f = previas.get(cod)
+        falta = f is None or f.get("fichaPendiente")
+        importante = base["endemico"] or base["completo"] in centinela or base["origen"] == "ISI"
+        return (not falta, not importante, -(antiguedad(f) if f else 9999), base["completo"])
+    pendientes_ini = sum(1 for c in registros if previas[c] is None or previas[c].get("fichaPendiente") or antiguedad(previas[c]) > args.dias)
+    print(f"Fichas por descargar o actualizar: {pendientes_ini} de {total}", flush=True)
+    descargadas = 0
+    for n, (cod, base) in enumerate(sorted(registros.items(), key=prioridad), 1):
         nombre, autor, rango = separar_nombre_texto(base["completo"])
         rec = {
             "codigo": cod, "nombre": nombre, "autor": autor, "rango": rango, "nombreCompleto": base["completo"],
@@ -488,7 +589,12 @@ def main() -> int:
             "nImagenes": base["nImagenes"], "fuentes": {"lista": "Biota (exportación oficial)"},
         }
         destino = SALIDA / "fichas" / f"{cod}.json"
-        if not args.sin_fichas:
+        prev = previas.get(cod)
+        necesita = prev is None or prev.get("fichaPendiente") or antiguedad(prev) > args.dias
+        a_tiempo = (time.time() - inicio) < args.minutos * 60
+        if not args.sin_fichas and necesita and a_tiempo:
+            descargadas += 1
+            ok = True
             try:
                 r = cli.get(f"{BIOTA}/especie/{cod}")
                 rec.update({k: v for k, v in leer_ficha_biota(r.text).items() if v not in (None, "")})
@@ -507,12 +613,25 @@ def main() -> int:
                     rec["centinela"] = leer_ficha_centinela(rc.text)
                     rec["fuentes"]["centinela"] = f"{CENTINELA}/especie/{cod}"
             except Exception as e:  # noqa: BLE001
+                ok = False
                 errores.append({"codigo": cod, "error": str(e)})
                 print(f"  ERROR {cod}: {e}", flush=True)
-                if destino.exists():  # conservar la ficha anterior
-                    rec = {**json.loads(destino.read_text(encoding="utf-8")), **{k: rec[k] for k in ("presencia", "status", "validez")}}
+                if prev is not None:  # conservar la ficha anterior
+                    rec = {**prev, **{k: rec[k] for k in ("presencia", "status", "validez")}}
+            if ok:
+                rec.pop("fichaPendiente", None)
+                rec["actualizado"] = datetime.now(timezone.utc).date().isoformat()
+            elif prev is None:
+                rec["fichaPendiente"] = True
+                rec["actualizado"] = "2000-01-01"
+        elif prev is not None:
+            # Ficha reciente o sin tiempo: se conserva y se actualiza con la exportación de hoy
+            rec = {**prev, **{k: rec[k] for k in ("presencia", "status", "validez", "nImagenes", "comunes", "grupo", "subgrupo",
+                                                   "reino", "medio", "clase", "origenCsv", "endemicoCsv")}}
+        else:
+            rec["fichaPendiente"] = True
+            rec["actualizado"] = "2000-01-01"
         rec["nivel"] = nivel_endemicidad(rec)
-        rec["actualizado"] = datetime.now(timezone.utc).date().isoformat()
         destino.write_text(json.dumps(rec, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
         prot = resumen_proteccion(rec.get("proteccion", {}))
@@ -526,15 +645,17 @@ def main() -> int:
             "st": rec["status"], "hb": list(dict.fromkeys(h["categoria"] for h in rec.get("habitats", []))),
             "cc": prot.get("Catálogo Canario", []), "ce": prot.get("Catálogo Español/LESRPE", []),
             "pr": bool(rec.get("protegida")), "img": portada, "ni": rec["nImagenes"],
+            **({"fp": 1} if rec.get("fichaPendiente") else {}),
+            **{k: v for k, v in (indice_previo.get(cod) or {}).items() if k in EXTRA_INDICE},
         })
-        if n % 50 == 0 or n == total:
+        if n % 500 == 0 or n == total:
             mins = (time.time() - inicio) / 60
-            print(f"[{n}/{total}] {mins:.1f} min", flush=True)
+            print(f"[{n}/{total}] fichas descargadas: {descargadas} · {mins:.1f} min", flush=True)
 
     # 3. Índice y metadatos
-    indice.sort(key=lambda x: (x["re"] != "Flora", x["g"], x["fa"], x["n"]))
+    indice.sort(key=lambda x: (x["re"] != "Flora", x["g"] in INVERTEBRADOS, x["g"], x["fa"], x["n"]))
     for i, e in enumerate(indice, 1):
-        e["no"] = i  # número de Pokédex: orden por reino, grupo, familia y nombre
+        e["no"] = i  # número de Pokédex: flora, vertebrados e invertebrados; dentro, por grupo, familia y nombre
     (SALIDA / "documentos.json").write_text(json.dumps(documentos, ensure_ascii=False, indent=1), encoding="utf-8")
     (SALIDA / "indice.json").write_text(json.dumps(indice, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
     meta = {
@@ -542,6 +663,8 @@ def main() -> int:
         "taxones": len(indice),
         "porGrupo": {g: sum(1 for e in indice if e["g"] == g) for g in sorted({e["g"] for e in indice})},
         "errores": errores,
+        "fichasPendientes": sum(1 for e in indice if e.get("fp")),
+        "fichasDescargadas": descargadas,
         "peticiones": cli.peticiones,
         "islas": ISLAS, "presencia": PRESENCIA,
         "fuentes": {"Biota": BIOTA, "Centinela": CENTINELA},

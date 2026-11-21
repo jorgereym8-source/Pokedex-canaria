@@ -44,6 +44,15 @@ const P = {
   nieve: "M7 14h10a4 4 0 0 0 0-8 5 5 0 0 0-9.6 1.5A3.3 3.3 0 0 0 7 14zM9 18v.01M12 20v.01M15 18v.01",
   descargar: "M12 4v12M7 11l5 5 5-5M5 20h14",
   papelera: "M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13",
+  insecto: "M10 5.5a2 2 0 1 0 4 0 2 2 0 1 0-4 0M8 11c0-2.5 1.8-3.5 4-3.5s4 1 4 3.5v5c0 2.8-1.8 4.5-4 4.5s-4-1.7-4-4.5zM12 7.5v13M8 11.5L4.5 10M8 14.5H4M8.3 17.5L5 19.5M16 11.5l3.5-1.5M16 14.5h4M15.7 17.5l3.3 2M11 4L9.5 2.3M13 4l1.5-1.7",
+  arana: "M10.5 8a1.5 1.5 0 1 0 3 0 1.5 1.5 0 1 0-3 0M9.5 13.5a2.5 3 0 1 0 5 0 2.5 3 0 1 0-5 0M10.6 8.8L6 5 4 6M10.4 10l-5.9-.5L3 11M10 12.5l-5 2-1.5 3M10.2 15l-3.5 3.5-.5 2.5M13.4 8.8L18 5l2 1M13.6 10l5.9-.5L21 11M14 12.5l5 2 1.5 3M13.8 15l3.5 3.5.5 2.5",
+  caracol: "M3 19h15.5a2.5 2.5 0 0 0 2.5-2.5M6 19a5.5 5.5 0 1 1 10.8-1.6c0 1.9-1.5 3-3.1 3a2.4 2.4 0 0 1-2.4-2.4c0-1.2.9-2 2-2M3 19c-.6-1.8-.4-3.6.6-5M4 14.5L2.5 11M5 14l.5-3.5",
+  cangrejo: "M7 13.5c0-2.5 2.2-4 5-4s5 1.5 5 4-2.2 4-5 4-5-1.5-5-4zM7.3 12L4 8.5l.8-3.5 2.2 2.3M16.7 12L20 8.5 19.2 5 17 7.3M7.5 15.5L4 17.5M8.6 16.8L6.5 20M16.5 15.5l3.5 2M15.4 16.8l2.1 3.2M10.5 9.6L10 7.5M13.5 9.6l.5-2.1",
+  ciempies: "M5 4c1.5 2 2.5 4 3.5 6.5S11 15 13 16s4.5 2 6 4M6.3 6.8L4 7.6M7.6 5.6l-.4-2.2M7.8 9.8l-2.4.6M9.6 8.6L10 6.4M10 13l-2.3 1M12 11.5l1.5-1.6M12.6 15.6l-1.6 2M14.4 13.9l2.1-.7M16.5 17.6l-1 2.1M18 16l2.3-.4",
+  gusano: "M3 15c2-4 4-4 6 0s4 4 6 0 4-4 6 0M20.5 13.8v.01",
+  medusa: "M5 12a7 7 0 0 1 14 0zM7.5 12c0 3-1 5-1 8M10.5 12c0 3 1 5 0 8M13.5 12c0 3-1 5 0 8M16.5 12c0 3 1 5 1 8",
+  estrella: "M12 3l2.2 5.6 6 .4-4.6 3.8 1.5 5.8L12 15.4l-5.1 3.2 1.5-5.8L3.8 9l6-.4z",
+  esponja: "M7 21V9c0-3 2-5 5-5s5 2 5 5v12zM10 8.5v.01M14 11v.01M10 14v.01M14 17v.01M10 18.5v.01",
 };
 
 export function icono(nombre, extra = "") {
@@ -53,7 +62,16 @@ export function icono(nombre, extra = "") {
 export const GRUPOS = {
   "Helechos": { icono: "helecho" }, "Plantas con flor": { icono: "hoja" }, "Aves": { icono: "ave" },
   "Reptiles": { icono: "lagarto" }, "Mamíferos": { icono: "pata" }, "Anfibios": { icono: "rana" }, "Peces": { icono: "pez" },
+  "Insectos": { icono: "insecto" }, "Arácnidos": { icono: "arana" }, "Moluscos": { icono: "caracol" }, "Crustáceos": { icono: "cangrejo" },
+  "Miriápodos": { icono: "ciempies" }, "Anélidos": { icono: "gusano" }, "Cnidarios": { icono: "medusa" }, "Equinodermos": { icono: "estrella" },
+  "Esponjas": { icono: "esponja" }, "Otros invertebrados": { icono: "gusano" },
 };
+// Bloques de grupos para Inicio y filtros
+export const BLOQUES = [
+  ["Flora", ["Plantas con flor", "Helechos"]],
+  ["Vertebrados", ["Aves", "Reptiles", "Mamíferos", "Anfibios", "Peces"]],
+  ["Invertebrados", ["Insectos", "Arácnidos", "Moluscos", "Crustáceos", "Miriápodos", "Anélidos", "Cnidarios", "Equinodermos", "Esponjas", "Otros invertebrados"]],
+];
 export const iconoGrupo = (g) => (GRUPOS[g] || { icono: "hoja" }).icono;
 
 export const ISLAS = [
