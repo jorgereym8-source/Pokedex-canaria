@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22T03:50:21+00:00",
+ "actualizado": "2026-11-22T05:01:06+00:00",
  "taxones": 19094,
  "porGrupo": {
   "Anfibios": 3,
@@ -20,63 +20,10 @@
   "Plantas con flor": 2660,
   "Reptiles": 49
  },
- "errores": [
-  {
-   "codigo": "A01697",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01697"
-  },
-  {
-   "codigo": "A01698",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01698"
-  },
-  {
-   "codigo": "A01699",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01699"
-  },
-  {
-   "codigo": "A01700",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01700"
-  },
-  {
-   "codigo": "A01701",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01701"
-  },
-  {
-   "codigo": "A01702",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01702"
-  },
-  {
-   "codigo": "A01703",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01703"
-  },
-  {
-   "codigo": "A01704",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01704"
-  },
-  {
-   "codigo": "A01705",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01705"
-  },
-  {
-   "codigo": "A01706",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01706"
-  },
-  {
-   "codigo": "A01707",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/A01707"
-  },
-  {
-   "codigo": "E10679",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/E10679"
-  },
-  {
-   "codigo": "E10531",
-   "error": "Sin respuesta válida: https://www.biodiversidadcanarias.es/biota/especie/E10531"
-  }
- ],
- "fichasPendientes": 3003,
- "fichasDescargadas": 12087,
- "peticiones": 12480,
+ "errores": [],
+ "fichasPendientes": 0,
+ "fichasDescargadas": 3003,
+ "peticiones": 3071,
  "islas": {
   "H": "El Hierro",
   "P": "La Palma",
