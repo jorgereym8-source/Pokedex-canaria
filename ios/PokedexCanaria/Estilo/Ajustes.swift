@@ -7,21 +7,28 @@ import Observation
 final class Ajustes {
     private static let clave = "pokedex-canaria:ajustes"
 
+    private var guardados: DatosAjustes
+
+    /// Los ajustes; cada cambio se guarda al momento
     var d: DatosAjustes {
-        didSet { guardar() }
+        get { guardados }
+        set {
+            guardados = newValue
+            guardar()
+        }
     }
 
     init() {
         if let datos = UserDefaults.standard.data(forKey: Ajustes.clave),
            let g = try? JSONDecoder().decode(DatosAjustes.self, from: datos) {
-            d = g
+            guardados = g
         } else {
-            d = DatosAjustes()
+            guardados = DatosAjustes()
         }
     }
 
     private func guardar() {
-        if let datos = try? JSONEncoder().encode(d) {
+        if let datos = try? JSONEncoder().encode(guardados) {
             UserDefaults.standard.set(datos, forKey: Ajustes.clave)
         }
     }
