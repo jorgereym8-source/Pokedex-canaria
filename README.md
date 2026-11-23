@@ -32,6 +32,8 @@ Las fotos pertenecen a sus autores: la app las muestra desde la web de origen (B
 
 Abre la app en Safari, pulsa Compartir y elige «Añadir a pantalla de inicio».
 
+También hay una versión nativa en SwiftUI para instalar desde Xcode, con los mismos datos y estilos: está en la carpeta [`ios/`](ios/README.md).
+
 ## Estructura
 
 - `index.html`, `css/`, `js/`: la app (sin compilación; HTML, CSS y JavaScript).

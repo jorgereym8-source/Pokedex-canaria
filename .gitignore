@@ -4,3 +4,9 @@ __pycache__/
 sonda/
 .DS_Store
 node_modules/
+
+# Xcode (app nativa en ios/)
+xcuserdata/
+*.xcuserstate
+DerivedData/
+ios/build/
