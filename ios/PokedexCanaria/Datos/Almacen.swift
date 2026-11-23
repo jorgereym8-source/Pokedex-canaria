@@ -39,7 +39,26 @@ final class Almacen {
     @ObservationIgnored private let carpetaDescargas: URL
     @ObservationIgnored private let sesion: URLSession
 
-    static let urlDatos = URL(string: Cat.web + "datos/")!
+    /// De dónde se descargan los datos nuevos: GitHub Pages y, si falla, el repositorio
+    static let fuentesDatos = [URL(string: Cat.web + "datos/")!, URL(string: Cat.repositorio + "datos/")!]
+    @ObservationIgnored private var fuenteBuena = 0
+
+    /// Descarga un archivo de datos probando las dos fuentes
+    private func descargar(_ ruta: String) async throws -> Data {
+        var ultimoError: Error = URLError(.badServerResponse)
+        let orden = [fuenteBuena] + Almacen.fuentesDatos.indices.filter { $0 != fuenteBuena }
+        for i in orden {
+            do {
+                let (d, r) = try await sesion.data(from: Almacen.fuentesDatos[i].appendingPathComponent(ruta))
+                guard (r as? HTTPURLResponse)?.statusCode == 200, !d.isEmpty else { throw URLError(.badServerResponse) }
+                fuenteBuena = i
+                return d
+            } catch {
+                ultimoError = error
+            }
+        }
+        throw ultimoError
+    }
 
     init(carpetaApp: URL? = Bundle.main.url(forResource: "Datos", withExtension: nil), carpetaDescargas: URL? = nil) {
         self.carpetaApp = carpetaApp
@@ -165,9 +184,8 @@ final class Almacen {
     }
 
     private func descargarFicha(_ codigo: String, guardar: Bool = true) async throws -> Data {
-        let url = Almacen.urlDatos.appendingPathComponent("fichas/\(codigo).json")
-        let (d, r) = try await sesion.data(from: url)
-        guard (r as? HTTPURLResponse)?.statusCode == 200, d.first == UInt8(ascii: "{") else { throw ErrorFicha.noDisponible }
+        let d = try await descargar("fichas/\(codigo).json")
+        guard d.first == UInt8(ascii: "{") else { throw ErrorFicha.noDisponible }
         if guardar {
             let carpeta = carpetaDescargas.appendingPathComponent("fichas", isDirectory: true)
             try? FileManager.default.createDirectory(at: carpeta, withIntermediateDirectories: true)
@@ -188,8 +206,7 @@ final class Almacen {
         comprobando = true
         defer { comprobando = false }
         do {
-            let (dm, rm) = try await sesion.data(from: Almacen.urlDatos.appendingPathComponent("meta.json"))
-            guard (rm as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
+            let dm = try await descargar("meta.json")
             let remota = try JSONDecoder().decode(MetaDatos.self, from: dm)
             UserDefaults.standard.set(ahora, forKey: Almacen.claveUltima)
             guard Almacen.esMasNuevo(remota, que: meta) else {
@@ -197,8 +214,7 @@ final class Almacen {
                 return
             }
             mensajeDatos = "Descargando datos nuevos…"
-            let (di, ri) = try await sesion.data(from: Almacen.urlDatos.appendingPathComponent("indice.json"))
-            guard (ri as? HTTPURLResponse)?.statusCode == 200 else { throw URLError(.badServerResponse) }
+            let di = try await descargar("indice.json")
             let lista = try await Task.detached(priority: .utility) { () throws -> [Especie] in
                 let l = try JSONDecoder().decode([Especie].self, from: di)
                 Indice.preparar(l)

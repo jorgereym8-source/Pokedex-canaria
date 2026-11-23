@@ -6,7 +6,9 @@ enum Cat {
     static let centinela = "https://www.biodiversidadcanarias.es/centinela"
     static let redexos = "https://www.gobiernodecanarias.org/medioambiente/materias/biodiversidad/especies-exoticas-invasoras/"
     /// Web de la app (GitHub Pages): de aquí salen las actualizaciones de datos y los enlaces para compartir.
-    static let web = "https://jorgereym8-source.github.io/pokedex-canaria/"
+    static let web = "https://jorgereym8-source.github.io/Pokedex-canaria/"
+    /// Copia directa del repositorio en GitHub, por si GitHub Pages no responde
+    static let repositorio = "https://raw.githubusercontent.com/jorgereym8-source/Pokedex-canaria/main/"
 
     /// Islas de oeste a este
     static let islas: [(String, String)] = [
